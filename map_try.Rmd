@@ -1,9 +1,46 @@
 ---
-title: "Kpmg_Proj"
+title: "KPMG Thesis Project"
 output: html_document
 ---
 
-## Map Viz
+# Data Reading:
+```{r}
+library(readr)
+
+#uncomment when you want to read the data from fresh
+#Data <- read_delim("E:/KPMG/Data/KPMGDT.csv",",", escape_double = FALSE, trim_ws = TRUE)
+```
+# Data Prepration
+```{r}
+Data$CreditRating <- as.factor(Data$CreditRating)
+Data$InterestType <- as.factor(Data$InterestType)
+Data$MortgageType <- as.factor(Data$MortgageType)
+Data$NewLoan <- as.factor(Data$NewLoan)
+Data$ProbationaryLoans <- as.factor(Data$ProbationaryLoans)
+Data$LTVCategory <- as.factor(Data$LTVCategory)
+Data$InArrears <- as.factor(Data$InArrears)
+Data$County <- as.factor(Data$County)
+Data$DefaultedLoans <- as.factor(Data$DefaultedLoans)
+```
+
+# Data Stats
+```{r}
+
+dim(Data)
+names(Data)
+summary(Data)
+```
+
+
+#Subsetting Train and Test Datasets
+```{r}
+set.seed(1234)
+dataPartition = sample(2,nrow(Data),replace=TRUE,prob=c(0.7,0.3))
+trainData <- Data[dataPartition ==1,]
+testData <- Data[dataPartition ==2,]
+```
+
+## Vizualization of Ireland property price market
 
 ```{r}
 ## Load the library
@@ -16,9 +53,6 @@ library(ggmap)
 library(gridExtra)
 library(htmlwidgets)
 library(readr)
-Data <- read_delim("E:/KPMG/Data/Data.csv", 
-    ";", escape_double = FALSE, trim_ws = TRUE)
-
 ResMortgage <- data.frame(Data)
 weatherIcon <- makeIcon(
                          iconUrl = "./fig/weather.png",
@@ -136,7 +170,31 @@ save(lrmodel, file = "mymodel.rda")
 load("mymodel.rda")
 prob <- predict(lrmodel, newdata = mydata1, type = "response")
 plot(prob,mydata1$CreditRating)
+
 ```
+
+
+## Decision tree using Tree()
+```{r}
+library(C50)
+library(tree)
+library(rpart)
+data.rp <- rpart(DefaultedLoans~., data=trainData)
+
+```
+```{r}
+library(rpart)
+library(rattle)					# Fancy tree plot
+library(rpart.plot)				# Enhanced tree plots
+library(RColorBrewer)				# Color selection for fancy tree plot
+library(party)					# Alternative decision tree algorithm
+library(partykit)				# Convert rpart object to BinaryTree
+library(caret)
+print(data.rp)
+prp(data.rp)
+```
+
+
 #Decision Tree for Tableu
 ```{r}
 library(rpart)
@@ -147,11 +205,29 @@ library(party)					# Alternative decision tree algorithm
 library(partykit)				# Convert rpart object to BinaryTree
 library(caret)
 mydata <- read.csv("E:/KPMG/Data/Prep/Sample1_3.csv")
-fit <- rpart(DefaultedLoans ~ CreditRating + LoanBalance + PropertyValue, method = "class",data=mydata, control =  rpart.control(minisplit=10,cp = 0.001))
+fit <- rpart(DefaultedLoans ~ CreditRating+CreditRatingMovement + LoanBalance + PropertyValue+InterestRate + County,method = "class",data=Data, control =  rpart.control(minisplit=15,cp = 0.001))
 
 save(fit, file = "myclassificationtree.rda")
-plot(fit)
-text(fit)
+print(fit)
+prp(fit)
+tree.1 <- fit
+fancyRpartPlot(tree.1)
+```
+```{r}
+#Decision Tree for Tableu
+library(rpart)
+library(rattle)					# Fancy tree plot
+library(rpart.plot)				# Enhanced tree plots
+library(RColorBrewer)				# Color selection for fancy tree plot
+library(party)					# Alternative decision tree algorithm
+library(partykit)				# Convert rpart object to BinaryTree
+library(caret)
+
+mydata <- read.csv("E:/KPMG/Data/Prep/Sample1_3.csv")
+fit <- rpart(DefaultedLoans ~ LoanBalance + PropertyValue+ CreditRating+ AnnualPYMT,method = "class",data=trainData, control =  rpart.control(minisplit=15,cp = 0.001))
+
+save(fit, file = "myclassificationtree.rda")
+print(fit)
 prp(fit)
 tree.1 <- fit
 fancyRpartPlot(tree.1)
