@@ -89,7 +89,11 @@ MapDisplay
 #saveWidget(MapDisplay, file="MapDisplay.html")
 
 ```
-
+####################################
+#
+#Update this part
+#
+#####################################
 
 ```{r}
 library(lubridate)
@@ -106,21 +110,15 @@ library(ipred)
 library(plyr)
 library(rpart.plot)
 library(readr)
-mydata <- read.csv("E:/KPMG/Data/Prep/Sample1.csv")
-mydata1 <- read.csv("E:/KPMG/Data/Prep/Sample1_1.csv")
-dim(mydata)
-```
-
-```{r}
-levels.default(mydata$DefaultedLoans)
-table(mydata$DefaultedLoans, mydata$CreditRating)
-ggplot(mydata, aes(x = InterestRate)) +geom_histogram(aes(fill = CreditRating)) +facet_wrap(~DefaultedLoans, ncol=1)
+levels.default(testData$DefaultedLoans)
+table(testData$DefaultedLoans, testData$CreditRating)
+ggplot(testData, aes(x = testData$LoanBalance)) +geom_histogram(aes(fill = CreditRating)) +facet_wrap(~DefaultedLoans, ncol=1)
 
 ```
 ```{r}
-index = createDataPartition(y = mydata$DefaultedLoans, p = 0.90)[[1]]
-loans.sample <- mydata[-index,]
-ggplot(loans.sample, aes(x = LoanBalance, y = InterestRate)) + geom_point(aes(color = MortgageYears))
+index = createDataPartition(y = testData$DefaultedLoans, p = 0.90)[[1]]
+loans.sample <- testData[-index,]
+ggplot(loans.sample, aes(x = testData$CreditRating, y = testData$CreditRatingMovement)) + geom_point(aes(color = testData$MortgageYears))
 
 ```
 
@@ -197,23 +195,6 @@ prp(data.rp)
 
 #Decision Tree for Tableu
 ```{r}
-library(rpart)
-library(rattle)					# Fancy tree plot
-library(rpart.plot)				# Enhanced tree plots
-library(RColorBrewer)				# Color selection for fancy tree plot
-library(party)					# Alternative decision tree algorithm
-library(partykit)				# Convert rpart object to BinaryTree
-library(caret)
-mydata <- read.csv("E:/KPMG/Data/Prep/Sample1_3.csv")
-fit <- rpart(DefaultedLoans ~ CreditRating+CreditRatingMovement + LoanBalance + PropertyValue+InterestRate + County,method = "class",data=Data, control =  rpart.control(minisplit=15,cp = 0.001))
-
-save(fit, file = "myclassificationtree.rda")
-print(fit)
-prp(fit)
-tree.1 <- fit
-fancyRpartPlot(tree.1)
-```
-```{r}
 #Decision Tree for Tableu
 library(rpart)
 library(rattle)					# Fancy tree plot
@@ -222,14 +203,18 @@ library(RColorBrewer)				# Color selection for fancy tree plot
 library(party)					# Alternative decision tree algorithm
 library(partykit)				# Convert rpart object to BinaryTree
 library(caret)
-
-mydata <- read.csv("E:/KPMG/Data/Prep/Sample1_3.csv")
-fit <- rpart(DefaultedLoans ~ LoanBalance + PropertyValue+ CreditRating+ AnnualPYMT,method = "class",data=trainData, control =  rpart.control(minisplit=15,cp = 0.001))
+fit <- rpart(DefaultedLoans ~ County+LoanBalance + PropertyValue+ CreditRating+ AnnualPYMT,method = "class",data=testData, control =  rpart.control(minisplit=15,cp = 0.001))
 
 save(fit, file = "myclassificationtree.rda")
 print(fit)
 prp(fit)
 tree.1 <- fit
 fancyRpartPlot(tree.1)
+```
+# Regression Trees
+```{r}
+library(tree)
+tree.model <- tree(DefaultedLoans~., data=testData)
+plot(testData$AddressLongitude, testData$AddressLatitude, col=grey(10:2/11)[testData$PropertyValue], pch=20, xlab="Longitude",ylab="Latitude")
 ```
 
