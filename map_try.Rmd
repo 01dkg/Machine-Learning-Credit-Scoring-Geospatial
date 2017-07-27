@@ -3,15 +3,7 @@ title: "Kpmg_Proj"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## Map Viz
 
 ```{r}
 ## Load the library
@@ -22,45 +14,146 @@ library(leaflet)
 library(ggplot2)
 library(ggmap)
 library(gridExtra)
-
+library(htmlwidgets)
 library(readr)
 Data <- read_delim("E:/KPMG/Data/Data.csv", 
     ";", escape_double = FALSE, trim_ws = TRUE)
-View(Data)
-us_weather_df <- data.frame(Data)
+
+ResMortgage <- data.frame(Data)
 weatherIcon <- makeIcon(
                          iconUrl = "./fig/weather.png",
                          iconWidth = 30, 
                          iconHeight = 30
                         )
 
-popupInfo <- paste(us_weather_df[['ContractRef']], 
+popupInfo <- paste(ResMortgage[['ContractRef']], 
                    ", ", 
-                   us_weather_df[['LoanBalance']],
+                   ResMortgage[['LoanBalance']],
                    "<br>", 
                    "Average January Temp in F:  ",
-                   us_weather_df[['DefaultedLoans']],
+                   ResMortgage[['DefaultedLoans']],
                    "<br>", 
                    "Credit Rating:  ",
-                   us_weather_df[['CreditRating']],
+                   ResMortgage[['CreditRating']],
                    "<br>", 
                    "LTV:  ",
-                   us_weather_df[['LTV']],
+                   ResMortgage[['LTV']],
                    "<br>", 
                    "Property Value:  ",
-                   us_weather_df[['PropertyValue']],
+                   ResMortgage[['PropertyValue']],
                    sep='')
 
 
-us_mainland_temp <- leaflet(us_weather_df) %>% 
+MapDisplay <- leaflet(ResMortgage) %>% 
                           setView(-93.65, 42.0285, zoom = 4) %>%
                                  addTiles() %>%
                                       addMarkers(Data$AddressLongitude, Data$AddressLatitude, popup= ~ popupInfo,
                                       options = popupOptions(closeButton = TRUE),
                                       clusterOptions = markerClusterOptions(), 
                                       icon = weatherIcon)
-
-
-us_mainland_temp
+MapDisplay
+#saveWidget(MapDisplay, file="MapDisplay.html")
 
 ```
+
+
+```{r}
+library(lubridate)
+library(ggplot2)
+library(dplyr)
+library(stringr)
+library(caret)
+library(rpart)
+library(rattle)
+library(ROSE)
+library(ROCR)
+library(MASS)
+library(ipred)
+library(plyr)
+library(rpart.plot)
+library(readr)
+mydata <- read.csv("E:/KPMG/Data/Prep/Sample1.csv")
+mydata1 <- read.csv("E:/KPMG/Data/Prep/Sample1_1.csv")
+dim(mydata)
+```
+
+```{r}
+levels.default(mydata$DefaultedLoans)
+table(mydata$DefaultedLoans, mydata$CreditRating)
+ggplot(mydata, aes(x = InterestRate)) +geom_histogram(aes(fill = CreditRating)) +facet_wrap(~DefaultedLoans, ncol=1)
+
+```
+```{r}
+index = createDataPartition(y = mydata$DefaultedLoans, p = 0.90)[[1]]
+loans.sample <- mydata[-index,]
+ggplot(loans.sample, aes(x = LoanBalance, y = InterestRate)) + geom_point(aes(color = MortgageYears))
+
+```
+
+```{r}
+#Decision Tree
+index = createDataPartition(y = mydata$DefaultedLoans, p = 0.9)[[1]]
+mydata.test <- mydata[-index,]
+mydata.train <- mydata[index,]
+mydata.rpart.0 <- rpart(DefaultedLoans ~ ., data = mydata.train)
+
+mydata.rpart.1 <- rpart(DefaultedLoans ~ . , data = mydata.train, 
+                      control=rpart.control(minsplit=10, minbucket = 3, cp=0.0006))
+
+
+fancyRpartPlot(mydata.rpart.0)
+```
+
+```{r}
+predictions.1 <- (predict(mydata.rpart.1, mydata.test, type = "class"))
+confusionMatrix(predictions.1, mydata.test$DefaultedLoans)
+```
+
+```{r}
+#Confusion Matrix
+mydata.oversampled <- ovun.sample(DefaultedLoans ~ ., data = mydata.train, method = "over", N = 52410, seed = 13)$data
+
+table(mydata.oversampled$DefaultedLoans)
+tune <- data.frame(0.001)
+colnames(tune) <- "cp"
+tr_control <- trainControl(method = "cv",number = 10, verboseIter = TRUE)
+mydata.rpart.oversampled <- train(DefaultedLoans ~., data = mydata.oversampled, method = "rpart", trControl = tr_control, tuneGrid = tune, control=rpart.control(minsplit=10, minbucket = 3))
+
+```
+```{r}
+#ROC Line Plot
+roc.curve(mydata.test$DefaultedLoans, predict(mydata.rpart.1, mydata.test, type = "prob")[,1], plot = TRUE)
+```
+#Model for Tableau
+```{r}
+mydata <- read.csv("E:/KPMG/Data/Prep/Sample1_3.csv")
+lrmodel <- glm(DefaultedLoans ~ CreditRating + LoanBalance + PropertyValue, data = mydata, family = "binomial");
+save(lrmodel, file = "mymodel.rda")
+
+```
+
+```{r}
+load("mymodel.rda")
+prob <- predict(lrmodel, newdata = mydata1, type = "response")
+plot(prob,mydata1$CreditRating)
+```
+#Decision Tree for Tableu
+```{r}
+library(rpart)
+library(rattle)					# Fancy tree plot
+library(rpart.plot)				# Enhanced tree plots
+library(RColorBrewer)				# Color selection for fancy tree plot
+library(party)					# Alternative decision tree algorithm
+library(partykit)				# Convert rpart object to BinaryTree
+library(caret)
+mydata <- read.csv("E:/KPMG/Data/Prep/Sample1_3.csv")
+fit <- rpart(DefaultedLoans ~ CreditRating + LoanBalance + PropertyValue, method = "class",data=mydata, control =  rpart.control(minisplit=10,cp = 0.001))
+
+save(fit, file = "myclassificationtree.rda")
+plot(fit)
+text(fit)
+prp(fit)
+tree.1 <- fit
+fancyRpartPlot(tree.1)
+```
+
