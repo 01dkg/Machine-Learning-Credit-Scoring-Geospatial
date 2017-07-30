@@ -1,0 +1,280 @@
+---
+title: "Analysis v2"
+author: "Deepak & Shruti"
+date: "30 July 2017"
+output: html_document
+---
+
+#Work on Original Dataset
+
+## Data Reading:
+```{r}
+library(readr)
+Datav2 <- read_delim("E:/KPMG/KPMG/KPMGv2.csv", 
+    ";", escape_double = FALSE, trim_ws = TRUE)
+```
+## Data Stats
+```{r}
+dim(Datav2)
+names(Datav2)
+summary(Datav2)
+```
+
+
+##Subsetting Train and Test Datasets
+```{r}
+set.seed(100)
+dataPartition = sample(2,nrow(Datav2),replace=TRUE,prob=c(0.7,0.3))
+trainDatav2 <- Datav2[dataPartition ==1,]
+testDatav2 <- Datav2[dataPartition ==2,]
+```
+
+
+##Data Prepration
+```{r}
+Datav2$CreditRating <- as.factor(Datav2$CreditRating)
+Datav2$InterestType <- as.factor(Datav2$InterestType)
+Datav2$MortgageType <- as.factor(Datav2$MortgageType)
+Datav2$NewLoan <- as.factor(Datav2$NewLoan)
+Datav2$ProbationaryLoans <- as.factor(Datav2$ProbationaryLoans)
+Datav2$LTVCategory <- as.factor(Datav2$LTVCategory)
+Datav2$InArrears <- as.factor(Datav2$InArrears)
+Datav2$County <- as.factor(Datav2$County)
+Datav2$DefaultedLoans <- as.factor(Datav2$DefaultedLoans)
+str(Datav2)
+```
+##GLM
+
+###Building Simple GLM Model
+```{r}
+
+simpleglmv2 <- glm(DefaultedLoans ~ CreditRating + InterestIncome + 
+    log(PropertyValue) + log(LoanBalance) + AnnualPYMT + LTV + 
+    InterestType + NewLoan + ProbationaryLoans + MortgageYears + 
+    MortgageType + InArrears + County + AddressLatitude + AddressLongitude, 
+    family = "binomial", data = trainDatav2)
+
+summary(simpleglmv2)
+
+
+```
+###Running simple GLM Model on test data of predict loan default
+
+```{r}
+testDatav2$prediction <- predict(simpleglmv2, newdata=testDatav2, type="response")
+```
+
+###Testing Accuracy of glm() model
+```{r}
+table(testDatav2$DefaultedLoans, as.numeric(testDatav2$prediction >= 0.5))
+confusionMatrix(testDatav2$prediction,testDatav2$DefaultedLoans)
+```
+### Accuracy
+```{r}
+(865+8188)/nrow(testDatav2)
+```
+### ROC Curve
+```{r}
+library(ROCR)
+roc_prediction = prediction(testDatav2$prediction, testDatav2$DefaultedLoans)
+as.numeric(performance(pred, "auc")@y.values)
+
+# Make predictions on training set
+train_pred = predict(simpleglmv2, type="response")
+
+# Prediction function
+ROCT_Prediction = prediction(train_pred, trainDatav2$DefaultedLoans)
+
+# Performance function
+ROCR_Performance = performance(ROCT_Prediction, "tpr", "fpr")
+
+# Plot ROC curve
+plot(ROCR_Performance)
+
+# Add colors
+plot(ROCR_Performance, colorize=TRUE)
+
+# Add threshold labels 
+plot(ROCR_Performance, colorize=TRUE, print.cutoffs.at=seq(0,1,by=0.05), text.adj=c(-0.2,2.0))
+```
+
+
+## Vizualization of Ireland property price market
+
+```{r}
+## Load the library
+library(dplyr)
+library(maps)
+library(reshape2)
+library(leaflet)
+library(ggplot2)
+library(ggmap)
+library(gridExtra)
+library(htmlwidgets)
+library(readr)
+weatherIcon <- makeIcon(
+                         iconUrl = "./fig/weather.png",
+                         iconWidth = 30, 
+                         iconHeight = 30
+                        )
+
+popupInfo <- paste(testDatav2[['ContractRef']], 
+                   ", ", 
+                   testDatav2[['LoanBalance']],
+                   "<br>", 
+                   "Average January Temp in F:  ",
+                   testDatav2[['DefaultedLoans']],
+                   "<br>", 
+                   "Credit Rating:  ",
+                   testDatav2[['CreditRating']],
+                   "<br>", 
+                   "LTV:  ",
+                   testDatav2[['LTV']],
+                   "<br>", 
+                   "Property Value:  ",
+                   testDatav2[['PropertyValue']],
+                   sep='')
+
+
+MapDisplay <- leaflet(testDatav2) %>% 
+                          setView(-6.24420, 53.30867, zoom = 12) %>%
+                                 addTiles() %>%
+                                      addMarkers(testDatav2$AddressLongitude, testDatav2$AddressLatitude, popup= ~ popupInfo,
+                                      options = popupOptions(closeButton = TRUE),
+                                      clusterOptions = markerClusterOptions(), 
+                                      icon = weatherIcon)
+MapDisplay
+#saveWidget(MapDisplay, file="MapDisplay.html")
+
+```
+####################################
+#
+#Update this part
+#
+#####################################
+
+```{r}
+library(lubridate)
+library(ggplot2)
+library(dplyr)
+library(stringr)
+library(caret)
+library(rpart)
+library(rattle)
+library(ROSE)
+library(ROCR)
+library(MASS)
+library(ipred)
+library(plyr)
+library(rpart.plot)
+library(readr)
+levels.default(trainDatav2$DefaultedLoans)
+table(trainDatav2$DefaultedLoans, trainDatav2$CreditRating)
+ggplot(trainDatav2, aes(x = trainDatav2$LoanBalance)) +geom_histogram(aes(fill = CreditRating)) +facet_wrap(~DefaultedLoans, ncol=1)
+
+```
+
+```{r}
+#Decision Tree
+mydata.rpart.0 <- rpart(DefaultedLoans ~ ., data = trainDatav2)
+
+mydata.rpart.1 <- rpart(DefaultedLoans ~ . , data = testDatav2, 
+                      control=rpart.control(minsplit=10, minbucket = 3, cp=0.0006))
+
+
+fancyRpartPlot(mydata.rpart.1)
+```
+
+```{r}
+predictions.1 <- (predict(mydata.rpart.1, testDatav2, type = "class"))
+confusionMatrix(predictions.1, testDatav2$DefaultedLoans)
+```
+
+#Model for Tableau
+```{r}
+lrmodel <- glm(DefaultedLoans ~ CreditRating + LoanBalance + PropertyValue, data = trainDatav2, family = "binomial");
+save(lrmodel, file = "trainDatav2.rda")
+
+```
+
+```{r}
+load("trainDatav2.rda")
+prob <- predict(lrmodel, newdata = testDatav2, type = "response")
+plot(prob,testDatav2$CreditRating)
+
+```
+#Decision Tree
+
+##Decision Tree Model
+```{r}
+#Decision Tree for Tableu
+library(rpart)
+library(rattle)					# Fancy tree plot
+library(rpart.plot)			# Enhanced tree plots
+library(RColorBrewer)		# Color selection for fancy tree plot
+library(party)					# Alternative decision tree algorithm
+library(partykit)				# Convert rpart object to BinaryTree
+library(caret)
+defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=trainDatav2, control =  rpart.control(minisplit=5,cp = 0.001))
+
+#save(fit, file = "myclassificationtree.rda")
+print(defaultLoanTree)
+prp(defaultLoanTree)
+tree.1 <- defaultLoanTree
+fancyRpartPlot(tree.1)
+```
+## Stats for Decision Tree
+```{r}
+printcp(defaultLoanTree)
+```
+
+## Confusion Matrix for traindata
+```{r}
+defaultPredict <- predict(defaultLoanTree, trainDatav2, type = 'class')
+matrix <- table(defaultPredict, trainDatav2$DefaultedLoans)
+print(matrix)
+print((matrix[4]+matrix[1])/nrow(trainDatav2))
+```
+## Confusion Matrix for test data
+```{r}
+defaultPredict <- predict(defaultLoanTree, testDatav2, type = 'class')
+matrix <- table(defaultPredict, testDatav2$DefaultedLoans)
+print(matrix)
+print((matrix[4]+matrix[1])/nrow(testDatav2))
+```
+## Prunning Decision Tree using rpart()
+```{r}
+PruneTree = prune(fit, cp = 0.003)
+prp(PruneTree)
+fancyRpartPlot(PruneTree)
+```
+
+## Classification Tree Model (Small Tree)
+```{r}
+library(rpart)
+library(rpart.plot)				# Enhanced tree plots
+library(RColorBrewer)
+library(rattle)					# Fancy tree plot)				# Color selection for fancy tree plot
+library(caret)
+fit <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + 
+    PropertyValue + InterestIncome + CreditRating + AnnualPYMT + 
+    County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + 
+    AddressLatitude + AddressLongitude, data=testDatav2, control=rpart.control(minsplit =25,cp=0.002),method="class")
+prp(fit)
+fancyRpartPlot(fit)
+
+```
+
+## Decision Tree using party() package
+```{r}
+library(party)
+library(partykit)
+fit <- ctree(DefaultedLoans ~ NewLoan + County + LoanBalance + 
+    PropertyValue + InterestIncome + CreditRating + AnnualPYMT + 
+    County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + 
+    AddressLatitude + AddressLongitude, data=testDatav2)
+plot (fit, main="Conditional Inference Tree")  # the ctreeprp(fit)
+
+```
+
+

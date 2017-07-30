@@ -2,15 +2,34 @@
 title: "KPMG Thesis Project"
 output: html_document
 ---
+#Work on Original Dataset
 
-# Data Reading:
+## Data Reading:
 ```{r}
 library(readr)
 
 #uncomment when you want to read the data from fresh
 #Data <- read_delim("E:/KPMG/Data/KPMGDT.csv",",", escape_double = FALSE, trim_ws = TRUE)
 ```
-# Data Prepration
+
+## Data Stats
+```{r}
+dim(Data)
+names(Data)
+summary(Data)
+```
+
+
+##Subsetting Train and Test Datasets
+```{r}
+set.seed(100)
+dataPartition = sample(2,nrow(Data),replace=TRUE,prob=c(0.7,0.3))
+trainData <- Data[dataPartition ==1,]
+testData <- Data[dataPartition ==2,]
+```
+
+
+##Data Prepration
 ```{r}
 Data$CreditRating <- as.factor(Data$CreditRating)
 Data$InterestType <- as.factor(Data$InterestType)
@@ -21,23 +40,60 @@ Data$LTVCategory <- as.factor(Data$LTVCategory)
 Data$InArrears <- as.factor(Data$InArrears)
 Data$County <- as.factor(Data$County)
 Data$DefaultedLoans <- as.factor(Data$DefaultedLoans)
+str(Data)
 ```
+##GLM
 
-# Data Stats
+###Building Simple GLM Model
 ```{r}
 
-dim(Data)
-names(Data)
-summary(Data)
+simpleglm <- glm(DefaultedLoans ~ CreditRating + InterestIncome + 
+    log(PropertyValue) + log(LoanBalance) + AnnualPYMT + LTV + 
+    InterestType + NewLoan + ProbationaryLoans + MortgageYears + 
+    MortgageType + InArrears + County + AddressLatitude + AddressLongitude, 
+    family = "binomial", data = trainData)
+
+summary(simpleglm)
+
+
+```
+###Running simple GLM Model on test data of predict loan default
+
+```{r}
+testData$prediction = predict(simpleglm, newdata=testData, type="response")
 ```
 
-
-#Subsetting Train and Test Datasets
+###Testing Accuracy of glm() model
 ```{r}
-set.seed(1234)
-dataPartition = sample(2,nrow(Data),replace=TRUE,prob=c(0.7,0.3))
-trainData <- Data[dataPartition ==1,]
-testData <- Data[dataPartition ==2,]
+table(testData$DefaultedLoans, as.numeric(testData$prediction >= 0.5))
+```
+### Accuracy
+```{r}
+(67566+3154)/nrow(testData)
+```
+### ROC Curve
+```{r}
+library(ROCR)
+roc_prediction = prediction(testData$prediction, testData$DefaultedLoans)
+as.numeric(performance(pred, "auc")@y.values)
+
+# Make predictions on training set
+train_pred = predict(simpleglm, type="response")
+
+# Prediction function
+ROCT_Prediction = prediction(train_pred, trainData$DefaultedLoans)
+
+# Performance function
+ROCR_Performance = performance(ROCT_Prediction, "tpr", "fpr")
+
+# Plot ROC curve
+plot(ROCR_Performance)
+
+# Add colors
+plot(ROCR_Performance, colorize=TRUE)
+
+# Add threshold labels 
+plot(ROCR_Performance, colorize=TRUE, print.cutoffs.at=seq(0,1.5,by=0.1), text.adj=c(-0.2,1.7))
 ```
 
 ## Vizualization of Ireland property price market
@@ -53,35 +109,34 @@ library(ggmap)
 library(gridExtra)
 library(htmlwidgets)
 library(readr)
-ResMortgage <- data.frame(Data)
 weatherIcon <- makeIcon(
                          iconUrl = "./fig/weather.png",
                          iconWidth = 30, 
                          iconHeight = 30
                         )
 
-popupInfo <- paste(ResMortgage[['ContractRef']], 
+popupInfo <- paste(testData[['ContractRef']], 
                    ", ", 
-                   ResMortgage[['LoanBalance']],
+                   testData[['LoanBalance']],
                    "<br>", 
                    "Average January Temp in F:  ",
-                   ResMortgage[['DefaultedLoans']],
+                   testData[['DefaultedLoans']],
                    "<br>", 
                    "Credit Rating:  ",
-                   ResMortgage[['CreditRating']],
+                   testData[['CreditRating']],
                    "<br>", 
                    "LTV:  ",
-                   ResMortgage[['LTV']],
+                   testData[['LTV']],
                    "<br>", 
                    "Property Value:  ",
-                   ResMortgage[['PropertyValue']],
+                   testData[['PropertyValue']],
                    sep='')
 
 
-MapDisplay <- leaflet(ResMortgage) %>% 
-                          setView(-93.65, 42.0285, zoom = 4) %>%
+MapDisplay <- leaflet(testData) %>% 
+                          setView(-6.24420, 53.30867, zoom = 12) %>%
                                  addTiles() %>%
-                                      addMarkers(Data$AddressLongitude, Data$AddressLatitude, popup= ~ popupInfo,
+                                      addMarkers(testData$AddressLongitude, testData$AddressLatitude, popup= ~ popupInfo,
                                       options = popupOptions(closeButton = TRUE),
                                       clusterOptions = markerClusterOptions(), 
                                       icon = weatherIcon)
@@ -122,39 +177,13 @@ ggplot(loans.sample, aes(x = testData$CreditRating, y = testData$CreditRatingMov
 
 ```
 
-```{r}
-#Decision Tree
-index = createDataPartition(y = mydata$DefaultedLoans, p = 0.9)[[1]]
-mydata.test <- mydata[-index,]
-mydata.train <- mydata[index,]
-mydata.rpart.0 <- rpart(DefaultedLoans ~ ., data = mydata.train)
 
-mydata.rpart.1 <- rpart(DefaultedLoans ~ . , data = mydata.train, 
-                      control=rpart.control(minsplit=10, minbucket = 3, cp=0.0006))
-
-
-fancyRpartPlot(mydata.rpart.0)
-```
 
 ```{r}
 predictions.1 <- (predict(mydata.rpart.1, mydata.test, type = "class"))
 confusionMatrix(predictions.1, mydata.test$DefaultedLoans)
 ```
 
-```{r}
-#Confusion Matrix
-mydata.oversampled <- ovun.sample(DefaultedLoans ~ ., data = mydata.train, method = "over", N = 52410, seed = 13)$data
-
-table(mydata.oversampled$DefaultedLoans)
-tune <- data.frame(0.001)
-colnames(tune) <- "cp"
-tr_control <- trainControl(method = "cv",number = 10, verboseIter = TRUE)
-mydata.rpart.oversampled <- train(DefaultedLoans ~., data = mydata.oversampled, method = "rpart", trControl = tr_control, tuneGrid = tune, control=rpart.control(minsplit=10, minbucket = 3))
-
-```
-```{r}
-#ROC Line Plot
-roc.curve(mydata.test$DefaultedLoans, predict(mydata.rpart.1, mydata.test, type = "prob")[,1], plot = TRUE)
 ```
 #Model for Tableau
 ```{r}
@@ -172,27 +201,6 @@ plot(prob,mydata1$CreditRating)
 ```
 
 
-## Decision tree using Tree()
-```{r}
-library(C50)
-library(tree)
-library(rpart)
-data.rp <- rpart(DefaultedLoans~., data=trainData)
-
-```
-```{r}
-library(rpart)
-library(rattle)					# Fancy tree plot
-library(rpart.plot)				# Enhanced tree plots
-library(RColorBrewer)				# Color selection for fancy tree plot
-library(party)					# Alternative decision tree algorithm
-library(partykit)				# Convert rpart object to BinaryTree
-library(caret)
-print(data.rp)
-prp(data.rp)
-```
-
-
 #Decision Tree for Tableu
 ```{r}
 #Decision Tree for Tableu
@@ -203,7 +211,7 @@ library(RColorBrewer)				# Color selection for fancy tree plot
 library(party)					# Alternative decision tree algorithm
 library(partykit)				# Convert rpart object to BinaryTree
 library(caret)
-fit <- rpart(DefaultedLoans ~ County+LoanBalance + PropertyValue+ CreditRating+ AnnualPYMT,method = "class",data=testData, control =  rpart.control(minisplit=15,cp = 0.001))
+fit <- rpart(DefaultedLoans ~ NewLoan+County+LoanBalance + PropertyValue+ CreditRating+ AnnualPYMT,method = "class",data=testData, control =  rpart.control(minisplit=5,cp = 0.001))
 
 save(fit, file = "myclassificationtree.rda")
 print(fit)
@@ -211,10 +219,24 @@ prp(fit)
 tree.1 <- fit
 fancyRpartPlot(tree.1)
 ```
-# Regression Trees
+## Confusion Matrix for traindata
 ```{r}
-library(tree)
-tree.model <- tree(DefaultedLoans~., data=testData)
-plot(testData$AddressLongitude, testData$AddressLatitude, col=grey(10:2/11)[testData$PropertyValue], pch=20, xlab="Longitude",ylab="Latitude")
+defaultPredict <- predict(fit, trainData, type = 'class')
+matrix <- table(defaultPredict, trainData$DefaultedLoans)
+print(matrix)
+print((matrix[4]+matrix[1])/nrow(trainData))
+```
+# Classification Tree Model for Tableau
+```{r}
+library(rpart)
+library(rpart.plot)				# Enhanced tree plots
+library(RColorBrewer)
+library(rattle)					# Fancy tree plot)				# Color selection for fancy tree plot
+library(party)					# Alternative decision tree algorithm
+library(partykit)				# Convert rpart object to BinaryTree
+library(caret)
+fit <- rpart(DefaultedLoans ~ CreditRating+ County+ LoanBalance +PropertyValue+ NewLoan + ProbationaryLoans+LTV + LTVCategory +InterestIncome+ AddressLatitude, data=testData, control=rpart.control(minsplit =5,cp=0.001),method="class")
+
+prp(fit)
 ```
 
