@@ -184,22 +184,21 @@ predictions.1 <- (predict(mydata.rpart.1, mydata.test, type = "class"))
 confusionMatrix(predictions.1, mydata.test$DefaultedLoans)
 ```
 
-```
+
 #Model for Tableau
 ```{r}
-mydata <- read.csv("E:/KPMG/Data/Prep/Sample1_3.csv")
-lrmodel <- glm(DefaultedLoans ~ CreditRating + LoanBalance + PropertyValue, data = mydata, family = "binomial");
+#mydata <- read.csv("E:/KPMG/Data/Prep/Sample1_3.csv")
+lrmodel <- glm(DefaultedLoans ~ CreditRating + LoanBalance + PropertyValue, data = trainData, family = "binomial");
 save(lrmodel, file = "mymodel.rda")
 
 ```
 
 ```{r}
 load("mymodel.rda")
-prob <- predict(lrmodel, newdata = mydata1, type = "response")
-plot(prob,mydata1$CreditRating)
+prob <- predict(lrmodel, newdata = testData, type = "response")
+plot(prob,testData$CreditRating)
 
 ```
-
 
 #Decision Tree for Tableu
 ```{r}
@@ -219,6 +218,7 @@ prp(fit)
 tree.1 <- fit
 fancyRpartPlot(tree.1)
 ```
+
 ## Confusion Matrix for traindata
 ```{r}
 defaultPredict <- predict(fit, trainData, type = 'class')
@@ -226,7 +226,8 @@ matrix <- table(defaultPredict, trainData$DefaultedLoans)
 print(matrix)
 print((matrix[4]+matrix[1])/nrow(trainData))
 ```
-# Classification Tree Model for Tableau
+
+## Classification Tree Model for Tableau
 ```{r}
 library(rpart)
 library(rpart.plot)				# Enhanced tree plots

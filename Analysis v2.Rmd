@@ -2,7 +2,9 @@
 title: "Analysis v2"
 author: "Deepak & Shruti"
 date: "30 July 2017"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 #Work on Original Dataset
@@ -20,16 +22,6 @@ names(Datav2)
 summary(Datav2)
 ```
 
-
-##Subsetting Train and Test Datasets
-```{r}
-set.seed(100)
-dataPartition = sample(2,nrow(Datav2),replace=TRUE,prob=c(0.7,0.3))
-trainDatav2 <- Datav2[dataPartition ==1,]
-testDatav2 <- Datav2[dataPartition ==2,]
-```
-
-
 ##Data Prepration
 ```{r}
 Datav2$CreditRating <- as.factor(Datav2$CreditRating)
@@ -43,6 +35,15 @@ Datav2$County <- as.factor(Datav2$County)
 Datav2$DefaultedLoans <- as.factor(Datav2$DefaultedLoans)
 str(Datav2)
 ```
+
+##Subsetting Train and Test Datasets
+```{r}
+set.seed(100)
+dataPartition = sample(2,nrow(Datav2),replace=TRUE,prob=c(0.7,0.3))
+trainDatav2 <- Datav2[dataPartition ==1,]
+testDatav2 <- Datav2[dataPartition ==2,]
+```
+
 ##GLM
 
 ###Building Simple GLM Model
@@ -67,7 +68,7 @@ testDatav2$prediction <- predict(simpleglmv2, newdata=testDatav2, type="response
 ###Testing Accuracy of glm() model
 ```{r}
 table(testDatav2$DefaultedLoans, as.numeric(testDatav2$prediction >= 0.5))
-confusionMatrix(testDatav2$prediction,testDatav2$DefaultedLoans)
+
 ```
 ### Accuracy
 ```{r}
@@ -76,8 +77,7 @@ confusionMatrix(testDatav2$prediction,testDatav2$DefaultedLoans)
 ### ROC Curve
 ```{r}
 library(ROCR)
-roc_prediction = prediction(testDatav2$prediction, testDatav2$DefaultedLoans)
-as.numeric(performance(pred, "auc")@y.values)
+#roc_prediction = prediction(testDatav2$prediction, testDatav2$DefaultedLoans)as.numeric(performance(pred, "auc")@y.values)
 
 # Make predictions on training set
 train_pred = predict(simpleglmv2, type="response")
@@ -215,6 +215,7 @@ library(RColorBrewer)		# Color selection for fancy tree plot
 library(party)					# Alternative decision tree algorithm
 library(partykit)				# Convert rpart object to BinaryTree
 library(caret)
+library(tree)
 defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=trainDatav2, control =  rpart.control(minisplit=5,cp = 0.001))
 
 #save(fit, file = "myclassificationtree.rda")
@@ -222,6 +223,14 @@ print(defaultLoanTree)
 prp(defaultLoanTree)
 tree.1 <- defaultLoanTree
 fancyRpartPlot(tree.1)
+
+##################################
+
+## Prunning Decision Tree using rpart()
+
+#PruneTree = prune(fit, cp = 0.003)
+#prp(PruneTree)
+#fancyRpartPlot(PruneTree)
 ```
 ## Stats for Decision Tree
 ```{r}
@@ -242,12 +251,7 @@ matrix <- table(defaultPredict, testDatav2$DefaultedLoans)
 print(matrix)
 print((matrix[4]+matrix[1])/nrow(testDatav2))
 ```
-## Prunning Decision Tree using rpart()
-```{r}
-PruneTree = prune(fit, cp = 0.003)
-prp(PruneTree)
-fancyRpartPlot(PruneTree)
-```
+
 
 ## Classification Tree Model (Small Tree)
 ```{r}

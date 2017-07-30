@@ -1,0 +1,72 @@
+---
+title: "KPMG Map"
+author: "Deepak & Shruti"
+date: "30 July 2017"
+output: html_document
+---
+
+```{r}
+## Load the library
+library(dplyr)
+library(maps)
+library(reshape2)
+library(leaflet)
+library(ggplot2)
+library(ggmap)
+library(gridExtra)
+library(htmlwidgets)
+library(readr)
+#weatherIcon <- makeIcon(
+                         #iconUrl = "./fig/weather.png",
+                         #iconWidth = 30, 
+                         #iconHeight = 30
+                        #)
+
+
+
+getColor <- function(testDatav2) {
+  sapply(testDatav2$CreditRating, function(CreditRating) {
+  if(CreditRating == 5) {
+    "green"
+  } else if(CreditRating ==3) {
+    "orange"
+  } else {
+    "red"
+  } })
+}
+
+icons <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = getColor(testDatav2)
+)
+popupInfo <- paste(testDatav2[['ContractRef']], 
+                   ", ", 
+                   testDatav2[['LoanBalance']],
+                   "<br>", 
+                   "Average January Temp in F:  ",
+                   testDatav2[['DefaultedLoans']],
+                   "<br>", 
+                   "Credit Rating:  ",
+                   testDatav2[['CreditRating']],
+                   "<br>", 
+                   "LTV:  ",
+                   testDatav2[['LTV']],
+                   "<br>", 
+                   "Property Value:  ",
+                   testDatav2[['PropertyValue']],
+                   sep='')
+
+
+MapDisplay <- leaflet(testDatav2) %>% 
+                          setView(-6.24420, 53.30867, zoom = 12) %>%
+                                 addTiles() %>%
+                                      addMarkers(testDatav2$AddressLongitude, testDatav2$AddressLatitude, popup= ~ popupInfo,
+                                      options = popupOptions(closeButton = TRUE),
+                                      clusterOptions = markerClusterOptions(), 
+                                      icon = icons)
+#MapDisplay
+saveWidget(MapDisplay, file="MapDisplay.html")
+
+```
