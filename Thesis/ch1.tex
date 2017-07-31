@@ -1,0 +1,118 @@
+%   MSc Business Analytics Dissertation
+%
+%   Title:     Aaa Bbbbbbb Cccccccccc
+%   Author(s): Xxxxxx Xxxxxxxxx and Yyy Yyyyyyyyy
+%
+%   Chapter 1: Introduction and basic definitions
+%
+%   Change Control:
+%   When     Who   Ver  What
+%   -------  ----  ---  --------------------------------------------------------------
+%   11Feb11  AB    0.1  Begun
+%
+
+\chapter{Introduction}\label{C.intro}
+
+
+
+Here's an example of a quote.
+
+\begin{quote}
+If anybody calls, says the brother, tell them I'm above in Merrion Square workin at the
+quateernyuns, says he, and take any message.  There does be other lads in the same house
+doing sums with the brother.  The brother does be teachin them sums.  He does be puttin
+them right about the sums and the quateernyuns.
+
+\textit{Indeed.}
+
+I do believe the brother's makin a good thing out of the sums and the quateernyuns.  Your
+men couldn't offer him less than five bob an hour and I'm certain sure he gets his tea
+thrown in.
+
+\textit{That is a desirable perquisite.}
+
+Because do you know, the brother won't starve.  The brother looks after Number Wan.
+Matteradamn what he's at, it has to stop when the grubsteaks is on the table.  The brother's
+very particular about that.
+
+\textit{Your relative is versed in the science of living.}
+
+Begob the sums and the quateernyuns is quickly shoved aside when the alarm for grub is sounded
+and all hands is piped to the table.  The brother thinks there's a time for everything.
+
+\hspace{2cm}--- Myles na Gopaleen, \emph{Cruiskeen Lawn}
+\end{quote}
+
+
+\section{Background}\label{S.intro1}
+
+We begin by \ldots
+
+\subsection{Particular Background}\label{SS.xyz}
+
+Here are some examples of indexing: Newton's algorithm\index{Newton's algorithm}\index{algorithm!Newton} is
+still widely used, with modifications.
+
+Note that the \verb|\index{algorithm!Newton}| gives an index subentry for Newton under the entry for algorithm.
+The index entries and/or their page numbers can be formatted using a pipe $|$ symbol in the \verb!\index{}!
+command as follows:
+
+\begin{defn}
+The strictest definition of an \emph{algorithm}\index{algorithm@\textit{algorithm}} is: a finite set of instructions
+that can be carried out in a finite amount of time: that is, it must terminate.
+
+These instructions must be clear and unambiguous as they are to be interpreted by a (dumb)
+machine, so we must be absolutely precise about their meaning --- mathematical logic is
+thus crucial in the design of algorithms\index{algorithm@\textbf{algorithm}}.
+\end{defn}
+
+In practice, many useful numerical ``algorithms''\index{algorithm|textbf} that we study may get closer and closer
+to the desired solution without reaching it in a finite time.  So, typically, we accept as an
+``algorithm''\index{algorithm|textit} a finite set of instructions that will get within any desired tolerance
+of the true solution in a finite time.
+If the algorithm is stochastic (involves probability, as many modern ones do) the term
+``metaheuristic''\index{metaheuristic|textbf} is sometimes used.
+
+In particular, you could use the \verb|\index{algorithm@\textit{algorithm}}| or \verb!\index{algorithm|\textbf}! to
+indicate the first or most important occurrence in the text of the term ``algorithm'', etc.
+
+Some minor examples of other things indexing can do:
+\begin{itemize}
+\item You can handle accented words as in \'ecole\index{ecole@\'ecole}: the index entry appears in the correct
+order under E, as desired;
+\item You can put in cross-references, as in
+
+Are metaheuristics\index{metaheuristic|see{algorithm}} really algorithms\index{algorithm|seealso{metaheuristic}}?
+\end{itemize}
+
+Note: when you LaTeX your file \texttt{myfile.tex}, a file \texttt{myfile.idx} is produced by \verb|\makeindex|;
+this file must be sorted by an operating system command, e.g.,
+
+\texttt{makeindex myfile}
+
+This generated a \emph{sorted} index file \texttt{myfile.ind}.  Running LaTeX one more time gets the index printed
+in the right place by \verb|\printindex|.
+
+Here is a dummy theorem to show how to reference notation:
+\begin{thm}\label{Th.FF.fte.field}
+Let $\FF_q$ be a finite field of $q$ elements.  Then $q$ is a power of some prime number $p$.
+\end{thm}
+
+
+\section{Referencing}
+
+Recall the strictures against plagiarism. Accidental plagiarism is still plagiarism. If you paraphrase, you must still cite. If your paraphrase is very similar to the original, then delete it and quote instead (and cite).
+
+Use a reference format similar to that used in the journal Management Science. This can be achieved by using the Management Science Endnote style or by using a style based on the Chicago 15th B style in Endnote.  Please ensure that volume (and issue numbers where appropriate) are displayed, as well as appropriate page numbers.
+
+The following are examples of suitable output:
+
+Keenan (2003) identified the role of GIS\ldots
+
+Or GIS can seen as a form of IS (Keenan, 2003) \dots
+
+Do not put the title of the paper you are citing, normally.
+
+Do not write: (Keenan, 2003) found that\ldots
+
+To insert a citation, use the \verb+\cite+ command in LaTeX, or \verb+\citep+ and \verb+\citen+ etc. if you know \verb+natbib+.

@@ -1,0 +1,29 @@
+copy all files in the directory where your document is (or to some generic
+directory in your path)
+
+attached is the script bookit. Don't forget to make it executable.
+
+Use it on a ps file as follows: bookit file (i.e. without the extension ps),
+it will do the conversion, and open the result, filebooked.ps in gv for
+viewing.
+
+This should give you the correct reshuffled booklet. If not, you can tweak
+the parameters.
+
+If you are using a short-edge duplex printer to print, you have to use the script
+shortlpr (this time you have to give the ps-extension). Before you do that
+you will have to make some easy changes in it (the directories and print
+command, which may not work on your computer). The other two files
+tell the printer to switch to short-edge duplex mode, and then later back to
+normal duplex mode.
+
+If you are using another printer, you don't need to use this script, but
+reshuffle the pages manually.
+
+Note: the printouts here are supposed to be reshuffled, and cut in the
+middle. If you intend to fold a number
+of pages double and staple them in the middele, you will probably have to
+change the parameter 4 in the psbook command in bookit to a bigger multiple
+of 4. Try it out a few times. Especially if the number of pages of your
+booklet is small, you should get the correct value after a few tries.
+

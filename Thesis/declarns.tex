@@ -1,0 +1,264 @@
+%   General LaTeX Declarations (try -adobe-courier-medium-r-normal--18-180-75-75-m-110-iso8859-2)
+%
+%   Sean McGarraghy
+%
+%   Change Control:
+%   Date      Ver  Reason
+%   --------  ---  --------------------------------------------------------------
+%   12/02/98  0.1  Begun
+%
+
+% Where to hyphenate words LaTeX doesn't know
+
+\hyphenation{neigh-bour-hood neigh-bour-hoods}
+\hyphenation{Bel-field}
+
+% Short commands for italic, bold etc fonts
+
+\newcommand*{\tr}[1]{\textrm{#1}}
+\newcommand*{\ti}[1]{\textit{#1}}
+\newcommand*{\tb}[1]{\textbf{#1}}
+\newcommand*{\ts}[1]{\textsl{#1}}
+\newcommand*{\tc}[1]{\textsc{#1}}
+\newcommand*{\mr}[1]{\mathrm{#1}}
+\newcommand*{\mb}[1]{\mathbf{#1}}
+\newcommand*{\tth}[1]{{\slshape #1}}
+\newcommand*{\df}[1]{\textbf{#1}}      % put the thing being defined in bold
+
+\newcommand*{\bs}{$\backslash$}
+\newcommand*{\ol}[1]{\overline{#1}}
+\newcommand*{\cnj}[1]{\overline{#1}}
+\newcommand*{\nth}[1]{\ensuremath{{#1}^{\textrm{th}}}}% superscripted `th' for counting
+\newcommand*{\nst}[1]{\ensuremath{{#1}^{\textrm{st}}}}% superscripted `st' for counting
+\newcommand*{\nnd}[1]{\ensuremath{{#1}^{\textrm{nd}}}}% superscripted `nd' for counting
+\newcommand*{\nrd}[1]{\ensuremath{{#1}^{\textrm{rd}}}}% superscripted `rd' for counting
+
+% commonly occurring text in Maths documents
+
+\newcommand*{\eg}  {e.\,g.~}
+\newcommand*{\ie}  {i.\,e.~}
+\newcommand*{\ff}  {\textrm{if and only if }}
+\newcommand*{\A}   {\textrm{ for all }}
+\newcommand*{\all} {\textrm{ for all }}
+\renewcommand*{\AA}{\ensuremath{\forall~}}
+\newcommand*{\E}   {\textrm{ there exists }}
+\newcommand*{\EE}  {\ensuremath{\exists~}}
+\newcommand*{\st}  {\textrm{ such that }}
+\newcommand*{\sta} {\textrm{ such that, for all }}
+\newcommand*{\tfae}{the following are equivalent}
+\newcommand*{\Tfae}{The following are equivalent}
+\newcommand*{\wrt} {with respect to }
+\newcommand*{\wolog}{without loss of generality}
+\newcommand*{\Wolog}{Without loss of generality}
+\newcommand*{\ftsoc}{for the sake of contradiction}
+\newcommand*{\resp}{respectively}
+\newcommand*{\RHS} {right hand side}
+\newcommand*{\LHS} {left hand side}
+\newcommand*{\Pf}  {\noindent\tb{Proof: }}            % for backwards compatibility only
+\newcommand*{\eop} {~~\vrule height 5 pt width 5 pt depth 0 pt\relax}
+\newcommand*{\QED} {\mbox{}\hspace{\fill}\eop}
+
+\newcommand*{\fn}  {function}
+\newcommand*{\vsp} {vector space}
+
+\newcommand*{\ind} {independent}
+\newcommand*{\dep} {dependent}
+\newcommand*{\lcmb}{linear combination}
+\newcommand*{\lind}{linearly independent}
+\newcommand*{\ldep}{linearly dependent}
+\newcommand*{\di}  {dimension}
+\newcommand*{\fd}  {finite-dimension}
+\newcommand*{\cp}  {characteristic polynomial}
+\newcommand*{\de}  {determinant}
+\newcommand*{\evl} {eigenvalue}
+\newcommand*{\evc} {eigenvector}
+\newcommand*{\sle} {system of linear equations}
+\newcommand*{\ERO} {elementary row operation}
+\newcommand*{\ECO} {elementary column operation}
+\newcommand*{\repn}{representation}
+
+\newcommand*{\UCD} {University College Dublin} 
+
+\newcommand*{\itema}[1][a]{\item[(\emph{#1})]} 
+\newcommand*{\ita}[1][a]{(\emph{#1})} 
+
+% Math Roman abbreviations e.g. Gal(), Aut() etc.
+
+\newcommand*{\len}{\ensuremath{\operatorname{length}}}% 
+\newcommand*{\rank}{\ensuremath{\operatorname{rank}}} % RANK of matrix/linear map
+\newcommand*{\nll}{\ensuremath{\operatorname{nullity}}} % NULLity of linear map
+\newcommand*{\diag}{\ensuremath{\operatorname{diag}}} % DIAGonal matrix
+\newcommand*{\cond}{\ensuremath{\operatorname{cond}}} % CONDition number
+\newcommand*{\sign}{\ensuremath{\operatorname{sign}}} % SIGNature
+\newcommand*{\sgn} {\ensuremath{\operatorname{sgn}}}  % SiGN of permutation
+\newcommand*{\imp}{\ensuremath{\mathbin\Rightarrow}}  % IMPlies sign
+\renewcommand*{\Im}{\ensuremath{\operatorname{Im}}}   % IMage (of a map)
+\newcommand*{\zv} {\ensuremath{\mathbf{0}}}           % Zero vector
+\newcommand*{\zs}[1]{\ensuremath{{#1}^{-1}(0)}}       % Zero Set of function #1
+\renewcommand*{\i}[1]{\ensuremath{{#1}^{-1}}}         % Inverse of geezer #1
+
+% spacing/heading commands
+
+\newcommand*{\cpb}{\vspace{\fill}\pagebreak}          % Clean PageBreak inside paragraph
+\newcommand*{\cb}{\hspace*{\fill}\\*[\medskipamount]} % Clean Break inside paragraph
+\newcommand*{\cbb}{\hspace*{\fill}\\[\medskipamount]} % Clean Break, may have page Break
+\newcommand*{\cbs}{\hspace*{\fill}\\*[\smallskipamount]} % Small Clean Creak inside paragraph
+\newcommand*{\cbbs}{\hspace*{\fill}\\[\smallskipamount]} % Small Clean Creak, may have page break
+\newcommand*{\cbl}{\hspace*{\fill}\\*}                % No gap Clean Break inside paragraph
+\newcommand*{\cbbl}{\hspace*{\fill}\\}                % No gap Clean Break, may have page break
+
+\newcommand*{\qt}[1]{\ensuremath{\quad\text{#1}\quad}}
+\newcommand*{\qqt}[1]{\ensuremath{\qquad\text{#1}\qquad}}
+
+\newcommand*{\subhead}[1]{  
+            \begin{center}
+            \tb{#1}
+            \end{center}\\*}
+
+
+% Various inclusion, ideal, equivalence, mapping symbols
+
+%\newcommand*{\squig}{\sim\!\sim\!\rightarrow}  % old definition
+\newcommand*{\eqv} {\ensuremath{\mathbin\Leftrightarrow}}  % EQuiValence sign
+\newcommand*{\app} {\ensuremath{\rightarrow}}          % APProaches/tends to (limit)
+\newcommand*{\map} {\ensuremath{\longrightarrow}}      % set MAPs to (long arrow)
+\newcommand*{\tmap}[1]{\ensuremath{
+                      \stackrel{\ssk{#1}}{\map} }}    % scriptsize #1 atop ---> arrow
+\newcommand*{\mpt}{\ensuremath{\longmapsto}}          % element maps to (long arrow with bar)
+\newcommand*{\tmpt}[1]{\ensuremath{
+                               \stackrel{#1}{\mpt}}}  % scriptsize #1 atop |--> arrow
+\newcommand*{\cng}{\ensuremath{\equiv}}               % CoNGruent to 
+\newcommand*{\rel}{\ensuremath{\sim}}                 % single tilde RELation sign
+\newcommand*{\nul}{\ensuremath{\emptyset}}            % NULl set 
+\newcommand*{\su} {\ensuremath{\subset}}              % SUbset of
+\newcommand*{\se} {\ensuremath{\subseteq}}            % Subset of/Equal to
+\newcommand*{\sne}{\ensuremath{\subsetneqq}}          % Subset of but Not Equal to
+\newcommand*{\sm} {\ensuremath{\smallsetminus}}       % set difference (Set Minus)
+\newcommand*{\la} {\ensuremath{\langle}}              % Left Angle bracket
+\newcommand*{\ra} {\ensuremath{\rangle}}              % Right Angle bracket
+\newcommand*{\du} {\ensuremath{\dot{\cup}}}           % Disjoint Union (dot over cup sign)
+\newcommand*{\rt}{\right}
+\newcommand*{\lt}{\left}
+\newcommand*{\oo}{\ensuremath{\infty}}                % oo = infinity
+\newcommand*{\fp}[3]{\ensuremath{{#1}:{#2}\map{#3}}}  % Function/maP f:A--->B
+\newcommand*{\ma}[3]{\ensuremath{{#1}:\R^{#2}\map\R^{#3}}} % MAp f:R^n--->R^m
+\newcommand*{\lma}[4][]{linear map{#1} \ma{#2}{#3}{#4}} % linear map(s) f:R^n--->R^m
+\newcommand*{\cpd}[1][A]{\ensuremath{\det({#1}-\l I)}} % char poly eg det(A-lI)
+
+% Logic and proof
+\newcommand*{\LT} {\texttt{T}}
+\newcommand*{\LF} {\texttt{F}}
+\newcommand*{\NOT}{\mathop\mathrm{not}}
+\newcommand*{\AND}{\mathbin\mathrm{and}}
+\newcommand*{\OR} {\mathbin\mathrm{or}}
+
+% Binomial coefficient
+\newcommand*{\bin}[2]{\ensuremath{\binom{#1}{#2}}}
+
+% Binomial coefficient (textstyle i.e. Small font)
+\newcommand*{\sbin}[2]{\ensuremath{\tbinom{#1}{#2}}}
+
+% Binomial coefficient (displaystyle i.e. Big font)
+\newcommand*{\bbin}[2]{\ensuremath{\dbinom{#1}{#2}}}
+
+% derivatives
+\newcommand*{\dd}[1]{\ensuremath{\displaystyle{\frac{d}{d{#1}}}}}
+
+\newcommand*{\polyn}[3][n]{\ensuremath{{#3}_0+{#3}_1{#2}+\cdots+{#3}_{#1}{#2}^{#1}}}
+
+% MATRICES
+
+% two commonly used building blocks for matrices
+
+% identity matrix
+\newcommand*{\idmat}{\ensuremath{ 
+1      & 0      & \cdots & 0       \\
+0      & 1      & \cdots & 0       \\
+\vdots & \vdots & \ddots & \vdots  \\
+0      & 0      & \cdots & 1          } }
+
+% matrix consisting of zeros
+\newcommand*{\zeromat}{\ensuremath{ 
+0      & 0      & \cdots & 0       \\
+\vdots & \vdots & \ddots & \vdots  \\
+0      & 0      & \cdots & 0          } }
+
+% matrix consisting of asterisks
+\newcommand*{\astmat}{\ensuremath{ 
+*      & *      & \cdots & *       \\
+\vdots & \vdots & \ddots & \vdots  \\
+*      & *      & \cdots & *          } }
+
+% Greek letters - abbreviations
+
+\renewcommand*{\a}{\ensuremath{\alpha}}
+\renewcommand*{\b}{\ensuremath{\beta}}
+\newcommand*{\g}{\ensuremath{\gamma}}
+\renewcommand*{\d}{\ensuremath{\delta}}
+\newcommand*{\e}{\ensuremath{\varepsilon}}
+\newcommand*{\z}{\ensuremath{\zeta}}
+\newcommand*{\h}{\ensuremath{\eta}}
+\renewcommand*{\th}{\ensuremath{\vartheta}}
+%\newcommand*{\io}{\ensuremath{\iota}}
+\renewcommand*{\k}{\ensuremath{\kappa}}
+\renewcommand*{\l}{\ensuremath{\lambda}}
+\newcommand*{\m}{\ensuremath{\mu}}
+\newcommand*{\n}{\ensuremath{\nu}}
+\renewcommand*{\r}{\ensuremath{\rho}}
+\newcommand*{\s}{\ensuremath{\sigma}}
+\renewcommand*{\t}{\ensuremath{\tau}}
+\renewcommand*{\u}{\ensuremath{\upsilon}}
+\newcommand*{\f}{\ensuremath{\varphi}}
+\renewcommand*{\c}{\ensuremath{\chi}}
+\newcommand*{\x}{\ensuremath{\xi}}
+\newcommand*{\p}{\ensuremath{\psi}}
+\renewcommand*{\o}{\ensuremath{\omega}}
+
+\newcommand*{\G}{\ensuremath{\Gamma}}
+\newcommand*{\D}{\ensuremath{\Delta}}
+\newcommand*{\T}{\ensuremath{\Vartheta}}
+\renewcommand*{\L}{\ensuremath{\Lambda}}
+\renewcommand*{\L}{\ensuremath{{\textstyle{\bigwedge}}}}
+%\newcommand*{\Si}{\ensuremath{\Sigma}}
+\newcommand*{\U}{\ensuremath{\Upsilon}}
+\newcommand*{\F}{\ensuremath{\Phi}}
+\renewcommand*{\P}{\ensuremath{\Psi}}
+\renewcommand*{\O}{\ensuremath{\Omega}}
+
+
+% Math mode blackboard and calligraphic (script) letters
+
+\newcommand*{\N}{\ensuremath{\mathbb{N}}}
+\newcommand*{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand*{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand*{\R}{\ensuremath{\mathbb{R}}}
+\newcommand*{\C}{\ensuremath{\mathbb{C}}}
+\renewcommand*{\H}{\ensuremath{\mathbb{H}}}
+\newcommand*{\FF}{\ensuremath{\mathbb{F}}}
+
+\newcommand*{\sA}{\ensuremath{\mathcal{A}}}
+\newcommand*{\sB}{\ensuremath{\mathcal{B}}}
+\newcommand*{\sC}{\ensuremath{\mathcal{C}}}
+\newcommand*{\sD}{\ensuremath{\mathcal{D}}}
+\newcommand*{\sE}{\ensuremath{\mathcal{E}}}
+\newcommand*{\sF}{\ensuremath{\mathcal{F}}}
+\newcommand*{\sG}{\ensuremath{\mathcal{G}}}
+\newcommand*{\sH}{\ensuremath{\mathcal{H}}}
+\newcommand*{\sI}{\ensuremath{\mathcal{I}}}
+\newcommand*{\sJ}{\ensuremath{\mathcal{J}}}
+\newcommand*{\sK}{\ensuremath{\mathcal{K}}}
+\newcommand*{\sL}{\ensuremath{\mathcal{L}}}
+\newcommand*{\sM}{\ensuremath{\mathcal{M}}}
+\newcommand*{\sN}{\ensuremath{\mathcal{N}}}
+\newcommand*{\sO}{\ensuremath{\mathcal{O}}}
+\newcommand*{\sP}{\ensuremath{\mathcal{P}}}
+\newcommand*{\sQ}{\ensuremath{\mathcal{Q}}}
+\newcommand*{\sR}{\ensuremath{\mathcal{R}}}
+\newcommand*{\sS}{\ensuremath{\mathcal{S}}}
+\newcommand*{\sT}{\ensuremath{\mathcal{T}}}
+\newcommand*{\sU}{\ensuremath{\mathcal{U}}}
+\newcommand*{\sV}{\ensuremath{\mathcal{V}}}
+\newcommand*{\sW}{\ensuremath{\mathcal{W}}}
+\newcommand*{\sX}{\ensuremath{\mathcal{X}}}
+\newcommand*{\sY}{\ensuremath{\mathcal{Y}}}
+\newcommand*{\sZ}{\ensuremath{\mathcal{Z}}}

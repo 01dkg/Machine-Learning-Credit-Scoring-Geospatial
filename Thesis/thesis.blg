@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: preface.aux
+A level-1 auxiliary file: ch1.aux
+A level-1 auxiliary file: ch2.aux
+A level-1 auxiliary file: ch3.aux
+A level-1 auxiliary file: ch4.aux
+A level-1 auxiliary file: ch5.aux
+A level-1 auxiliary file: ch6.aux
+A level-1 auxiliary file: ch7.aux
+A level-1 auxiliary file: appendix1.aux
+A level-1 auxiliary file: appendix2.aux
+A level-1 auxiliary file: glossary.aux
+The style file: mscBA.bst
+A level-1 auxiliary file: notation.aux
+Database file #1: thesis.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 6 entries,
+            3163 wiz_defined-function locations,
+            730 strings with 6803 characters,
+and the built_in function-call counts, 3633 in all, are:
+= -- 299
+> -- 81
+< -- 12
++ -- 28
+- -- 21
+* -- 239
+:= -- 522
+add.period$ -- 25
+call.type$ -- 6
+change.case$ -- 37
+chr.to.int$ -- 5
+cite$ -- 12
+duplicate$ -- 286
+empty$ -- 313
+format.name$ -- 39
+if$ -- 721
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 67
+newline$ -- 60
+num.names$ -- 30
+pop$ -- 102
+preamble$ -- 2
+purify$ -- 31
+quote$ -- 0
+skip$ -- 121
+stack$ -- 0
+substring$ -- 216
+swap$ -- 132
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 79
+warning$ -- 0
+while$ -- 30
+width$ -- 0
+write$ -- 114

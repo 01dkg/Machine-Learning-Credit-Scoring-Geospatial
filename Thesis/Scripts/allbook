@@ -1,0 +1,6 @@
+#!/bin/bash
+dvips -f -o $1.ps $1.dvi 
+psbook  $1.ps $1temp.ps
+psnup -2 $1temp.ps $1book.ps
+rm $1temp.ps
+gv $1book.ps &

@@ -1,0 +1,434 @@
+%   Template for a LaTeX MSc Business Analytics Dissertation/Practicum
+%   Sean McGarraghy and James McDermott
+%   Remove these first three lines when starting your own document
+%
+%   MSc Business Analytics Dissertation/Practicum
+%
+%   Title:     Aaa Bbbbbbb Cccccccccc
+%   Author(s): Xxxxxx Xxxxxxxxx and Yyy Yyyyyyyyy
+%
+%   This file is the top level file for a dissertation.  It contains:
+%   - usepackage commands for any packages required
+%   - document-wide parameter settings such as textwidth, etc
+%   - The text of small items of the frontmatter (title, abstract, etc.) and backmatter
+%
+%   Chapter 1: Introduction and basic definitions
+%   Chapter 2: Business background and problem
+%   Chapter 3: Literature Review
+%   Chapter 4: Methodology
+%   Chapter 5: Results
+%   Chapter 6: Discussion
+%   Chapter 7: Conclusions
+%
+%   Change Control:
+%   When     Who   Ver  What
+%   -------  ----  ---  --------------------------------------------------------------
+%   01Sep10  SMcG  0.0  Developed MSc Business Analytics Dissertation LaTeX template
+%   02Sep16  JMcD  0.1  Updated template
+%   01Apr17  XX    0.2  Begun dissertation proper
+%   02Apr17  YY    0.3  Added ....
+%
+
+%% To LaTeX (compile) your whole document, run these 4 commands in the order given (I run them from
+%% the command line on Linux or Mac OS X but you can run them from inside WinEdt or whatever you use):
+%% latex  yourfilename
+%% bibtex yourfilename  % NB this is the name of your LaTeX file, not your BibTeX database file!!
+%% latex  yourfilename
+%% latex  yourfilename
+%%
+%% Note: you don't need the .tex extension of yourfilename.tex (in fact giving it will confuse bibtex,
+%% though latex will understand it).  If you stick with the name thesis.tex for this file, you would use
+%% latex thesis etc
+%%
+%% There are two approaches to where to put the supporting files (LaTeX style (package) files, etc).  Either:
+%% 1. Put them all in the same directory as this file (quick and dirty); or
+%% 2. Many style (package) files such as natbib.sty, lineno.sty may already be installed on your system, but if
+%%    not, just download them e.g., from ctan.org, and copy them to YOURBASEDIRECTORY/texmf/tex/latex
+%%    Copy the BibTeX style file mscBA.bst to YOURBASEDIRECTORY/texmf/bibtex/bst
+%% Approach 2 will make these files visible to any other LaTeX docs you produce.  Here, YOURBASEDIRECTORY is
+%% typically your home directory.
+
+\documentclass[a4paper,12pt,bibtotoc,notitlepage,oneside]{book}
+% remove ``oneside'' when printing the final version since that
+% will have plenty of blank pages already!
+
+% the bibtotoc may be needed to make your references appear in the Contents, also liststotoc etc
+
+% Preamble
+
+% LaTeX Packages to use
+\usepackage{makeidx}
+%\usepackage{showidx} % for drafts: shows in margin what will be indexed
+\usepackage{amsthm,amsmath,amsfonts,amssymb,latexsym,graphicx,appendix,subfigure}
+% the ams* packages provide the (very useful) LaTeX extensions from the AMS (Amer. Math. Soc.)
+% latexsym provides some useful extra symbols
+% graphicx gives control over image files, e.g., width, etc
+% appendix gives more fine-tuned control over the appendices
+% subfigure lets you put multiple figures (and tables) in a figure environment, so you can refer to them individually, e.g., Figure~6(b).
+\usepackage{algorithm2e} % handles algorithms in a nice way, akin to tables and figures
+\usepackage[subfigure]{tocloft}  % package allows you to control the design of table of contents, figures and tables. use subfigure for compatibility -- jmmcd
+\usepackage{natbib}   % gives more control over references and style of citation.  Has a lot of options, e.g., can use the [sectionbib] option to have multiple bibliographies in my document, listed in sections rather than chapters. Need this package for Chicago Manual of Style BibTeX referencing and the MScBA derived style
+\usepackage{lineno}   % useful for early draft, so a reviewer can list by pageno+lineno where to make changes
+% Packages you may like to use
+% \usepackage{fancyhdr}  % more control over contents of page headers and footers for documentclass book
+% \usepackage{psfrag}  % if using eps files for images, this package lets you replace text in those images, so you can have the same font type and size in both text and images.
+% \usepackage{layout} % prints an overview of all the page margins, if you include \layout
+%\usepackage[sectionbib]{natbib} if using multiple bibliography files
+%\usepackage{chapterbib}
+%\usepackage{doublespace} % for double spacing, e.g. initial versions for correcting
+%\usepackage[nottoc]{tocbibind} % puts almost everything in the Table of Contents
+
+% include your own macro / declaration files, if any
+\input{macros}
+\input{declarns}
+
+\linespread{1.25}         % spacing between lines
+\parindent0pt             % no paragraph indentation
+\parskip\smallskipamount  % small space between paragraphs
+
+%\setlength{ \topmargin      }{  -1cm }
+%\setlength{ \textheight     }{  24cm }
+\setlength{ \textwidth      }{  14cm }
+\setlength{ \oddsidemargin  }{ 1.0cm }
+\setlength{ \evensidemargin }{ 1.0cm }
+
+\numberwithin{equation}{section}  % alter this if desired
+\numberwithin{figure}{chapter}    % alter this if desired
+
+\pagestyle{plain} % just puts a page number at the bottom of each page
+% If you comment out the last line's \pagestyle command, you can control the page headers as follows:
+%\def\leftmark{\textsc{YourText1}}  % text to appear in header of left-hand (even numbered) pages, e.g., Chapter Title
+%\def\rightmark{\textsc{YourText2}}  % text to appear in header of right-hand (odd numbered) pages, e.g., Thesis Title
+%\def\leftmark{\textsc{}}  % gives empty header on left-hand (even numbered) pages
+%\def\rightmark{\textsc{}}  % gives empty header on right-hand (odd numbered) pages
+
+% If, in the output, if you find the width of numbers in the Contents, List of Figures, etc is too great
+% (e.g. too close to the heading names) uncomment the following
+%\setlength{\cftfignumwidth}{3em} % this allows you to control width of numbering in List of Figures
+                                 % 4em, 5em etc would be even wider; you can also hardcode 2cm or similar
+                                 % but units of em (width of a capital M) or ex (height of a small x) are
+                                 % preferred since they vary with the font type / size used
+
+% comment this out for your final version (where you don't want line numbers)
+%\linenumbers
+
+\makeindex % generates the index entries (unsorted: need to run makeindex from the command line to sort them)
+
+
+% Use the following to only include certain chapters (it will speed up compilation of the part you
+% are currently working on, should the dissertation as a whole take excessively long to compile).
+\includeonly{%
+preface%
+,
+ch1%
+,%
+ch2%
+,%
+ch3
+,%
+ch4%
+,
+ch5%
+,
+ch6%
+,
+ch7%
+,
+appendix1%
+,
+appendix2%
+,
+glossary%
+,
+notation
+}
+
+
+%% Lay out your thesis as follows (standard book form: some of these are optional):
+
+%% \begin{enumerate}
+%% \item Front matter (preliminaries: roman page numbering, i, ii, iii, iv,\ldots)
+%%   \begin{enumerate}
+%%   \itema{} Title Page, giving (on separate lines, in this order):
+%%     \begin{enumerate}
+%%     \itema[i] Title
+%%     \itema[ii] Author(s), listing previous degree(s), e.g.,\ Joe Bloggs, B.E.
+%%     \itema[iii] A thesis submitted to \UCD\ in part fulfilment of the requirements of the degree of
+%%           M.Sc.~in Business Analytics
+%%     \itema[iv] Michael Smurfit Graduate School of Business
+%%     \itema[v] Date (\emph{Month, Year}, e.g.,\ \emph{September, 2010})
+%%     \itema[vi] Supervisor(s): Xxx Xxxxx (and Yyy Yyyyy)
+%%     \itema[vii] Head of School: Professor Ciar\'an O'h\'Ogartaigh
+%%  \end{enumerate}
+%%   \itema[b] Dedication
+%%   \itema[c] Table of Contents
+%%   \itema[d] List of Figures (Illustrations)
+%%   \itema[e] List of Tables
+%%   \itema[f] List of Algorithms (if any)
+%%   \itema[g] Foreword (if any: may precede table of contents)
+%%   \itema[h] Preface (including authors' signatures: may precede table of contents)
+%%   \itema[j] Acknowledgements (including permissions and other credits)
+%%   \itema[k] Abstract
+%%   \itema[l] List of important abbreviations (including special fonts, e.g.,\ {\tt fixed width} for program code)
+%%  \end{enumerate}
+%% \item Body or ``Main Matter'' (the text: arabic page numbering, 1, 2, 3,\ldots)
+%%   \begin{enumerate}
+%%   \itema{} Chapters of your dissertation, including, but not limited to:
+%%     \begin{enumerate}
+%% \itema[i] Introduction
+%% \itema[ii] Literature Review
+%% \itema[iii] Methodology
+%% \itema[iv] Results
+%% \itema[v] Analysis/Discussion
+%% \itema[vi] Conclusions
+%%    \end{enumerate}
+%%   \itema[b] Epilogue (if any)
+%%   \itema[c] Afterword (if any)
+%%   \end{enumerate}
+%% \item Back matter (loose ends: continue arabic page numbering)
+%%   \begin{enumerate}
+%%   \itema{} Appendices (if any: may include program code if not too long)
+%%   \itema[b] Endnotes
+%%   \itema[c] Glossary of terms
+%%   \itema[d] Bibliography (References)
+%%   \itema[e] List of contributors
+%%   \itema[f] Notation Index / List of Symbols
+%%   \itema[g] Index
+%% \end{enumerate}
+%% \end{enumerate}
+
+
+\begin{document}
+
+\frontmatter % This is the material before chapter 1, page numbering in Roman numerals ii, iii, iv, ...
+
+\title%[Abbreviated Title for Header]
+    {\bf Enhancing Credit Analysis and Assessment using Geo Spatial Techniques\\}
+
+\author{Deepak Kumar Gupta, B.E. Computer Science \\ Shruti Goyal, B.E. Instrumentation and Control}  % change to suit!
+\date{}
+\maketitle % this outputs the title using the \title and \author above
+
+{\normalsize
+\vfill
+\begin{center}
+% Alternative for PhD
+%\textup{A thesis submitted to University College Dublin in part fulfilment
+%of the requirements of the degree of Philosophi\ae~Doctor}
+\textup{A Practicum submitted to University College Dublin in part fulfilment
+of the requirements of the degree of M.Sc.~in Business Analytics}
+\end{center}
+\vfill
+\begin{center}
+Michael Smurfit Graduate School of Business,
+University College Dublin
+\end{center}
+\vfill
+\begin{center}
+\textit{September, 2017}
+\end{center}
+\vfill
+\begin{center}
+\textup{Supervisors: Dr. Peter Keenan, UCD \\ Selwyn Hearns, KPMG IRM Audit}
+\end{center}
+\vfill
+\begin{center}
+\textup{Head of School: Professor Ciar\'an \'O h\'Ogartaigh}
+\end{center}
+\vfill
+}
+
+\thispagestyle{empty} % it is conventional to have no page number on the title page (page i)
+
+\clearpage % inserts a page break
+
+
+% Subsequent distinct parts of the document begin with a \chapter*{} command: this produces a chapter with
+% no number.  Note that in a book or amsbook document class, each chapter starts on a new odd-numbered page.
+
+
+%% Dedication
+\chapter*{Dedication}
+To X, Y and Z (typically family members)
+
+
+%% Table of Contents
+% If you would like the word ``Chapter '' to appear before the chapter number in your Contents, uncomment:
+% \renewcommand{\cftchapfont}{Chapter }
+
+\cleardoublepage
+\tableofcontents
+%\renewcommand{\cftchapfont}{}
+
+% Note: to show subfigures, subtables (if any) in the appropriate list below, uncomment the following command
+% \setcounter{lofdepth}{2}
+
+% If you find your Table and/or Figure captions are taking up too much space in the Lists below, use the
+% following in the appropriate Table and Figure environments in your chapters:
+%\caption[Short Caption]{An Excessively Long and Descriptive Caption, which is probably too long in any case\ldots}
+% Then the short caption appears in the list, while the long one appears in the text under your Table/Figure.
+
+% below, the \addcontentsline{toc}{section}{List of figures} etc ensures these lists appear in the contents
+
+% similarly to the \renewcommand{\cftchapfont}{Chapter } above, you can have the words Table or Figure appear
+% in front of every entry in the appropriate list by uncommenting as approapriate:
+%\renewcommand{\cftfigfont}{Figure }
+%\renewcommand{\cfttabfont}{Table }
+
+\clearpage
+
+%% List of Figures (Illustrations)
+\listoffigures\addcontentsline{toc}{chapter}{List of figures}
+
+\clearpage
+%% List of Tables
+\listoftables\addcontentsline{toc}{chapter}{List of tables}
+
+%% List of Algorithms (if any): need to \usepackage{algorithm2e} for nice algorithm layout and this command
+\listofalgorithms\addcontentsline{toc}{chapter}{List of algorithms}
+
+%% modify titles with
+%% \renewcommand{\cftXtitlefont}{\Huge\itshape}
+%% Replace the X with either “toc”, “lof” or “lot” and use any font size you like.
+%% Available font sizes are: \tiny, \scriptsize, \footnotesize, \small, \normalsize, \large,
+%% \Large, \LARGE, \huge and \Huge.
+
+
+
+%% foreword (if any: may precede table of contents)
+\chapter*{Foreword}
+
+
+
+%% Preface (including authors' signatures: may precede table of contents)
+\include{preface}
+
+
+%% Acknowledgements (including permissions and other credits).  Modify as appropriate
+
+\chapter*{Acknowledgements}
+
+
+
+%% Abstract
+
+%\begin{abstract}
+\chapter*{Abstract/Executive Summary}
+
+%%   List of important abbreviations (including special fonts, e.g.,\ {\tt fixed width} for program code)
+
+% Bulk of thesis. line numbers in arabic numerals, 1, 2, 3, ...
+\mainmatter
+
+\linespread{1.3} % adjust line spacing (if desired)
+
+% \include all your chapters.  This automatically puts the material on a new page.  Recall that \chapter{} and
+% \chapter*{} start a new chapter on a new odd-numbered page, but won't put extra empty pages along with \include
+\include{ch1}
+\include{ch2}
+\include{ch3}
+\include{ch4}
+\include{ch5}
+\include{ch6}
+\include{ch7}
+
+%%   These next two items are more or less the same (epilogue is just the Greek for afterword!)
+%%   They are unlikely to be long enough to justify their own file(s) to \include
+
+%%   Epilogue (if any)
+%%   Afterword (if any)
+
+%% Back matter (loose ends: continue arabic page numbering)
+\backmatter
+
+%%   Appendices, if any: there will almost certainly be one or more.
+%%   This is where you put material which the reader may like to refer to but which might break
+%%   the train of thought in the thesis proper.  Large tables, etc might go here.
+%%   You may also include program code if not too long: say a few important chunks.  But the
+%%   majority of this should just be put on the accompanying CD/DVD.
+%%   \include appendix/ces as it/they will be big enough to justify its/their own ``chapter(s)''
+\cleardoublepage
+\appendix
+\addappheadtotoc         % adds a separating entry to the TOC, saying Appendices
+\noappendicestocpagenum  % ensures there is no page number after that TOC separating entry
+% It may happen that the first appendix (e.g., Detailed Tables) appears before the "Appendices" line
+% in the table of contents.  If so, edit thesis.toc and move the Appendices line there above the first appendix,
+% then re-run LaTeX to get the thesis.dvi file right.  You may have to repeatedly do this every time you LaTeX!
+\cleardoublepage
+\include{appendix1}
+\include{appendix2}
+% and so on
+
+%%   Endnotes (if needed)
+
+%%   Glossary of terms
+%%   \include this as it may be big enough to justify its own ``chapter''
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Glossary}
+\include{glossary}
+
+%%   Bibliography (References)
+% For this, use BibTeX (invariably comes with your LaTeX installation).  BibTeX separates the form of a
+% reference from its content, just as LaTeX does for a document.  You put the content in a .bib file
+% called a BibTeX database, and tell BibTeX what style to overlay on it.
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{mscBA} % the BibTeX style file to use (omit the .bst suffix)
+\bibliography{thesis}     % the BibTeX database file to use (omit the .bib suffix)
+%
+%% In the above, mscBA.bst is a BibTeX style file I developed based on the fairly standard chicago.bst.
+%%
+%% Below are sample journal and book entries from a .bib file.  Ensure that the key e.g., Chomsky:1965 you use
+%% in your .bib file entry is the same as you use in the \cite{Chomsky:1965} command in your LaTeX file.
+%%
+%% @String{MIT = {{MIT Press}}}
+%% @String{MIT:adr = {{Cambridge, Massachusetts}}}
+%%
+%% @Article{MetropEtAl:1953,
+%%  AUTHOR =       {Metropolis, N. and A.W. Rosenbluth and M.N. Rosenbluth and A.H. Teller and E. Teller},
+%%  YEAR =         {1953},
+%%  TITLE =        {Equations of {S}tate Calculations by Fast Computing Machines},
+%%  JOURNAL =      {Journal of Chemical Physics},
+%%  VOLUME =       {21},
+%%  NUMBER =       {6},
+%%  PAGES =        {1087--1092}
+%% }
+%%
+%% @Book{Chomsky:1965,
+%%   Author =       {N. Chomsky},
+%%   title =        {Aspects of the theory of syntax},
+%%   PUBLISHER =    MIT,
+%%   ADDRESS =      MIT:adr,
+%%   YEAR =         1965
+%% }
+%%
+%% Some other points (see the sample bibfile entries above for illustration):
+%% - Case is unimportant for a field name: DATE, daTe and date all mean the same.
+%% - You separate multiple authors by 'and', not using commas etc.
+%% - Some punctuation marks in the key are OK, e.g. the colon ':' as in MetropEtAl:1953
+%% - BibTeX has its own internal rules on when to change the case of capitalised text (e.g. in journal article titles).
+%%   You can override this by putting braces {} around text you want unchanged (e.g. the S in the article title above.
+%% - You can define strings which will be expanded in the references, e.g., MIT and MIT:adr in the book above
+%%   Don't put braces or quotes around these: if you do, they will not be expanded (will remain as MIT:adr, say)
+%% - In your actual text, you can cite in two ways (note the position of parentheses):
+%%   \citep{MetropEtAl:1953} for citation in parentheses, e.g.,
+%%     "In \citep{MetropEtAl:1953} it is shown that ..." appears as "In (Metropolis et al, 1953) it is shown that ..."
+%%   \citet{MetropEtAl:1953} for citation in text, e.g., where the authors are the subject of the sentence:
+%%     "\citet{MetropEtAl:1953} show that ..." appears as "Metropolis et al (1953) show that ..."
+%% - With either \citep or \citet you can use optional arguments such as
+%%     "\citep[e.g.,][pp.~12--20]{MetropEtAl:1953}" appears as "(e.g., Metropolis et al, 1953, pp.~12--20)"
+
+%%   List of contributors -- anyone else you feel should be credited
+
+%%   Notation Index / List of Symbols
+%%   \include this as it may be big enough to justify its own ``chapter''
+\cleardoublepage
+\addcontentsline{toc}{chapter}{List of Notation}
+\include{notation}
+
+%%   Index
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+\end{document}

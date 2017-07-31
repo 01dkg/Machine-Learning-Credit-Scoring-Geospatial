@@ -1,0 +1,28 @@
+\contentsline {chapter}{List of figures}{v}
+\contentsline {chapter}{List of tables}{vi}
+\contentsline {chapter}{List of algorithms}{vii}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Background}{2}
+\contentsline {subsection}{\numberline {1.1.1}Particular Background}{2}
+\contentsline {section}{\numberline {1.2}Referencing}{3}
+\contentsline {chapter}{\numberline {2}Business Background}{5}
+\contentsline {section}{\numberline {2.1}Introduction}{5}
+\contentsline {chapter}{\numberline {3}Literature Review}{6}
+\contentsline {section}{\numberline {3.1}Introduction}{6}
+\contentsline {section}{\numberline {3.2}Credit Risk}{8}
+\contentsline {subsection}{\numberline {3.2.1}Examples of citations}{8}
+\contentsline {chapter}{\numberline {4}Methodology}{10}
+\contentsline {section}{\numberline {4.1}Introduction}{10}
+\contentsline {chapter}{\numberline {5}Results}{11}
+\contentsline {section}{\numberline {5.1}Introduction}{11}
+\contentsline {chapter}{\numberline {6}Discussion}{12}
+\contentsline {section}{\numberline {6.1}Introduction}{12}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{13}
+\contentsline {section}{\numberline {7.1}Introduction}{14}
+\contentsline {chapter}{Detailed tables}{15}
+\contentsline {chapter}{Appendices}{15}
+\contentsline {chapter}{Program code}{16}
+\contentsline {chapter}{Glossary}{17}
+\contentsline {chapter}{Bibliography}{18}
+\contentsline {chapter}{List of Notation}{19}
+\contentsline {chapter}{Index}{20}

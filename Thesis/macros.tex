@@ -1,0 +1,58 @@
+%   Macros
+%   Esp. Theorem styles for amsart/amsbook document classes (currently enabled)
+%
+%   Sean McGarraghy
+%
+%   Change Control:
+%   Date      Ver  Reason
+%   --------  ---  --------------------------------------------------------------
+%   12/05/98  0.1  Begun
+%
+
+\newcommand*{\Ax}  {Axiom~}
+\newcommand*{\Df}  {Definition~}
+\newcommand*{\Th}  {Theorem~}
+\newcommand*{\Co}  {Corollary~}
+\renewcommand*{\Pr}{Proposition~}
+\newcommand*{\Lm}  {Lemma~}
+\newcommand*{\Rk}  {Remark~}
+\newcommand*{\Ex}  {Example~}
+\newcommand*{\Exe} {Exercise~}
+\newcommand*{\Eq}  {Equation~}
+\newcommand*{\dfn} {definition}
+
+\theoremstyle{plain}                 % Default
+
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{propn}[thm]{Proposition}
+\newtheorem{pr}[thm]{Proposition}
+\newtheorem{prp}[thm]{Propn.}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{fact}[thm]{Fact}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{claim}{Claim}[]
+
+\theoremstyle{definition}
+
+\newtheorem{dm}{}  % Dummy theorem name for numbering only, independent of section
+\newtheorem{dmy}[thm]{}  % Dummy theorem name for numbering only
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{exe}[thm]{Exercise}
+
+\theoremstyle{remark}
+
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{notn}[thm]{Notation}
+\newtheorem{note}[thm]{Note}
+\newtheorem{cmt}[thm]{Comment}
+\newtheorem{case}[thm]{Case}
+\newtheorem{intr1}[thm]{Introduction}
+\newtheorem{intro}[thm]{Introduction}
+
+\newenvironment{pf}{\vspace{-4pt}\noindent\begin{proof}}{\end{proof}\vspace{2pt}}
+
+
+

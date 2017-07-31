@@ -1,0 +1,4 @@
+#!/bin/bash
+cat Scripts/frontshortedge $1book.ps Scripts/back > $1bookshortedge.ps 
+ssh -l sean aeschylus.ucd.ie lpr -t < $1bookshortedge.ps 
+# rm %1bookshortedge.ps
