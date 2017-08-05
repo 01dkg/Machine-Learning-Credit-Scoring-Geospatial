@@ -9,21 +9,23 @@
 \contentsline {section}{\numberline {2.1}Introduction}{5}
 \contentsline {chapter}{\numberline {3}Literature Review}{6}
 \contentsline {section}{\numberline {3.1}Introduction}{6}
-\contentsline {section}{\numberline {3.2}Credit Risk}{8}
-\contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{8}
-\contentsline {subsection}{\numberline {3.3.1}Examples of citations}{11}
-\contentsline {chapter}{\numberline {4}Methodology}{12}
-\contentsline {section}{\numberline {4.1}Introduction}{12}
-\contentsline {chapter}{\numberline {5}Results}{13}
-\contentsline {section}{\numberline {5.1}Introduction}{13}
-\contentsline {chapter}{\numberline {6}Discussion}{14}
-\contentsline {section}{\numberline {6.1}Introduction}{14}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{15}
-\contentsline {section}{\numberline {7.1}Introduction}{16}
-\contentsline {chapter}{Detailed tables}{17}
-\contentsline {chapter}{Appendices}{17}
-\contentsline {chapter}{Program code}{18}
-\contentsline {chapter}{Glossary}{19}
-\contentsline {chapter}{Bibliography}{20}
-\contentsline {chapter}{List of Notation}{21}
-\contentsline {chapter}{Index}{22}
+\contentsline {section}{\numberline {3.2}What is Credit Scoring?}{8}
+\contentsline {subsection}{\numberline {3.2.1}Traditional Judging System and Credit Scoring}{9}
+\contentsline {subsection}{\numberline {3.2.2}Advantages and Disadvantages of Credit Scoring}{10}
+\contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{10}
+\contentsline {subsection}{\numberline {3.3.1}Examples of citations}{12}
+\contentsline {chapter}{\numberline {4}Methodology}{13}
+\contentsline {section}{\numberline {4.1}Introduction}{13}
+\contentsline {chapter}{\numberline {5}Results}{14}
+\contentsline {section}{\numberline {5.1}Introduction}{14}
+\contentsline {chapter}{\numberline {6}Discussion}{15}
+\contentsline {section}{\numberline {6.1}Introduction}{15}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{16}
+\contentsline {section}{\numberline {7.1}Introduction}{17}
+\contentsline {chapter}{Detailed tables}{18}
+\contentsline {chapter}{Appendices}{18}
+\contentsline {chapter}{Program code}{19}
+\contentsline {chapter}{Glossary}{20}
+\contentsline {chapter}{Bibliography}{21}
+\contentsline {chapter}{List of Notation}{23}
+\contentsline {chapter}{Index}{24}
