@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  2 AUG 2017 22:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  5 AUG 2017 16:12
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -600,18 +600,18 @@ Chapter 7.
 
 
 ]
-(thesis.bbl (babelbst.tex)) [20
+(thesis.bbl (babelbst.tex) [20
 
 
 
-]
+]) [21]
 \openout2 = `notation.aux'.
 
- (notation.tex) [21
+ (notation.tex) [22
 
 
 
-] (thesis.ind [22
+] (thesis.ind [23
 
 
 
@@ -626,13 +626,13 @@ Chapter 7.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5019 strings out of 493333
- 66723 string characters out of 3139192
- 146602 words of memory out of 3000000
- 8343 multiletter control sequences out of 15000+200000
+ 5028 strings out of 493333
+ 66883 string characters out of 3139192
+ 146689 words of memory out of 3000000
+ 8349 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 40i,8n,26p,1375b,3024s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,26p,1375b,3102s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
@@ -641,9 +641,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (33 pages, 185032 bytes).
+Output written on thesis.pdf (34 pages, 187704 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
+ 144 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

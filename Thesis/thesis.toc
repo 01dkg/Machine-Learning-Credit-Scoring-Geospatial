@@ -25,5 +25,5 @@
 \contentsline {chapter}{Program code}{18}
 \contentsline {chapter}{Glossary}{19}
 \contentsline {chapter}{Bibliography}{20}
-\contentsline {chapter}{List of Notation}{21}
-\contentsline {chapter}{Index}{22}
+\contentsline {chapter}{List of Notation}{22}
+\contentsline {chapter}{Index}{23}
