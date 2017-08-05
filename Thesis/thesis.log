@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  5 AUG 2017 17:48
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  5 AUG 2017 17:46
+>>>>>>> a445c048e8f67363d5f06eec0e313ab230d018d9
 entering extended mode
 **G:/KPMG/Thesis/thesis.tex
 (G:/KPMG/Thesis/thesis.tex
@@ -578,7 +582,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
+<<<<<<< HEAD
 [11 <./creditscoreflow.jpg>]) [12]
+=======
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+[10]) [11] [12]
+>>>>>>> a445c048e8f67363d5f06eec0e313ab230d018d9
 \openout2 = `ch4.aux'.
 
  (ch4.tex
@@ -666,6 +684,7 @@ Chapter 7.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  5053 strings out of 493333
  69508 string characters out of 3129710
  146951 words of memory out of 3000000
@@ -684,6 +703,24 @@ onts/cm/cmti12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 Output written on thesis.pdf (35 pages, 193473 bytes).
+=======
+ 5044 strings out of 493333
+ 67235 string characters out of 3139192
+ 146863 words of memory out of 3000000
+ 8361 multiletter control sequences out of 15000+200000
+ 14468 words of font info for 59 fonts, out of 3000000 for 9000
+ 1146 hyphenation exceptions out of 8191
+ 40i,8n,26p,1398b,3103s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (35 pages, 191138 bytes).
+>>>>>>> a445c048e8f67363d5f06eec0e313ab230d018d9
 PDF statistics:
  147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

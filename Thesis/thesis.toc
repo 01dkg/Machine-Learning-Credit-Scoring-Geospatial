@@ -9,10 +9,15 @@
 \contentsline {section}{\numberline {2.1}Introduction}{5}
 \contentsline {chapter}{\numberline {3}Literature Review}{6}
 \contentsline {section}{\numberline {3.1}Introduction}{6}
+<<<<<<< HEAD
 \contentsline {section}{\numberline {3.2}What is Credit Scoring?}{8}
 \contentsline {subsection}{\numberline {3.2.1}Traditional Judging System and Credit Scoring}{9}
 \contentsline {subsection}{\numberline {3.2.2}Advantages and Disadvantages of Credit Scoring}{10}
 \contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{10}
+=======
+\contentsline {section}{\numberline {3.2}Credit Risk}{8}
+\contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{8}
+>>>>>>> a445c048e8f67363d5f06eec0e313ab230d018d9
 \contentsline {subsection}{\numberline {3.3.1}Examples of citations}{12}
 \contentsline {chapter}{\numberline {4}Methodology}{13}
 \contentsline {section}{\numberline {4.1}Introduction}{13}
