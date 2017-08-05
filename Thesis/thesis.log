@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  5 AUG 2017 18:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  5 AUG 2017 20:20
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -553,12 +553,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-[12]) [13]
+[12]) [13] [14]
 \openout2 = `ch4.aux'.
 
  (ch4.tex
 Chapter 4.
-) [14
+) [15
 
 
 
@@ -567,7 +567,7 @@ Chapter 4.
 
  (ch5.tex
 Chapter 5.
-) [15
+) [16
 
 
 
@@ -576,7 +576,7 @@ Chapter 5.
 
  (ch6.tex
 Chapter 6.
-) [16
+) [17
 
 
 
@@ -585,14 +585,14 @@ Chapter 6.
 
  (ch7.tex
 Chapter 7.
-) [17
+) [18
 
 
 
-] [18]
+] [19]
 \openout2 = `appendix1.aux'.
 
- (appendix1.tex) [19
+ (appendix1.tex) [20
 
 
 
@@ -602,32 +602,32 @@ Chapter 7.
 ]
 \openout2 = `appendix2.aux'.
 
- (appendix2.tex) [20
+ (appendix2.tex) [21
 
 
 
 ]
 \openout2 = `glossary.aux'.
 
- (glossary.tex) [21
+ (glossary.tex) [22
 
 
 
 
 ]
-(thesis.bbl (babelbst.tex) [22
+(thesis.bbl (babelbst.tex) [23
 
 
 
-] [23]) [24]
+] [24]) [25]
 \openout2 = `notation.aux'.
 
- (notation.tex) [25
+ (notation.tex) [26
 
 
 
 ] (thesis.ind
-[26
+[27
 
 
 
@@ -641,13 +641,13 @@ Chapter 7.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5077 strings out of 493333
- 67996 string characters out of 3139192
- 147211 words of memory out of 3000000
- 8386 multiletter control sequences out of 15000+200000
+ 5109 strings out of 493333
+ 68724 string characters out of 3139192
+ 148677 words of memory out of 3000000
+ 8410 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 40i,8n,26p,1791b,3120s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,28p,1791b,3119s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
@@ -656,9 +656,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (37 pages, 199097 bytes).
+Output written on thesis.pdf (38 pages, 201778 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
+ 159 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
