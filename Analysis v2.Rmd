@@ -218,7 +218,7 @@ library(caret)
 library(tree)
 defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=trainDatav2, control =  rpart.control(minisplit=5,cp = 0.001))
 
-#save(fit, file = "Model/classificationTreeV2.rda")
+save(fit, file = "Model/classificationTreeV2.rda")
 print(defaultLoanTree)
 prp(defaultLoanTree)
 tree.1 <- defaultLoanTree
