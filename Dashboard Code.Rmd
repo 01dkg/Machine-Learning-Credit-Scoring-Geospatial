@@ -67,6 +67,6 @@ MapDisplay <- leaflet(testDatav2) %>%
                                       clusterOptions = markerClusterOptions(), 
                                       icon = icons)
 #MapDisplay
-saveWidget(MapDisplay, file="MapDisplay.html")
+saveWidget(MapDisplay, file="Dashboard_Map.html")
 
 ```
