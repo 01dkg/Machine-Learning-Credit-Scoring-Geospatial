@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  5 AUG 2017 22:56
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  5 AUG 2017 20:38
+>>>>>>> 1708cebd102722be0cbc83c747cfd9971307968d
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -519,18 +523,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 [11]
 Underfull \hbox (badness 10000) in paragraph at lines 63--64
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+>>>>>>> 1708cebd102722be0cbc83c747cfd9971307968d
 
  []
 
 <creditscoreflow.jpg, id=79, 899.36pt x 284.06125pt>
 File: creditscoreflow.jpg Graphic file (type jpg)
  <use creditscoreflow.jpg>
+<<<<<<< HEAD
 Package pdftex.def Info: creditscoreflow.jpg used on input line 67.
 (pdftex.def)             Requested size: 398.33858pt x 125.8152pt.
 
@@ -545,6 +559,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
+=======
+Package pdftex.def Info: creditscoreflow.jpg used on input line 65.
+(pdftex.def)             Requested size: 398.33858pt x 125.8152pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+>>>>>>> 1708cebd102722be0cbc83c747cfd9971307968d
 
  []
 
@@ -553,17 +578,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
+<<<<<<< HEAD
 
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+>>>>>>> 1708cebd102722be0cbc83c747cfd9971307968d
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+>>>>>>> 1708cebd102722be0cbc83c747cfd9971307968d
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
@@ -580,6 +614,28 @@ Package pdftex.def Info: simpledt.png used on input line 91.
 (pdftex.def)             Requested size: 398.33858pt x 207.45502pt.
  [14])
 [15 <./simpledt.png>]
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+[12 <./creditscoreflow.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+) [14]
+>>>>>>> 1708cebd102722be0cbc83c747cfd9971307968d
 \openout2 = `ch4.aux'.
 
  (ch4.tex
@@ -666,6 +722,7 @@ Chapter 7.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  5151 strings out of 493333
  69567 string characters out of 3139192
  150259 words of memory out of 3000000
@@ -673,6 +730,15 @@ Here is how much of TeX's memory you used:
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
  40i,8n,33p,1773b,3140s stack positions out of 5000i,500n,10000p,200000b,50000s
+=======
+ 5109 strings out of 493333
+ 68724 string characters out of 3139192
+ 149677 words of memory out of 3000000
+ 8410 multiletter control sequences out of 15000+200000
+ 14468 words of font info for 59 fonts, out of 3000000 for 9000
+ 1146 hyphenation exceptions out of 8191
+ 40i,8n,28p,1773b,3119s stack positions out of 5000i,500n,10000p,200000b,50000s
+>>>>>>> 1708cebd102722be0cbc83c747cfd9971307968d
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
@@ -681,7 +747,11 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb>
+<<<<<<< HEAD
 Output written on thesis.pdf (40 pages, 277717 bytes).
+=======
+Output written on thesis.pdf (38 pages, 203075 bytes).
+>>>>>>> 1708cebd102722be0cbc83c747cfd9971307968d
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
