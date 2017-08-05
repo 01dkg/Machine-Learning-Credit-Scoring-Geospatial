@@ -12,7 +12,7 @@ output:
 ## Data Reading:
 ```{r}
 library(readr)
-Datav2 <- read_delim("E:/KPMG/KPMG/KPMGv2.csv", 
+Datav2 <- read_delim("Data/finalData.csv", 
     ";", escape_double = FALSE, trim_ws = TRUE)
 ```
 ## Data Stats
@@ -193,12 +193,12 @@ confusionMatrix(predictions.1, testDatav2$DefaultedLoans)
 #Model for Tableau
 ```{r}
 lrmodel <- glm(DefaultedLoans ~ CreditRating + LoanBalance + PropertyValue, data = trainDatav2, family = "binomial");
-save(lrmodel, file = "trainDatav2.rda")
+save(lrmodel, file = "Model/lrmodelv2.rda")
 
 ```
 
 ```{r}
-load("trainDatav2.rda")
+load("Model/lrmodelv2.rda")
 prob <- predict(lrmodel, newdata = testDatav2, type = "response")
 plot(prob,testDatav2$CreditRating)
 
@@ -218,7 +218,7 @@ library(caret)
 library(tree)
 defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=trainDatav2, control =  rpart.control(minisplit=5,cp = 0.001))
 
-#save(fit, file = "myclassificationtree.rda")
+#save(fit, file = "Model/classificationTreeV2.rda")
 print(defaultLoanTree)
 prp(defaultLoanTree)
 tree.1 <- defaultLoanTree
