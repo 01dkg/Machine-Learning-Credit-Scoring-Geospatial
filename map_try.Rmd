@@ -9,7 +9,7 @@ output: html_document
 library(readr)
 
 #uncomment when you want to read the data from fresh
-#Data <- read_delim("E:/KPMG/Data/KPMGDT.csv",",", escape_double = FALSE, trim_ws = TRUE)
+#Data <- read_delim("Data/KPMGDT.csv",",", escape_double = FALSE, trim_ws = TRUE)
 ```
 
 ## Data Stats
@@ -74,8 +74,8 @@ table(testData$DefaultedLoans, as.numeric(testData$prediction >= 0.5))
 ### ROC Curve
 ```{r}
 library(ROCR)
-roc_prediction = prediction(testData$prediction, testData$DefaultedLoans)
-as.numeric(performance(pred, "auc")@y.values)
+#roc_prediction = prediction(testData$prediction, testData$DefaultedLoans)
+#as.numeric(performance(pred, "auc")@y.values)
 
 # Make predictions on training set
 train_pred = predict(simpleglm, type="response")
@@ -140,8 +140,8 @@ MapDisplay <- leaflet(testData) %>%
                                       options = popupOptions(closeButton = TRUE),
                                       clusterOptions = markerClusterOptions(), 
                                       icon = weatherIcon)
-MapDisplay
-#saveWidget(MapDisplay, file="MapDisplay.html")
+#MapDisplay
+saveWidget(MapDisplay, file="E:/KPMG/KPMG/Output/MapDisplay.html")
 
 ```
 ####################################
@@ -189,7 +189,7 @@ confusionMatrix(predictions.1, mydata.test$DefaultedLoans)
 ```{r}
 #mydata <- read.csv("E:/KPMG/Data/Prep/Sample1_3.csv")
 lrmodel <- glm(DefaultedLoans ~ CreditRating + LoanBalance + PropertyValue, data = trainData, family = "binomial");
-save(lrmodel, file = "mymodel.rda")
+save(lrmodel, file = "Model/mymodel.rda")
 
 ```
 
@@ -212,7 +212,7 @@ library(partykit)				# Convert rpart object to BinaryTree
 library(caret)
 fit <- rpart(DefaultedLoans ~ NewLoan+County+LoanBalance + PropertyValue+ CreditRating+ AnnualPYMT,method = "class",data=testData, control =  rpart.control(minisplit=5,cp = 0.001))
 
-save(fit, file = "myclassificationtree.rda")
+save(fit, file = "Output/myclassificationtree.rda")
 print(fit)
 prp(fit)
 tree.1 <- fit
