@@ -58,6 +58,8 @@ Traditional credit scoring process with random selection of good and bad portfol
 
 \citep{10.2307/2983268}, Mentioned about three commonly used approaches used for selecting characterstics out of avialble data: Expert Knowledge, Stepwise Statstical procedure and evaulating individual characterstics. Subject Matter Expert(SME) \\
 
+Credit analysis and assessment is very important for banks and financial instituions to evaluate the credit worthiness of an applicant or a borrower. Banks implements various factors while assessing credit risk; such as credit rating, loan to value ratio, probability of default, etc.; that leads to derivation of credit risk rating. Variety of financial techniques have been used by the officials to analyse credit risk. 
+
 
 An applicant credit score is generated using credit rating system based on various charterstics points. Thereafter credit score is used depending on the usage of system. There are single cut-off and two cut-off stages in deciding application decision. In single cut-off, credit is granted if applicant score is higher than cut-off; otherwise credit is denied. Some instituations incorportae two stage cut-offs, in this system if credit score is higher than upper cut-off then credit is granted straighted and denied if score is lower thant lower cut-off. If score is between upper and lower cut-off then applicant credit history is pulled to calculate further scoring point and added to credit score. If new total score is higher than upper cut-off then credit is granted else denied.\\
 
@@ -87,46 +89,18 @@ Diffrrerent Technology in Credit Risk:\\\\
 \textbf{Logistic Regression} has resemblance with Linear regression and it is also most commonly used statsical technique for building credit scoring system. Dichtomous nature of logistic regression outcome probablity (good credit or bad credit) makes it different from linear regression. \citep{hosmer1989best}. By using two or more independent variables, one can build the simple logistic regression model. However, logistic regressions with more than one independent variables use the maximum likelihood method to build credit scoring model.\citep{altland1999regression}. Logistic regression has been widely used in building credit scoring system in financial domain ( see for example: \citep{nie2011credit,abdou2008neural,bensic2005modelling,joanes1993reject}) \\
 
 
-Decision trees
-
-fdgdfh
-
-Expert systems
-
-
-
-Neural networks
+\textbf{Decision trees} is one of the classification techniqeue in machine learning and widely using for buidling credit scoring system. There are two commonly used algorithm for the induction of decision tree C4.5 and Classification and Regression Trees (CART) \citep{kohavi2002data}. One of the firts model pioneered by \cite{breiman1984classification}.
+\begin{figure}
+\includegraphics[width=\textwidth]{simpledt.png}
+\caption{Simple Decision Tree 
+Source: \citep{zhang2010vertical}}
+\end{figure}
+With the help of single input function, algorithm splits all data observations to generate a dichotomous tree using CART.  The algorithm chooses the best subset data based on the lowest cost of misclassifications\citep{zekic2004small}. This process of selecting attribute from data subset is repeated as algorithm C4.5 or CART continues to choose one attribute that splits data into subset based on information gain \citep{zhou2008new}. \citet{huang2007credit} used decision tree along with support vector machines to build credit scoring model. Other applications on using decision tree in credit scoring has been discussed by \citep{xia2017boosted,koh2015two,koutanaei2015hybrid}
 
 
-Genetic programming was introduced by \citet{koza1992evolution} 
+\textbf{Neural networks} 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Credit analysis and assessment is very important for banks and financial instituions to evaluate the credit worthiness of an applicant or a borrower. Banks implements various factors while assessing credit risk; such as credit rating, loan to value ratio, probability of default, etc.; that leads to derivation of credit risk rating. Variety of financial techniques have been used by the officials to analyse credit risk. 
+\citet{west2000neural} carried out several experiments to measure the performance five different types of the neural network for credit scoring. During experiments, it was found that Logistic regression is slightly more accurate in prediction in comparison to neural networks. This Research also observed that CART and \emph{k} Nearest Neighbour results are not par with logistic regression.
 
 \subsection{Examples of citations}\label{SS.citations}
 

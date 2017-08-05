@@ -14,19 +14,19 @@
 \contentsline {subsection}{\numberline {3.2.2}Advantages and Disadvantages of Credit Scoring}{10}
 \contentsline {subsection}{\numberline {3.2.3}Is credit scoring process optimal?}{11}
 \contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{11}
-\contentsline {subsection}{\numberline {3.3.1}Examples of citations}{15}
-\contentsline {chapter}{\numberline {4}Methodology}{16}
-\contentsline {section}{\numberline {4.1}Introduction}{16}
-\contentsline {chapter}{\numberline {5}Results}{17}
-\contentsline {section}{\numberline {5.1}Introduction}{17}
-\contentsline {chapter}{\numberline {6}Discussion}{18}
-\contentsline {section}{\numberline {6.1}Introduction}{18}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{19}
-\contentsline {section}{\numberline {7.1}Introduction}{20}
-\contentsline {chapter}{Detailed tables}{21}
-\contentsline {chapter}{Appendices}{21}
-\contentsline {chapter}{Program code}{22}
-\contentsline {chapter}{Glossary}{23}
-\contentsline {chapter}{Bibliography}{24}
-\contentsline {chapter}{List of Notation}{28}
-\contentsline {chapter}{Index}{29}
+\contentsline {subsection}{\numberline {3.3.1}Examples of citations}{16}
+\contentsline {chapter}{\numberline {4}Methodology}{17}
+\contentsline {section}{\numberline {4.1}Introduction}{17}
+\contentsline {chapter}{\numberline {5}Results}{18}
+\contentsline {section}{\numberline {5.1}Introduction}{18}
+\contentsline {chapter}{\numberline {6}Discussion}{19}
+\contentsline {section}{\numberline {6.1}Introduction}{19}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{20}
+\contentsline {section}{\numberline {7.1}Introduction}{21}
+\contentsline {chapter}{Detailed tables}{22}
+\contentsline {chapter}{Appendices}{22}
+\contentsline {chapter}{Program code}{23}
+\contentsline {chapter}{Glossary}{24}
+\contentsline {chapter}{Bibliography}{25}
+\contentsline {chapter}{List of Notation}{30}
+\contentsline {chapter}{Index}{31}
