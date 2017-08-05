@@ -12,7 +12,11 @@
 \contentsline {section}{\numberline {3.2}What is Credit Scoring?}{8}
 \contentsline {subsection}{\numberline {3.2.1}Traditional Judging System and Credit Scoring}{9}
 \contentsline {subsection}{\numberline {3.2.2}Advantages and Disadvantages of Credit Scoring}{10}
+<<<<<<< HEAD
 \contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{11}
+=======
+\contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{10}
+>>>>>>> 30325ab9581f997cbdccaadd6b4734c0e34d18f2
 \contentsline {subsection}{\numberline {3.3.1}Examples of citations}{14}
 \contentsline {chapter}{\numberline {4}Methodology}{15}
 \contentsline {section}{\numberline {4.1}Introduction}{15}
