@@ -16,24 +16,20 @@
 \contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{11}
 \contentsline {section}{\numberline {3.4}Diffrrerent Technology in Credit Risk:}{14}
 \contentsline {section}{\numberline {3.5}Geospatial}{17}
-<<<<<<< HEAD
 \contentsline {section}{\numberline {3.6}Data Visualisation}{18}
-=======
-\contentsline {section}{\numberline {3.6}Data Visualisation}{17}
->>>>>>> c4f36a331ec612511789f4189e390462ff95d241
-\contentsline {subsection}{\numberline {3.6.1}Examples of citations}{18}
-\contentsline {chapter}{\numberline {4}Methodology}{19}
-\contentsline {section}{\numberline {4.1}Introduction}{19}
-\contentsline {chapter}{\numberline {5}Results}{20}
-\contentsline {section}{\numberline {5.1}Introduction}{20}
-\contentsline {chapter}{\numberline {6}Discussion}{21}
-\contentsline {section}{\numberline {6.1}Introduction}{21}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{22}
-\contentsline {section}{\numberline {7.1}Introduction}{23}
-\contentsline {chapter}{Detailed tables}{24}
-\contentsline {chapter}{Appendices}{24}
-\contentsline {chapter}{Program code}{25}
-\contentsline {chapter}{Glossary}{26}
-\contentsline {chapter}{Bibliography}{27}
-\contentsline {chapter}{List of Notation}{32}
-\contentsline {chapter}{Index}{33}
+\contentsline {subsection}{\numberline {3.6.1}Examples of citations}{19}
+\contentsline {chapter}{\numberline {4}Methodology}{20}
+\contentsline {section}{\numberline {4.1}Introduction}{20}
+\contentsline {chapter}{\numberline {5}Results}{21}
+\contentsline {section}{\numberline {5.1}Introduction}{21}
+\contentsline {chapter}{\numberline {6}Discussion}{22}
+\contentsline {section}{\numberline {6.1}Introduction}{22}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{23}
+\contentsline {section}{\numberline {7.1}Introduction}{24}
+\contentsline {chapter}{Detailed tables}{25}
+\contentsline {chapter}{Appendices}{25}
+\contentsline {chapter}{Program code}{26}
+\contentsline {chapter}{Glossary}{27}
+\contentsline {chapter}{Bibliography}{28}
+\contentsline {chapter}{List of Notation}{34}
+\contentsline {chapter}{Index}{35}
