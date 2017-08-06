@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  6 AUG 2017 16:22
+=======
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  6 AUG 2017 15:42
 =======
 <<<<<<< HEAD
@@ -7,14 +10,15 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preload
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  6 AUG 2017 15:30
 >>>>>>> bac7b8b82e23c16a08db37ae947ef2b1eb89237a
 >>>>>>> 9250b6b73647ee536e064cd7a805dcb86a9f1265
+>>>>>>> 084550cafa0f636a7a62b1ae723219237f42c4d0
 entering extended mode
 **./thesis.tex
 (thesis.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk12.clo"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk12.clo"
 File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,11 +34,10 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty
-"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks14
 \thm@bodyfont=\toks15
@@ -46,30 +49,24 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip45
 \dth@everypar=\toks19
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen103
 ))
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count88
@@ -110,58 +107,47 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts
-.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\latexsym.sty
-"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latexsym.sty"
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
-.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks25
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
-.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
-"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\grap
-hics.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdft
-ex.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
 File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
-err.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
-s.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count100
@@ -169,15 +155,13 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\appendix\appendix
-.sty"
+(C:\Users\Deepak\AppData\Roaming\MiKTeX\2.9\tex\latex\appendix\appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@pps=\count101
 \c@@ppsavesec=\count102
 \c@@ppsaveapp=\count103
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigu
-re.sty"
+(C:\Users\Deepak\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip49
 \subfigcapskip=\skip50
@@ -193,26 +177,23 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigu
-re.cfg")
+(C:\Users\Deepak\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
 \subfig@top=\skip53
 \subfig@bottom=\skip54
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithm2e\algor
-ithm2e.sty"
+(C:\Users\Deepak\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithm2e\algorithm2e.s
+ty
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
 \c@AlgoLine=\count108
-
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip55
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ltxmisc\relsize.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
 Package: relsize 2003/07/04 ver 3.1
 )
 ********************************************************
@@ -256,9 +237,7 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count111
 \algocf@algoframe=\box34
 \algocf@algobox=\box35
-)
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tocloft\tocloft.s
-ty"
+) (C:\Users\Deepak\AppData\Roaming\MiKTeX\2.9\tex\latex\tocloft\tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 44.
 \cftparskip=\skip73
@@ -302,16 +281,14 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \cftsubtabindent=\skip111
 \cftsubtabnumwidth=\skip112
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.sty
-"
+(C:\Users\Deepak\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip113
 \bibsep=\skip114
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count112
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lineno\lineno.sty
-"
+(C:\Users\Deepak\AppData\Roaming\MiKTeX\2.9\tex\latex\lineno\lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count113
 \output=\toks26
@@ -329,8 +306,7 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box36
 LaTeX Info: Redefining \\ on input line 3056.
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs
-.sty"
+(C:\Users\Deepak\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen127
 \lightrulewidth=\dimen128
@@ -349,7 +325,8 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@thisruleclass=\count122
 \@lastruleclass=\count123
 \@thisrulewidth=\dimen139
-) (macros.tex
+)
+(macros.tex
 \c@thm=\count124
 \c@claim=\count125
 \c@dm=\count126
@@ -381,8 +358,7 @@ LaTeX Font Info:    ... okay on input line 203.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 203.
 LaTeX Font Info:    ... okay on input line 203.
 
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
-kii"
+(C:\Users\Deepak\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count127
 \scratchdimen=\dimen140
@@ -395,19 +371,15 @@ kii"
 \MPnumerator=\count131
 \makeMPintoPDFobject=\count132
 \everyMPtoPDFconversion=\toks28
-)
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftex
-cmds.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluat
-ex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -415,28 +387,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
--base.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefi
-nekeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoption
-s.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetk
-eys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcm
-ds.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -452,22 +418,22 @@ G,.JBIG2,.JB2,.eps]
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 212.
 
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 212.
- ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
-"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+lasy on input line 212.
- ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
 
-{E:/Users/Shruti/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2
+{C:/Users/Deepak/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 
 ] (thesis.toc [3
@@ -476,7 +442,8 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [4] (thesis.lof)
+ [4]
+(thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
@@ -492,8 +459,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \tf@loa=\write7
 \openout7 = `thesis.loa'.
 
-
-[7
+ [7
 
 ]
 \openout2 = `preface.aux'.
@@ -501,15 +467,15 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
  (preface.tex) [8
 
 
-<<<<<<< HEAD
-] [9
-=======
-] [10
->>>>>>> bac7b8b82e23c16a08db37ae947ef2b1eb89237a
-
-
 ]
-[10
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+[9
+
+
+] [10
 
 ]
 \openout2 = `ch1.aux'.
@@ -522,7 +488,7 @@ Chapter 1.
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 81.
- ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -530,7 +496,8 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
  [2]) [3] [4]
 \openout2 = `ch2.aux'.
 
- (ch2.tex
+
+(ch2.tex
 Chapter 2.
 ) [5
 
@@ -767,18 +734,12 @@ Missing character: There is no ™ in font cmti12!
 ### bottom level 
 Here is how much of TeX's memory you used:
  5234 strings out of 493333
-<<<<<<< HEAD
  70933 string characters out of 3139192
  153366 words of memory out of 3000000
-=======
- 72935 string characters out of 3129710
- 152367 words of memory out of 3000000
->>>>>>> bac7b8b82e23c16a08db37ae947ef2b1eb89237a
  8514 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
  40i,9n,33p,1773b,3208s stack positions out of 5000i,500n,10000p,200000b,50000s
-<<<<<<< HEAD
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
@@ -787,20 +748,7 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (42 pages, 285014 bytes).
-=======
-<E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmbx12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Users/Shruti/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Users/Shruti/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users
-/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmti12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (43 pages, 285147 bytes).
->>>>>>> bac7b8b82e23c16a08db37ae947ef2b1eb89237a
+Output written on thesis.pdf (42 pages, 285011 bytes).
 PDF statistics:
  172 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
