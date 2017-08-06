@@ -15,19 +15,21 @@
 \contentsline {subsection}{\numberline {3.2.3}Is credit scoring process optimal?}{11}
 \contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{11}
 \contentsline {section}{\numberline {3.4}Diffrrerent Technology in Credit Risk:}{14}
-\contentsline {subsection}{\numberline {3.4.1}Examples of citations}{17}
-\contentsline {chapter}{\numberline {4}Methodology}{18}
-\contentsline {section}{\numberline {4.1}Introduction}{18}
-\contentsline {chapter}{\numberline {5}Results}{19}
-\contentsline {section}{\numberline {5.1}Introduction}{19}
-\contentsline {chapter}{\numberline {6}Discussion}{20}
-\contentsline {section}{\numberline {6.1}Introduction}{20}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{21}
-\contentsline {section}{\numberline {7.1}Introduction}{22}
-\contentsline {chapter}{Detailed tables}{23}
-\contentsline {chapter}{Appendices}{23}
-\contentsline {chapter}{Program code}{24}
-\contentsline {chapter}{Glossary}{25}
-\contentsline {chapter}{Bibliography}{26}
-\contentsline {chapter}{List of Notation}{31}
-\contentsline {chapter}{Index}{32}
+\contentsline {section}{\numberline {3.5}Geospatial}{17}
+\contentsline {section}{\numberline {3.6}Data Visualisation}{17}
+\contentsline {subsection}{\numberline {3.6.1}Examples of citations}{18}
+\contentsline {chapter}{\numberline {4}Methodology}{19}
+\contentsline {section}{\numberline {4.1}Introduction}{19}
+\contentsline {chapter}{\numberline {5}Results}{20}
+\contentsline {section}{\numberline {5.1}Introduction}{20}
+\contentsline {chapter}{\numberline {6}Discussion}{21}
+\contentsline {section}{\numberline {6.1}Introduction}{21}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{22}
+\contentsline {section}{\numberline {7.1}Introduction}{23}
+\contentsline {chapter}{Detailed tables}{24}
+\contentsline {chapter}{Appendices}{24}
+\contentsline {chapter}{Program code}{25}
+\contentsline {chapter}{Glossary}{26}
+\contentsline {chapter}{Bibliography}{27}
+\contentsline {chapter}{List of Notation}{32}
+\contentsline {chapter}{Index}{33}
