@@ -16,7 +16,11 @@
 \contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{11}
 \contentsline {section}{\numberline {3.4}Diffrrerent Technology in Credit Risk:}{14}
 \contentsline {section}{\numberline {3.5}Geospatial}{17}
+<<<<<<< HEAD
 \contentsline {section}{\numberline {3.6}Data Visualisation}{18}
+=======
+\contentsline {section}{\numberline {3.6}Data Visualisation}{17}
+>>>>>>> c4f36a331ec612511789f4189e390462ff95d241
 \contentsline {subsection}{\numberline {3.6.1}Examples of citations}{18}
 \contentsline {chapter}{\numberline {4}Methodology}{19}
 \contentsline {section}{\numberline {4.1}Introduction}{19}
