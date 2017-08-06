@@ -22,7 +22,8 @@
 \contentsline {section}{\numberline {4.2}Software \& Tools Specifications}{20}
 \contentsline {section}{\numberline {4.3}Hardware Specifications}{22}
 \contentsline {section}{\numberline {4.4}Data}{22}
-\contentsline {section}{\numberline {4.5}}{22}
+\contentsline {section}{\numberline {4.5}Implementation}{22}
+\contentsline {section}{\numberline {4.6}Deployment \& Connection Setup}{22}
 \contentsline {chapter}{\numberline {5}Results}{23}
 \contentsline {section}{\numberline {5.1}Introduction}{23}
 \contentsline {chapter}{\numberline {6}Discussion}{24}
