@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  5 AUG 2017 23:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  6 AUG 2017 15:30
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -320,10 +320,31 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframesep=\dimen126
 \bframebox=\box36
 LaTeX Info: Redefining \\ on input line 3056.
+)
+("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs
+.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen127
+\lightrulewidth=\dimen128
+\cmidrulewidth=\dimen129
+\belowrulesep=\dimen130
+\belowbottomsep=\dimen131
+\aboverulesep=\dimen132
+\abovetopsep=\dimen133
+\cmidrulesep=\dimen134
+\cmidrulekern=\dimen135
+\defaultaddspace=\dimen136
+\@cmidla=\count120
+\@cmidlb=\count121
+\@aboverulesep=\dimen137
+\@belowrulesep=\dimen138
+\@thisruleclass=\count122
+\@lastruleclass=\count123
+\@thisrulewidth=\dimen139
 ) (macros.tex
-\c@thm=\count120
-\c@claim=\count121
-\c@dm=\count122
+\c@thm=\count124
+\c@claim=\count125
+\c@dm=\count126
 ) (declarns.tex)
 \@indexfile=\write3
 \openout3 = `thesis.idx'.
@@ -339,32 +360,32 @@ LaTeX Warning: Unused global option(s):
 (notation.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
 
 ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
 kii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count123
-\scratchdimen=\dimen127
+\scratchcounter=\count127
+\scratchdimen=\dimen140
 \scratchbox=\box37
-\nofMPsegments=\count124
-\nofMParguments=\count125
+\nofMPsegments=\count128
+\nofMParguments=\count129
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count126
-\MPscratchDim=\dimen128
-\MPnumerator=\count127
-\makeMPintoPDFobject=\count128
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen141
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
 \everyMPtoPDFconversion=\toks28
 )
 ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftex
@@ -421,17 +442,17 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 210.
+LaTeX Font Info:    Try loading font information for U+msa on input line 212.
 
 ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 210.
+LaTeX Font Info:    Try loading font information for U+msb on input line 212.
  ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 210.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 212.
  ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
@@ -544,56 +565,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--52
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 <creditscoreflow.jpg, id=79, 899.36pt x 284.06125pt>
 File: creditscoreflow.jpg Graphic file (type jpg)
  <use creditscoreflow.jpg>
-Package pdftex.def Info: creditscoreflow.jpg used on input line 70.
+Package pdftex.def Info: creditscoreflow.jpg used on input line 73.
 (pdftex.def)             Requested size: 398.33858pt x 125.8152pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-[12]
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
@@ -604,37 +620,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
-
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[]\OT1/cmr/m/n/12 Linear Re-gres-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]\OT1/cmr/m/n/12 Discriminant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 [13 <./creditscoreflow.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-
+Overfull \hbox (6.92114pt too wide) in paragraph at lines 107--108
+[]\OT1/cmr/bx/n/12 Discriminant Anal-y-sis: \OT1/cmr/m/n/12 In credit scor-ing 
+mod-els, a sta-tis-ti-cal anal-y-sis method
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-[14] <simpledt.png, id=90, 977.15062pt x 508.90125pt>
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+<simpledt.png, id=90, 977.15062pt x 508.90125pt>
 File: simpledt.png Graphic file (type png)
  <use simpledt.png>
-Package pdftex.def Info: simpledt.png used on input line 94.
+Package pdftex.def Info: simpledt.png used on input line 115.
 (pdftex.def)             Requested size: 398.33858pt x 207.45502pt.
 
-[15 <./simpledt.png>]) [16]
+Underfull \hbox (badness 10000) in paragraph at lines 113--120
+
+ []
+
+[15] [16 <./simpledt.png>]) [17]
 \openout2 = `ch4.aux'.
 
  (ch4.tex
 Chapter 4.
-) [17
+) [18
 
 
 
@@ -643,7 +674,7 @@ Chapter 4.
 
  (ch5.tex
 Chapter 5.
-) [18
+) [19
 
 
 
@@ -652,7 +683,7 @@ Chapter 5.
 
  (ch6.tex
 Chapter 6.
-) [19
+) [20
 
 
 
@@ -661,14 +692,14 @@ Chapter 6.
 
  (ch7.tex
 Chapter 7.
-) [20
+) [21
 
 
 
-] [21]
+] [22]
 \openout2 = `appendix1.aux'.
 
- (appendix1.tex) [22
+ (appendix1.tex) [23
 
 
 
@@ -678,32 +709,39 @@ Chapter 7.
 ]
 \openout2 = `appendix2.aux'.
 
- (appendix2.tex) [23
+ (appendix2.tex) [24
 
 
 
 ]
 \openout2 = `glossary.aux'.
 
- (glossary.tex) [24
+ (glossary.tex) [25
 
 
 
 
 ]
-(thesis.bbl (babelbst.tex) [25
+(thesis.bbl (babelbst.tex) [26
 
 
 
-] [26] [27] [28]) [29]
+]
+Missing character: There is no â in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+Missing character: There is no â in font cmti12!
+Missing character: There is no € in font cmti12!
+Missing character: There is no ™ in font cmti12!
+ [27] [28] [29]) [30]
 \openout2 = `notation.aux'.
 
- (notation.tex) [30
+ (notation.tex) [31
 
 
 
 ]
-(thesis.ind [31
+(thesis.ind [32
 
 
 
@@ -717,13 +755,13 @@ Chapter 7.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5156 strings out of 493333
- 71641 string characters out of 3129710
- 150302 words of memory out of 3000000
- 8445 multiletter control sequences out of 15000+200000
+ 5234 strings out of 493333
+ 72935 string characters out of 3129710
+ 152367 words of memory out of 3000000
+ 8514 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 40i,8n,33p,1773b,3160s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,9n,33p,1773b,3208s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmbx12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Users/Shruti/AppData/Local/Prog
@@ -734,9 +772,9 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users
 onts/cm/cmti12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (42 pages, 280282 bytes).
+Output written on thesis.pdf (43 pages, 285147 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
+ 176 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
