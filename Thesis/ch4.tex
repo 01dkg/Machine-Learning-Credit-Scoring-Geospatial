@@ -14,6 +14,76 @@
 \chapter{Methodology}\label{C.Methodology}
 
 \section{Overview}\label{S.Ch4.opening}
-\section{Software and Hardware Specifications}\label{ch4.2}
+To assist financial auditor or stakeholder at financial institutions and banks, and to identify such loan portfolio which may default in future based on the geospatial information and financial data. This research work followed the KDD process which involves characteristics variables selection, perform data restructuring, data transformation and data mining for the deployment of a predictive model using visual analytics tools such as Tableau, QlikView, etc.
+
+
+\section{Software \& Tools Specifications}\label{ch4.2}
+\begin{description}
+  \item[Data Processing:] MS Excel 2017 and Alteryx Desginer Professional 2017
+  \item[Version Control:] Github
+  \item[Dashboard:] Tableau and R Shiny
+  \item[Data Storage:] Github and Google Drive
+\end{description}
+
+Predictive modeling in R Studio using following packages
+\begin{description}
+  \item[Packages required Logisctic Regression Model:] Following packages used to building simple regression and logistic regression based model for predictig the good or bad loan portfolio.
+   \begin{itemize}
+        \item readr
+        \item glm() with class set to "bionomial" for Logistic Regression and "log" for Poisson regression
+        \item ROSE
+        \item ROCR
+        \item Dplyr
+        \item maps
+        \item ggplot2
+    \end{itemize}
+  \item[Decession Tree:] Following r-packages used for building a predictive model based on decision tree
+    \begin{itemize}
+        \item caret
+        \item rpart
+        \item rattle
+        \item ROSE
+        \item ROCR
+        \item RColorBrewer
+        \item party
+        \item partykit
+    \end{itemize}
+
+\end{description}
+
+
+
+R Shiny Packages for building interactive dashboards
+\begin{itemize}
+  \item leaflet
+  \item maps
+  \item ggmap
+  \item gridExtra
+  \item htmlwidgets
+  \item reshape2
+\end{itemize}
+
+R Server used to deploy predictive model on Tableau to build dyanmic and easy to user dashboard
+
+\section{Hardware Specifications}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[!htb]
+\centering
+\caption{System configurations used to carry out this research}
+\label{osc4}
+\begin{tabular}{|p{3cm}|p{5cm}|p{5cm}|}
+\toprule
+\textbf{Specification}    & \textbf{System 1 - Lenovo Yoga 500}   & \textbf{System 2 - Dell Inspiron 15} \\ \midrule
+\textbf{Operating System} & Windows 10 Professional               & Windows 7 Professional               \\
+\textbf{Processor}        & Intel(R) Core(TM) i3-5005CU @ 2.00GHz & Intel(R) Core(TM) i3-3217U @ 1.80GHz \\
+\textbf{RAM}              & 4.00 GB                               & 4.00 GB                              \\
+\textbf{System Type}      & 64-bit OS, x64-Based Processor        & 32 -bit Operating System             \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
 \section{Data}\label{ch4.3}
-\section{}\label{}
+\section{Implementation}\label{}
+\section{Deployment \& Connection Setup}
