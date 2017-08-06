@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  6 AUG 2017 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  6 AUG 2017 17:45
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -664,7 +664,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--120
  []
 
 [15] [16 <./simpledt.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
+Underfull \hbox (badness 10000) in paragraph at lines 130--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--134
 
  []
 
@@ -763,10 +773,10 @@ Missing character: There is no ™ in font cmti12!
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5234 strings out of 493333
- 72935 string characters out of 3129710
- 152366 words of memory out of 3000000
- 8514 multiletter control sequences out of 15000+200000
+ 5238 strings out of 493333
+ 72999 string characters out of 3129710
+ 152424 words of memory out of 3000000
+ 8517 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
  40i,9n,33p,1773b,3208s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -780,7 +790,7 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users
 onts/cm/cmti12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (43 pages, 287508 bytes).
+Output written on thesis.pdf (43 pages, 288254 bytes).
 PDF statistics:
  176 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
