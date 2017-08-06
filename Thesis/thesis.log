@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  6 AUG 2017 16:22
-=======
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  6 AUG 2017 15:42
-=======
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  6 AUG 2017 16:07
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  6 AUG 2017 15:30
->>>>>>> bac7b8b82e23c16a08db37ae947ef2b1eb89237a
->>>>>>> 9250b6b73647ee536e064cd7a805dcb86a9f1265
->>>>>>> 084550cafa0f636a7a62b1ae723219237f42c4d0
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  6 AUG 2017 16:33
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -638,12 +626,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--120
 
  []
 
-[15] [16 <./simpledt.png>]) [17]
+[15] [16 <./simpledt.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+[17]) [18]
 \openout2 = `ch4.aux'.
 
  (ch4.tex
 Chapter 4.
-) [18
+) [19
 
 
 
@@ -652,7 +650,7 @@ Chapter 4.
 
  (ch5.tex
 Chapter 5.
-) [19
+) [20
 
 
 
@@ -661,7 +659,7 @@ Chapter 5.
 
  (ch6.tex
 Chapter 6.
-) [20
+) [21
 
 
 
@@ -670,14 +668,14 @@ Chapter 6.
 
  (ch7.tex
 Chapter 7.
-) [21
+) [22
 
 
 
-] [22]
+] [23]
 \openout2 = `appendix1.aux'.
 
- (appendix1.tex) [23
+ (appendix1.tex) [24
 
 
 
@@ -687,20 +685,20 @@ Chapter 7.
 ]
 \openout2 = `appendix2.aux'.
 
- (appendix2.tex) [24
+ (appendix2.tex) [25
 
 
 
 ]
 \openout2 = `glossary.aux'.
 
- (glossary.tex) [25
+ (glossary.tex) [26
 
 
 
 
 ]
-(thesis.bbl (babelbst.tex) [26
+(thesis.bbl (babelbst.tex) [27
 
 
 
@@ -711,15 +709,15 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [27] [28] [29]) [30]
+ [28] [29] [30]) [31]
 \openout2 = `notation.aux'.
 
- (notation.tex) [31
+ (notation.tex) [32
 
 
 
 ]
-(thesis.ind [32
+(thesis.ind [33
 
 
 
@@ -735,7 +733,7 @@ Missing character: There is no ™ in font cmti12!
 Here is how much of TeX's memory you used:
  5234 strings out of 493333
  70933 string characters out of 3139192
- 153366 words of memory out of 3000000
+ 152366 words of memory out of 3000000
  8514 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
@@ -748,9 +746,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (42 pages, 285011 bytes).
+Output written on thesis.pdf (43 pages, 286866 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
+ 176 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
