@@ -1,14 +1,10 @@
 %   MSc Business Analytics Dissertation
 %
-%   Title:     Aaa Bbbbbbb Cccccccccc
-%   Author(s): Xxxxxx Xxxxxxxxx and Yyy Yyyyyyyyy
+%   Title:     Enhancing credit analysis using GeoSpatial Technqiues
+%   Author(s): Deepak Gupta and Shruti Goyal
 %
 %   Chapter 3: Literature Review
 %
-%   Change Control:
-%   When     Who   Ver  What
-%   -------  ----  ---  --------------------------------------------------------------
-%   11Feb11  AB    0.1  Begun 
 %
 
 \chapter{Literature Review}\label{C.LitReview}
@@ -20,7 +16,11 @@ Suppose, a customer wants to buy a new car but he/she does not have access to su
 
 A mortgage or collateral is an instrument that applicant has to pay back with predefined series of payments to the bank and financial institutions. Over a duration of time, an applicant needs to repay the loan inclusive of interest amount in order to free his/her mortgage. In case, if an applicant is not able to repay the loan within predetermined time, then the bank can recover their money by selling or putting it for auction the mortgage. The most common type of mortgage is residential mortgages were applicant gives his/her house to banks and in a case of no repayment then a bank will claim the house to recover the balance amount of the loan. This will give a bank a security that their lent amount is not at risk and over the years they will get back their lent money one way or the other. Mortgages come in various different forms. Most commonly used mortgage types are Fixed Rate Mortgage where applicant repays the loan amount on a fixed rate throughout the period determined and Adjustable Rate Mortgage where interest rate varies as per the changes in market interest rates. Our work is based on analysis of residential mortgages with varied interest types which will be discussed in later sections.\\
 
-Put \textbf{Photo of loan application process folw chart}
+\begin{figure}
+\includegraphics[width=\textwidth]{LAP.jpg}
+\caption{Loan Application Flow Chart  
+Source: http://libertyrva.com}
+\end{figure}
 
 Before analysing data based on residential mortgages, one needs to understand the process of giving a loan. Depending upon the requirement an applicant applies for a loan by filling an application form with all the necessary details required by the bank. Bank officials then analyse the application and may ask an applicant for additional information; after evaluation, bank approves or disapproves the loan. Next, borrower and bank sign an agreement that states all the terms and conditions of the loan including determined interest rate and type of mortgage. Lastly, loan amount will disburse and borrower will start repaying the instalments that constitute principal amount and interest amount for predetermined period of time.\\
 
@@ -41,7 +41,6 @@ One of the most important questions of borrowing and lending process of loan is 
 The primary objective of credit evaluation process is to compare and contrast characteristics of an applicant with other previous candidates who have repaid the loan amount. Bank will check candidate's profile with earlier candidates, if a profile is very much similar, then they will check if an applicant has repaid the loan on time. If a claimant did not default then the loan can be granted, if not then loan application will be rejected. \citet{crook1996credit} stated that there are two techniques for credit evaluation: Credit Scoring and Officials Subjective Assessment. Traditional judgement assessment method is entirely dependent on evaluator's experience and knowledge \citep{sullivan1981consumer,bailey2004consumer}. Subjective assessment is subjective and inconsistent, but on the other hand it can be successful, creditor's experience can be qualitative that helps in taking successful credit decisions.\\
 
 While in credit scoring method, creditors use their knowledge and historical information of the loan applications to form an evaluation model to determine creditworthiness. Credit scoring methods are consistent, and self-operated that includes quantitative measurements of applicant's credit score subjected to predictor variables such as employment duration or credit history. Also, credit scoring method provides an advantage to a bank to keep their good credit customers intact and to improve customer service. Consequently, this process has been criticized because data that has been used consists of some assumptions to evolve model statistically.\\
-
 \subsection{Advantages and Disadvantages of Credit Scoring}
 In \citep{crook1996credit}, Crook said that credit scoring process does not require too much information because the process the model has been statistically developed for a particular set of variables; on the other hand, subjective assessment does not have any variable reduction method because of no statistical importance. Credit scoring method reduces bias by inspecting rejected applications; it will keep score how rejected applicants would have behaved if they have given the loan. It considered both good and bad credit players and built a model on a large number of applications compared to traditional methods. Scoring models also contain a significant number of relevant variables that show a correlation between variables and payment behavior. A significant advantage of this approach is its reusability; the process can be used multiple time over the same data set with accuracy. Scoring models reduce processing cost and time with efficiency and ease decision-making process.\\
 
@@ -66,19 +65,11 @@ An applicant credit score is generated using credit rating system based on vario
 
 Banks and financial instution sets their own cut-off for credit score based on the probablities of each applicant ability to repay or nonpayment of credit amount.\\
 
-Adding flow chart of Evaulation Process and Pricing
-\begin{figure}
-\includegraphics[width=\textwidth]{creditscoreflow.jpg}
-\end{figure}
-
 However, Credit Risk has recevied a lot of critisim as well from Academics and Researchers. \citet{al2002credit} has questioned about optimal method to evaulate customers? What are key variables or data points which an analyst must consider while evaulating customer applications? On what basis one can classify an applicant as good or bad?\\
-
 
 However, apart from above questions following can be useful when building a new credit scoring system. One should evaluate statistical techniques or algorithm by its accuracy to correctly classify historical portfolios into good or bad credit from creditors file. Also, Banks and Financial institution's identified factors that can influence the prediction of credit and loan quality by gathering all possible information from customer applications form, bank transactions history and previous credit history. Credit Analysts analysis of all these information to decide what all variables or characteristics to be included in final the credit model.\\
 
-
 One of the principal objectives of credit scoring system is to assist Banks and Financial Institutions to streamline their credit management procedure and policy that will enable analysts with an efficient tool which will provide fast and accurate analysis of credit.On the longer run, such tool helps banks to avoid bad credit and scale up bank revenues and profit by selling more financial products to customers.\\
-
 
 \section{Diffrrerent Technology in Credit Risk:}
 
@@ -106,7 +97,6 @@ Neural networks       & \cite{demuth2008neural,west2000neural,gately1995neural,p
 
 
 \textbf{Logistic Regression} has resemblance with Linear regression and it is also most commonly used statsical technique for building credit scoring system. Dichtomous nature of logistic regression outcome probablity (good credit or bad credit) makes it different from linear regression. \citep{hosmer1989best}. By using two or more independent variables, one can build the simple logistic regression model. However, logistic regressions with more than one independent variables use the maximum likelihood method to build credit scoring model.\citep{altland1999regression}. Logistic regression has been widely used in building credit scoring system in financial domain ( see for example: \citep{nie2011credit,abdou2008neural,bensic2005modelling,joanes1993reject}) \\
-
 
 \textbf{Decision trees} is one of the classification techniqeue in machine learning and widely using for buidling credit scoring system. Classification \& Regression Trees (CART) and C4.5 are two widely use decision tree algorithms \citep{kohavi2002data}. One of the firts model pioneered by \cite{breiman1984classification}.
 \begin{figure}

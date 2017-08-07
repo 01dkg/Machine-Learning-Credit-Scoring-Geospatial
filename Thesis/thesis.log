@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  7 AUG 2017 20:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  7 AUG 2017 21:09
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -360,18 +360,18 @@ LaTeX Warning: Unused global option(s):
 (notation.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
 
 ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
 kii"
@@ -442,17 +442,17 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 212.
+LaTeX Font Info:    Try loading font information for U+msa on input line 208.
 
 ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 212.
+LaTeX Font Info:    Try loading font information for U+msb on input line 208.
  ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 212.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 208.
  ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
@@ -494,7 +494,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
 
  []
 
@@ -509,29 +509,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--308
  (ch1.tex
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--17
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[1
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+) [1
 
 
 
-] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 82.
-
-("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
-
-[3]) [4]
+]
 \openout2 = `ch2.aux'.
 
  (ch2.tex
 Chapter 2.
-) [5
+) [2
 
 
 
@@ -541,30 +537,35 @@ Chapter 2.
  (ch3.tex
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-[6
+[3
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
+<LAP.jpg, id=46, 948.54375pt x 525.965pt>
+File: LAP.jpg Graphic file (type jpg)
+ <use LAP.jpg>
+Package pdftex.def Info: LAP.jpg used on input line 20.
+(pdftex.def)             Requested size: 398.33858pt x 220.8797pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[7] [8]
+[4] [5 <./LAP.jpg>]
 Overfull \hbox (24.51929pt too wide) in paragraph at lines 40--40
 []\OT1/cmr/bx/n/14.4 Traditional Sub-jec-tive As-sess-ment Sys-tem and Credit
  []
@@ -574,144 +575,138 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-<creditscoreflow.jpg, id=76, 899.36pt x 284.06125pt>
-File: creditscoreflow.jpg Graphic file (type jpg)
- <use creditscoreflow.jpg>
-Package pdftex.def Info: creditscoreflow.jpg used on input line 71.
-(pdftex.def)             Requested size: 398.33858pt x 125.8152pt.
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
 []\OT1/cmr/m/n/12 Linear Re-gres-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
 []\OT1/cmr/m/n/12 Discriminant
  []
 
-[13 <./creditscoreflow.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 
-Overfull \hbox (6.92114pt too wide) in paragraph at lines 105--106
+Overfull \hbox (6.92114pt too wide) in paragraph at lines 96--97
 []\OT1/cmr/bx/n/12 Discriminant Anal-y-sis: \OT1/cmr/m/n/12 In credit scor-ing 
 mod-els, a sta-tis-ti-cal anal-y-sis method
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+[12] <simpledt.png, id=75, 977.15062pt x 508.90125pt>
+File: simpledt.png Graphic file (type png)
+ <use simpledt.png>
+Package pdftex.def Info: simpledt.png used on input line 103.
+(pdftex.def)             Requested size: 398.33858pt x 207.45502pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--108
+
+ []
+
+[13 <./simpledt.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
-<simpledt.png, id=86, 977.15062pt x 508.90125pt>
-File: simpledt.png Graphic file (type png)
- <use simpledt.png>
-Package pdftex.def Info: simpledt.png used on input line 113.
-(pdftex.def)             Requested size: 398.33858pt x 207.45502pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--118
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
-[15] [16 <./simpledt.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
-
- []
-
-) [19]
+) [16]
 \openout2 = `ch4.aux'.
 
  (ch4.tex
@@ -721,7 +716,7 @@ Overfull \hbox (4.42546pt too wide) in paragraph at lines 28--29
 []\OT1/cmr/m/n/12 Following pack-ages used
  []
 
-[20
+[17
 
 
 
@@ -745,18 +740,18 @@ Overfull \hbox (7.54724pt too wide) in paragraph at lines 40--48
  [][] 
  []
 
-[21] [22]
+[18] [19]
 Overfull \hbox (19.17375pt too wide) in paragraph at lines 85--86
 \OT1/cmr/m/n/12 One can in-stall pack-eges in r stu-dio us-ing com-mon in-stall
 .packages(<packagename>) 
  []
 
-) [23] [24]
+) [20] [21]
 \openout2 = `ch5.aux'.
 
  (ch5.tex
 Chapter 5.
-) [25
+) [22
 
 
 
@@ -765,7 +760,7 @@ Chapter 5.
 
  (ch6.tex
 Chapter 6.
-) [26
+) [23
 
 
 
@@ -774,14 +769,14 @@ Chapter 6.
 
  (ch7.tex
 Chapter 7.
-) [27
+) [24
 
 
 
-] [28]
+] [25]
 \openout2 = `appendix1.aux'.
 
- (appendix1.tex) [29
+ (appendix1.tex) [26
 
 
 
@@ -791,20 +786,20 @@ Chapter 7.
 ]
 \openout2 = `appendix2.aux'.
 
- (appendix2.tex) [30
+ (appendix2.tex) [27
 
 
 
 ]
 \openout2 = `glossary.aux'.
 
- (glossary.tex) [31
+ (glossary.tex) [28
 
 
 
 
 ]
-(thesis.bbl (babelbst.tex) [32
+(thesis.bbl (babelbst.tex) [29
 
 
 
@@ -815,48 +810,50 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [33] [34] [35]) [36]
+ [30] [31] [32]) [33]
 \openout2 = `notation.aux'.
 
- (notation.tex) [37
+ (notation.tex
+
+LaTeX Warning: Reference `Th.FF.fte.field' on page 34 undefined on input line 2
+5.
+
+) [34
 
 
 
-]
-(thesis.ind [38
-
-
-
-
-]) (thesis.aux (preface.aux) (ch1.aux) (ch2.aux) (ch3.aux)
+] (thesis.ind) (thesis.aux (preface.aux) (ch1.aux) (ch2.aux) (ch3.aux)
 (ch4.aux) (ch5.aux) (ch6.aux) (ch7.aux) (appendix1.aux) (appendix2.aux)
-(glossary.aux) (notation.aux)) )
+(glossary.aux) (notation.aux))
+
+LaTeX Warning: There were undefined references.
+
+ )
 (\end occurred inside a group at level 2)
 
-### simple group (level 2) entered at line 19 ({)
+### simple group (level 2) entered at line 15 ({)
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5233 strings out of 493333
- 72963 string characters out of 3129710
- 152367 words of memory out of 3000000
- 8514 multiletter control sequences out of 15000+200000
+ 5213 strings out of 493333
+ 72545 string characters out of 3129710
+ 153333 words of memory out of 3000000
+ 8497 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 40i,10n,33p,1772b,3205s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,10n,33p,1772b,3199s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmbx12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Users/Shruti/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Users/Shruti/AppDa
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users
-/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12
 .pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmti12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (48 pages, 298241 bytes).
+onts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (44 pages, 328490 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
+ 175 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
