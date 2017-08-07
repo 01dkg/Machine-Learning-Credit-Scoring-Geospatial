@@ -18,55 +18,29 @@ To assist financial auditor or stakeholder at financial institutions and banks, 
 
 
 \section{Software \& Tools Specifications}\label{ch4.2}
+
+\textbf{Software \& Tools used:}
+
 \begin{description}
-  \item[Data Processing:] MS Excel 2017 and Alteryx Desginer Professional 2017
-  \item[Version Control:] Github
-  \item[Dashboard:] Tableau and R Shiny
-  \item[Data Storage:] Github and Google Drive
+  \item[Data Processing:] MS Excel 2017 and Alteryx Desginer 11.0
+  \item[Version Control:] Github (github.com)
+  \item[Dashboard:] Tableau Professional 10.2 and R Stuio 1.0.36
+  \item[Data Storage:] Github Pages (https://pages.github.com/) and Google Drive
 \end{description}
 
-Predictive modeling in R Studio using following packages
+\textbf{R Packages used:}\\
+
 \begin{description}
-  \item[Packages required Logisctic Regression Model:] Following packages used to building simple regression and logistic regression based model for predictig the good or bad loan portfolio.
-   \begin{itemize}
-        \item readr
-        \item glm() with class set to "bionomial" for Logistic Regression and "log" for Poisson regression
-        \item ROSE
-        \item ROCR
-        \item Dplyr
-        \item maps
-        \item ggplot2
-    \end{itemize}
-  \item[Decession Tree:] Following r-packages used for building a predictive model based on decision tree
-    \begin{itemize}
-        \item caret
-        \item rpart
-        \item rattle
-        \item ROSE
-        \item ROCR
-        \item RColorBrewer
-        \item party
-        \item partykit
-    \end{itemize}
+  \item[Packages required Logisctic Regression Model:] Following packages used to building simple regression and logistic regression based model for predictig the good or bad loan portfolio: glm() with class set to "bionomial" for Logistic Regression and "log" for Poisson regression, ROSE, ROCR, Dplyr, maps, ggplot2
+  \item[Decession Tree:] Following r-packages used for building a predictive model based on decision tree: caret, rpart, rattle, ROSE, ROCR, RColorBrewer, party, partykit
 
 \end{description}
 
-
-
-R Shiny Packages for building interactive dashboards
-\begin{itemize}
-  \item leaflet
-  \item maps
-  \item ggmap
-  \item gridExtra
-  \item htmlwidgets
-  \item reshape2
-\end{itemize}
-
-R Server used to deploy predictive model on Tableau to build dyanmic and easy to user dashboard
+\textbf{R Shinny:} R Shiny packages for building interactive dashboards: leaflet, maps, ggmap, gridExtra, htmlwidgets, reshape2. To deploy predictive model on Tableau to build dyanmic and easy to user dashboard R Server used
 
 \section{Hardware Specifications}
 
+One may replicate our work on his/her computer having minimum hardware specifications outlined here. This research work carried on following machines. 
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
 \begin{table}[!htb]
@@ -85,5 +59,47 @@ R Server used to deploy predictive model on Tableau to build dyanmic and easy to
 
 
 \section{Data}\label{ch4.3}
+
+\subsection{Overview}
+One requires the accessibility to the right set of data, and information on which statistical and modelling techniques can be applied to start any data oriented research in analytics domain, KPMG, Ireland provided data set. This data set contains historical data of various loan portfolios that maintained by each branch of banks or financial institutions. Also, this dataset has geospatial information about credit account along with their transactional history of previous loans. Credit scoring model requires being trained with a correct set of characteristics variables to provide the prediction with high accuracy.
+
+\subsection{Data Dictionary}
+
+Comprehensive list of all variables at one palce
+Start with number of variables and how big is data
+
+
+how we selected only  few
+
+\begin{description}
+  \item[ContractRef]: Is a unique reference number assigned for each portfolio
+  \item[InterestType]: There are three of interest rate Fixed, Tracker and Variable
+  \item[MortgageType]: Wheather property is bought for "buy-to-let" or "owner occpied"
+  \item[NewLoan]: Is portfolio is new or existing?
+  \item[ProbationaryLoans]: Yes/No
+  \item[DefaultedLoans]: Yes/No
+  \item[LTVCategory]: 5 Level categorized pre-assigned to each loan account
+  \item[CreditRating]: Each account is rated from 1-5 scale on the basis of credit union policy
+  \item[MortgageYears]: How many years mortgage has been taken
+  \item[CreditRatingMovement]
+  \item[LTV]: Loan to Value 
+  \item[LoanBalance]: How much loan amount is left to repay
+  \item[InterestIncome]: How much bank is earning 
+  \item[PropertyValue]
+  \item[AnnualPYMT]
+  \item[AddressLatitude]
+  \item[AddressLongitude]
+  \item[County]
+  \item[InArrears]
+  \item[ArrearsCategory]
+\end{description}
+
+
 \section{Implementation}\label{}
+
+One can install packeges in r studio using common  install.packages(<packagename>)
+
+what is r packages, how to use r packege, which are essential
+
+This packages is used for following purpose
 \section{Deployment \& Connection Setup}
