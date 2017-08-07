@@ -22,6 +22,7 @@
 \contentsline {section}{\numberline {4.2}Software \& Tools Specifications}{20}
 \contentsline {section}{\numberline {4.3}Hardware Specifications}{21}
 \contentsline {section}{\numberline {4.4}Data}{22}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {4.4.1}Overview}{22}
 \contentsline {subsection}{\numberline {4.4.2}Data Dictionary}{22}
 \contentsline {section}{\numberline {4.5}Implementation}{23}
@@ -39,3 +40,20 @@
 \contentsline {chapter}{Bibliography}{31}
 \contentsline {chapter}{List of Notation}{36}
 \contentsline {chapter}{Index}{37}
+=======
+\contentsline {section}{\numberline {4.5}Implementation}{22}
+\contentsline {section}{\numberline {4.6}Deployment \& Connection Setup}{22}
+\contentsline {chapter}{\numberline {5}Results}{23}
+\contentsline {section}{\numberline {5.1}Introduction}{23}
+\contentsline {chapter}{\numberline {6}Discussion}{24}
+\contentsline {section}{\numberline {6.1}Introduction}{24}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{25}
+\contentsline {section}{\numberline {7.1}Introduction}{26}
+\contentsline {chapter}{Detailed tables}{27}
+\contentsline {chapter}{Appendices}{27}
+\contentsline {chapter}{Program code}{28}
+\contentsline {chapter}{Glossary}{29}
+\contentsline {chapter}{Bibliography}{30}
+\contentsline {chapter}{List of Notation}{35}
+\contentsline {chapter}{Index}{36}
+>>>>>>> 5e02b8966a3e17e949d228974e94ab3dab929dcd
