@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  7 AUG 2017 14:25
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  6 AUG 2017 23:04
->>>>>>> 5e02b8966a3e17e949d228974e94ab3dab929dcd
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  7 AUG 2017 19:00
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -714,12 +710,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--139
  (ch4.tex
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-
-Overfull \hbox (4.42546pt too wide) in paragraph at lines 34--35
+Overfull \hbox (4.42546pt too wide) in paragraph at lines 28--29
 []\OT1/cmr/m/n/12 Following pack-ages used
  []
 
@@ -727,55 +718,38 @@ Overfull \hbox (4.42546pt too wide) in paragraph at lines 34--35
 
 
 
-<<<<<<< HEAD
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-=======
-] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
->>>>>>> 5e02b8966a3e17e949d228974e94ab3dab929dcd
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 []\OT1/cmr/bx/n/12 Operating
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
->>>>>>> 5e02b8966a3e17e949d228974e94ab3dab929dcd
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
 []\OT1/cmr/m/n/12 Intel(R) Core(TM) i3-
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
->>>>>>> 5e02b8966a3e17e949d228974e94ab3dab929dcd
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 []\OT1/cmr/m/n/12 Intel(R) Core(TM) i3-
  []
 
 
-<<<<<<< HEAD
-Overfull \hbox (7.54724pt too wide) in paragraph at lines 50--58
-=======
-Overfull \hbox (7.54724pt too wide) in paragraph at lines 76--84
->>>>>>> 5e02b8966a3e17e949d228974e94ab3dab929dcd
+Overfull \hbox (7.54724pt too wide) in paragraph at lines 40--48
  [][] 
  []
 
 [21] [22]
-Overfull \hbox (19.17375pt too wide) in paragraph at lines 93--94
+Overfull \hbox (19.17375pt too wide) in paragraph at lines 85--86
 \OT1/cmr/m/n/12 One can in-stall pack-eges in r stu-dio us-ing com-mon in-stall
 .packages(<packagename>) 
  []
 
-) [23]
+) [23] [24]
 \openout2 = `ch5.aux'.
 
  (ch5.tex
 Chapter 5.
-) [24
+) [25
 
 
 
@@ -784,7 +758,7 @@ Chapter 5.
 
  (ch6.tex
 Chapter 6.
-) [25
+) [26
 
 
 
@@ -793,14 +767,14 @@ Chapter 6.
 
  (ch7.tex
 Chapter 7.
-) [26
+) [27
 
 
 
-] [27]
+] [28]
 \openout2 = `appendix1.aux'.
 
- (appendix1.tex) [28
+ (appendix1.tex) [29
 
 
 
@@ -810,20 +784,20 @@ Chapter 7.
 ]
 \openout2 = `appendix2.aux'.
 
- (appendix2.tex) [29
+ (appendix2.tex) [30
 
 
 
 ]
 \openout2 = `glossary.aux'.
 
- (glossary.tex) [30
+ (glossary.tex) [31
 
 
 
 
 ]
-(thesis.bbl (babelbst.tex) [31
+(thesis.bbl (babelbst.tex) [32
 
 
 
@@ -834,15 +808,15 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [32] [33] [34]) [35]
+ [33] [34] [35]) [36]
 \openout2 = `notation.aux'.
 
- (notation.tex) [36
+ (notation.tex) [37
 
 
 
 ]
-(thesis.ind [37
+(thesis.ind [38
 
 
 
@@ -857,28 +831,12 @@ Missing character: There is no ™ in font cmti12!
 ### bottom level 
 Here is how much of TeX's memory you used:
  5233 strings out of 493333
-<<<<<<< HEAD
- 70961 string characters out of 3139192
-=======
  72963 string characters out of 3129710
->>>>>>> 5e02b8966a3e17e949d228974e94ab3dab929dcd
  152367 words of memory out of 3000000
  8514 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
-<<<<<<< HEAD
  40i,10n,33p,1772b,3205s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (47 pages, 296111 bytes).
-=======
- 40i,9n,33p,1772b,3205s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmbx12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Users/Shruti/AppData/Local/Prog
@@ -889,10 +847,9 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users
 onts/cm/cmti12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (46 pages, 293657 bytes).
->>>>>>> 5e02b8966a3e17e949d228974e94ab3dab929dcd
+Output written on thesis.pdf (48 pages, 297485 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
+ 191 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
