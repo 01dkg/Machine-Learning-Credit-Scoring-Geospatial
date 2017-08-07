@@ -1,0 +1,97 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+## Load the library
+library(dplyr)
+library(maps)
+library(reshape2)
+library(leaflet)
+library(gridExtra)
+library(htmlwidgets)
+library(leaflet.extras)
+library(magrittr)
+
+MapDisplay <- leaflet() %>%
+  addProviderTiles(providers$CartoDB.Positron)
+
+popupInfo <- paste(testDatav2[['ContractRef']], 
+                   ", ", 
+                   testDatav2[['LoanBalance']],
+                   "<br>", 
+                   "Average January Temp in F:  ",
+                   testDatav2[['DefaultedLoans']],
+                   "<br>", 
+                   "Credit Rating:  ",
+                   testDatav2[['CreditRating']],
+                   "<br>", 
+                   "LTV:  ",
+                   testDatav2[['LTV']],
+                   "<br>", 
+                   "Property Value:  ",
+                   testDatav2[['PropertyValue']],
+                   sep='')
+
+purrr::walk(
+  testDatav2$DefaultedLoans,
+  function(DefaultedLoans) {
+    MapDisplay <<- MapDisplay %>%
+      addHeatmap(
+        data = testDatav2,
+        layerId =  testDatav2$DefaultedLoans, group =  testDatav2$DefaultedLoans,
+        lng=~AddressLongitude, lat=~AddressLatitude,
+        blur = 20, max = 0.05, radius = 15)
+  })
+
+MapDisplay <- leaflet(testDatav2) %>% 
+  setView(-6.24420, 53.30867, zoom = 12) %>%
+  addLayersControl(baseGroups = testDatav2$CreditRating,
+    options = layersControlOptions(collapsed = FALSE))
+#%>%
+ # addHeatmap(lng = ~AddressLongitude, lat = ~AddressLatitude, intensity = ~LoanBalance,
+  #           blur = 20, max = 0.05, radius = 20,layerId = testDatav2$CreditRating, group = testDatav2$CreditRating)
+
+
+
+
+  #addMarkers(testDatav2$AddressLongitude, testDatav2$AddressLatitude, popup= ~ popupInfo,
+                                     # options = popupOptions(closeButton = TRUE),
+                                      #clusterOptions = markerClusterOptions(), 
+                                     # icon = weatherIcon)
+#MapDisplay
+saveWidget(MapDisplay, file="Display.html")
+```
+
+#Map
+```{r}
+library(dplyr)
+library(maps)
+library(reshape2)
+library(leaflet)
+library(gridExtra)
+library(htmlwidgets)
+library(leaflet.extras)
+library(magrittr)
+
+leaf <- leaflet() %>%
+  addProviderTiles(providers$CartoDB.Positron)
+
+leaf %>%
+  setView(-0.094106, 51.515, 14) %>%
+  addLayersControl(
+    baseGroups = testDatav2$DefaultedLoans,
+    options = layersControlOptions(collapsed = FALSE)
+  )%>%
+ addHeatmap(
+        data = testDatav2[['CreditRating']],
+        layerId = testDatav2$CreditRating, group = testDatav2$CreditRating,
+        lng=testDatav2$AddressLongitude, lat=testDatav2$AddressLatitude,
+        blur = 20, max = 0.05, radius = 15)
+```
+

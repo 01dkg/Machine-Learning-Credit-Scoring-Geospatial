@@ -57,7 +57,7 @@ simpleglmv2 <- glm(DefaultedLoans ~ CreditRating + InterestIncome +
 
 summary(simpleglmv2)
 
-
+save(simpleglmv2, file = "Model/simpleglmv2.rda")
 ```
 ###Running simple GLM Model on test data of predict loan default
 
@@ -122,10 +122,10 @@ popupInfo <- paste(testDatav2[['ContractRef']],
                    ", ", 
                    testDatav2[['LoanBalance']],
                    "<br>", 
-                   "Average January Temp in F:  ",
+                   "Has Defaulted?:  ",
                    testDatav2[['DefaultedLoans']],
                    "<br>", 
-                   "Credit Rating:  ",
+                   "Credit Rating is::  ",
                    testDatav2[['CreditRating']],
                    "<br>", 
                    "LTV:  ",
@@ -144,7 +144,7 @@ MapDisplay <- leaflet(testDatav2) %>%
                                       clusterOptions = markerClusterOptions(), 
                                       icon = weatherIcon)
 MapDisplay
-#saveWidget(MapDisplay, file="MapDisplay.html")
+saveWidget(MapDisplay, file="MapDisplayv2.html")
 
 ```
 ####################################
