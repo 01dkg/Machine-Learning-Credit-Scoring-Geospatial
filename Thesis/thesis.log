@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  7 AUG 2017 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  7 AUG 2017 20:29
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -508,18 +508,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  (ch1.tex
 Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
 [1
 
 
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 81.
- ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+] [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 82.
+
+("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
- [2]) [3] [4]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
+
+[3]) [4]
 \openout2 = `ch2.aux'.
 
  (ch2.tex
@@ -847,7 +854,7 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users
 onts/cm/cmti12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (48 pages, 297485 bytes).
+Output written on thesis.pdf (48 pages, 298241 bytes).
 PDF statistics:
  191 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

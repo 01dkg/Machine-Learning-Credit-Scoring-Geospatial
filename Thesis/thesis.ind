@@ -1,6 +1,6 @@
 \begin{theindex}
 
-  \item algorithm, \textbf{2}, \textit{2}, \seealso{metaheuristic}{3}
+  \item algorithm, \seealso{metaheuristic}{3}, \textbf{3}, \textit{3}
     \subitem Newton, 2
   \item \textbf{algorithm}, 2
   \item \textit{algorithm}, 2
@@ -11,7 +11,7 @@
 
   \indexspace
 
-  \item metaheuristic, \textbf{2}, \see{algorithm}{3}
+  \item metaheuristic, \see{algorithm}{3}, \textbf{3}
 
   \indexspace
 
