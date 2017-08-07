@@ -15,34 +15,30 @@
 
 \section{Overview}\label{S.Ch4.opening}
 To assist financial auditor or stakeholder at financial institutions and banks, and to identify such loan portfolio which may default in future based on the geospatial information and financial data. This research work followed the KDD process which involves characteristics variables selection, perform data restructuring, data transformation and data mining for the deployment of a predictive model using visual analytics tools such as Tableau, QlikView, etc.
-
-
 \section{Software \& Tools Specifications}\label{ch4.2}
+<<<<<<< HEAD
 
 \textbf{Software \& Tools used:}
 
 
+=======
+Following is the list of tools and softwares that has been used while working on this project:
+>>>>>>> 7deba4bf74b66b42d4bbb86fd4ea96958ac97a06
 \begin{description}
   \item[Data Processing:] MS Excel 2017 and Alteryx Desginer 11.0
   \item[Version Control:] Github (github.com)
   \item[Dashboard:] Tableau Professional 10.2 and R Stuio 1.0.36
   \item[Data Storage:] Github Pages (https://pages.github.com/) and Google Drive
 \end{description}
-
-\textbf{R Packages used:}\\
-
+\textbf{R Packages used:}
 \begin{description}
   \item[Packages required Logisctic Regression Model:] Following packages used to building simple regression and logistic regression based model for predictig the good or bad loan portfolio: glm() with class set to "bionomial" for Logistic Regression and "log" for Poisson regression, ROSE, ROCR, Dplyr, maps, ggplot2
   \item[Decession Tree:] Following r-packages used for building a predictive model based on decision tree: caret, rpart, rattle, ROSE, ROCR, RColorBrewer, party, partykit
-
 \end{description}
-
-\textbf{R Shinny:} R Shiny packages for building interactive dashboards: leaflet, maps, ggmap, gridExtra, htmlwidgets, reshape2. To deploy predictive model on Tableau to build dyanmic and easy to user dashboard R Server used
+\textbf{R Shiny:} R Shiny packages for building interactive dashboards: leaflet, maps, ggmap, gridExtra, htmlwidgets, reshape2. To deploy predictive model on Tableau to build dyanmic and easy to user dashboard R Server used
 
 \section{Hardware Specifications}
-
 One may replicate our work on his/her computer having minimum hardware specifications outlined here. This research work carried on following machines. 
-% Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
 \begin{table}[!htb]
 \centering
@@ -65,34 +61,29 @@ One may replicate our work on his/her computer having minimum hardware specifica
 One requires the accessibility to the right set of data, and information on which statistical and modelling techniques can be applied to start any data oriented research in analytics domain, KPMG, Ireland provided data set. This data set contains historical data of various loan portfolios that maintained by each branch of banks or financial institutions. Also, this dataset has geospatial information about credit account along with their transactional history of previous loans. Credit scoring model requires being trained with a correct set of characteristics variables to provide the prediction with high accuracy.
 
 \subsection{Data Dictionary}
-
-Comprehensive list of all variables at one palce
-Start with number of variables and how big is data
-
-
-how we selected only  few
-
+Dataset format: .xlsx\\Number of attributes: 35\\Total number of records: 237,390\\
+All the variables and attributes have been carefully studied and analysed to decide what key factors will be used to develop the model. Below is the comprehensive list of all variables that has been chosen for the model creation:
 \begin{description}
-  \item[ContractRef]: Is a unique reference number assigned for each portfolio
-  \item[InterestType]: There are three of interest rate Fixed, Tracker and Variable
-  \item[MortgageType]: Wheather property is bought for "buy-to-let" or "owner occpied"
+  \item[ContractRef]: Unique reference number assigned to each portfolio
+  \item[InterestType]: There are three types of interest rate: Fixed, Tracker and Variable
+  \item[MortgageType]: Whether property is bought for "buy-to-let" or "owner occpied"
   \item[NewLoan]: Is portfolio is new or existing?
-  \item[ProbationaryLoans]: Yes/No
-  \item[DefaultedLoans]: Yes/No
+  \item[ProbationaryLoans]: Has loan been taken on probation?
+  \item[DefaultedLoans]: Classify if the loan has defaulted in the past
   \item[LTVCategory]: 5 Level categorized pre-assigned to each loan account
   \item[CreditRating]: Each account is rated from 1-5 scale on the basis of credit union policy
-  \item[MortgageYears]: How many years mortgage has been taken
-  \item[CreditRatingMovement]
-  \item[LTV]: Loan to Value 
-  \item[LoanBalance]: How much loan amount is left to repay
-  \item[InterestIncome]: How much bank is earning 
-  \item[PropertyValue]
-  \item[AnnualPYMT]
-  \item[AddressLatitude]
-  \item[AddressLongitude]
-  \item[County]
-  \item[InArrears]
-  \item[ArrearsCategory]
+  \item[MortgageYears]: How many years mortgage has been taken for?
+  \item[CreditRatingMovement]: Percentage that indicates how credit rating has moved from previous value for an application
+  \item[LTV]: Ratio of applied loan amount to property evaluation value 
+  \item[LoanBalance]: How much loan amount is left to repay?
+  \item[InterestIncome]: How much interest amount bank is earning?
+  \item[PropertyValue]: Recent property evaluation amount
+  \item[AnnualPYMT]: How much amount is getting repaid to the bank by the applicant annually?
+  \item[AddressLatitude]: Latitude value of the house on map
+  \item[AddressLongitude]: Longiitude value of the house on map
+  \item[County]: Name of the county where house is located
+  \item[InArrears]: Any amount that has not been paid earlier on time
+  \item[ArrearsCategory]: Category that defines duration of Arrears such as more than 90 days
 \end{description}
 
 

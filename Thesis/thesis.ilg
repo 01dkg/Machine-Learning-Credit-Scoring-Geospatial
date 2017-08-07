@@ -1,9 +1,4 @@
 This is makeindex, version 2.15 [MiKTeX 2.9.6210] (kpathsea + Thai support).
-Scanning input file thesis.idx....done (10 entries accepted, 0 rejected).
-Sorting entries....done (36 comparisons).
-Generating output file thesis.ind....
-## Warning (input = thesis.idx, line = 6; output = thesis.ind, line = 3):
-   -- Conflicting entries: multiple encaps for the same page under same key.
-done (20 lines written, 1 warning).
-Output written in thesis.ind.
+Scanning input file thesis.idx...done (0 entries accepted, 0 rejected).
+Nothing written in thesis.ind.
 Transcript written in thesis.ilg.
