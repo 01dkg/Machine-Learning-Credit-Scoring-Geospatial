@@ -68,7 +68,7 @@ testDatav2$prediction <- predict(simpleglmv2, newdata=testDatav2, type="response
 ###Testing Accuracy of glm() model
 ```{r}
 table(testDatav2$DefaultedLoans, as.numeric(testDatav2$prediction >= 0.5))
-
+write.csv(testDatav2, "Data/Data_Model2.csv")
 ```
 ### Accuracy
 ```{r}
@@ -280,5 +280,11 @@ fit <- ctree(DefaultedLoans ~ NewLoan + County + LoanBalance +
 plot (fit, main="Conditional Inference Tree")  # the ctreeprp(fit)
 
 ```
+#Adding Prediction variable in Dataset of Decision Tree
 
+```{r}
+dt_data_model <-testDatav2
+dt_data_model$PredictionDT <- predict(defaultLoanTree, testDatav2, type = 'class')
+write.csv(dt_data_model, "Data/dt_data_model.csv")
+```
 
