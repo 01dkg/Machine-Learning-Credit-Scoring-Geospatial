@@ -17,25 +17,6 @@
 \contentsline {chapter}{\numberline {4}Methodology}{17}
 \contentsline {section}{\numberline {4.1}Overview}{17}
 \contentsline {section}{\numberline {4.2}Software \& Tools Specifications}{17}
-<<<<<<< HEAD
-\contentsline {section}{\numberline {4.3}Data}{19}
-\contentsline {subsection}{\numberline {4.3.1}Overview}{19}
-\contentsline {subsection}{\numberline {4.3.2}Data Dictionary}{19}
-\contentsline {section}{\numberline {4.4}Implementation}{20}
-\contentsline {section}{\numberline {4.5}Deployment \& Connection Setup}{21}
-\contentsline {chapter}{\numberline {5}Results}{22}
-\contentsline {section}{\numberline {5.1}Introduction}{22}
-\contentsline {chapter}{\numberline {6}Discussion}{23}
-\contentsline {section}{\numberline {6.1}Introduction}{23}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{24}
-\contentsline {section}{\numberline {7.1}Introduction}{25}
-\contentsline {chapter}{Detailed tables}{26}
-\contentsline {chapter}{Appendices}{26}
-\contentsline {chapter}{Program code}{27}
-\contentsline {chapter}{Glossary}{28}
-\contentsline {chapter}{Bibliography}{29}
-\contentsline {chapter}{List of Notation}{34}
-=======
 \contentsline {section}{\numberline {4.3}Implementation}{19}
 \contentsline {subsection}{\numberline {4.3.1}Overview}{19}
 \contentsline {subsection}{\numberline {4.3.2}Data Set}{19}
@@ -43,19 +24,17 @@
 \contentsline {subsection}{\numberline {4.4.1}Data Extraction:}{21}
 \contentsline {subsection}{\numberline {4.4.2}Data Transformation}{24}
 \contentsline {subsection}{\numberline {4.4.3}Data Loading}{24}
-\contentsline {subsection}{\numberline {4.4.4}Algorithm Selection}{25}
-\contentsline {subsection}{\numberline {4.4.5}Model}{25}
-\contentsline {section}{\numberline {4.5}Deployment \& Connection Setup}{26}
-\contentsline {chapter}{\numberline {5}Results}{27}
-\contentsline {section}{\numberline {5.1}Introduction}{27}
-\contentsline {chapter}{\numberline {6}Discussion}{28}
-\contentsline {section}{\numberline {6.1}Introduction}{28}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{29}
-\contentsline {section}{\numberline {7.1}Introduction}{30}
-\contentsline {chapter}{Detailed tables}{31}
-\contentsline {chapter}{Appendices}{31}
-\contentsline {chapter}{Program code}{32}
-\contentsline {chapter}{Glossary}{33}
-\contentsline {chapter}{Bibliography}{34}
-\contentsline {chapter}{List of Notation}{39}
->>>>>>> 1842c3df842159f473fcc3cfab9d6614fd8fb8ab
+\contentsline {subsection}{\numberline {4.4.4}Model}{25}
+\contentsline {section}{\numberline {4.5}Deployment \& Connection Setup}{27}
+\contentsline {chapter}{\numberline {5}Results}{28}
+\contentsline {section}{\numberline {5.1}Introduction}{28}
+\contentsline {chapter}{\numberline {6}Discussion}{29}
+\contentsline {section}{\numberline {6.1}Introduction}{29}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{30}
+\contentsline {section}{\numberline {7.1}Introduction}{31}
+\contentsline {chapter}{Detailed tables}{32}
+\contentsline {chapter}{Appendices}{32}
+\contentsline {chapter}{Program code}{33}
+\contentsline {chapter}{Glossary}{34}
+\contentsline {chapter}{Bibliography}{35}
+\contentsline {chapter}{List of Notation}{40}
