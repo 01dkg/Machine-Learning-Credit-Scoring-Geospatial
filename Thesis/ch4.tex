@@ -19,8 +19,6 @@ To assist financial auditor or stakeholder at financial institutions and banks, 
 
 \textbf{Software \& Tools used:}
 
-
-=======
 Following is the list of tools and softwares that has been used while working on this project:
 \begin{description}
   \item[Data Processing:] MS Excel 2017 and Alteryx Desginer 11.0
@@ -54,14 +52,42 @@ One may replicate our work on his/her computer having minimum hardware specifica
 \end{table}
 
 
-\section{Data}\label{ch4.3}
+\section{Implementation}\label{ch4.3}
 
 \subsection{Overview}
-One requires the accessibility to the right set of data, and information on which statistical and modelling techniques can be applied to start any data oriented research in analytics domain, KPMG, Ireland provided data set. This data set contains historical data of various loan portfolios that maintained by each branch of banks or financial institutions. Also, this dataset has geospatial information about credit account along with their transactional history of previous loans. Credit scoring model requires being trained with a correct set of characteristics variables to provide the prediction with high accuracy.
+One requires the accessibility to the right set of data, and information on which statistical and modelling techniques can be applied to start any data oriented research in analytics domain, KPMG, Ireland provided data set. This data set contains historical data of various loan portfolios that maintained by each branch of banks or financial institutions. Also, this dataset has geospatial information about credit account along with their transactional history of previous loans. Credit scoring model requires being trained with a correct set of characteristics variables to provide the prediction with high accuracy.\\
 
-\subsection{Data Dictionary}
-Dataset format: .xlsx\\Number of attributes: 35\\Total number of records: 237,390\\
-All the variables and attributes have been carefully studied and analysed to decide what key factors will be used to develop the model. Below is the comprehensive list of all variables that has been chosen for the model creation:
+This project has been carried out in four stages as outlined below:
+\begin{itemize}
+  \item Data Selection \& Processing
+  \item Model Design \& Implementation
+  \item Testing
+  \item Deployment \& Visualizations
+\end{itemize}
+
+\subsection{Data Set}
+Dataset format: .xlsx\\
+Number of attributes: 35\\
+Total number of records: 237,390\\
+All the variables and attributes have been carefully studied and analysed to decide what key factors will be used to develop the model. Based on the availability of RAM on the current system, it was decided to build a model on selected characteristics variables. One may train the model with all possible variables as well if system hardware allows. Below is the list of variables in original dataset:
+
+\begin{verbatim}
+
+[1] "ContractRef"           "LoanBalance"    "InterestType"    
+[4] "ProbationaryLoans"     "MortgageType"   "NewLoan"         "NIM"  
+[8] "DefaultedLoans"        "CreditRating"   "InterestIncome"  "LTV"               
+[12] "LTVCategory"          "MortgageYears"  "PropertyValue"             
+[15] "MaturityDate"         "BookingDate"    "LastValuationDate"      
+[18] "County"               "Branch"         "Address"   
+[21] "Town"                 "InArrears"      "AddressLongitude" 
+[24] "AddressLatitude"      "DaysInArrears"  "ArrearsCategory"
+[27] "HousePriceMovement"   "ValueInArrears" "ValuationAgeYears"
+[30] "UpdatedPropertyValue" "LTVUpdated"     "LTVCategoryUpdated"
+[33] "CreditRatingMovement" "InterestRate"   "AnnualPYMT"
+
+\end{verbatim}
+
+Below is the comprehensive list of all variables that have been chosen for the model creation:
 \begin{description}
   \item[ContractRef]: Unique reference number assigned to each portfolio
   \item[InterestType]: There are three types of interest rate: Fixed, Tracker and Variable
@@ -88,9 +114,75 @@ All the variables and attributes have been carefully studied and analysed to dec
 
 \section{Implementation}\label{}
 
-One can install packeges in r studio using common  install.packages(<packagename>)
+\begin{figure}
+\includegraphics[width=\textwidth]{dw.jpg}
+\caption{Loan Application Flow Chart}{Source: http://libertyrva.com}
+\end{figure}
 
-what is r packages, how to use r packege, which are essential
 
-This packages is used for following purpose
+One can install packeges in r studio using common  install.packages(<packagename>).what is r packages, how to use r packege, which are essential. This packages is used for following purpose
+
+\subsection{Data Processing:} Prior building predictive model in R one, need to process and analyse the data. The primary objective is to identify any outliers and to normalise the available data set. \cite{sola1997importance}, observed that un-normalized data tends to increase square mean error and then deviate the model prediction. Therefore, it is important to treat data and normalised it's all variables so that model works with high precision and accuracy. One can also do data pre-processing using R as well, but Alteryx provides graphical user interface to select features and settings that makes whole data processing phase easy and fast\\
+
+\textbf{Alteryx Desginer} tool allow one to build workflow to prepare data from multiple data sources on the go and by using features such as 'Select', 'Random Sample', 'Transform' and 'Output' one can easily prepare data for the predictive model \citep{dinsmore2016self}. Alteryx can process large amount of dataset and optimized it to be ready for data modelling in R.
+
+\begin{center}
+\begin{figure}[ht]
+\includegraphics[width=\textwidth]{dataprocess.png}
+\centering
+\caption{Data Processing using Alteryx}{\textbf{Source:} Designed using in Alteryx Designer v11}
+\label{fig:dataprocessing}
+\end{figure}
+\end{center}
+
+In fig.\ref{fig:dataprocessing}, raw data has been read using \emph{Input tool}, then null values, white spaces etc removed using \emph{Cleansing Tool} and variables selection has been done using \emph{Select Tool}. To create train data set and test data set \emph{Random Sample \% tool}, which allows generating sample datasets.\\
+
+In Alteryx, there is no provision to normalize data. Processed data from Alteryx is loaded into \textbf{R Studio} for data normalization or scaling using in built functions such as scale($<variable>$) and log($<variable>$) on $LoanBalance$, $PropertyValue$, $InterestIncome$ and $AnnualPYMT$ as these variables are crucial paramters for credit scoring to make unbaised prediction model.\\
+
+\textbf{R Studio}: Data from Alteryx is loaded to R Studio for the development of prediction model. R is used to identify patterns or correlation in variables using \emph{ggplot2}, \emph{plot.ly}, \emph{leaflets}. Two predictive models have developed based Logistic Regression and Decision Tree algorithms and both models performance evaluated concerning accuracy. Trained model is saved on the hard drive and loaded in Tableau, and with the help of R Server, Tableau allows the user to build dynamic visualizations. In Tableau, calculated fields can dynamically invokes R enginge to perform calculations and then R results output values back to Tableau, so that visualizations can be designed.\\
+
+\subsection{Integration of R in Tableau:} 
+
+Local instance of R Server is deployed by installing \emph{Rserve} package from R console. To invoke R Server with following command:
+      \begin{verbatim}
+      install.packages("Rserve")
+      library(Rserve)
+      Rserve()
+      \end{verbatim}
+
+   In Tableau, go to \emph{Help} menu then 
+
+1. Install R Server from R Console and other required packages(Google list)
+2. Go to tableau extenal connection then enter localhost and port number
+3. Test Connection
+4. Use calculated field to write and load Prediction or Logistic Regression model
+5. Add further calculations based on the business requirment
+
+
+\subsection{Algorithm Selection}
+Accuracy reduced to 25\% after scaling variables. Compare difference between model performance and how it is improved.
+
+How we implemented the model
+
+Explaing Limitations of Algorithm and why one algo is better
+
+\subsection{Model}
+
+Limitations of data in real life application. Accuracy might vary
+
+As provided was made up due to confidentialy agreement. Data is generated from pre-defined formulas which made it look quite original but it could cover all possible scenarios of real life. For example, it failed to consider a scenario when a customer is defaulting while being in creting rating 1 (Good Credit). \\
+
+Intially, Logistic Regression and Decsion tree were giving accuracy of 99.31\% which is practially not possible in credit scoring. during this research work we found that various other researchers also pointed out that Logistic regression is much better modelling technique than any other statsical techqnique. For Instance Mr.x noted in work that neural network can work at par with logistic regression model provided that the target variable is predict result in yes or no.\\
+
+Similarly decision tree has other limitations with respect to number of possible nodes and leafs for making creteria. hence decision tree end with less number of rules. Mr. Y compared the performance of Decesion tree and LR and found LR performance is higher than 5\%
+
+As per dasssssssssssh paper 25 - 30\% error is expected in credit rating system because human nature is quite difficult to predict. Similar in this scenario it is quite complex to various parameter to consider to build solid system which have high accuracy. One of the leading bank in Ireland in past attempted to consider upto 600 parameter to all possible cases of credit using Artificial Intelligence 
+testiing of model.
+
+
+
+
 \section{Deployment \& Connection Setup}
+
+
+FUTURE SCOPE IS AI of this credit scoring
