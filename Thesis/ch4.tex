@@ -122,7 +122,7 @@ Below is the comprehensive list of all variables that have been chosen for the m
 
 One can install packeges in r studio using common  install.packages(<packagename>).what is r packages, how to use r packege, which are essential. This packages is used for following purpose
 
-\subsection{Data Processing:} Prior building predictive model in R one, need to process and analyse the data. The primary objective is to identify any outliers and to normalise the available data set. \cite{sola1997importance}, observed that un-normalized data tends to increase square mean error and then deviate the model prediction. Therefore, it is important to treat data and normalised it's all variables so that model works with high precision and accuracy. One can also do data pre-processing using R as well, but Alteryx provides graphical user interface to select features and settings that makes whole data processing phase easy and fast\\
+\subsection{Data Extraction:} Prior building predictive model in R one, need to process and analyse the data. The primary objective is to identify any outliers and to normalise the available data set. \cite{sola1997importance}, observed that un-normalized data tends to increase square mean error and then deviate the model prediction. Therefore, it is important to treat data and normalised it's all variables so that model works with high precision and accuracy. One can also do data pre-processing using R as well, but Alteryx provides graphical user interface to select features and settings that makes whole data processing phase easy and fast\\
 
 \textbf{Alteryx Desginer} tool allow one to build workflow to prepare data from multiple data sources on the go and by using features such as 'Select', 'Random Sample', 'Transform' and 'Output' one can easily prepare data for the predictive model \citep{dinsmore2016self}. Alteryx can process large amount of dataset and optimized it to be ready for data modelling in R.
 
@@ -137,27 +137,31 @@ One can install packeges in r studio using common  install.packages(<packagename
 
 In fig.\ref{fig:dataprocessing}, raw data has been read using \emph{Input tool}, then null values, white spaces etc removed using \emph{Cleansing Tool} and variables selection has been done using \emph{Select Tool}. To create train data set and test data set \emph{Random Sample \% tool}, which allows generating sample datasets.\\
 
+\subsection{Data Transformation}
 In Alteryx, there is no provision to normalize data. Processed data from Alteryx is loaded into \textbf{R Studio} for data normalization or scaling using in built functions such as scale($<variable>$) and log($<variable>$) on $LoanBalance$, $PropertyValue$, $InterestIncome$ and $AnnualPYMT$ as these variables are crucial paramters for credit scoring to make unbaised prediction model.\\
 
 \textbf{R Studio}: Data from Alteryx is loaded to R Studio for the development of prediction model. R is used to identify patterns or correlation in variables using \emph{ggplot2}, \emph{plot.ly}, \emph{leaflets}. Two predictive models have developed based Logistic Regression and Decision Tree algorithms and both models performance evaluated concerning accuracy. Trained model is saved on the hard drive and loaded in Tableau, and with the help of R Server, Tableau allows the user to build dynamic visualizations. In Tableau, calculated fields can dynamically invokes R enginge to perform calculations and then R results output values back to Tableau, so that visualizations can be designed.\\
 
-\subsection{Integration of R in Tableau:} 
 
-Local instance of R Server is deployed by installing \emph{Rserve} package from R console. To invoke R Server with following command:
+\subsection{Data Loading}
+\textbf{Integration of R in Tableau}: Processed and transformed data is loaded into Tableau for building business dashboards. Credit analyst or auditors will use the dashboard to identify locations where the most number of loan default happenings or identify those portfolios which have provided incorrect information, etc. business decisions can be made with the help of credit scoring dashboard.\\
+
+\textbf{Installtion of R Server:} Local instance of R Server is deployed by installing \emph{Rserve} package from R console. To invoke R Server with following command:
       \begin{verbatim}
       install.packages("Rserve")
       library(Rserve)
       Rserve()
       \end{verbatim}
 
-   In Tableau, go to \emph{Help} menu then 
+\textbf{Setting in Tableau}:\\
 
-1. Install R Server from R Console and other required packages(Google list)
-2. Go to tableau extenal connection then enter localhost and port number
-3. Test Connection
-4. Use calculated field to write and load Prediction or Logistic Regression model
-5. Add further calculations based on the business requirment
+In Tableau, go to \emph{Settings and Performance} under \emph{Help} menu and then select \emph{Manage External Service Connection}. Following settings are required to connect with R server:
+      \begin{verbatim}
+      Server: "localhost" or "127.0.0.1
+      Port: 6311
+      \end{verbatim}
 
+R scripts are written in calculated fields of Tableau to make calls to R using in built functions in Tableau such as \emph{SCRIPT\_STR} and \emph{SCRIPT\_REAL}
 
 \subsection{Algorithm Selection}
 Accuracy reduced to 25\% after scaling variables. Compare difference between model performance and how it is improved.
