@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  8 AUG 2017 12:40
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  12 AUG 2017 21:58
->>>>>>> 1842c3df842159f473fcc3cfab9d6614fd8fb8ab
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  12 AUG 2017 22:21
 entering extended mode
-**E:/KPMG/KPMG/Thesis/thesis.tex
-(E:/KPMG/KPMG/Thesis/thesis.tex
+**./thesis.tex
+(thesis.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls"
@@ -720,50 +716,26 @@ Chapter 4.
 
 
 ]
-<<<<<<< HEAD
-Overfull \hbox (4.42546pt too wide) in paragraph at lines 33--34
-=======
 Overfull \hbox (4.42546pt too wide) in paragraph at lines 31--32
->>>>>>> 1842c3df842159f473fcc3cfab9d6614fd8fb8ab
 []\OT1/cmr/m/n/12 Following pack-ages used
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 47--47
->>>>>>> 1842c3df842159f473fcc3cfab9d6614fd8fb8ab
 []\OT1/cmr/bx/n/12 Operating
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 48--48
->>>>>>> 1842c3df842159f473fcc3cfab9d6614fd8fb8ab
 []\OT1/cmr/m/n/12 Intel(R) Core(TM) i3-
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
->>>>>>> 1842c3df842159f473fcc3cfab9d6614fd8fb8ab
 []\OT1/cmr/m/n/12 Intel(R) Core(TM) i3-
  []
 
 
-<<<<<<< HEAD
-Overfull \hbox (7.54724pt too wide) in paragraph at lines 46--54
- [][] 
- []
-
-[18] [19]
-Overfull \hbox (19.17375pt too wide) in paragraph at lines 91--92
-=======
 Overfull \hbox (7.54724pt too wide) in paragraph at lines 44--52
  [][] 
  []
@@ -775,12 +747,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
 [18]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+
+("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
- [19]
+
+[19]
 Overfull \hbox (21.56163pt too wide) in paragraph at lines 88--88
 []\OT1/cmtt/m/n/12 [4] "ProbationaryLoans"     "MortgageType"   "NewLoan"      
    "NIM"[] 
@@ -805,7 +779,6 @@ Package pdftex.def Info: dw.jpg used on input line 118.
 (pdftex.def)             Requested size: 398.33858pt x 259.4906pt.
 
 Overfull \hbox (47.89568pt too wide) in paragraph at lines 123--124
->>>>>>> 1842c3df842159f473fcc3cfab9d6614fd8fb8ab
 \OT1/cmr/m/n/12 One can in-stall pack-eges in r stu-dio us-ing com-mon in-stall
 .packages(<packagename>).what
  []
@@ -833,6 +806,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
 [23 <./dataprocess.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
@@ -940,42 +918,24 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 5213 strings out of 493333
- 72545 string characters out of 3129710
- 153333 words of memory out of 3000000
- 8497 multiletter control sequences out of 15000+200000
+ 5250 strings out of 493333
+ 73242 string characters out of 3129710
+ 153438 words of memory out of 3000000
+ 8527 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 40i,9n,33p,1772b,3199s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,9n,33p,1772b,3203s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmbx12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Users/Shruti/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Users/Shruti/AppDa
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users
-/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12
+/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (44 pages, 328245 bytes).
-=======
- 5251 strings out of 493333
- 71300 string characters out of 3139192
- 153436 words of memory out of 3000000
- 8527 multiletter control sequences out of 15000+200000
- 14468 words of font info for 59 fonts, out of 3000000 for 9000
- 1146 hyphenation exceptions out of 8191
- 40i,9n,33p,1790b,3203s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (49 pages, 420575 bytes).
->>>>>>> 1842c3df842159f473fcc3cfab9d6614fd8fb8ab
+onts/cm/cmti12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (49 pages, 420598 bytes).
 PDF statistics:
  197 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
