@@ -17,12 +17,11 @@
 \contentsline {chapter}{\numberline {4}Methodology}{17}
 \contentsline {section}{\numberline {4.1}Overview}{17}
 \contentsline {section}{\numberline {4.2}Software \& Tools Specifications}{17}
-\contentsline {section}{\numberline {4.3}Hardware Specifications}{18}
-\contentsline {section}{\numberline {4.4}Data}{18}
-\contentsline {subsection}{\numberline {4.4.1}Overview}{18}
-\contentsline {subsection}{\numberline {4.4.2}Data Dictionary}{19}
-\contentsline {section}{\numberline {4.5}Implementation}{20}
-\contentsline {section}{\numberline {4.6}Deployment \& Connection Setup}{21}
+\contentsline {section}{\numberline {4.3}Data}{19}
+\contentsline {subsection}{\numberline {4.3.1}Overview}{19}
+\contentsline {subsection}{\numberline {4.3.2}Data Dictionary}{19}
+\contentsline {section}{\numberline {4.4}Implementation}{20}
+\contentsline {section}{\numberline {4.5}Deployment \& Connection Setup}{21}
 \contentsline {chapter}{\numberline {5}Results}{22}
 \contentsline {section}{\numberline {5.1}Introduction}{22}
 \contentsline {chapter}{\numberline {6}Discussion}{23}
