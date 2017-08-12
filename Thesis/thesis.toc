@@ -24,6 +24,7 @@
 \contentsline {subsection}{\numberline {4.4.1}Data Extraction:}{21}
 \contentsline {subsection}{\numberline {4.4.2}Data Transformation}{24}
 \contentsline {subsection}{\numberline {4.4.3}Data Loading}{24}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {4.4.4}Model}{25}
 \contentsline {section}{\numberline {4.5}Deployment \& Connection Setup}{27}
 \contentsline {chapter}{\numberline {5}Results}{28}
@@ -38,3 +39,20 @@
 \contentsline {chapter}{Glossary}{34}
 \contentsline {chapter}{Bibliography}{35}
 \contentsline {chapter}{List of Notation}{40}
+=======
+\contentsline {subsection}{\numberline {4.4.4}Algorithm Selection}{25}
+\contentsline {subsection}{\numberline {4.4.5}Model}{25}
+\contentsline {section}{\numberline {4.5}Deployment \& Connection Setup}{26}
+\contentsline {chapter}{\numberline {5}Results}{27}
+\contentsline {section}{\numberline {5.1}Introduction}{27}
+\contentsline {chapter}{\numberline {6}Discussion}{28}
+\contentsline {section}{\numberline {6.1}Introduction}{28}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{29}
+\contentsline {section}{\numberline {7.1}Introduction}{30}
+\contentsline {chapter}{Detailed tables}{31}
+\contentsline {chapter}{Appendices}{31}
+\contentsline {chapter}{Program code}{32}
+\contentsline {chapter}{Glossary}{33}
+\contentsline {chapter}{Bibliography}{34}
+\contentsline {chapter}{List of Notation}{39}
+>>>>>>> a96c056e5c88f6617ab0680f3794e7c31d9a48cc
