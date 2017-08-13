@@ -12,12 +12,38 @@
 %
 
 \chapter{Introduction}\label{C.intro}
-\emph{difference betwenn credit and loan - extending credit to someone grants them the ability to borrow while loan is act of borrowing.}
+One of the key activities of banking and financial institutions that enhance their quality and financial system, correct handling, and management of liabilities. The performance of those tasks is very crucial for country's economic development, that Irish government witnessed as Irish property bubble that happened in Celtic Tiger period (late 1990 - 2007). While assessing credit risk, it is essential to validate the accuracy and reliability of credit scores or credit rating for all participants. So, How do banks identify a default event: 1. Nonrepayment of the debt to the bank, 2. Repayment is due for more than 90days.\\
 
-One of the key activities of banking and financial institutions that enhance their quality and financial system, correct handling and management of liabilities. Performance of those tasks is very crucial for country's economic development, that was witnessed by Irish property bubble that happened in Celtic Tiger period (late 1990 - 2007).While assessing credit risk, it is essential to validate the accuracy and reliability of credit scores or credit rating for all participants. So, How do banks identify a default event: 1. Non repayment of the debt to the bank, 2. Repayment is due for more than 90days.\\\\
+This work will discuss predictive models for enhancement in credit analysis and assessment of residential mortgages registered in Ireland using geospatial locations. There have been many studies and researches on how to assess and analyze credit scoring or credit risk, but very few studies are present that describes assessment using geospatial data. This project will demonstrate how geospatial techniques can be used to enhance further credit analyses that empowers banks and financial institutions to take the much better decision on an application. This project will present predictive model that predicts probability of default and an interactive visualization highly focused on geospatial locations of residences registered in Ireland and bank's branch locations. The purpose of this visualization is to support decision maker to take a more effective decision whether to provide loan on a particular house mortgage or not with the use of predicted probability of default. Models for Credit analysis are developed with the use of decision trees using CART algorithm and logistic regression for binary response (dependent) variables. While building models, potential variables were selected based on Information Value statistics. Credibility and quality of the models were evaluated using approaches such as GINI statistics, prediction accuracy, and ROC (Receiver Operating Characteristic) curve.\\
 
+Credit assessment and analysis plays a crucial role in determining financial strength of businesses and risk estimation that are associated with credit. Following are the main purposes of assessment of credit:
+\begin{enumerate}
+\item Helps keeping track of the economy (macro economic perception) 
+\item Analyses and ensures stability of financial market (macro prudential perspective)
+\item Assessment of quality of collateral/mortgage (monetary policy)
+\end{enumerate}
 
+\section{Assumptions \& Challenges}
 
-Our work will describe models for enhancement of credit analysis of residential mortgages registered in Ireland. This project 
+KPMG provided made up data due to conidentiality agreement with their client. Data is generated from pre deined formulas that made data look like original real life data but it could not cover all possible real life scenarios. For example - Data only considers that an applicant will default if it has credit rating of 5 but data did not consider the scenario that an applicant may default if he\/she has a credit rating of 2,3,4 and even 1 in some cases. This depicts a constraint of given data over real life data.\\
 
+Below is a list of assumptions undertaken during the process of practicum:
+\begin{enumerate}
+\item Property prices have been considered as provided in the data by KPMG, there is no consideration of any time frame. For example, date when property valuation was done. 
+\item Geospatial data such as address latitude and address longitude is assumed to be correctly depicts geospatial location a property.
+\item A property is considered as a whole, number of apartments and number of floors are ignored. Latitude and longitude of a house consists of 2 floors is same.
+\item Dimensions of house and size of the house(number of rooms, bathrooms, lawn, etc) are not considered during model development.
+\item This project only focuses on residential properties not on commercial properties. 
+\item This project did not consider factors such as neighbourhood, amneties and demographics which affects the property price in the market. However, factors such as location, average price have been considered for predicting probability of default.
+\end{enumerate}
 
+\section{Outline}
+Below is the flow of the practicum which will give brief description of each chapter:
+\begin{list}
+\item Business Background
+\item Literature Review
+\item Methodology
+\item Results
+\item Discussion
+\item Conclusion and Future Work
+\end{list}

@@ -1,15 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: ch1.aux
-A level-1 auxiliary file: ch2.aux
-A level-1 auxiliary file: ch3.aux
-A level-1 auxiliary file: ch4.aux
-A level-1 auxiliary file: ch5.aux
-A level-1 auxiliary file: ch6.aux
-A level-1 auxiliary file: ch7.aux
-A level-1 auxiliary file: appendix1.aux
-A level-1 auxiliary file: appendix2.aux
-A level-1 auxiliary file: glossary.aux
-The style file: mscBA.bst
-A level-1 auxiliary file: notation.aux
-Database file #1: thesis.bib
+I found no \bibdata command---while reading file thesis.aux
+I found no \bibstyle command---while reading file thesis.aux
+(There were 2 error messages)
