@@ -256,6 +256,8 @@ library(stats)
 m2 <- glm(DefaultedLoans ~., family = "binomial", data = trainDatav2)
 \end{verbatim}
 
+<<<<<<< HEAD
+=======
 Next, model is trained with selective variables set and following code is used:
 
 \begin{verbatim}
@@ -265,6 +267,7 @@ simpleglmv2 <- glm(DefaultedLoans ~ CreditRating + InterestIncome +
     MortgageType + InArrears + County + AddressLatitude + AddressLongitude, 
     family = "binomial", data = trainDatav2)
 \end{verbatim}
+>>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
 
 Trained model is used to predict output for test dataset using following code:
 \begin{verbatim}

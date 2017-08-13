@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  13 AUG 2017 22:24
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  13 AUG 2017 22:35
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 entering extended mode
-**E:/KPMG/KPMG/Thesis/thesis.tex
-(E:/KPMG/KPMG/Thesis/thesis.tex
+**./thesis.tex
+(thesis.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
@@ -406,6 +410,7 @@ G,.JBIG2,.JB2,.eps]
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 209.
 
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -417,6 +422,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Try loading font information for U+lasy on input line 209.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+=======
+("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 209.
+ ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 209.
+ ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
@@ -471,7 +488,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--305
  (ch1.tex
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
@@ -480,16 +497,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-) [1
+[1
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
+ ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+ [3]) [4]
 \openout2 = `ch2.aux'.
 
  (ch2.tex
 Chapter 2.
-) [2
+) [5
 
 
 
@@ -508,7 +537,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-[3
+[6
 
 
 
@@ -517,7 +546,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-<Loanflowchart.jpg, id=46, 878.53218pt x 481.04718pt>
+<Loanflowchart.jpg, id=56, 878.53218pt x 481.04718pt>
 File: Loanflowchart.jpg Graphic file (type jpg)
  <use Loanflowchart.jpg>
 Package pdftex.def Info: Loanflowchart.jpg used on input line 20.
@@ -527,7 +556,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-[4] [5 <./Loanflowchart.jpg>]
+[7] [8 <./Loanflowchart.jpg>]
 Overfull \hbox (24.51929pt too wide) in paragraph at lines 41--41
 []\OT1/cmr/bx/n/14.4 Traditional Sub-jec-tive As-sess-ment Sys-tem and Credit
  []
@@ -537,7 +566,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-[6]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
@@ -547,7 +576,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
-[7]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
@@ -557,7 +586,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-[8]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
@@ -572,7 +601,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-[9]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
@@ -592,7 +621,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-[10]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
@@ -623,12 +652,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
-[11]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[12] <simpledt.png, id=75, 977.15062pt x 508.90125pt>
+[15] <simpledt.png, id=86, 977.15062pt x 508.90125pt>
 File: simpledt.png Graphic file (type png)
  <use simpledt.png>
 Package pdftex.def Info: simpledt.png used on input line 104.
@@ -638,12 +667,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--109
 
  []
 
-[13 <./simpledt.png>]
+[16 <./simpledt.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-[14]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
@@ -658,7 +687,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-[15]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
@@ -668,7 +697,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-) [16]
+) [19]
 \openout2 = `ch4.aux'.
 
  (ch4.tex
@@ -678,7 +707,7 @@ Overfull \hbox (4.42546pt too wide) in paragraph at lines 30--31
 []\OT1/cmr/m/n/12 Following pack-ages used
  []
 
-[17
+[20
 
 
 
@@ -707,14 +736,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[18]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 61.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
- [19]
+[21] [22]
 Overfull \hbox (21.56163pt too wide) in paragraph at lines 87--87
 []\OT1/cmtt/m/n/12 [4] "ProbationaryLoans"     "MortgageType"   "NewLoan"      
    "NIM"[] 
@@ -732,7 +754,7 @@ Overfull \hbox (3.03662pt too wide) in paragraph at lines 87--87
 ated"[] 
  []
 
-[20]
+[23]
 Missing character: There is no â in font cmtt12!
 Missing character: There is no € in font cmtt12!
 Missing character: There is no ˜ in font cmtt12!
@@ -796,9 +818,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
+<<<<<<< HEAD
 
 Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
+=======
+[24]
+Overfull \hbox (83.31166pt too wide) in paragraph at lines 150--150
+[] \OT1/cmtt/m/n/12 $ LoanBalance         : num [1:36696, 1] -0.647 -0.297 1.41
+8 -0.986 -1.32 ...[] 
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
  []
 
 [24 <./dataprocess.png>]
@@ -833,6 +862,14 @@ Overfull \hbox (15.38663pt too wide) in paragraph at lines 267--267
 ncome +[] 
  []
 
+<<<<<<< HEAD
+=======
+<ETL.jpg, id=116, 963.6pt x 542.025pt>
+File: ETL.jpg Graphic file (type jpg)
+ <use ETL.jpg>
+Package pdftex.def Info: ETL.jpg used on input line 156.
+(pdftex.def)             Requested size: 398.33858pt x 224.0595pt.
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 
 Overfull \hbox (64.78665pt too wide) in paragraph at lines 267--267
 []    \OT1/cmtt/m/n/12 MortgageType + InArrears + County + AddressLatitude + Ad
@@ -845,11 +882,16 @@ Overfull \hbox (3.03662pt too wide) in paragraph at lines 273--273
 tav2,[] 
  []
 
+<<<<<<< HEAD
 [28 <./logistic.jpg>]
 Overfull \hbox (46.26164pt too wide) in paragraph at lines 313--313
 []\OT1/cmtt/m/n/12 defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County +
  LoanBalance[] 
  []
+=======
+[25] <dataprocess.png, id=120, 530.73282pt x 243.15843pt>
+File: dataprocess.png Graphic file (type png)
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 
 
 Overfull \hbox (27.73663pt too wide) in paragraph at lines 313--313
@@ -863,8 +905,13 @@ Overfull \hbox (46.26164pt too wide) in paragraph at lines 313--313
 trainDatav2,[] 
  []
 
+<<<<<<< HEAD
 
 Underfull \hbox (badness 10000) in paragraph at lines 319--320
+=======
+[26 <./ETL.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 
  []
 
@@ -880,6 +927,11 @@ Overfull \hbox (64.78665pt too wide) in paragraph at lines 353--353
 itRating=.arg2,[] 
  []
 
+<<<<<<< HEAD
+=======
+[27 <./dataprocess.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 
 Overfull \hbox (46.26164pt too wide) in paragraph at lines 353--353
 []\OT1/cmtt/m/n/12 InterestIncome=.arg3, LoanBalance =.arg4, AnnualPYMT =.arg5,
@@ -892,6 +944,7 @@ Overfull \hbox (64.78665pt too wide) in paragraph at lines 353--353
 County =.arg13,[] 
  []
 
+<<<<<<< HEAD
 
 Overfull \hbox (40.08664pt too wide) in paragraph at lines 353--353
 []\OT1/cmtt/m/n/12 AddressLatitude=.arg14, AddressLongitude=.arg15, PropertyVal
@@ -929,6 +982,54 @@ ty Value]))[]
  []
 
 ) [31]
+=======
+[28] [29] <logistic.jpg, id=135, 464.4853pt x 355.3275pt>
+File: logistic.jpg Graphic file (type jpg)
+ <use logistic.jpg>
+Package pdftex.def Info: logistic.jpg used on input line 231.
+(pdftex.def)             Requested size: 398.33858pt x 304.73529pt.
+
+[30 <./logistic.jpg>]
+Overfull \hbox (27.73663pt too wide) in paragraph at lines 249--249
+[]\OT1/cmtt/m/n/12 m2 <- glm(DefaultedLoans ~., family = "binomial", data = tra
+inDatav2)[] 
+ []
+
+
+Overfull \hbox (15.38663pt too wide) in paragraph at lines 261--261
+[]\OT1/cmtt/m/n/12 simpleglmv2 <- glm(DefaultedLoans ~ CreditRating + InterestI
+ncome +[] 
+ []
+
+
+Overfull \hbox (64.78665pt too wide) in paragraph at lines 261--261
+[]    \OT1/cmtt/m/n/12 MortgageType + InArrears + County + AddressLatitude + Ad
+dressLongitude,[] 
+ []
+
+
+Overfull \hbox (108.01167pt too wide) in paragraph at lines 267--267
+[]\OT1/cmtt/m/n/12 testDatav2$prediction <- predict(simpleglmv2, newdata=testDa
+tav2, type="response")[] 
+ []
+
+[31]
+Overfull \hbox (132.81691pt too wide) in paragraph at lines 280--282
+[]\OT1/cmr/m/n/12 Parameters for con-trol-ling the growth of tree. \OT1/cmr/bx/
+n/12 con-trol = rpart.control(minisplit=500,cp
+ []
+
+
+Overfull \hbox (1627.06242pt too wide) in paragraph at lines 303--303
+[]\OT1/cmtt/m/n/12 defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County +
+ LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + Cou
+nty + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLat
+itude + AddressLongitude ,method = "class",data=trainDatav2, control =  rpart.c
+ontrol(minisplit=5,cp = 0.001))[] 
+ []
+
+) [32]
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 \openout2 = `ch5.aux'.
 
  (ch5.tex
@@ -943,7 +1044,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
+<<<<<<< HEAD
 [32
+=======
+[33
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 
 
 
@@ -953,12 +1058,20 @@ Overfull \hbox (4.68655pt too wide) in paragraph at lines 33--35
 t-ter FU-TURE SCOPE
  []
 
+<<<<<<< HEAD
 ) [33]
+=======
+) [34]
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 \openout2 = `ch6.aux'.
 
  (ch6.tex
 Chapter 6.
+<<<<<<< HEAD
 ) [34
+=======
+) [35
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 
 
 
@@ -967,6 +1080,7 @@ Chapter 6.
 
  (ch7.tex
 Chapter 7.
+<<<<<<< HEAD
 ) [35
 
 
@@ -975,6 +1089,16 @@ Chapter 7.
 \openout2 = `appendix1.aux'.
 
  (appendix1.tex) [37
+=======
+) [36
+
+
+
+] [37]
+\openout2 = `appendix1.aux'.
+
+ (appendix1.tex) [38
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 
 
 
@@ -984,20 +1108,32 @@ Chapter 7.
 ]
 \openout2 = `appendix2.aux'.
 
+<<<<<<< HEAD
  (appendix2.tex) [38
+=======
+ (appendix2.tex) [39
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 
 
 
 ]
 \openout2 = `glossary.aux'.
 
+<<<<<<< HEAD
  (glossary.tex) [39
+=======
+ (glossary.tex) [40
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 
 
 
 
 ]
+<<<<<<< HEAD
 (thesis.bbl (babelbst.tex) [40
+=======
+(thesis.bbl (babelbst.tex) [41
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 
 
 
@@ -1008,15 +1144,26 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
+<<<<<<< HEAD
  [41] [42] [43]) [44]
+=======
+ [42] [43] [44]) [45]
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 \openout2 = `notation.aux'.
 
  (notation.tex
 
+<<<<<<< HEAD
 LaTeX Warning: Reference `Th.FF.fte.field' on page 45 undefined on input line 2
 5.
 
 ) [45
+=======
+LaTeX Warning: Reference `Th.FF.fte.field' on page 46 undefined on input line 2
+5.
+
+) [46
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
 
 
 
@@ -1033,6 +1180,7 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  5268 strings out of 493333
  71685 string characters out of 3139192
  153573 words of memory out of 3000000
@@ -1051,6 +1199,28 @@ ublic/amsfonts/symbols/msbm10.pfb>
 Output written on thesis.pdf (55 pages, 495091 bytes).
 PDF statistics:
  217 PDF objects out of 1000 (max. 8388607)
+=======
+ 5266 strings out of 493333
+ 73618 string characters out of 3129710
+ 153563 words of memory out of 3000000
+ 8540 multiletter control sequences out of 15000+200000
+ 14468 words of font info for 59 fonts, out of 3000000 for 9000
+ 1146 hyphenation exceptions out of 8191
+ 40i,9n,33p,1772b,3205s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Users/Shruti/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Users/Shruti/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users
+/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmti12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (56 pages, 497615 bytes).
+PDF statistics:
+ 220 PDF objects out of 1000 (max. 8388607)
+>>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
