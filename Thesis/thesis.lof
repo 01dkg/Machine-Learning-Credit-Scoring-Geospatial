@@ -4,15 +4,9 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Loan application flow chart}}{8}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Simple Decision Tree Source: \citep {zhang2010vertical}}}{16}
 \addvspace {10\p@ }
-<<<<<<< HEAD
-\contentsline {figure}{\numberline {4.1}{\ignorespaces ETL \& Data Model Architecture}}{23}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Data Processing using Alteryx}}{24}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Standard Logistic Regression}}{28}
-=======
 \contentsline {figure}{\numberline {4.1}{\ignorespaces ETL \& Data Model Architecture}}{26}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Data Processing using Alteryx}}{27}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Standard Logistic Regression}}{30}
->>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Standard Logistic Regression}}{31}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

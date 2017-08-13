@@ -2,46 +2,6 @@
 \contentsline {chapter}{List of tables}{vi}
 \contentsline {chapter}{List of algorithms}{vii}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-<<<<<<< HEAD
-\contentsline {chapter}{\numberline {2}Business Background}{2}
-\contentsline {section}{\numberline {2.1}Introduction}{2}
-\contentsline {chapter}{\numberline {3}Literature Review}{3}
-\contentsline {section}{\numberline {3.1}Introduction}{3}
-\contentsline {section}{\numberline {3.2}What is Credit Scoring?}{6}
-\contentsline {subsection}{\numberline {3.2.1}Traditional Subjective Assessment System and Credit Scoring}{7}
-\contentsline {subsection}{\numberline {3.2.2}Advantages and Disadvantages of Credit Scoring}{7}
-\contentsline {subsection}{\numberline {3.2.3}Is credit scoring process optimal?}{8}
-\contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{9}
-\contentsline {section}{\numberline {3.4}Diffrrerent Technology in Credit Risk:}{11}
-\contentsline {section}{\numberline {3.5}Geospatial}{14}
-\contentsline {section}{\numberline {3.6}Data Visualisation}{15}
-\contentsline {chapter}{\numberline {4}Methodology}{17}
-\contentsline {section}{\numberline {4.1}Overview}{17}
-\contentsline {section}{\numberline {4.2}Data Processing \& Analysis}{19}
-\contentsline {subsection}{\numberline {4.2.1}Overview}{19}
-\contentsline {subsection}{\numberline {4.2.2}Data Set}{19}
-\contentsline {section}{\numberline {4.3}Implementation}{23}
-\contentsline {subsection}{\numberline {4.3.1}Data Extraction}{23}
-\contentsline {subsection}{\numberline {4.3.2}Data Transformation}{24}
-\contentsline {subsection}{\numberline {4.3.3}Data Loading}{25}
-\contentsline {section}{\numberline {4.4}Predictive Model}{26}
-\contentsline {subsection}{\numberline {4.4.1}Overview}{26}
-\contentsline {subsection}{\numberline {4.4.2}Logistic Regression}{27}
-\contentsline {subsection}{\numberline {4.4.3}Decission Tree}{29}
-\contentsline {section}{\numberline {4.5}Tableau \& Dashboards}{30}
-\contentsline {chapter}{\numberline {5}Results}{32}
-\contentsline {section}{\numberline {5.1}Introduction}{32}
-\contentsline {chapter}{\numberline {6}Discussion}{34}
-\contentsline {section}{\numberline {6.1}Introduction}{34}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{35}
-\contentsline {section}{\numberline {7.1}Introduction}{36}
-\contentsline {chapter}{Detailed tables}{37}
-\contentsline {chapter}{Appendices}{37}
-\contentsline {chapter}{Program code}{38}
-\contentsline {chapter}{Glossary}{39}
-\contentsline {chapter}{Bibliography}{40}
-\contentsline {chapter}{List of Notation}{45}
-=======
 \contentsline {section}{\numberline {1.1}Assumptions \& Challenges}{2}
 \contentsline {section}{\numberline {1.2}Outline}{3}
 \contentsline {chapter}{\numberline {2}Business Background}{5}
@@ -61,24 +21,24 @@
 \contentsline {section}{\numberline {4.2}Data Processing \& Analysis}{22}
 \contentsline {subsection}{\numberline {4.2.1}Overview}{22}
 \contentsline {subsection}{\numberline {4.2.2}Data Set}{22}
-\contentsline {section}{\numberline {4.3}Implementation}{25}
-\contentsline {subsection}{\numberline {4.3.1}Data Extraction}{25}
+\contentsline {section}{\numberline {4.3}Implementation}{26}
+\contentsline {subsection}{\numberline {4.3.1}Data Extraction}{26}
 \contentsline {subsection}{\numberline {4.3.2}Data Transformation}{27}
 \contentsline {subsection}{\numberline {4.3.3}Data Loading}{28}
 \contentsline {section}{\numberline {4.4}Predictive Model}{29}
 \contentsline {subsection}{\numberline {4.4.1}Overview}{29}
-\contentsline {subsection}{\numberline {4.4.2}Logistic Regression}{29}
-\contentsline {subsection}{\numberline {4.4.3}Decission Tree}{31}
-\contentsline {chapter}{\numberline {5}Results}{33}
-\contentsline {section}{\numberline {5.1}Introduction}{33}
-\contentsline {chapter}{\numberline {6}Discussion}{35}
-\contentsline {section}{\numberline {6.1}Introduction}{35}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{36}
-\contentsline {section}{\numberline {7.1}Introduction}{37}
-\contentsline {chapter}{Detailed tables}{38}
-\contentsline {chapter}{Appendices}{38}
-\contentsline {chapter}{Program code}{39}
-\contentsline {chapter}{Glossary}{40}
-\contentsline {chapter}{Bibliography}{41}
-\contentsline {chapter}{List of Notation}{46}
->>>>>>> 09d109592a90527d06c1cec7a1d206dee4a56679
+\contentsline {subsection}{\numberline {4.4.2}Logistic Regression}{30}
+\contentsline {subsection}{\numberline {4.4.3}Decission Tree}{32}
+\contentsline {section}{\numberline {4.5}Tableau \& Dashboards}{33}
+\contentsline {chapter}{\numberline {5}Results}{35}
+\contentsline {section}{\numberline {5.1}Introduction}{35}
+\contentsline {chapter}{\numberline {6}Discussion}{37}
+\contentsline {section}{\numberline {6.1}Introduction}{37}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{38}
+\contentsline {section}{\numberline {7.1}Introduction}{39}
+\contentsline {chapter}{Detailed tables}{40}
+\contentsline {chapter}{Appendices}{40}
+\contentsline {chapter}{Program code}{41}
+\contentsline {chapter}{Glossary}{42}
+\contentsline {chapter}{Bibliography}{43}
+\contentsline {chapter}{List of Notation}{48}
