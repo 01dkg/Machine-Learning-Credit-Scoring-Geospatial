@@ -115,13 +115,16 @@ Below is the comprehensive list of all variables that have been chosen for the m
 Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	36696 obs. of  20 variables:
  $ ContractRef         : chr  "00000CONTR00111034" "00000CONTR00146183"
     "00000CONTR00175040" "00000CONTR00171901" ...
- $ InterestType        : Factor w/ 3 levels "Fixed","Tracker",..: 2 3 2
-     1 2 3 2 2 2 3 ...
- $ MortgageType        : Factor w/ 2 levels "Buy to Let","Owner Occupied":
-     1 2 2 2 2 2 2 2 2 2 ...
- $ NewLoan             : Factor w/ 2 levels "No","Yes": 1 1 1 1 1 1 1 1 2 1 ...
- $ ProbationaryLoans   : Factor w/ 2 levels "No","Yes": 2 1 1 1 1 1 1 1 1 1 ...
- $ DefaultedLoans      : Factor w/ 2 levels "No","Yes": 2 2 2 2 2 2 2 2 2 2 ...
+ $ InterestType        : Factor w/ 3 levels "Fixed","Tracker",..:
+    2 3 2 1 2 3 2 2 2 3 ...
+ $ MortgageType        : Factor w/ 2 levels "Buy to Let",
+     "Owner Occupied": 1 2 2 2 2 2 2 2 2 2 ...
+ $ NewLoan             : Factor w/ 2 levels "No","Yes":
+    1 1 1 1 1 1 1 1 2 1 ...
+ $ ProbationaryLoans   : Factor w/ 2 levels "No","Yes": 
+    2 1 1 1 1 1 1 1 1 1 ...
+ $ DefaultedLoans      : Factor w/ 2 levels "No","Yes":
+    2 2 2 2 2 2 2 2 2 2 ...
  $ LTVCategory         : Factor w/ 11 levels "> 100%","0 to 10%",..:
     11 8 11 5 3 5 9 11 9 9 ...
  $ CreditRating        : Factor w/ 5 levels "1","2","3","4",..:
@@ -129,21 +132,26 @@ Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	36696 obs. of  20 variables:
  $ MortgageYears       : int  31 30 30 29 29 32 28 35 29 31 ...
  $ CreditRatingMovement: int  3 0 0 0 2 -3 0 0 0 0 ...
  $ LTV                 : num  0.983 0.65 0.93 0.368 0.167 ...
- $ LoanBalance         : num [1:36696, 1] -0.647 -0.297 1.418 -0.986 -1.32 ...
+ $ LoanBalance         : num [1:36696, 1] -0.647 -0.297 1.418
+    -0.986 -1.32 ...
   ..- attr(*, "scaled:center")= num -1.05e-17
   ..- attr(*, "scaled:scale")= num 1
- $ InterestIncome      : num [1:36696, 1] -0.71 -0.132 1.53 -0.203 -1.1 ...
+ $ InterestIncome      : num [1:36696, 1] -0.71 -0.132 1.53 
+    -0.203 -1.1 ...
   ..- attr(*, "scaled:center")= num -2.14e-17
   ..- attr(*, "scaled:scale")= num 1
- $ PropertyValue       : num [1:36696, 1] -1.3 -0.311 0.779 -0.511 -0.205 ...
+ $ PropertyValue       : num [1:36696, 1] -1.3 -0.311 0.779
+    -0.511 -0.205 ...
   ..- attr(*, "scaled:center")= num -2.51e-17
   ..- attr(*, "scaled:scale")= num 1
- $ AnnualPYMT          : num [1:36696, 1] -1.2756 -0.2211 0.9057 -0.3651 ...
+ $ AnnualPYMT          : num [1:36696, 1] -1.2756 -0.2211 
+    0.9057 -0.3651 ...
   ..- attr(*, "scaled:center")= num 9.48e-18
   ..- attr(*, "scaled:scale")= num 1
  $ AddressLatitude     : num  52.4 53.3 52.8 53.7 53.4 ...
  $ AddressLongitude    : num  -7.7 -6.27 -6.74 -6.68 -6.21 ...
- $ InArrears           : Factor w/ 2 levels "No","Yes": 1 1 1 1 1 1 1 2 1 2 ...
+ $ InArrears           : Factor w/ 2 levels "No","Yes":
+    1 1 1 1 1 1 1 2 1 2 ...
  $ County              : Factor w/ 26 levels "Carlow","Cavan",..: 
       22 6 1 17 6 9 16 22 6 6 ...
  $ ArrearsCategory     : chr  "0" "0" "0" "0" ...
@@ -179,7 +187,7 @@ In Alteryx, there is no provision to normalize data. Processed data from Alteryx
 \textbf{R Studio}: Data from Alteryx is loaded to R Studio for the development of prediction model. R is used to identify patterns or correlation in variables using \emph{ggplot2}, \emph{plot.ly}, \emph{leaflets}. Two predictive models have developed based Logistic Regression and Decision Tree algorithms and both models performance evaluated concerning accuracy. Trained model is saved on the hard drive and loaded in Tableau, and with the help of R Server, Tableau allows the user to build dynamic visualizations. In Tableau, calculated fields can dynamically invokes R engine to perform calculations and then R results output values back to Tableau, so that visualizations can be designed.\\
 
 
-\subsection{Data Loading}
+\subsection{Data Loading}\label{tableau}
 \textbf{Integration of R in Tableau}: Processed and transformed data is loaded into Tableau for building business dashboards. Credit analyst or auditors will use the dashboard to identify locations where the most number of loan default happenings or identify those portfolios which have provided incorrect information, etc. business decisions can be made with the help of credit scoring dashboard.\\
 
 \textbf{Installtion of R Server:} Local instance of R Server is deployed by installing \emph{Rserve} package from R console. To invoke R Server with following command:
@@ -260,7 +268,8 @@ simpleglmv2 <- glm(DefaultedLoans ~ CreditRating + InterestIncome +
 
 Trained model is used to predict output for test dataset using following code:
 \begin{verbatim}
-testDatav2$prediction <- predict(simpleglmv2, newdata=testDatav2, type="response")
+testDatav2$prediction <- predict(simpleglmv2, newdata=testDatav2,
+type="response")
 \end{verbatim}
 
 
@@ -274,7 +283,7 @@ rpart(formula, data=, method=,control=)
   \item[formula =] DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude
   \item[data =]trainDatav2
   \item[method =] "Class"
-  \item [control =] Parameters for controlling the growth of tree. 
+  \item [control =] Parameters for controlling the growth of tree. \\
   \textbf{control =  rpart.control(minisplit=500,cp = 0.001))} At least 500 observations should be on a node before attempting a split and reduce the split fit factor by 0.001 before being attempted.
 \end{description}
 
@@ -290,7 +299,11 @@ library(RColorBrewer)		# Color selection for fancy tree plot
 library(party)					# Alternative decision tree algorithm
 library(partykit)				# Convert rpart object to BinaryTree
 library(caret)
-defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=trainDatav2, control =  rpart.control(minisplit=5,cp = 0.001))
+defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance 
++ PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County 
++ LTV + LTVCategory + InArrears + MortgageType + MortgageYears 
++ AddressLatitude + AddressLongitude ,method = "class",data=trainDatav2,
+control =  rpart.control(minisplit=5,cp = 0.001))
 
 save(fit, file = "Model/classificationTreeV2.rda")
 print(defaultLoanTree)
@@ -300,3 +313,45 @@ fancyRpartPlot(tree.1)
 \end{verbatim}
 
 Finally, Model performance of logistic regression and decision tree has been evaulated based on GINI, ROC metrics.
+
+\section{Tableau \& Dashboards} 
+
+Tableau professional software is used to develop the business dashboard that will be utilised by end users such as credit analyst, auditors, banks officials, etc. In Tableau, CSV file connector is used to connect to the data source ( sample dataset); then it is used to prepare various graphs and geospatial dashboard. Calculated field in Tableau allows making the call to R engine directly. By using calculated field options in Tableau, the predictive model is loaded into Tableau to make direct calls to R engine. Instructions and settings mentioned in section \ref{tableau} used as is to connect Tableau with R. \\
+
+In the dashboard, the user can select an origin city or region and distance (in miles) from that origin. Based on these inputs user will be able to take the business decision such as investigating a loan account when property value of a particular house is higher than the area average property value, or opening new branches near by to areas for which a high number of loan applications is coming in. Following calculations are performed in Tableau calculated fields:
+
+\textbf{Calculation for distance from Origin city}:
+\begin{verbatim}
+3959 * ACOS
+(
+  SIN(RADIANS(LOOKUP(AVG([Address Latitude]), First()))) * 
+  SIN(RADIANS(AVG([Address Latitude]))
+) +
+  COS(RADIANS(LOOKUP(AVG([Address Latitude]), First()))) * 
+  COS(RADIANS(AVG([Address Latitude]))) * 
+  COS(RADIANS(AVG([Address Longitude])) - RADIANS(LOOKUP(AVG([Address Longitude]),
+  First())))
+)
+\end{verbatim}
+
+
+\textbf{Calculation script for logistic regression model in Tableau:}
+\begin{verbatim}
+SCRIPT_REAL('mydata <- data.frame(DefaultedLoans=.arg1, CreditRating=.arg2,
+InterestIncome=.arg3, LoanBalance =.arg4, AnnualPYMT =.arg5, LTV =.arg6,
+InterestType=.arg7,NewLoan=.arg8, ProbationaryLoans = .arg9, 
+MortgageYears=.arg10,MortgageType=.arg11, InArrears =.arg12,County =.arg13,
+AddressLatitude=.arg14, AddressLongitude=.arg15, PropertyValue=.arg16);
+load("Model/simpleglmv2.rda")
+
+prob <- predict(simpleglmv2, newdata = mydata, type = "response")',
+ATTR([Defaulted Loans]),ATTR([Credit Rating]),AVG([Interest Income]),
+AVG([Loan Balance]),AVG([Annual PYMT]),AVG([LTV]),ATTR([Interest Type]),
+ATTR([New Loan]),ATTR([Probationary Loans]),AVG([Mortgage Years]),
+ATTR([Mortgage Type]),ATTR([In Arrears]),ATTR([County]),
+AVG([Address Latitude]),AVG([Address Longitude]),AVG([Property Value]))
+\end{verbatim}
+
+
+
+
