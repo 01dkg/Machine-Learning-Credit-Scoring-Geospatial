@@ -15,7 +15,6 @@
 
 \section{Overview}\label{S.Ch4.opening}
 To assist financial auditor or stakeholder at financial institutions and banks, and to identify such loan portfolio which may default in future based on the geospatial information and financial data. This research work followed the KDD process which involves characteristics variables selection, perform data restructuring, data transformation and data mining for the deployment of a predictive model using visual analytics tools such as Tableau, QlikView, etc.
-\section{Software \& Tools Specifications}\label{ch4.2}
 
 \textbf{Software \& Tools used:}
 
@@ -52,7 +51,7 @@ One may replicate our work on his/her computer having minimum hardware specifica
 \end{table}
 
 
-\section{Data}\label{ch4.3}
+\section{Data Processing \& Analysis}\label{ch4.3}
 
 \subsection{Overview}
 One requires the accessibility to the right set of data, and information on which statistical and modelling techniques can be applied to start any data oriented research in analytics domain, KPMG, Ireland provided data set. This data set contains historical data of various loan portfolios that maintained by each branch of banks or financial institutions. Also, this dataset has geospatial information about credit account along with their transactional history of previous loans. Credit scoring model requires being trained with a correct set of characteristics variables to provide the prediction with high accuracy.\\
@@ -61,7 +60,7 @@ This project has been carried out in four stages as outlined below:
 \begin{itemize}
   \item Data Selection \& Processing
   \item Model Design \& Implementation
-  \item Testing
+  \item Testing \& Model Results
   \item Deployment \& Visualizations
 \end{itemize}
 
@@ -111,18 +110,55 @@ Below is the comprehensive list of all variables that have been chosen for the m
   \item[ArrearsCategory]: Category that defines duration of Arrears such as more than 90 days
 \end{description}
 
+\textbf{Structure of the Data}
+\begin{verbatim}
+Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	36696 obs. of  20 variables:
+ $ ContractRef         : chr  "00000CONTR00111034" "00000CONTR00146183"
+    "00000CONTR00175040" "00000CONTR00171901" ...
+ $ InterestType        : Factor w/ 3 levels "Fixed","Tracker",..: 2 3 2
+     1 2 3 2 2 2 3 ...
+ $ MortgageType        : Factor w/ 2 levels "Buy to Let","Owner Occupied":
+     1 2 2 2 2 2 2 2 2 2 ...
+ $ NewLoan             : Factor w/ 2 levels "No","Yes": 1 1 1 1 1 1 1 1 2 1 ...
+ $ ProbationaryLoans   : Factor w/ 2 levels "No","Yes": 2 1 1 1 1 1 1 1 1 1 ...
+ $ DefaultedLoans      : Factor w/ 2 levels "No","Yes": 2 2 2 2 2 2 2 2 2 2 ...
+ $ LTVCategory         : Factor w/ 11 levels "> 100%","0 to 10%",..:
+    11 8 11 5 3 5 9 11 9 9 ...
+ $ CreditRating        : Factor w/ 5 levels "1","2","3","4",..:
+    4 2 4 4 3 2 3 3 4 2 ...
+ $ MortgageYears       : int  31 30 30 29 29 32 28 35 29 31 ...
+ $ CreditRatingMovement: int  3 0 0 0 2 -3 0 0 0 0 ...
+ $ LTV                 : num  0.983 0.65 0.93 0.368 0.167 ...
+ $ LoanBalance         : num [1:36696, 1] -0.647 -0.297 1.418 -0.986 -1.32 ...
+  ..- attr(*, "scaled:center")= num -1.05e-17
+  ..- attr(*, "scaled:scale")= num 1
+ $ InterestIncome      : num [1:36696, 1] -0.71 -0.132 1.53 -0.203 -1.1 ...
+  ..- attr(*, "scaled:center")= num -2.14e-17
+  ..- attr(*, "scaled:scale")= num 1
+ $ PropertyValue       : num [1:36696, 1] -1.3 -0.311 0.779 -0.511 -0.205 ...
+  ..- attr(*, "scaled:center")= num -2.51e-17
+  ..- attr(*, "scaled:scale")= num 1
+ $ AnnualPYMT          : num [1:36696, 1] -1.2756 -0.2211 0.9057 -0.3651 ...
+  ..- attr(*, "scaled:center")= num 9.48e-18
+  ..- attr(*, "scaled:scale")= num 1
+ $ AddressLatitude     : num  52.4 53.3 52.8 53.7 53.4 ...
+ $ AddressLongitude    : num  -7.7 -6.27 -6.74 -6.68 -6.21 ...
+ $ InArrears           : Factor w/ 2 levels "No","Yes": 1 1 1 1 1 1 1 2 1 2 ...
+ $ County              : Factor w/ 26 levels "Carlow","Cavan",..: 
+      22 6 1 17 6 9 16 22 6 6 ...
+ $ ArrearsCategory     : chr  "0" "0" "0" "0" ...
+\end{verbatim}
 
 \section{Implementation}\label{}
 
 \begin{figure}
-\includegraphics[width=\textwidth]{dw.jpg}
-\caption{Loan Application Flow Chart}{Source: http://libertyrva.com}
+\centering
+\includegraphics[width=\textwidth]{ETL.jpg}
+\caption{ETL \& Data Model Architecture}{\textbf{Source}: Designed using MS Office}
 \end{figure}
 
 
-One can install packeges in r studio using common  install.packages(<packagename>).what is r packages, how to use r packege, which are essential. This packages is used for following purpose
-
-\subsection{Data Extraction:} Prior building predictive model in R one, need to process and analyse the data. The primary objective is to identify any outliers and to normalise the available data set. \cite{sola1997importance}, observed that un-normalized data tends to increase square mean error and then deviate the model prediction. Therefore, it is important to treat data and normalised it's all variables so that model works with high precision and accuracy. One can also do data pre-processing using R as well, but Alteryx provides graphical user interface to select features and settings that makes whole data processing phase easy and fast\\
+\subsection{Data Extraction} Prior building predictive model in R one, need to process and analyse the data. The primary objective is to identify any outliers and to normalise the available data set. \cite{sola1997importance}, observed that un-normalized data tends to increase square mean error and then deviate the model prediction. Therefore, it is important to treat data and normalised it's all variables so that model works with high precision and accuracy. One can also do data pre-processing using R as well, but Alteryx provides graphical user interface to select features and settings that makes whole data processing phase easy and fast\\
 
 \textbf{Alteryx Desginer} tool allow one to build workflow to prepare data from multiple data sources on the go and by using features such as 'Select', 'Random Sample', 'Transform' and 'Output' one can easily prepare data for the predictive model \citep{dinsmore2016self}. Alteryx can process large amount of dataset and optimized it to be ready for data modelling in R.
 
@@ -140,7 +176,7 @@ In fig.\ref{fig:dataprocessing}, raw data has been read using \emph{Input tool},
 \subsection{Data Transformation}
 In Alteryx, there is no provision to normalize data. Processed data from Alteryx is loaded into \textbf{R Studio} for data normalization or scaling using in built functions such as scale($<variable>$) and log($<variable>$) on $LoanBalance$, $PropertyValue$, $InterestIncome$ and $AnnualPYMT$ as these variables are crucial paramters for credit scoring to make unbaised prediction model.\\
 
-\textbf{R Studio}: Data from Alteryx is loaded to R Studio for the development of prediction model. R is used to identify patterns or correlation in variables using \emph{ggplot2}, \emph{plot.ly}, \emph{leaflets}. Two predictive models have developed based Logistic Regression and Decision Tree algorithms and both models performance evaluated concerning accuracy. Trained model is saved on the hard drive and loaded in Tableau, and with the help of R Server, Tableau allows the user to build dynamic visualizations. In Tableau, calculated fields can dynamically invokes R enginge to perform calculations and then R results output values back to Tableau, so that visualizations can be designed.\\
+\textbf{R Studio}: Data from Alteryx is loaded to R Studio for the development of prediction model. R is used to identify patterns or correlation in variables using \emph{ggplot2}, \emph{plot.ly}, \emph{leaflets}. Two predictive models have developed based Logistic Regression and Decision Tree algorithms and both models performance evaluated concerning accuracy. Trained model is saved on the hard drive and loaded in Tableau, and with the help of R Server, Tableau allows the user to build dynamic visualizations. In Tableau, calculated fields can dynamically invokes R engine to perform calculations and then R results output values back to Tableau, so that visualizations can be designed.\\
 
 
 \subsection{Data Loading}
@@ -165,55 +201,102 @@ R scripts are written in calculated fields of Tableau to make calls to R using i
 
 
 
-\subsection{Model}
+\section{Predictive Model}
 
-Accuracy reduced to 25\% after scaling variables. Compare difference between model performance and how it is improved.
+\subsection{Overview}
+\cite{shmueli2011predictive}, define predictive analytics as the process of building statistical models using data mining algorithm with an objective to predict the outcome on future data set. A model is evaluated based on its predictive power or accuracy. As discussed in section \ref{c3.tech}, Logistic regression and Decision Tree are most commonly algorithms for building predictive models for credit scoring. Based on the requirement of predictive algorithms, data type of certain variables has been converted using below code:
 
-How we implemented the model
+\begin{verbatim}
+Datav2$CreditRating <- as.factor(Datav2$CreditRating)
+Datav2$InterestType <- as.factor(Datav2$InterestType)
+Datav2$MortgageType <- as.factor(Datav2$MortgageType)
+Datav2$NewLoan <- as.factor(Datav2$NewLoan)
+Datav2$ProbationaryLoans <- as.factor(Datav2$ProbationaryLoans)
+Datav2$LTVCategory <- as.factor(Datav2$LTVCategory)
+Datav2$InArrears <- as.factor(Datav2$InArrears)
+Datav2$County <- as.factor(Datav2$County)
+Datav2$DefaultedLoans <- as.factor(Datav2$DefaultedLoans)
+Datav2$LoanBalance <- scale(Datav2$LoanBalance)
+Datav2$PropertyValue <- scale(Datav2$PropertyValue)
+Datav2$InterestIncome <-scale(Datav2$InterestIncome)
+Datav2$AnnualPYMT <-scale(Datav2$AnnualPYMT
+\end{verbatim}
 
-Explaing Limitations of Algorithm and why one algo is better
+\subsection{Logistic Regression}
 
-\subsubsection*{Logistic Regression}
+Logistic regression is the most commonly used technique in credit scoring as it works on binary response variables, i.e., 0 or 1 \citep{hilbe2011logistic}. In fig. \ref{fig:logistic}, output results of standard logistics regression function lies between 0 and 1 only. In this research work output of response variable, i.e., the probability of default $p=1$ is considered as 'Yes' and $p=0$ is considered as 'No'. Probability is represented using logistic function (logit) and the probability of binary response variable based on the one, or more independent variables.
 
-Overview:
+\begin{center}
+\begin{figure}[ht]
+\includegraphics[width=\textwidth]{logistic.jpg}
+\centering
+\caption{Standard Logistic Regression}{\textbf{Source:} http://www.thefactmachine.com/wp-content/uploads/2015/03/13-Sigmoid.gif}
+\label{fig:logistic}
+\end{figure}
+\end{center}
 
-Settings:
+\subsubsection*{Model Settings:}
 
-Output:
+\textbf{Response Variable:} DefaultedLoans\\
+\textbf{Family (Function):} "Binomial" (Logit)
 
-Limitations:
+\subsubsection*{Model Implementation Details:}
+Initially, To train the model for all variables available in the dataset, but the model couldn't be trained because R engine failed to allocate 5.0GB vector space for the model. Following the line of code is used:
 
-Enhancement:
+\begin{verbatim}
+library(stats)
+m2 <- glm(DefaultedLoans ~., family = "binomial", data = trainDatav2)
+\end{verbatim}
 
+Next, model is trained with selective variables set and following code is used:
 
-\subsubsection*{Decission Tree}
+\begin{verbatim}
+simpleglmv2 <- glm(DefaultedLoans ~ CreditRating + InterestIncome + 
+    log(PropertyValue) + log(LoanBalance) + AnnualPYMT + LTV + 
+    InterestType + NewLoan + ProbationaryLoans + MortgageYears + 
+    MortgageType + InArrears + County + AddressLatitude + AddressLongitude, 
+    family = "binomial", data = trainDatav2)
+\end{verbatim}
 
-Overview:
-
-Settings:
-
-Output:
-
-Limitations:
-
-Enhancement:
-
-
-Limitations of data in real life application. Accuracy might vary
-
-As provided was made up due to confidentialy agreement. Data is generated from pre-defined formulas which made it look quite original but it could cover all possible scenarios of real life. For example, it failed to consider a scenario when a customer is defaulting while being in creting rating 1 (Good Credit). \\
-
-Intially, Logistic Regression and Decsion tree were giving accuracy of 99.31\% which is practially not possible in credit scoring. during this research work we found that various other researchers also pointed out that Logistic regression is much better modelling technique than any other statsical techqnique. For Instance Mr.x noted in work that neural network can work at par with logistic regression model provided that the target variable is predict result in yes or no.\\
-
-Similarly decision tree has other limitations with respect to number of possible nodes and leafs for making creteria. hence decision tree end with less number of rules. Mr. Y compared the performance of Decesion tree and LR and found LR performance is higher than 5\%
-
-As per dasssssssssssh paper 25 - 30\% error is expected in credit rating system because human nature is quite difficult to predict. Similar in this scenario it is quite complex to various parameter to consider to build solid system which have high accuracy. One of the leading bank in Ireland in past attempted to consider upto 600 parameter to all possible cases of credit using Artificial Intelligence 
-testiing of model.
-
-
-FUTURE SCOPE IS AI of this credit scoring
-
-\section{Deployment \& Connection Setup}
+Trained model is used to predict output for test dataset using following code:
+\begin{verbatim}
+testDatav2$prediction <- predict(simpleglmv2, newdata=testDatav2, type="response")
+\end{verbatim}
 
 
+\subsection{Decission Tree}
 
+As discussed in section \ref{logit}, Decision Trees has two most commonly used algorithm for credit scoring i.e. CART and C4.5. Classification and regression trees (CART) has been implemented using rpart() package available in R to build predicive model. rpart() syntax is \begin{verbatim}
+rpart(formula, data=, method=,control=)
+\end{verbatim}
+
+\begin{description}
+  \item[formula =] DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude
+  \item[data =]trainDatav2
+  \item[method =] "Class"
+  \item [control =] Parameters for controlling the growth of tree. 
+  \textbf{control =  rpart.control(minisplit=500,cp = 0.001))} At least 500 observations should be on a node before attempting a split and reduce the split fit factor by 0.001 before being attempted.
+\end{description}
+
+Packages such as rattle(), RColorBrewer(), etc. used to enhance the overall decision tree.
+
+\subsubsection*{Model Implementation Details:}
+
+\begin{verbatim}
+library(rpart)
+library(rattle)					# Fancy tree plot
+library(rpart.plot)			# Enhanced tree plots
+library(RColorBrewer)		# Color selection for fancy tree plot
+library(party)					# Alternative decision tree algorithm
+library(partykit)				# Convert rpart object to BinaryTree
+library(caret)
+defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=trainDatav2, control =  rpart.control(minisplit=5,cp = 0.001))
+
+save(fit, file = "Model/classificationTreeV2.rda")
+print(defaultLoanTree)
+prp(defaultLoanTree)
+tree.1 <- defaultLoanTree
+fancyRpartPlot(tree.1)
+\end{verbatim}
+
+Finally, Model performance of logistic regression and decision tree has been evaulated based on GINI, ROC metrics.

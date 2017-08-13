@@ -38,7 +38,7 @@ Datav2$LoanBalance <- scale(Datav2$LoanBalance)
 Datav2$PropertyValue <- scale(Datav2$PropertyValue)
 Datav2$InterestIncome <-scale(Datav2$InterestIncome)
 Datav2$AnnualPYMT <-scale(Datav2$AnnualPYMT)
-#str(Datav2)
+str(Datav2)
 
 ```
 
@@ -52,6 +52,13 @@ testDatav2 <- Datav2[dataPartition ==2,]
 
 ##GLM
 
+### Model trained with all variables
+```{r}
+
+m2 <- glm(DefaultedLoans ~., family = "binomial", data = trainDatav2)
+
+```
+
 ###Building Simple GLM Model
 ```{r}
 
@@ -64,7 +71,10 @@ simpleglmv2 <- glm(DefaultedLoans ~ CreditRating + InterestIncome +
 summary(simpleglmv2)
 
 save(simpleglmv2, file = "Model/simpleglmv2.rda")
+
 ```
+
+
 ###Running simple GLM Model on test data of predict loan default
 
 ```{r}
@@ -222,7 +232,7 @@ library(party)					# Alternative decision tree algorithm
 library(partykit)				# Convert rpart object to BinaryTree
 library(caret)
 library(tree)
-defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=trainDatav2, control =  rpart.control(minisplit=5,cp = 0.001))
+defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=trainDatav2, control =  rpart.control(minisplit=5000,cp = 0.001))
 
 save(fit, file = "Model/classificationTreeV2.rda")
 print(defaultLoanTree)

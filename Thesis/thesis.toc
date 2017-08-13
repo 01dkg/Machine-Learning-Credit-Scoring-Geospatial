@@ -16,43 +16,26 @@
 \contentsline {section}{\numberline {3.6}Data Visualisation}{15}
 \contentsline {chapter}{\numberline {4}Methodology}{17}
 \contentsline {section}{\numberline {4.1}Overview}{17}
-\contentsline {section}{\numberline {4.2}Software \& Tools Specifications}{17}
-\contentsline {section}{\numberline {4.3}Implementation}{19}
-\contentsline {subsection}{\numberline {4.3.1}Overview}{19}
-\contentsline {subsection}{\numberline {4.3.2}Data Set}{19}
-\contentsline {section}{\numberline {4.4}Implementation}{21}
-\contentsline {subsection}{\numberline {4.4.1}Data Extraction:}{21}
-\contentsline {subsection}{\numberline {4.4.2}Data Transformation}{24}
-\contentsline {subsection}{\numberline {4.4.3}Data Loading}{24}
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {4.4.4}Model}{25}
-\contentsline {section}{\numberline {4.5}Deployment \& Connection Setup}{27}
-\contentsline {chapter}{\numberline {5}Results}{28}
-\contentsline {section}{\numberline {5.1}Introduction}{28}
-\contentsline {chapter}{\numberline {6}Discussion}{29}
-\contentsline {section}{\numberline {6.1}Introduction}{29}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{30}
-\contentsline {section}{\numberline {7.1}Introduction}{31}
-\contentsline {chapter}{Detailed tables}{32}
-\contentsline {chapter}{Appendices}{32}
-\contentsline {chapter}{Program code}{33}
-\contentsline {chapter}{Glossary}{34}
-\contentsline {chapter}{Bibliography}{35}
-\contentsline {chapter}{List of Notation}{40}
-=======
-\contentsline {subsection}{\numberline {4.4.4}Algorithm Selection}{25}
-\contentsline {subsection}{\numberline {4.4.5}Model}{25}
-\contentsline {section}{\numberline {4.5}Deployment \& Connection Setup}{26}
-\contentsline {chapter}{\numberline {5}Results}{27}
-\contentsline {section}{\numberline {5.1}Introduction}{27}
-\contentsline {chapter}{\numberline {6}Discussion}{28}
-\contentsline {section}{\numberline {6.1}Introduction}{28}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{29}
-\contentsline {section}{\numberline {7.1}Introduction}{30}
-\contentsline {chapter}{Detailed tables}{31}
-\contentsline {chapter}{Appendices}{31}
-\contentsline {chapter}{Program code}{32}
-\contentsline {chapter}{Glossary}{33}
-\contentsline {chapter}{Bibliography}{34}
-\contentsline {chapter}{List of Notation}{39}
->>>>>>> a96c056e5c88f6617ab0680f3794e7c31d9a48cc
+\contentsline {section}{\numberline {4.2}Data Processing \& Analysis}{19}
+\contentsline {subsection}{\numberline {4.2.1}Overview}{19}
+\contentsline {subsection}{\numberline {4.2.2}Data Set}{19}
+\contentsline {section}{\numberline {4.3}Implementation}{22}
+\contentsline {subsection}{\numberline {4.3.1}Data Extraction}{22}
+\contentsline {subsection}{\numberline {4.3.2}Data Transformation}{24}
+\contentsline {subsection}{\numberline {4.3.3}Data Loading}{25}
+\contentsline {section}{\numberline {4.4}Predictive Model}{26}
+\contentsline {section}{\numberline {4.5}Overview}{26}
+\contentsline {subsection}{\numberline {4.5.1}Logistic Regression}{26}
+\contentsline {subsection}{\numberline {4.5.2}Decission Tree}{28}
+\contentsline {chapter}{\numberline {5}Results}{30}
+\contentsline {section}{\numberline {5.1}Introduction}{30}
+\contentsline {chapter}{\numberline {6}Discussion}{32}
+\contentsline {section}{\numberline {6.1}Introduction}{32}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{33}
+\contentsline {section}{\numberline {7.1}Introduction}{34}
+\contentsline {chapter}{Detailed tables}{35}
+\contentsline {chapter}{Appendices}{35}
+\contentsline {chapter}{Program code}{36}
+\contentsline {chapter}{Glossary}{37}
+\contentsline {chapter}{Bibliography}{38}
+\contentsline {chapter}{List of Notation}{43}
