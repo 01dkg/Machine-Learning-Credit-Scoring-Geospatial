@@ -1,69 +1,43 @@
-<<<<<<< HEAD
-=======
 \contentsline {chapter}{List of figures}{v}
 \contentsline {chapter}{List of tables}{vi}
 \contentsline {chapter}{List of algorithms}{vii}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {chapter}{\numberline {2}Business Background}{2}
-\contentsline {section}{\numberline {2.1}Introduction}{2}
-\contentsline {chapter}{\numberline {3}Literature Review}{3}
-\contentsline {section}{\numberline {3.1}Introduction}{3}
-\contentsline {section}{\numberline {3.2}What is Credit Scoring?}{6}
-\contentsline {subsection}{\numberline {3.2.1}Traditional Subjective Assessment System and Credit Scoring}{7}
-\contentsline {subsection}{\numberline {3.2.2}Advantages and Disadvantages of Credit Scoring}{7}
-\contentsline {subsection}{\numberline {3.2.3}Is credit scoring process optimal?}{8}
-\contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{9}
-\contentsline {section}{\numberline {3.4}Diffrrerent Technology in Credit Risk:}{11}
-\contentsline {section}{\numberline {3.5}Geospatial}{14}
-\contentsline {section}{\numberline {3.6}Data Visualisation}{15}
-\contentsline {chapter}{\numberline {4}Methodology}{17}
-\contentsline {section}{\numberline {4.1}Overview}{17}
-<<<<<<< HEAD
-\contentsline {section}{\numberline {4.2}Data Processing \& Analysis}{19}
-\contentsline {subsection}{\numberline {4.2.1}Overview}{19}
-\contentsline {subsection}{\numberline {4.2.2}Data Set}{19}
-\contentsline {section}{\numberline {4.3}Implementation}{22}
-\contentsline {subsection}{\numberline {4.3.1}Data Extraction}{22}
-\contentsline {subsection}{\numberline {4.3.2}Data Transformation}{24}
-\contentsline {subsection}{\numberline {4.3.3}Data Loading}{25}
-\contentsline {section}{\numberline {4.4}Predictive Model}{26}
-\contentsline {section}{\numberline {4.5}Overview}{26}
-\contentsline {subsection}{\numberline {4.5.1}Logistic Regression}{26}
-\contentsline {subsection}{\numberline {4.5.2}Decission Tree}{28}
-\contentsline {chapter}{\numberline {5}Results}{30}
-\contentsline {section}{\numberline {5.1}Introduction}{30}
-\contentsline {chapter}{\numberline {6}Discussion}{32}
-\contentsline {section}{\numberline {6.1}Introduction}{32}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{33}
-\contentsline {section}{\numberline {7.1}Introduction}{34}
-\contentsline {chapter}{Detailed tables}{35}
-\contentsline {chapter}{Appendices}{35}
-\contentsline {chapter}{Program code}{36}
-\contentsline {chapter}{Glossary}{37}
-\contentsline {chapter}{Bibliography}{38}
-\contentsline {chapter}{List of Notation}{43}
-=======
-\contentsline {section}{\numberline {4.2}Software \& Tools Specifications}{17}
-\contentsline {section}{\numberline {4.3}Data}{19}
-\contentsline {subsection}{\numberline {4.3.1}Overview}{19}
-\contentsline {subsection}{\numberline {4.3.2}Data Set}{19}
-\contentsline {section}{\numberline {4.4}Implementation}{21}
-\contentsline {subsection}{\numberline {4.4.1}Data Extraction:}{21}
-\contentsline {subsection}{\numberline {4.4.2}Data Transformation}{24}
-\contentsline {subsection}{\numberline {4.4.3}Data Loading}{24}
-\contentsline {subsection}{\numberline {4.4.4}Model}{25}
-\contentsline {section}{\numberline {4.5}Deployment \& Connection Setup}{27}
-\contentsline {chapter}{\numberline {5}Results}{28}
-\contentsline {section}{\numberline {5.1}Introduction}{28}
-\contentsline {chapter}{\numberline {6}Discussion}{29}
-\contentsline {section}{\numberline {6.1}Introduction}{29}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{30}
-\contentsline {section}{\numberline {7.1}Introduction}{31}
-\contentsline {chapter}{Detailed tables}{32}
-\contentsline {chapter}{Appendices}{32}
-\contentsline {chapter}{Program code}{33}
-\contentsline {chapter}{Glossary}{34}
-\contentsline {chapter}{Bibliography}{35}
-\contentsline {chapter}{List of Notation}{40}
->>>>>>> e2fa622e5d45dfa088a6984f67522ef747449fe1
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
+\contentsline {section}{\numberline {1.1}Assumptions \& Challenges}{2}
+\contentsline {section}{\numberline {1.2}Outline}{3}
+\contentsline {chapter}{\numberline {2}Business Background}{5}
+\contentsline {section}{\numberline {2.1}Introduction}{5}
+\contentsline {chapter}{\numberline {3}Literature Review}{6}
+\contentsline {section}{\numberline {3.1}Introduction}{6}
+\contentsline {section}{\numberline {3.2}What is Credit Scoring?}{9}
+\contentsline {subsection}{\numberline {3.2.1}Traditional Subjective Assessment System and Credit Scoring}{10}
+\contentsline {subsection}{\numberline {3.2.2}Advantages and Disadvantages of Credit Scoring}{10}
+\contentsline {subsection}{\numberline {3.2.3}Is credit scoring process optimal?}{11}
+\contentsline {section}{\numberline {3.3}Analysis and assessment of credit}{12}
+\contentsline {section}{\numberline {3.4}Diffrrerent Technology in Credit Risk:}{14}
+\contentsline {section}{\numberline {3.5}Geospatial}{17}
+\contentsline {section}{\numberline {3.6}Data Visualisation}{18}
+\contentsline {chapter}{\numberline {4}Methodology}{20}
+\contentsline {section}{\numberline {4.1}Overview}{20}
+\contentsline {section}{\numberline {4.2}Data Processing \& Analysis}{22}
+\contentsline {subsection}{\numberline {4.2.1}Overview}{22}
+\contentsline {subsection}{\numberline {4.2.2}Data Set}{22}
+\contentsline {section}{\numberline {4.3}Implementation}{25}
+\contentsline {subsection}{\numberline {4.3.1}Data Extraction}{25}
+\contentsline {subsection}{\numberline {4.3.2}Data Transformation}{27}
+\contentsline {subsection}{\numberline {4.3.3}Data Loading}{28}
+\contentsline {section}{\numberline {4.4}Predictive Model}{29}
+\contentsline {subsection}{\numberline {4.4.1}Overview}{29}
+\contentsline {subsection}{\numberline {4.4.2}Logistic Regression}{29}
+\contentsline {subsection}{\numberline {4.4.3}Decission Tree}{31}
+\contentsline {chapter}{\numberline {5}Results}{33}
+\contentsline {section}{\numberline {5.1}Introduction}{33}
+\contentsline {chapter}{\numberline {6}Discussion}{35}
+\contentsline {section}{\numberline {6.1}Introduction}{35}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{36}
+\contentsline {section}{\numberline {7.1}Introduction}{37}
+\contentsline {chapter}{Detailed tables}{38}
+\contentsline {chapter}{Appendices}{38}
+\contentsline {chapter}{Program code}{39}
+\contentsline {chapter}{Glossary}{40}
+\contentsline {chapter}{Bibliography}{41}
+\contentsline {chapter}{List of Notation}{46}

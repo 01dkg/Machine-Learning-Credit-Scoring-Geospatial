@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  13 AUG 2017 20:50
-=======
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  13 AUG 2017 20:20
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  13 AUG 2017 14:19
->>>>>>> e2fa622e5d45dfa088a6984f67522ef747449fe1
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  13 AUG 2017 22:27
 entering extended mode
-**E:/KPMG/KPMG/Thesis/thesis.tex
-(E:/KPMG/KPMG/Thesis/thesis.tex
+**./thesis.tex
+(thesis.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls"
@@ -363,7 +355,9 @@ Writing index file thesis.idx
 LaTeX Warning: Unused global option(s):
     [bibtotoc].
 
-No file thesis.aux.
+(thesis.aux (preface.aux) (ch1.aux) (ch2.aux) (ch3.aux) (ch4.aux) (ch5.aux)
+(ch6.aux) (ch7.aux) (appendix1.aux) (appendix2.aux) (glossary.aux)
+(notation.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 200.
@@ -448,49 +442,18 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 LaTeX Font Info:    Try loading font information for U+msa on input line 209.
-=======
->>>>>>> e2fa622e5d45dfa088a6984f67522ef747449fe1
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.208 \maketitle
-                 % this outputs the title using the \title and \author above
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
-LaTeX Font Info:    Try loading font information for U+msa on input line 208.
 
 ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-<<<<<<< HEAD
 LaTeX Font Info:    Try loading font information for U+msb on input line 209.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+lasy on input line 209.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
-=======
-LaTeX Font Info:    Try loading font information for U+msb on input line 208.
  ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 208.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 209.
  ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
->>>>>>> e2fa622e5d45dfa088a6984f67522ef747449fe1
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
@@ -505,12 +468,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [4] (thesis.lof
-
-Package natbib Warning: Citation `zhang2010vertical' on page v undefined on inp
-ut line 5.
-
-)
+ [4] (thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
@@ -526,7 +484,8 @@ ut line 5.
 \tf@loa=\write7
 \openout7 = `thesis.loa'.
 
- [7
+
+[7
 
 ]
 \openout2 = `preface.aux'.
@@ -569,376 +528,199 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
  []
 
 [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
+ ("E:\Users\Shruti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+ [3]) [4]
+\openout2 = `ch2.aux'.
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ (ch2.tex
+Chapter 2.
+) [5
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+]
+\openout2 = `ch3.aux'.
 
+ (ch3.tex
+Chapter 3.
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
-<<<<<<< HEAD
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-=======
-<Loanflowchart.jpg, id=46, 878.53218pt x 481.04718pt>
+ []
+
+[6
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+<Loanflowchart.jpg, id=56, 878.53218pt x 481.04718pt>
 File: Loanflowchart.jpg Graphic file (type jpg)
  <use Loanflowchart.jpg>
 Package pdftex.def Info: Loanflowchart.jpg used on input line 20.
 (pdftex.def)             Requested size: 398.33858pt x 218.12077pt.
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
 
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[7] [8 <./Loanflowchart.jpg>]
+Overfull \hbox (24.51929pt too wide) in paragraph at lines 41--41
+[]\OT1/cmr/bx/n/14.4 Traditional Sub-jec-tive As-sess-ment Sys-tem and Credit
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ []
 
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
+ []
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
+ []
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ []
 
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
+ []
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
+[]\OT1/cmr/m/n/12 Linear Re-gres-
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]\OT1/cmr/m/n/12 Discriminant
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Overfull \hbox (6.92114pt too wide) in paragraph at lines 97--98
+[]\OT1/cmr/bx/n/12 Discriminant Anal-y-sis: \OT1/cmr/m/n/12 In credit scor-ing 
+mod-els, a sta-tis-ti-cal anal-y-sis method
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-<<<<<<< HEAD
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-=======
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+[15] <simpledt.png, id=86, 977.15062pt x 508.90125pt>
+File: simpledt.png Graphic file (type png)
+ <use simpledt.png>
+Package pdftex.def Info: simpledt.png used on input line 104.
+(pdftex.def)             Requested size: 398.33858pt x 207.45502pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--109
+
+ []
+
+[16 <./simpledt.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+) [19]
+\openout2 = `ch4.aux'.
+
  (ch4.tex
 Chapter 4.
 
@@ -946,7 +728,7 @@ Overfull \hbox (4.42546pt too wide) in paragraph at lines 30--31
 []\OT1/cmr/m/n/12 Following pack-ages used
  []
 
-[17
+[20
 
 
 
@@ -954,23 +736,8 @@ Overfull \hbox (4.42546pt too wide) in paragraph at lines 30--31
 Underfull \hbox (badness 10000) in paragraph at lines 46--46
 []\OT1/cmr/bx/n/12 Operating
  []
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-<<<<<<< HEAD
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 47--47
 []\OT1/cmr/m/n/12 Intel(R) Core(TM) i3-
  []
@@ -979,92 +746,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--47
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 []\OT1/cmr/m/n/12 Intel(R) Core(TM) i3-
  []
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
-<<<<<<< HEAD
-=======
 Overfull \hbox (7.54724pt too wide) in paragraph at lines 43--51
  [][] 
  []
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-<<<<<<< HEAD
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
 
+ []
 
-<<<<<<< HEAD
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-=======
-[18]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 61.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
- [19]
+[21] [22]
 Overfull \hbox (21.56163pt too wide) in paragraph at lines 87--87
 []\OT1/cmtt/m/n/12 [4] "ProbationaryLoans"     "MortgageType"   "NewLoan"      
    "NIM"[] 
  []
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-<<<<<<< HEAD
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-=======
 Overfull \hbox (21.56163pt too wide) in paragraph at lines 87--87
 []\OT1/cmtt/m/n/12 [8] "DefaultedLoans"        "CreditRating"   "InterestIncome
 "  "LTV"[] 
@@ -1076,7 +775,7 @@ Overfull \hbox (3.03662pt too wide) in paragraph at lines 87--87
 ated"[] 
  []
 
-[20]
+[23]
 Missing character: There is no â in font cmtt12!
 Missing character: There is no € in font cmtt12!
 Missing character: There is no ˜ in font cmtt12!
@@ -1100,33 +799,8 @@ Overfull \hbox (40.08664pt too wide) in paragraph at lines 150--150
 [] \OT1/cmtt/m/n/12 $ ContractRef         : chr  "00000CONTR00111034" "00000CON
 TR00146183"[] 
  []
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-<<<<<<< HEAD
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-=======
 Overfull \hbox (40.08664pt too wide) in paragraph at lines 150--150
 [] \OT1/cmtt/m/n/12 $ InterestType        : Factor w/ 3 levels "Fixed","Tracker
 ",..: 2 3 2[] 
@@ -1162,7 +836,7 @@ Overfull \hbox (21.56163pt too wide) in paragraph at lines 150--150
 10%",..:[] 
  []
 
-[21]
+[24]
 Overfull \hbox (83.31166pt too wide) in paragraph at lines 150--150
 [] \OT1/cmtt/m/n/12 $ LoanBalance         : num [1:36696, 1] -0.647 -0.297 1.41
 8 -0.986 -1.32 ...[] 
@@ -1198,7 +872,7 @@ Overfull \hbox (3.03662pt too wide) in paragraph at lines 150--150
 ",..:[] 
  []
 
-<ETL.jpg, id=107, 963.6pt x 542.025pt>
+<ETL.jpg, id=116, 963.6pt x 542.025pt>
 File: ETL.jpg Graphic file (type jpg)
  <use ETL.jpg>
 Package pdftex.def Info: ETL.jpg used on input line 156.
@@ -1208,7 +882,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-[22] <dataprocess.png, id=111, 530.73282pt x 243.15843pt>
+[25] <dataprocess.png, id=120, 530.73282pt x 243.15843pt>
 File: dataprocess.png Graphic file (type png)
 
 <use dataprocess.png>
@@ -1219,135 +893,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
-[23 <./ETL.jpg>]
+[26 <./ETL.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 177--178
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
-<<<<<<< HEAD
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 179--180
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-<<<<<<< HEAD
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-=======
-[24 <./dataprocess.png>]
+[27 <./dataprocess.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 183--184
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
+
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-<<<<<<< HEAD
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 192--193
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
 
+ []
 
-<<<<<<< HEAD
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-=======
-[25] [26] <logistic.jpg, id=125, 464.4853pt x 355.3275pt>
+[28] [29] <logistic.jpg, id=135, 464.4853pt x 355.3275pt>
 File: logistic.jpg Graphic file (type jpg)
  <use logistic.jpg>
 Package pdftex.def Info: logistic.jpg used on input line 231.
 (pdftex.def)             Requested size: 398.33858pt x 304.73529pt.
 
-[27 <./logistic.jpg>]
+[30 <./logistic.jpg>]
 Overfull \hbox (27.73663pt too wide) in paragraph at lines 249--249
 []\OT1/cmtt/m/n/12 m2 <- glm(DefaultedLoans ~., family = "binomial", data = tra
 inDatav2)[] 
  []
 
 
-Overfull \hbox (15.38663pt too wide) in paragraph at lines 259--259
+Overfull \hbox (15.38663pt too wide) in paragraph at lines 261--261
 []\OT1/cmtt/m/n/12 simpleglmv2 <- glm(DefaultedLoans ~ CreditRating + InterestI
 ncome +[] 
  []
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
-<<<<<<< HEAD
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-=======
-Overfull \hbox (64.78665pt too wide) in paragraph at lines 259--259
+Overfull \hbox (64.78665pt too wide) in paragraph at lines 261--261
 []    \OT1/cmtt/m/n/12 MortgageType + InArrears + County + AddressLatitude + Ad
 dressLongitude,[] 
  []
 
 
-Overfull \hbox (108.01167pt too wide) in paragraph at lines 264--264
+Overfull \hbox (108.01167pt too wide) in paragraph at lines 267--267
 []\OT1/cmtt/m/n/12 testDatav2$prediction <- predict(simpleglmv2, newdata=testDa
 tav2, type="response")[] 
  []
 
-
-Overfull \hbox (132.81691pt too wide) in paragraph at lines 277--279
+[31]
+Overfull \hbox (132.81691pt too wide) in paragraph at lines 280--282
 []\OT1/cmr/m/n/12 Parameters for con-trol-ling the growth of tree. \OT1/cmr/bx/
 n/12 con-trol = rpart.control(minisplit=500,cp
  []
 
-[28]
-Overfull \hbox (1627.06242pt too wide) in paragraph at lines 300--300
+
+Overfull \hbox (1627.06242pt too wide) in paragraph at lines 303--303
 []\OT1/cmtt/m/n/12 defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County +
  LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + Cou
 nty + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLat
@@ -1355,7 +958,7 @@ itude + AddressLongitude ,method = "class",data=trainDatav2, control =  rpart.c
 ontrol(minisplit=5,cp = 0.001))[] 
  []
 
-) [29]
+) [32]
 \openout2 = `ch5.aux'.
 
  (ch5.tex
@@ -1370,183 +973,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[30
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
+[33
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
-<<<<<<< HEAD
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-=======
 ]
 Overfull \hbox (4.68655pt too wide) in paragraph at lines 33--35
 []\OT1/cmr/m/n/12 Explaing Lim-i-ta-tions of Al-go-rithm and why one algo is be
 t-ter FU-TURE SCOPE
  []
 
-) [31]
+) [34]
 \openout2 = `ch6.aux'.
 
  (ch6.tex
 Chapter 6.
-) [32
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+) [35
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+]
+\openout2 = `ch7.aux'.
 
-<<<<<<< HEAD
-=======
  (ch7.tex
 Chapter 7.
-) [33
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+) [36
 
 
-<<<<<<< HEAD
-! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-=======
-] [34]
+] [37]
 \openout2 = `appendix1.aux'.
 
- (appendix1.tex) [35
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
+ (appendix1.tex) [38
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<<<<<<< HEAD
-=======
- (appendix2.tex) [36
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 
-<<<<<<< HEAD
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-=======
- (glossary.tex) [37
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<<<<<<< HEAD
-=======
 ]
-(thesis.bbl (babelbst.tex) [38
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
+\openout2 = `appendix2.aux'.
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ (appendix2.tex) [39
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
-<<<<<<< HEAD
-=======
+
+]
+\openout2 = `glossary.aux'.
+
+ (glossary.tex) [40
+
+
+
+
+]
+(thesis.bbl (babelbst.tex) [41
+
+
+
 ]
 Missing character: There is no â in font cmr12!
 Missing character: There is no „ in font cmr12!
@@ -1554,95 +1038,38 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [39] [40] [41]) [42]
+ [42] [43] [44]) [45]
 \openout2 = `notation.aux'.
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ (notation.tex
 
-<<<<<<< HEAD
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-=======
-LaTeX Warning: Reference `Th.FF.fte.field' on page 43 undefined on input line 2
+LaTeX Warning: Reference `Th.FF.fte.field' on page 46 undefined on input line 2
 5.
 
-) [43
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+) [46
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+] (thesis.ind) (thesis.aux (preface.aux) (ch1.aux) (ch2.aux) (ch3.aux)
+(ch4.aux) (ch5.aux) (ch6.aux) (ch7.aux) (appendix1.aux) (appendix2.aux)
+(glossary.aux) (notation.aux))
 
-<<<<<<< HEAD
-=======
+LaTeX Warning: There were undefined references.
+
+ )
+(\end occurred inside a group at level 2)
+
 ### simple group (level 2) entered at line 15 ({)
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 5267 strings out of 493333
- 71676 string characters out of 3139192
- 153560 words of memory out of 3000000
+ 5266 strings out of 493333
+ 73618 string characters out of 3129710
+ 153563 words of memory out of 3000000
  8540 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 40i,9n,33p,1790b,3205s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (53 pages, 491642 bytes).
-=======
- 5251 strings out of 493333
- 73311 string characters out of 3129710
- 153446 words of memory out of 3000000
- 8528 multiletter control sequences out of 15000+200000
- 14468 words of font info for 59 fonts, out of 3000000 for 9000
- 1146 hyphenation exceptions out of 8191
- 40i,9n,33p,1772b,3203s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,9n,33p,1772b,3205s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmbx12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Users/Shruti/AppData/Local/Prog
@@ -1653,510 +1080,9 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users
 onts/cm/cmti12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (50 pages, 368805 bytes).
->>>>>>> e2fa622e5d45dfa088a6984f67522ef747449fe1
+Output written on thesis.pdf (56 pages, 497584 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
+ 220 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \item L
-            iterature Review
-(That makes 100 errors; please try again.) 
-Here is how much of TeX's memory you used:
- 4828 strings out of 493333
- 66874 string characters out of 3129710
- 140550 words of memory out of 3000000
- 8254 multiletter control sequences out of 15000+200000
- 13992 words of font info for 57 fonts, out of 3000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 110i,33n,107p,1434b,3432s stack positions out of 5000i,500n,10000p,200000b,50000s
-
-!  ==> Fatal error occurred, no output PDF file produced!
