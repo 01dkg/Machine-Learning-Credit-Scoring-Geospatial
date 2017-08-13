@@ -331,8 +331,9 @@ In the dashboard, the user can select an origin city or region and distance (in 
   SIN(RADIANS(AVG([Address Latitude]))
 ) +
   COS(RADIANS(LOOKUP(AVG([Address Latitude]), First()))) * 
-  COS(RADIANS(AVG([Address Latitude]))) * 
-  COS(RADIANS(AVG([Address Longitude])) - RADIANS(LOOKUP(AVG([Address Longitude]),
+  COS(RADIANS(AVG([Address Latitude]))) 
+  * COS(RADIANS(AVG([Address Longitude])) - 
+  RADIANS(LOOKUP(AVG([Address Longitude]),
   First())))
 )
 \end{verbatim}

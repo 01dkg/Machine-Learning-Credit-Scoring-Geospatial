@@ -34,10 +34,10 @@ Datav2$LTVCategory <- as.factor(Datav2$LTVCategory)
 Datav2$InArrears <- as.factor(Datav2$InArrears)
 Datav2$County <- as.factor(Datav2$County)
 Datav2$DefaultedLoans <- as.factor(Datav2$DefaultedLoans)
-Datav2$LoanBalance <- scale(Datav2$LoanBalance)
-Datav2$PropertyValue <- scale(Datav2$PropertyValue)
-Datav2$InterestIncome <-scale(Datav2$InterestIncome)
-Datav2$AnnualPYMT <-scale(Datav2$AnnualPYMT)
+#Datav2$LoanBalance <- scale(Datav2$LoanBalance)
+#Datav2$PropertyValue <- scale(Datav2$PropertyValue)
+#Datav2$InterestIncome <-scale(Datav2$InterestIncome)
+#Datav2$AnnualPYMT <-scale(Datav2$AnnualPYMT)
 str(Datav2)
 
 ```
@@ -63,7 +63,7 @@ m2 <- glm(DefaultedLoans ~., family = "binomial", data = trainDatav2)
 ```{r}
 
 simpleglmv2 <- glm(DefaultedLoans ~ CreditRating + InterestIncome + 
-    log(PropertyValue) + log(LoanBalance) + AnnualPYMT + LTV + 
+    PropertyValue + LoanBalance + AnnualPYMT + LTV + 
     InterestType + NewLoan + ProbationaryLoans + MortgageYears + 
     MortgageType + InArrears + County + AddressLatitude + AddressLongitude, 
     family = "binomial", data = trainDatav2)
@@ -88,7 +88,7 @@ write.csv(testDatav2, "Data/Data_Model2.csv")
 ```
 ### Accuracy
 ```{r}
-(407+2406)/nrow(testDatav2)
+(868+8190)/nrow(testDatav2)
 ```
 ### ROC Curve
 ```{r}

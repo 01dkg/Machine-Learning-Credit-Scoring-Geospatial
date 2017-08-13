@@ -1,0 +1,128 @@
+---
+title: "Results & Analysis"
+output: html_notebook
+---
+#Logistic Regression Model (Stepwise)
+```{r}
+lr <- glm(DefaultedLoans ~ InterestIncome + 
+    PropertyValue + LoanBalance + AnnualPYMT + LTV + 
+    InterestType + NewLoan + ProbationaryLoans + MortgageYears + 
+    MortgageType + InArrears + County + AddressLatitude + AddressLongitude, 
+    family = "binomial", data = trainDatav2)
+summary(lr)
+
+```
+
+```{r}
+lr <- na.omit(lr)
+#lr <- step(lr)
+
+```
+```{r}
+summary(lr)
+save(lr, file = "Model/lr.rda")
+```
+
+```{r}
+significant.variables <- summary(lr)$coeff[-1,4] < 0.01
+names(significant.variables)[significant.variables == TRUE]
+```
+```{r}
+prob <- predict(lr, type = "response")
+res <- residuals(lr, type = "deviance")
+
+#Plot Residuals
+plot(predict(lr), res,
+     xlab="Fitted values", ylab = "Residuals",
+     ylim = max(abs(res)) * c(-1,1))
+```
+
+```{r}
+## CIs using profiled log-likelihood
+confint(lr)
+```
+
+```{r}
+## CIs using standard errors
+confint.default(lr)
+```
+```{r}
+#score test data set
+testDatav2$lr_score <- predict(lr,type='response',testDatav2)
+m1_pred <- prediction(testDatav2$lr_score, testDatav2$DefaultedLoans)
+m1_perf <- performance(m1_pred,"tpr","fpr")
+
+#ROC
+plot(m1_perf, lwd=2, colorize=TRUE, main="ROC m1: Logistic Regression Performance")
+lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
+lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
+```
+```{r}
+# Plot precision/recall curve
+m1_perf_precision <- performance(m1_pred, measure = "prec", x.measure = "rec")
+plot(m1_perf_precision, main="m1 Logistic:Precision/recall curve")
+```
+
+```{r}
+# Plot accuracy as function of threshold
+m1_perf_acc <- performance(m1_pred, measure = "acc")
+plot(m1_perf_acc, main="m1 Logistic:Accuracy as function of threshold")
+```
+
+```{r}
+#KS, Gini & AUC m1
+m1_KS <- round(max(attr(m1_perf,'y.values')[[1]]-attr(m1_perf,'x.values')[[1]])*100, 2)
+m1_AUROC <- round(performance(m1_pred, measure = "auc")@y.values[[1]]*100, 2)
+m1_Gini <- (2*m1_AUROC - 100)
+cat("AUROC: ",m1_AUROC,"\tKS: ", m1_KS, "\tGini:", m1_Gini, "\n")
+```
+
+# Decision Tree Results
+```{r}
+#Decision Tree for Tableu
+library(rpart)
+library(rattle)					# Fancy tree plot
+library(rpart.plot)			# Enhanced tree plots
+library(RColorBrewer)		# Color selection for fancy tree plot
+library(party)					# Alternative decision tree algorithm
+library(partykit)				# Convert rpart object to BinaryTree
+library(caret)
+library(tree)
+DT <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=trainDatav2, control =  rpart.control(minisplit=5,cp = 0.001))
+
+save(fit, file = "Model/DT.rda")
+print(DT)
+prp(DT)
+tree.1 <- DT
+fancyRpartPlot(tree.1)
+```
+```{r}
+# score test data
+testDatav2$m2_score <- predict(DT,type='prob',testDatav2)
+m2_pred <- prediction(testDatav2$m2_score[,2],testDatav2$DefaultedLoans)
+m2_perf <- performance(m2_pred,"tpr","fpr")
+
+# MOdel performance plot
+plot(m2_perf, lwd=2, colorize=TRUE, main="ROC m2: Traditional Recursive Partitioning")
+lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
+lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
+```
+```{r}
+# Plot precision/recall curve
+m2_perf_precision <- performance(m2_pred, measure = "prec", x.measure = "rec")
+plot(m2_perf_precision, main="m2 Recursive Partitioning:Precision/recall curve")
+```
+```{r}
+# Plot accuracy as function of threshold
+m2_perf_acc <- performance(m2_pred, measure = "acc")
+plot(m2_perf_acc, main="m2 Recursive Partitioning:Accuracy as function of threshold")
+```
+
+```{r}
+# KS & AUC m1
+m2_AUROC <- round(performance(m2_pred, measure = "auc")@y.values[[1]]*100, 2)
+m2_KS <- round(max(attr(m2_perf,'y.values')[[1]]-attr(m2_perf,'x.values')[[1]])*100, 2)
+m2_Gini <- (2*m2_AUROC - 100)
+cat("AUROC: ",m2_AUROC,"\tKS: ", m2_KS, "\tGini:", m2_Gini, "\n")
+```
+
