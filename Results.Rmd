@@ -64,6 +64,7 @@ plot(lr_performance_accuracy, main="LR Logistic:Accuracy as function of threshol
 
 ```{r}
 #KS, Gini & AUC m1
+<<<<<<< HEAD
 lr_KS <- round(max(attr(lr_performance,'y.values')[[1]]-attr(lr_performance,'x.values')[[1]])*100, 2)
 lr_AUROC <- round(performance(lr_prediction, measure = "auc")@y.values[[1]]*100, 2)
 lr_Gini <- (2*lr_AUROC - 100)
@@ -80,6 +81,12 @@ confusion.glm <- function(data, model) {
 }
 
 confusion.glm(testDatav2$lr_prediction,lr)
+=======
+lr_KS <- round(max(attr(m1_perf,'y.values')[[1]]-attr(lr_performance,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(lr_prediction, measure = "auc")@y.values[[1]]*100, 2)
+lr_Gini <- (2*lr_AUROC - 100)
+cat("AUROC: ",lr_AUROC,"\tKS: ", m1_KS, "\tGini:", lr_Gini, "\n")
+>>>>>>> 6af8e78d55774ecb624a1f9a9b014a3611dadb88
 ```
 
 # Decision Tree Results
@@ -126,6 +133,7 @@ plot(DT_performance_precision, main="Decision Tree vs Precision/recall curve")
 # Plot accuracy as function of threshold
 DT_perf_acc <- performance(DT_prediction, measure = "acc")
 plot(DT_perf_acc, main="m2 Recursive Partitioning:Accuracy as function of threshold")
+<<<<<<< HEAD
 ```
 
 ```{r}
@@ -150,6 +158,26 @@ legend(0.6,0.5,
            col=c('blue','red'),
            lwd=3);
 lines(c(0,1),c(0,1),col = "gray", lty = 4 ) # random line
+=======
 ```
+
+```{r}
+# KS & AUC DT
+DT_AUROC <- round(performance(DT_prediction, measure = "auc")@y.values[[1]]*100, 2)
+DT_KS <- round(max(attr(DT_performance,'y.values')[[1]]-attr(DT_performance,'x.values')[[1]])*100, 2)
+DT_Gini <- (2*DT_AUROC - 100)
+cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
+>>>>>>> 6af8e78d55774ecb624a1f9a9b014a3611dadb88
+```
+```{r}
+plot(lr_performance, col='blue', lty=1, main='ROCs: Model Performance Comparision') # logistic regression
+plot(DT_performance, col='red',lty=2, add=TRUE); # simple 
+legend(0.6,0.5,
+           c('LR :Logistic regression','DT: Decision tree'),
+           col=c('blue','red'),
+           lwd=3);
+lines(c(0,1),c(0,1),col = "gray", lty = 4 ) # random line
+```
+
 
 
