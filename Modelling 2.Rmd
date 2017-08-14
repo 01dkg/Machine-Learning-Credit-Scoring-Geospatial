@@ -25,14 +25,14 @@ summary(Datav2)
 
 ##Data Prepration
 ```{r}
-Datav2$CreditRating <- as.factor(Datav2$CreditRating)
+#Datav2$CreditRating <- as.factor(Datav2$CreditRating)
 Datav2$InterestType <- as.factor(Datav2$InterestType)
 Datav2$MortgageType <- as.factor(Datav2$MortgageType)
 Datav2$NewLoan <- as.factor(Datav2$NewLoan)
 Datav2$ProbationaryLoans <- as.factor(Datav2$ProbationaryLoans)
 Datav2$LTVCategory <- as.factor(Datav2$LTVCategory)
 Datav2$InArrears <- as.factor(Datav2$InArrears)
-Datav2$County <- as.factor(Datav2$County)
+#Datav2$County <- as.factor(Datav2$County)
 Datav2$DefaultedLoans <- as.factor(Datav2$DefaultedLoans)
 #Datav2$LoanBalance <- scale(Datav2$LoanBalance)
 #Datav2$PropertyValue <- scale(Datav2$PropertyValue)

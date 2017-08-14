@@ -4,18 +4,17 @@ output: html_notebook
 ---
 #Logistic Regression Model (Stepwise)
 ```{r}
-lr <- glm(DefaultedLoans ~ InterestIncome + 
+lr <- glm(DefaultedLoans ~ InterestIncome + CreditRating+
     PropertyValue + LoanBalance + AnnualPYMT + LTV + 
     InterestType + NewLoan + ProbationaryLoans + MortgageYears + 
     MortgageType + InArrears + County + AddressLatitude + AddressLongitude, 
     family = "binomial", data = trainDatav2)
 summary(lr)
-
 ```
 
 ```{r}
-lr <- na.omit(lr)
-#lr <- step(lr)
+
+lr <- step(lr)
 
 ```
 ```{r}
@@ -48,33 +47,34 @@ confint.default(lr)
 ```
 ```{r}
 #score test data set
+library(ROCR)
 testDatav2$lr_score <- predict(lr,type='response',testDatav2)
-m1_pred <- prediction(testDatav2$lr_score, testDatav2$DefaultedLoans)
-m1_perf <- performance(m1_pred,"tpr","fpr")
+lr_prediction <- prediction(testDatav2$lr_score, testDatav2$DefaultedLoans)
+lr_performance <- performance(lr_prediction,"tpr","fpr")
 
 #ROC
-plot(m1_perf, lwd=2, colorize=TRUE, main="ROC m1: Logistic Regression Performance")
+plot(lr_performance, lwd=2, colorize=TRUE, main="ROC m1: Logistic Regression Performance")
 lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
 lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 ```
 ```{r}
 # Plot precision/recall curve
-m1_perf_precision <- performance(m1_pred, measure = "prec", x.measure = "rec")
-plot(m1_perf_precision, main="m1 Logistic:Precision/recall curve")
+lr_performance_precision <- performance(lr_prediction, measure = "prec", x.measure = "rec")
+plot(lr_performance_precision, main="LR Logistic:Precision vs Recall curve")
 ```
 
 ```{r}
 # Plot accuracy as function of threshold
-m1_perf_acc <- performance(m1_pred, measure = "acc")
-plot(m1_perf_acc, main="m1 Logistic:Accuracy as function of threshold")
+lr_performance_accuracy <- performance(lr_prediction, measure = "acc")
+plot(lr_performance_accuracy, main="LR Logistic:Accuracy as function of threshold")
 ```
 
 ```{r}
 #KS, Gini & AUC m1
-m1_KS <- round(max(attr(m1_perf,'y.values')[[1]]-attr(m1_perf,'x.values')[[1]])*100, 2)
-m1_AUROC <- round(performance(m1_pred, measure = "auc")@y.values[[1]]*100, 2)
-m1_Gini <- (2*m1_AUROC - 100)
-cat("AUROC: ",m1_AUROC,"\tKS: ", m1_KS, "\tGini:", m1_Gini, "\n")
+lr_KS <- round(max(attr(m1_perf,'y.values')[[1]]-attr(lr_performance,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(lr_prediction, measure = "auc")@y.values[[1]]*100, 2)
+lr_Gini <- (2*lr_AUROC - 100)
+cat("AUROC: ",lr_AUROC,"\tKS: ", m1_KS, "\tGini:", lr_Gini, "\n")
 ```
 
 # Decision Tree Results
@@ -88,7 +88,12 @@ library(party)					# Alternative decision tree algorithm
 library(partykit)				# Convert rpart object to BinaryTree
 library(caret)
 library(tree)
-DT <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=trainDatav2, control =  rpart.control(minisplit=5,cp = 0.001))
+DT <- rpart(DefaultedLoans ~ InterestIncome + CreditRating+
+    PropertyValue + LoanBalance + AnnualPYMT + LTV + 
+    InterestType + NewLoan + ProbationaryLoans + MortgageYears + 
+    MortgageType + InArrears + County + AddressLatitude + AddressLongitude
+    ,method = "class",data=trainDatav2,
+            control =  rpart.control(minisplit=5,cp = 0.001))
 
 save(fit, file = "Model/DT.rda")
 print(DT)
@@ -98,31 +103,41 @@ fancyRpartPlot(tree.1)
 ```
 ```{r}
 # score test data
-testDatav2$m2_score <- predict(DT,type='prob',testDatav2)
-m2_pred <- prediction(testDatav2$m2_score[,2],testDatav2$DefaultedLoans)
-m2_perf <- performance(m2_pred,"tpr","fpr")
+testDatav2$DT_score <- predict(DT,type='prob',testDatav2)
+DT_prediction <- prediction(testDatav2$DT_score[,2],testDatav2$DefaultedLoans)
+DT_performance <- performance(DT_prediction,"tpr","fpr")
 
 # MOdel performance plot
-plot(m2_perf, lwd=2, colorize=TRUE, main="ROC m2: Traditional Recursive Partitioning")
+plot(DT_performance, lwd=2, colorize=TRUE, main="ROC Decision Tree: Traditional Recursive Partitioning")
 lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
 lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 ```
 ```{r}
 # Plot precision/recall curve
-m2_perf_precision <- performance(m2_pred, measure = "prec", x.measure = "rec")
-plot(m2_perf_precision, main="m2 Recursive Partitioning:Precision/recall curve")
+DT_performance_precision <- performance(DT_prediction, measure = "prec", x.measure = "rec")
+plot(DT_performance_precision, main="Decision Tree vs Precision/recall curve")
 ```
 ```{r}
 # Plot accuracy as function of threshold
-m2_perf_acc <- performance(m2_pred, measure = "acc")
-plot(m2_perf_acc, main="m2 Recursive Partitioning:Accuracy as function of threshold")
+DT_perf_acc <- performance(DT_prediction, measure = "acc")
+plot(DT_perf_acc, main="m2 Recursive Partitioning:Accuracy as function of threshold")
 ```
 
 ```{r}
-# KS & AUC m1
-m2_AUROC <- round(performance(m2_pred, measure = "auc")@y.values[[1]]*100, 2)
-m2_KS <- round(max(attr(m2_perf,'y.values')[[1]]-attr(m2_perf,'x.values')[[1]])*100, 2)
-m2_Gini <- (2*m2_AUROC - 100)
-cat("AUROC: ",m2_AUROC,"\tKS: ", m2_KS, "\tGini:", m2_Gini, "\n")
+# KS & AUC DT
+DT_AUROC <- round(performance(DT_prediction, measure = "auc")@y.values[[1]]*100, 2)
+DT_KS <- round(max(attr(DT_performance,'y.values')[[1]]-attr(DT_performance,'x.values')[[1]])*100, 2)
+DT_Gini <- (2*DT_AUROC - 100)
+cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
 ```
+```{r}
+plot(lr_performance, col='blue', lty=1, main='ROCs: Model Performance Comparision') # logistic regression
+plot(DT_performance, col='red',lty=2, add=TRUE); # simple 
+legend(0.6,0.5,
+           c('LR :Logistic regression','DT: Decision tree'),
+           col=c('blue','red'),
+           lwd=3);
+lines(c(0,1),c(0,1),col = "gray", lty = 4 ) # random line
+```
+
 
