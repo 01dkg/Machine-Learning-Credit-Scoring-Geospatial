@@ -235,7 +235,7 @@ Datav2$AnnualPYMT <-scale(Datav2$AnnualPYMT
 Logistic regression is the most commonly used technique in credit scoring as it works on binary response variables, i.e., 0 or 1 \citep{hilbe2011logistic}. In fig. \ref{fig:logistic}, output results of standard logistics regression function lies between 0 and 1 only. In this research work output of response variable, i.e., the probability of default $p=1$ is considered as 'Yes' and $p=0$ is considered as 'No'. Probability is represented using logistic function (logit) and the probability of binary response variable based on the one, or more independent variables.
 
 \begin{center}
-\begin{figure}[ht]
+\begin{figure}[!htb]
 \includegraphics[width=\textwidth]{logistic.jpg}
 \centering
 \caption{Standard Logistic Regression}{\textbf{Source:} http://www.thefactmachine.com/wp-content/uploads/2015/03/13-Sigmoid.gif}
@@ -244,7 +244,6 @@ Logistic regression is the most commonly used technique in credit scoring as it 
 \end{center}
 
 \subsubsection*{Model Settings:}
-
 \textbf{Response Variable:} DefaultedLoans\\
 \textbf{Family (Function):} "Binomial" (Logit)
 
@@ -256,8 +255,6 @@ library(stats)
 m2 <- glm(DefaultedLoans ~., family = "binomial", data = trainDatav2)
 \end{verbatim}
 
-<<<<<<< HEAD
-=======
 Next, model is trained with selective variables set and following code is used:
 
 \begin{verbatim}
@@ -267,7 +264,6 @@ simpleglmv2 <- glm(DefaultedLoans ~ CreditRating + InterestIncome +
     MortgageType + InArrears + County + AddressLatitude + AddressLongitude, 
     family = "binomial", data = trainDatav2)
 \end{verbatim}
->>>>>>> 7f79cd9dd6bc200d97b54f224dc698794bfa066b
 
 Trained model is used to predict output for test dataset using following code:
 \begin{verbatim}

@@ -9,7 +9,7 @@ output: html_document
 library(readr)
 
 #uncomment when you want to read the data from fresh
-#Data <- read_delim("Data/KPMGDT.csv",",", escape_double = FALSE, trim_ws = TRUE)
+Data <- read_delim("Data/KPMGDT.csv",",", escape_double = FALSE, trim_ws = TRUE)
 ```
 
 ## Data Stats
