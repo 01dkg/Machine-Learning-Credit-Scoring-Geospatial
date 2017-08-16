@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  16 AUG 2017 23:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  17 AUG 2017 00:08
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -495,18 +495,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-) [8
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+[8
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+) [9]
 Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-[9
+[10
 
 
-] [10
+] [11
 
 ]
 \openout2 = `ch1.aux'.
@@ -577,7 +607,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-<Loanflowchart.jpg, id=59, 878.53218pt x 481.04718pt>
+<Loanflowchart.jpg, id=62, 878.53218pt x 481.04718pt>
 File: Loanflowchart.jpg Graphic file (type jpg)
  <use Loanflowchart.jpg>
 Package pdftex.def Info: Loanflowchart.jpg used on input line 20.
@@ -688,7 +718,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[16] <simpledt.png, id=89, 977.15062pt x 508.90125pt>
+[16] <simpledt.png, id=92, 977.15062pt x 508.90125pt>
 File: simpledt.png Graphic file (type png)
  <use simpledt.png>
 Package pdftex.def Info: simpledt.png used on input line 104.
@@ -828,7 +858,7 @@ Overfull \hbox (3.03662pt too wide) in paragraph at lines 158--158
 ",..:[] 
  []
 
-[26] <ETL.jpg, id=122, 963.6pt x 542.025pt>
+[26] <ETL.jpg, id=126, 963.6pt x 542.025pt>
 File: ETL.jpg Graphic file (type jpg)
  <use ETL.jpg>
 Package pdftex.def Info: ETL.jpg used on input line 164.
@@ -838,7 +868,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-[27 <./ETL.jpg>] <dataprocess.png, id=127, 530.73282pt x 243.15843pt>
+[27 <./ETL.jpg>] <dataprocess.png, id=130, 530.73282pt x 243.15843pt>
 File: dataprocess.png Graphic file (type png)
 
 <use dataprocess.png>
@@ -869,7 +899,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
-[29] [30] <logistic.jpg, id=138, 464.4853pt x 355.3275pt>
+[29] [30] <logistic.jpg, id=141, 464.4853pt x 355.3275pt>
 File: logistic.jpg Graphic file (type jpg)
  <use logistic.jpg>
 Package pdftex.def Info: logistic.jpg used on input line 239.
@@ -989,19 +1019,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-<LRrecall.png, id=158, 526.96875pt x 325.215pt>
+<LRrecall.png, id=161, 526.96875pt x 325.215pt>
 File: LRrecall.png Graphic file (type png)
  <use LRrecall.png>
 Package pdftex.def Info: LRrecall.png used on input line 61.
 (pdftex.def)             Requested size: 140.5225pt x 86.72377pt.
 
-<DRrecall.png, id=159, 526.96875pt x 325.215pt>
+<DRrecall.png, id=162, 526.96875pt x 325.215pt>
 File: DRrecall.png Graphic file (type png)
  <use DRrecall.png>
 Package pdftex.def Info: DRrecall.png used on input line 66.
 (pdftex.def)             Requested size: 140.5225pt x 86.72377pt.
  [37]
-<results1.png, id=163, 526.96875pt x 315.42844pt>
+<results1.png, id=166, 526.96875pt x 315.42844pt>
 File: results1.png Graphic file (type png)
  <use results1.png>
 Package pdftex.def Info: results1.png used on input line 75.
@@ -1088,7 +1118,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  5293 strings out of 493333
  74127 string characters out of 3129710
- 153744 words of memory out of 3000000
+ 153745 words of memory out of 3000000
  8562 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
@@ -1103,9 +1133,9 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users
 onts/cm/cmti12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (62 pages, 526359 bytes).
+Output written on thesis.pdf (63 pages, 527878 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
+ 245 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
