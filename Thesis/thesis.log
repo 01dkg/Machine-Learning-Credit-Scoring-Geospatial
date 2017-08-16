@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  14 AUG 2017 23:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  16 AUG 2017 21:48
 entering extended mode
-**./thesis.tex
-(thesis.tex
+**E:/KPMG/KPMG/Thesis/thesis.tex
+(E:/KPMG/KPMG/Thesis/thesis.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
@@ -932,41 +932,38 @@ ty Value]))[]
 
  (ch5.tex
 Chapter 5.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 24.
-
-<results1.png, id=152, 526.96875pt x 315.42844pt>
-File: results1.png Graphic file (type png)
- <use results1.png>
-Package pdftex.def Info: results1.png used on input line 39.
-(pdftex.def)             Requested size: 398.33858pt x 238.44301pt.
- [35
+[35
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[36 <./results1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+<LRrecall.png, id=155, 526.96875pt x 325.215pt>
+File: LRrecall.png Graphic file (type png)
+ <use LRrecall.png>
+Package pdftex.def Info: LRrecall.png used on input line 63.
+(pdftex.def)             Requested size: 140.5225pt x 86.72377pt.
 
- []
-
-
-Overfull \hbox (4.68655pt too wide) in paragraph at lines 66--68
-[]\OT1/cmr/m/n/12 Explaing Lim-i-ta-tions of Al-go-rithm and why one algo is be
-t-ter FU-TURE SCOPE
- []
-
-) [37]
+<DRrecall.png, id=156, 526.96875pt x 325.215pt>
+File: DRrecall.png Graphic file (type png)
+ <use DRrecall.png>
+Package pdftex.def Info: DRrecall.png used on input line 68.
+(pdftex.def)             Requested size: 140.5225pt x 86.72377pt.
+ [36]
+<results1.png, id=160, 526.96875pt x 315.42844pt>
+File: results1.png Graphic file (type png)
+ <use results1.png>
+Package pdftex.def Info: results1.png used on input line 77.
+(pdftex.def)             Requested size: 398.33858pt x 238.44301pt.
+) [37 <./LRrecall.png> <./DRrecall.png>] [38 <./results1.png>]
 \openout2 = `ch6.aux'.
 
  (ch6.tex
 Chapter 6.
-) [38
+) [39
 
 
 
@@ -975,14 +972,14 @@ Chapter 6.
 
  (ch7.tex
 Chapter 7.
-) [39
+) [40
 
 
 
-] [40]
+] [41]
 \openout2 = `appendix1.aux'.
 
- (appendix1.tex) [41
+ (appendix1.tex) [42
 
 
 
@@ -992,20 +989,20 @@ Chapter 7.
 ]
 \openout2 = `appendix2.aux'.
 
- (appendix2.tex) [42
+ (appendix2.tex) [43
 
 
 
 ]
 \openout2 = `glossary.aux'.
 
- (glossary.tex) [43
+ (glossary.tex) [44
 
 
 
 
 ]
-(thesis.bbl (babelbst.tex) [44
+(thesis.bbl (babelbst.tex) [45
 
 
 
@@ -1016,15 +1013,15 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [45] [46] [47]) [48]
+ [46] [47] [48] [49]) [50]
 \openout2 = `notation.aux'.
 
  (notation.tex
 
-LaTeX Warning: Reference `Th.FF.fte.field' on page 49 undefined on input line 2
+LaTeX Warning: Reference `Th.FF.fte.field' on page 51 undefined on input line 2
 5.
 
-) [49
+) [51
 
 
 
@@ -1041,13 +1038,13 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5274 strings out of 493333
- 71731 string characters out of 3139192
- 153598 words of memory out of 3000000
- 8547 multiletter control sequences out of 15000+200000
+ 5294 strings out of 493333
+ 72185 string characters out of 3139192
+ 153743 words of memory out of 3000000
+ 8562 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 40i,9n,33p,1772b,3205s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,9n,33p,1790b,3223s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
@@ -1056,9 +1053,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (59 pages, 511469 bytes).
+Output written on thesis.pdf (61 pages, 524019 bytes).
 PDF statistics:
- 230 PDF objects out of 1000 (max. 8388607)
+ 239 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

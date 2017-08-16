@@ -1,0 +1,454 @@
+\hyphenation{Post-Script Sprin-ger}
+\begin{thebibliography}{51}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\input{babelbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Annotation:}\
+  \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Annotation:}\ #2\end{quotation}}
+
+\bibitem[\protect\citeauthoryear{Abdou, Pointon \bbland{} El-Masry}{Abdou
+  \emph{\bbletal{}}}{2008}]{abdou2008neural}
+Abdou, H., J.~Pointon \bbland{} A.~El-Masry.
+\newblock 2008.
+\newblock Neural nets versus conventional techniques in credit scoring in
+  egyptian banking.
+\newblock \emph{Expert Systems with Applications}, \textbf{35}(3): 1275--1292.
+\bibAnnoteFile{abdou2008neural}
+
+\bibitem[\protect\citeauthoryear{Abdou}{Abdou}{2009}]{abdou2009credit}
+Abdou, H. A.~H.
+\newblock 2009.
+\newblock \emph{Credit scoring models for Egyptian banks: neural nets and
+  genetic programming versus conventional techniques}.
+\newblock \bblphdthesis{}, University of Plymouth.
+\bibAnnoteFile{abdou2009credit}
+
+\bibitem[\protect\citeauthoryear{Al~Amari}{Al~Amari}{2002}]{al2002credit}
+Al~Amari, A.
+\newblock 2002.
+\newblock \emph{The credit evaluation process and the role of credit scoring: a
+  case study of Qatar}.
+\newblock \bblphdthesis{}, University College Dublin.
+\bibAnnoteFile{al2002credit}
+
+\bibitem[\protect\citeauthoryear{Altland}{Altland}{1999}]{altland1999regression}
+Altland, H.~W.
+\newblock 1999.
+\newblock Regression analysis: statistical modeling of a response variable.
+\bibAnnoteFile{altland1999regression}
+
+\bibitem[\protect\citeauthoryear{Altman}{Altman}{1968}]{altman1968financial}
+Altman, E.~I.
+\newblock 1968.
+\newblock Financial ratios, discriminant analysis and the prediction of
+  corporate bankruptcy.
+\newblock \emph{The journal of finance}, \textbf{23}(4): 589--609.
+\bibAnnoteFile{altman1968financial}
+
+\bibitem[\protect\citeauthoryear{Anderson}{Anderson}{2007}]{anderson2007credit}
+Anderson, R.
+\newblock 2007.
+\newblock \emph{The credit scoring toolkit: theory and practice for retail
+  credit risk management and decision automation}.
+\newblock Oxford University Press.
+\bibAnnoteFile{anderson2007credit}
+
+\bibitem[\protect\citeauthoryear{Bailey}{Bailey}{2004}]{bailey2004consumer}
+Bailey, M.
+\newblock 2004.
+\newblock \emph{Consumer credit quality: underwriting, scoring, fraud
+  prevention and collections}.
+\newblock White Box Publishing.
+\bibAnnoteFile{bailey2004consumer}
+
+\bibitem[\protect\citeauthoryear{Bensic, Sarlija \bbland{} Zekic-Susac}{Bensic
+  \emph{\bbletal{}}}{2005}]{bensic2005modelling}
+Bensic, M., N.~Sarlija \bbland{} M.~Zekic-Susac.
+\newblock 2005.
+\newblock Modelling small-business credit scoring by using logistic regression,
+  neural networks and decision trees.
+\newblock \emph{Intelligent Systems in Accounting, Finance and Management},
+  \textbf{13}(3): 133--150.
+\bibAnnoteFile{bensic2005modelling}
+
+\bibitem[\protect\citeauthoryear{Beynon}{Beynon}{2005}]{beynon2005optimizing}
+Beynon, M.~J.
+\newblock 2005.
+\newblock Optimizing object classification under ambiguity/ignorance:
+  application to the credit rating problem.
+\newblock \emph{Intelligent Systems in Accounting, Finance and Management},
+  \textbf{13}(2): 113--130.
+\bibAnnoteFile{beynon2005optimizing}
+
+\bibitem[\protect\citeauthoryear{Breiman, Friedman, Stone \bbland{}
+  Olshen}{Breiman \emph{\bbletal{}}}{1984}]{breiman1984classification}
+Breiman, L., J.~Friedman, C.~J. Stone \bbland{} R.~A. Olshen.
+\newblock 1984.
+\newblock \emph{Classification and regression trees}.
+\newblock CRC press.
+\bibAnnoteFile{breiman1984classification}
+
+\bibitem[\protect\citeauthoryear{Can}{Can}{1998}]{can1998gis}
+Can, A.
+\newblock 1998.
+\newblock Gis and spatial analysis of housing and mortgage markets.
+\newblock \emph{Journal of Housing Research}, \textbf{9}(1): 61--86.
+\bibAnnoteFile{can1998gis}
+
+\bibitem[\protect\citeauthoryear{Capon}{Capon}{1982}]{capon1982credit}
+Capon, N.
+\newblock 1982.
+\newblock Credit scoring systems: A critical analysis.
+\newblock \emph{The Journal of Marketing}, \bblpages{} 82--91.
+\bibAnnoteFile{capon1982credit}
+
+\bibitem[\protect\citeauthoryear{Carling \bbland{} Lundberg}{Carling \bbland{}
+  Lundberg}{2005}]{carling2005asymmetric}
+Carling, K. \bbland{} S.~Lundberg.
+\newblock 2005.
+\newblock Asymmetric information and distance: an empirical assessment of
+  geographical credit rationing.
+\newblock \emph{Journal of Economics and Business}, \textbf{57}(1): 39--59.
+\bibAnnoteFile{carling2005asymmetric}
+
+\bibitem[\protect\citeauthoryear{Crook}{Crook}{1996}]{crook1996credit}
+Crook, J.
+\newblock 1996.
+\newblock Credit scoring: An overview.
+\newblock \emph{WORKING PAPER-UNIVERSITY OF EDINBURGH DEPARTMENT OF BUSINESS
+  STUDIES}.
+\bibAnnoteFile{crook1996credit}
+
+\bibitem[\protect\citeauthoryear{Demuth, Beale \bbland{} Hagan}{Demuth
+  \emph{\bbletal{}}}{2008}]{demuth2008neural}
+Demuth, H., M.~Beale \bbland{} M.~Hagan.
+\newblock 2008.
+\newblock Neural network toolbox™ 6.
+\newblock \emph{User’s guide}, \bblpages{} 37--55.
+\bibAnnoteFile{demuth2008neural}
+
+\bibitem[\protect\citeauthoryear{Desai, Crook \bbland{} Overstreet}{Desai
+  \emph{\bbletal{}}}{1996}]{desai1996comparison}
+Desai, V.~S., J.~N. Crook \bbland{} G.~A. Overstreet.
+\newblock 1996.
+\newblock A comparison of neural networks and linear scoring models in the
+  credit union environment.
+\newblock \emph{European Journal of Operational Research}, \textbf{95}(1):
+  24--37.
+\bibAnnoteFile{desai1996comparison}
+
+\bibitem[\protect\citeauthoryear{Dinsmore}{Dinsmore}{2016}]{dinsmore2016self}
+Dinsmore, T.~W.
+\newblock 2016.
+\newblock Self-service analytics.
+\newblock \capitalize\bblin{}: \emph{Disruptive Analytics}, \bblpages{}
+  199--230. Springer.
+\bibAnnoteFile{dinsmore2016self}
+
+\bibitem[\protect\citeauthoryear{Durand \emph{\bbletal{}}}{Durand
+  \emph{\bbletal{}}}{1941}]{durand1941risk}
+Durand, D. \emph{\bbletal{}}.
+\newblock 1941.
+\newblock Risk elements in consumer instalment financing.
+\newblock \emph{NBER Books}.
+\bibAnnoteFile{durand1941risk}
+
+\bibitem[\protect\citeauthoryear{Eisenbeis}{Eisenbeis}{1978}]{eisenbeis1978problems}
+Eisenbeis, R.~A.
+\newblock 1978.
+\newblock Problems in applying discriminant analysis in credit scoring models.
+\newblock \emph{Journal of Banking \& Finance}, \textbf{2}(3): 205--219.
+\bibAnnoteFile{eisenbeis1978problems}
+
+\bibitem[\protect\citeauthoryear{Fisher}{Fisher}{1936}]{fisher1936use}
+Fisher, R.~A.
+\newblock 1936.
+\newblock The use of multiple measurements in taxonomic problems.
+\newblock \emph{Annals of human genetics}, \textbf{7}(2): 179--188.
+\bibAnnoteFile{fisher1936use}
+
+\bibitem[\protect\citeauthoryear{Gately}{Gately}{1995}]{gately1995neural}
+Gately, E.
+\newblock 1995.
+\newblock \emph{Neural networks for financial forecasting}.
+\newblock John Wiley \& Sons, Inc.
+\bibAnnoteFile{gately1995neural}
+
+\bibitem[\protect\citeauthoryear{Ghosh \bbland{} Reilly}{Ghosh \bbland{}
+  Reilly}{1994}]{ghosh1994credit}
+Ghosh, S. \bbland{} D.~L. Reilly, 1994.
+\newblock Credit card fraud detection with a neural-network.
+\newblock \capitalize\bblin{}: \emph{System Sciences, 1994. Proceedings of the
+  Twenty-Seventh Hawaii International Conference on}, \bblvolume{}~3,
+  \bblpages{} 621--630. IEEE.
+\bibAnnoteFile{ghosh1994credit}
+
+\bibitem[\protect\citeauthoryear{Gup \bbland{} Kolari}{Gup \bbland{}
+  Kolari}{2005}]{gup2005commercial}
+Gup, B.~E. \bbland{} J.~W. Kolari.
+\newblock 2005.
+\newblock \emph{Commercial banking: The management of risk}.
+\newblock John Wiley \& Sons Incorporated.
+\bibAnnoteFile{gup2005commercial}
+
+\bibitem[\protect\citeauthoryear{Hand \bbland{} Henley}{Hand \bbland{}
+  Henley}{1997}]{10.2307/2983268}
+Hand, D.~J. \bbland{} W.~E. Henley.
+\newblock 1997.
+\newblock Statistical classification methods in consumer credit scoring: A
+  review.
+\newblock \emph{Journal of the Royal Statistical Society. Series A (Statistics
+  in Society)}, \textbf{160}(3): 523--541.
+\newblock ISSN 09641998, 1467985X.
+\bibAnnoteFile{10.2307/2983268}
+\newline\urlprefix\url{http://www.jstor.org/stable/2983268}
+
+\bibitem[\protect\citeauthoryear{Hand \bbland{} Jacka}{Hand \bbland{}
+  Jacka}{1998}]{hand1998consumer}
+Hand, D.~J. \bbland{} S.~Jacka.
+\newblock 1998.
+\newblock Consumer credit and statistics.
+\newblock \emph{Statistics in finance}, \bblpages{} 69--81.
+\bibAnnoteFile{hand1998consumer}
+
+\bibitem[\protect\citeauthoryear{Hilbe}{Hilbe}{2011}]{hilbe2011logistic}
+Hilbe, J.~M.
+\newblock 2011.
+\newblock Logistic regression.
+\newblock \capitalize\bblin{}: \emph{International Encyclopedia of Statistical
+  Science}, \bblpages{} 755--758. Springer.
+\bibAnnoteFile{hilbe2011logistic}
+
+\bibitem[\protect\citeauthoryear{Hosmer, Jovanovic \bbland{} Lemeshow}{Hosmer
+  \emph{\bbletal{}}}{1989}]{hosmer1989best}
+Hosmer, D.~W., B.~Jovanovic \bbland{} S.~Lemeshow.
+\newblock 1989.
+\newblock Best subsets logistic regression.
+\newblock \emph{Biometrics}, \bblpages{} 1265--1270.
+\bibAnnoteFile{hosmer1989best}
+
+\bibitem[\protect\citeauthoryear{Huang, Chen \bbland{} Wang}{Huang
+  \emph{\bbletal{}}}{2007}]{huang2007credit}
+Huang, C.-L., M.-C. Chen \bbland{} C.-J. Wang.
+\newblock 2007.
+\newblock Credit scoring with a data mining approach based on support vector
+  machines.
+\newblock \emph{Expert systems with applications}, \textbf{33}(4): 847--856.
+\bibAnnoteFile{huang2007credit}
+
+\bibitem[\protect\citeauthoryear{Joanes}{Joanes}{1993}]{joanes1993reject}
+Joanes, D.~N.
+\newblock 1993.
+\newblock Reject inference applied to logistic regression for credit scoring.
+\newblock \emph{IMA Journal of Management Mathematics}, \textbf{5}(1): 35--43.
+\bibAnnoteFile{joanes1993reject}
+
+\bibitem[\protect\citeauthoryear{Keenan}{Keenan}{1998}]{keenan1998spatial}
+Keenan, P.~B.
+\newblock 1998.
+\newblock Spatial decision support systems for vehicle routing.
+\newblock \emph{Decision Support Systems}, \textbf{22}(1): 65--71.
+\bibAnnoteFile{keenan1998spatial}
+
+\bibitem[\protect\citeauthoryear{Koh, Tan \bbland{} Goh}{Koh
+  \emph{\bbletal{}}}{2015}]{koh2015two}
+Koh, H.~C., W.~C. Tan \bbland{} C.~P. Goh.
+\newblock 2015.
+\newblock A two-step method to construct credit scoring models with data mining
+  techniques.
+\newblock \emph{International Journal of Business and Information},
+  \textbf{1}(1).
+\bibAnnoteFile{koh2015two}
+
+\bibitem[\protect\citeauthoryear{Kohavi \bbland{} Quinlan}{Kohavi \bbland{}
+  Quinlan}{2002}]{kohavi2002data}
+Kohavi, R. \bbland{} J.~R. Quinlan, 2002.
+\newblock Data mining tasks and methods: Classification: decision-tree
+  discovery.
+\newblock \capitalize\bblin{}: \emph{Handbook of data mining and knowledge
+  discovery}, \bblpages{} 267--276. Oxford University Press, Inc.
+\bibAnnoteFile{kohavi2002data}
+
+\bibitem[\protect\citeauthoryear{Koutanaei, Sajedi \bbland{}
+  Khanbabaei}{Koutanaei \emph{\bbletal{}}}{2015}]{koutanaei2015hybrid}
+Koutanaei, F.~N., H.~Sajedi \bbland{} M.~Khanbabaei.
+\newblock 2015.
+\newblock A hybrid data mining model of feature selection algorithms and
+  ensemble learning classifiers for credit scoring.
+\newblock \emph{Journal of Retailing and Consumer Services}, \textbf{27}:
+  11--23.
+\bibAnnoteFile{koutanaei2015hybrid}
+
+\bibitem[\protect\citeauthoryear{Lee \bbland{} Chen}{Lee \bbland{}
+  Chen}{2005}]{lee2005two}
+Lee, T.-S. \bbland{} I.-F. Chen.
+\newblock 2005.
+\newblock A two-stage hybrid credit scoring model using artificial neural
+  networks and multivariate adaptive regression splines.
+\newblock \emph{Expert Systems with Applications}, \textbf{28}(4): 743--752.
+\bibAnnoteFile{lee2005two}
+
+\bibitem[\protect\citeauthoryear{Liberati, Camillo \bbland{} Saporta}{Liberati
+  \emph{\bbletal{}}}{2017}]{liberati2017advances}
+Liberati, C., F.~Camillo \bbland{} G.~Saporta.
+\newblock 2017.
+\newblock Advances in credit scoring: combining performance and interpretation
+  in kernel discriminant analysis.
+\newblock \emph{Advances in Data Analysis and Classification}, \textbf{11}(1):
+  121--138.
+\bibAnnoteFile{liberati2017advances}
+
+\bibitem[\protect\citeauthoryear{Long, Griffith, Selker \bbland{}
+  D'agostino}{Long \emph{\bbletal{}}}{1993}]{long1993comparison}
+Long, W.~J., J.~L. Griffith, H.~P. Selker \bbland{} R.~B. D'agostino.
+\newblock 1993.
+\newblock A comparison of logistic regression to decision-tree induction in a
+  medical domain.
+\newblock \emph{Computers and Biomedical Research}, \textbf{26}(1): 74--97.
+\bibAnnoteFile{long1993comparison}
+
+\bibitem[\protect\citeauthoryear{Nie, Rowe, Zhang, Tian \bbland{} Shi}{Nie
+  \emph{\bbletal{}}}{2011}]{nie2011credit}
+Nie, G., W.~Rowe, L.~Zhang, Y.~Tian \bbland{} Y.~Shi.
+\newblock 2011.
+\newblock Credit card churn forecasting by logistic regression and decision
+  tree.
+\newblock \emph{Expert Systems with Applications}, \textbf{38}(12):
+  15273--15285.
+\bibAnnoteFile{nie2011credit}
+
+\bibitem[\protect\citeauthoryear{Presky, Yang, Minetti, Chua, Nabavi, Wu,
+  Gately \bbland{} Gubler}{Presky
+  \emph{\bbletal{}}}{1996}]{presky1996functional}
+Presky, D.~H., H.~Yang, L.~J. Minetti, A.~O. Chua, N.~Nabavi, C.-Y. Wu, M.~K.
+  Gately \bbland{} U.~Gubler.
+\newblock 1996.
+\newblock A functional interleukin 12 receptor complex is composed of two
+  $\beta$-type cytokine receptor subunits.
+\newblock \emph{Proceedings of the National Academy of Sciences},
+  \textbf{93}(24): 14002--14007.
+\bibAnnoteFile{presky1996functional}
+
+\bibitem[\protect\citeauthoryear{Satchidananda \bbland{} Simha}{Satchidananda
+  \bbland{} Simha}{2006}]{satchidananda2006comparing}
+Satchidananda, S. \bbland{} J.~B. Simha.
+\newblock 2006.
+\newblock Comparing decision trees with logistic regression for credit risk
+  analysis.
+\newblock \emph{International Institute of Information Technology, Bangalore,
+  India}.
+\bibAnnoteFile{satchidananda2006comparing}
+
+\bibitem[\protect\citeauthoryear{Shmueli \bbland{} Koppius}{Shmueli \bbland{}
+  Koppius}{2011}]{shmueli2011predictive}
+Shmueli, G. \bbland{} O.~R. Koppius.
+\newblock 2011.
+\newblock Predictive analytics in information systems research.
+\newblock \emph{Mis Quarterly}, \bblpages{} 553--572.
+\bibAnnoteFile{shmueli2011predictive}
+
+\bibitem[\protect\citeauthoryear{Sola \bbland{} Sevilla}{Sola \bbland{}
+  Sevilla}{1997}]{sola1997importance}
+Sola, J. \bbland{} J.~Sevilla.
+\newblock 1997.
+\newblock Importance of input data normalization for the application of neural
+  networks to complex industrial problems.
+\newblock \emph{IEEE Transactions on Nuclear Science}, \textbf{44}(3):
+  1464--1468.
+\bibAnnoteFile{sola1997importance}
+
+\bibitem[\protect\citeauthoryear{Sullivan}{Sullivan}{1981}]{sullivan1981consumer}
+Sullivan, A.
+\newblock 1981.
+\newblock Consumer finance.
+\newblock \emph{EI Altman, Financial Handbook (9.3-9.27), New York: John Wiley
+  \& Sons}.
+\bibAnnoteFile{sullivan1981consumer}
+
+\bibitem[\protect\citeauthoryear{Sun, Liang, Wu \bbland{} Qu}{Sun
+  \emph{\bbletal{}}}{2013}]{sun2013web}
+Sun, G., R.~Liang, F.~Wu \bbland{} H.~Qu.
+\newblock 2013.
+\newblock A web-based visual analytics system for real estate data.
+\newblock \emph{Science China Information Sciences}, \textbf{56}(5): 1--13.
+\bibAnnoteFile{sun2013web}
+
+\bibitem[\protect\citeauthoryear{Thomas, Edelman \bbland{} Crook}{Thomas
+  \emph{\bbletal{}}}{2002}]{thomas2002credit}
+Thomas, L.~C., D.~B. Edelman \bbland{} J.~N. Crook.
+\newblock 2002.
+\newblock \emph{Credit scoring and its applications}.
+\newblock SIAM.
+\bibAnnoteFile{thomas2002credit}
+
+\bibitem[\protect\citeauthoryear{Tse}{Tse}{2002}]{tse2002estimating}
+Tse, R.~Y.
+\newblock 2002.
+\newblock Estimating neighbourhood effects in house prices: towards a new
+  hedonic model approach.
+\newblock \emph{Urban studies}, \textbf{39}(7): 1165--1180.
+\bibAnnoteFile{tse2002estimating}
+
+\bibitem[\protect\citeauthoryear{West}{West}{2000}]{west2000neural}
+West, D.
+\newblock 2000.
+\newblock Neural network credit scoring models.
+\newblock \emph{Computers \& Operations Research}, \textbf{27}(11): 1131--1152.
+\bibAnnoteFile{west2000neural}
+
+\bibitem[\protect\citeauthoryear{Xia, Liu, Li \bbland{} Liu}{Xia
+  \emph{\bbletal{}}}{2017}]{xia2017boosted}
+Xia, Y., C.~Liu, Y.~Li \bbland{} N.~Liu.
+\newblock 2017.
+\newblock A boosted decision tree approach using bayesian hyper-parameter
+  optimization for credit scoring.
+\newblock \emph{Expert Systems with Applications}, \textbf{78}: 225--241.
+\bibAnnoteFile{xia2017boosted}
+
+\bibitem[\protect\citeauthoryear{Zekic-Susac, Sarlija \bbland{}
+  Bensic}{Zekic-Susac \emph{\bbletal{}}}{2004}]{zekic2004small}
+Zekic-Susac, M., N.~Sarlija \bbland{} M.~Bensic, 2004.
+\newblock Small business credit scoring: a comparison of logistic regression,
+  neural network, and decision tree models.
+\newblock \capitalize\bblin{}: \emph{Information Technology Interfaces, 2004.
+  26th International Conference on}, \bblpages{} 265--270. IEEE.
+\bibAnnoteFile{zekic2004small}
+
+\bibitem[\protect\citeauthoryear{Zhang, Zhou, Leung \bbland{} Zheng}{Zhang
+  \emph{\bbletal{}}}{2010}]{zhang2010vertical}
+Zhang, D., X.~Zhou, S.~C. Leung \bbland{} J.~Zheng.
+\newblock 2010.
+\newblock Vertical bagging decision trees model for credit scoring.
+\newblock \emph{Expert Systems with Applications}, \textbf{37}(12): 7838--7843.
+\bibAnnoteFile{zhang2010vertical}
+
+\bibitem[\protect\citeauthoryear{Zhou, Yang \bbland{} Hu}{Zhou
+  \emph{\bbletal{}}}{2016}]{zhou2016research}
+Zhou, X., L.~Yang \bbland{} H.~Hu.
+\newblock 2016.
+\newblock Research of thunderstorm warning system based on credit scoring
+  model.
+\newblock \capitalize\bblin{}: \emph{Frontier Computing}, \bblpages{} 65--76.
+  Springer.
+\bibAnnoteFile{zhou2016research}
+
+\bibitem[\protect\citeauthoryear{Zhou, Zhang \bbland{} Jiang}{Zhou
+  \emph{\bbletal{}}}{2008}]{zhou2008new}
+Zhou, X., D.~Zhang \bbland{} Y.~Jiang.
+\newblock 2008.
+\newblock A new credit scoring method based on rough sets and decision tree.
+\newblock \emph{Advances in Knowledge Discovery and Data Mining}, \bblpages{}
+  1081--1089.
+\bibAnnoteFile{zhou2008new}
+
+\end{thebibliography}

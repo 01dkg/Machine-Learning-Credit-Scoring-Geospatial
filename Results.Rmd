@@ -25,7 +25,7 @@ save(lr, file = "Model/lr.rda")
 ```
 
 ```{r}
-significant.variables <- summary(lr)$coeff[-1,4] < 0.01
+significant.variables <- summary(lr)$coeff[-1,4] < 0.05
 names(significant.variables)[significant.variables == TRUE]
 ```
 ```{r}
@@ -46,10 +46,17 @@ lr_prediction <- prediction(testDatav2$lr_score, testDatav2$DefaultedLoans)
 lr_performance <- performance(lr_prediction,"tpr","fpr")
 
 #ROC
-plot(lr_performance, lwd=2, colorize=TRUE, main="ROC m1: Logistic Regression Performance")
+plot(lr_performance, lwd=2, colorize=TRUE, main="ROC LR: Logistic Regression Performance")
 lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
 lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 ```
+```{r}
+defaultPredict <- predict(lr, trainDatav2, type = 'response')
+matrix <- table(defaultPredict, trainDatav2$DefaultedLoans)
+print(matrix)
+print((matrix[4]+matrix[1])/nrow(trainDatav2))
+```
+
 ```{r}
 # Plot precision/recall curve
 lr_performance_precision <- performance(lr_prediction, measure = "prec", x.measure = "rec")
@@ -64,29 +71,12 @@ plot(lr_performance_accuracy, main="LR Logistic:Accuracy as function of threshol
 
 ```{r}
 #KS, Gini & AUC m1
-<<<<<<< HEAD
 lr_KS <- round(max(attr(lr_performance,'y.values')[[1]]-attr(lr_performance,'x.values')[[1]])*100, 2)
 lr_AUROC <- round(performance(lr_prediction, measure = "auc")@y.values[[1]]*100, 2)
 lr_Gini <- (2*lr_AUROC - 100)
 cat("AUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
 ```
 ```{r}
-confusion.glm <- function(data, model) {
-  prediction <- ifelse(predict(model, data, type='response') > 0.5, TRUE, FALSE)
-  confusion  <- table(prediction, as.logical(model$y))
-  confusion  <- cbind(confusion, c(1 - confusion[1,1]/(confusion[1,1]+confusion[2,1]), 1 - confusion[2,2]/(confusion[2,2]+confusion[1,2])))
-  confusion  <- as.data.frame(confusion)
-  names(confusion) <- c('FALSE', 'TRUE', 'class.error')
-  confusion
-}
-
-confusion.glm(testDatav2$lr_prediction,lr)
-=======
-lr_KS <- round(max(attr(m1_perf,'y.values')[[1]]-attr(lr_performance,'x.values')[[1]])*100, 2)
-lr_AUROC <- round(performance(lr_prediction, measure = "auc")@y.values[[1]]*100, 2)
-lr_Gini <- (2*lr_AUROC - 100)
-cat("AUROC: ",lr_AUROC,"\tKS: ", m1_KS, "\tGini:", lr_Gini, "\n")
->>>>>>> 6af8e78d55774ecb624a1f9a9b014a3611dadb88
 ```
 
 # Decision Tree Results
@@ -105,13 +95,12 @@ DT <- rpart(DefaultedLoans ~ InterestIncome + CreditRating+
     InterestType + NewLoan + ProbationaryLoans + MortgageYears + 
     MortgageType + InArrears + County + AddressLatitude + AddressLongitude
     ,method = "class",data=trainDatav2,
-            control =  rpart.control(minisplit=5,cp = 0.001))
+            control =  rpart.control(minisplit=50,cp = 0.00123))
 
 save(fit, file = "Model/DT.rda")
-print(DT)
 prp(DT)
-tree.1 <- DT
-fancyRpartPlot(tree.1)
+new.fit <- prp(DT,snip=TRUE)$obj
+fancyRpartPlot(new.fit)
 ```
 ```{r}
 # score test data
@@ -127,13 +116,13 @@ lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 ```{r}
 # Plot precision/recall curve
 DT_performance_precision <- performance(DT_prediction, measure = "prec", x.measure = "rec")
-plot(DT_performance_precision, main="Decision Tree vs Precision/recall curve")
+plot(DT_performance_precision, main="Decision Tree: Precision vs Recall curve")
 ```
 ```{r}
 # Plot accuracy as function of threshold
 DT_perf_acc <- performance(DT_prediction, measure = "acc")
 plot(DT_perf_acc, main="m2 Recursive Partitioning:Accuracy as function of threshold")
-<<<<<<< HEAD
+
 ```
 
 ```{r}
@@ -158,7 +147,7 @@ legend(0.6,0.5,
            col=c('blue','red'),
            lwd=3);
 lines(c(0,1),c(0,1),col = "gray", lty = 4 ) # random line
-=======
+
 ```
 
 ```{r}
@@ -167,8 +156,9 @@ DT_AUROC <- round(performance(DT_prediction, measure = "auc")@y.values[[1]]*100,
 DT_KS <- round(max(attr(DT_performance,'y.values')[[1]]-attr(DT_performance,'x.values')[[1]])*100, 2)
 DT_Gini <- (2*DT_AUROC - 100)
 cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
->>>>>>> 6af8e78d55774ecb624a1f9a9b014a3611dadb88
+
 ```
+
 ```{r}
 plot(lr_performance, col='blue', lty=1, main='ROCs: Model Performance Comparision') # logistic regression
 plot(DT_performance, col='red',lty=2, add=TRUE); # simple 

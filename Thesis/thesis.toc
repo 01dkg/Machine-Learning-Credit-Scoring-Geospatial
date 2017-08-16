@@ -33,13 +33,14 @@
 \contentsline {chapter}{\numberline {5}Results}{35}
 \contentsline {section}{\numberline {5.1}Overview}{35}
 \contentsline {section}{\numberline {5.2}Introduction}{35}
-\contentsline {chapter}{\numberline {6}Discussion}{38}
-\contentsline {section}{\numberline {6.1}Introduction}{38}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{39}
-\contentsline {section}{\numberline {7.1}Introduction}{40}
-\contentsline {chapter}{Detailed tables}{41}
-\contentsline {chapter}{Appendices}{41}
-\contentsline {chapter}{Program code}{42}
-\contentsline {chapter}{Glossary}{43}
-\contentsline {chapter}{Bibliography}{44}
-\contentsline {chapter}{List of Notation}{49}
+\contentsline {section}{\numberline {5.3}Performance}{36}
+\contentsline {chapter}{\numberline {6}Discussion}{39}
+\contentsline {section}{\numberline {6.1}Introduction}{39}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{40}
+\contentsline {section}{\numberline {7.1}Introduction}{41}
+\contentsline {chapter}{Detailed tables}{42}
+\contentsline {chapter}{Appendices}{42}
+\contentsline {chapter}{Program code}{43}
+\contentsline {chapter}{Glossary}{44}
+\contentsline {chapter}{Bibliography}{45}
+\contentsline {chapter}{List of Notation}{51}

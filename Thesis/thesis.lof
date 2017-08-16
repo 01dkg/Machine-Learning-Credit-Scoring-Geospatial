@@ -8,7 +8,10 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Data Processing using Alteryx}}{27}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Standard Logistic Regression}}{31}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces ROCs for logistic regression vs decision tree}}{36}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Logistic Regression}}{37}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Decision Tree}}{37}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Precision vs Recall curve}}{37}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces ROCs for logistic regression vs decision tree}}{38}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
