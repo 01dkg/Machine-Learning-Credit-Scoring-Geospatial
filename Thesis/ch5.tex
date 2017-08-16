@@ -21,7 +21,26 @@ Model prediction accuracy of original test data set was 99.65\%, which is practi
 
 Original data set consist of 237389 observations and 35 variables, according to data 95\% loan applications will not default, and only 5\% application had chances to default. Therefore, to consider all possible scenarios data has been modified and a data subset has been generated from original dataset to carry experiments. New dataset has 36696 observations and 26 variabls. 
 
-\begin{table}[]
+\section{Performance}
+\textbf{Decision Tree over Logistic Regression:}
+
+\cite{long1993comparison} studied decision tree application for classifying heart disease patient and compared the performance of decision tree with logistic regression. \cite{long1993comparison}, also noted that logistic regression model failed to consider missing data and decision tree model easily worked when data was noisy. \cite{satchidananda2006comparing}, build credit scoring model and found that decision tree produce a more precise model and good performance in comparison to logistic regression.
+
+In this research work, decision tree performance did better against the logistic regression performance. Decision tree accuracy is 81.11\%, and logistic regression accuracy is 68.34\%. Based on the results of previous research work and after considering current experiments results on KPMG dataset, it is appropriate to build the business dashboard using decision tree model.
+
+Another advantage of using decision tree model is that one can control the growth of decision tree using 'split' setting by doing so model performance can be optimised. On the other hand,  to train model with logistic regression, one to select the restricted number of independent variables, otherwise, the model can not be trained with many variables as vector size response variable grows exponentially.
+
+Significant Variables in Logistic regression:
+\begin{verbatim}
+[1] "CreditRating"               "PropertyValue"             
+ [3] "LoanBalance"                "LTV"                       
+ [5] "NewLoanYes"                 "ProbationaryLoansYes"      
+ [7] "MortgageTypeOwner Occupied" "CountyCavan"               
+ [9] "CountyDonegal"              "CountyDublin"              
+
+\end{verbatim}
+
+\begin{table}[!htb]
 \centering
 \caption{Comparison of Logistic Regression and Decision Tree performance}
 \label{table:results}
@@ -33,6 +52,23 @@ Original data set consist of 237389 observations and 35 variables, according to 
 \end{tabular}
 \end{table}
 
+In table. \ref{table:results}, KS is the Kolmogorov-Smirnov goodness-of-Fit Test (or KS-Test), GINI is Gini coefficient of inequality distribution of response variable and AUC is Area under ROC (Receiver Operating Chaterstics) curve.\\
+
+\begin{figure*}[t!]
+    \centering
+    \begin{subfigure}
+        \centering
+        \includegraphics[height=1.2in]{LRrecall.png}
+        \caption{Logistic Regression}
+    \end{subfigure}%
+    \begin{subfigure}
+        \centering
+        \includegraphics[height=1.2in]{DRrecall.png}
+        \caption{Decision Tree}
+    \end{subfigure}
+    \caption{Precision vs Recall curve}
+\end{figure*}
+
 
 \begin{center}
 \begin{figure}[!htb]
@@ -43,27 +79,7 @@ Original data set consist of 237389 observations and 35 variables, according to 
 \end{figure}
 \end{center}
 
-In table. \ref{table:results}, KS is the Kolmogorov-Smirnov goodness-of-Fit Test (or KS-Test), GINI is Gini coefficient of inequality distribution of response variable and AUC is Area under ROC (Receiver Operating Chaterstics) curve.
-
-
 Receiver under curve is one of technique to estimate the performance of predictive model.
 
-Limitations of data in real life application. Accuracy might vary
-
-As provided was made up due to confidential agreement. Data is generated from pre-defined formulas which made it look quite original but it could cover all possible scenarios of real life. For example, it failed to consider a scenario when a customer is defaulting while being in creting rating 1 (Good Credit). \\
-
-Intially, Logistic Regression and Decsion tree were giving accuracy of 99.31\% which is practially not possible in credit scoring. during this research work we found that various other researchers also pointed out that Logistic regression is much better modelling technique than any other statsical techqnique. For Instance Mr.x noted in work that neural network can work at par with logistic regression model provided that the target variable is predict result in yes or no.\\
-
-Similarly decision tree has other limitations with respect to number of possible nodes and leafs for making creteria. hence decision tree end with less number of rules. Mr. Y compared the performance of Decesion tree and LR and found LR performance is higher than 5\%
-
-As per dasssssssssssh paper 25 - 30\% error is expected in credit rating system because human nature is quite difficult to predict. Similar in this scenario it is quite complex to various parameter to consider to build solid system which have high accuracy. One of the leading bank in Ireland in past attempted to consider upto 600 parameter to all possible cases of credit using Artificial Intelligence 
-testiing of model.
-
-Accuracy reduced to 25\% after scaling variables. Compare difference between model performance and how it is improved.
-
-How we implemented the model
-
-Explaing Limitations of Algorithm and why one algo is better
-FUTURE SCOPE IS AI of this credit scoring
 
 
