@@ -53,8 +53,6 @@ lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 ```{r}
 defaultPredict <- predict(lr, trainDatav2, type = 'response')
 matrix <- table(defaultPredict, trainDatav2$DefaultedLoans)
-print(matrix)
-print((matrix[4]+matrix[1])/nrow(trainDatav2))
 ```
 
 ```{r}
@@ -135,6 +133,8 @@ cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
 defaultPredict <- predict(DT, trainDatav2, type = 'class')
 matrix <- table(defaultPredict, trainDatav2$DefaultedLoans)
 print(matrix)
+cm<- confusionMatrix(defaultPredict,trainDatav2$DefaultedLoans)
+fourfoldplot(cm$table)
 print((matrix[4]+matrix[1])/nrow(trainDatav2))
 ```
 

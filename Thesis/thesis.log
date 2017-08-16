@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  16 AUG 2017 23:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  17 AUG 2017 00:16
 entering extended mode
 **E:/KPMG/KPMG/Thesis/thesis.tex
 (E:/KPMG/KPMG/Thesis/thesis.tex
@@ -328,7 +328,9 @@ Writing index file thesis.idx
 LaTeX Warning: Unused global option(s):
     [bibtotoc].
 
-(thesis.aux)
+(thesis.aux (preface.aux) (ch1.aux) (ch2.aux) (ch3.aux) (ch4.aux) (ch5.aux)
+(ch6.aux) (ch7.aux) (appendix1.aux) (appendix2.aux) (glossary.aux)
+(notation.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 200.
@@ -424,1142 +426,654 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 ] (thesis.toc [3
 
+])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+ [4]
+(thesis.lof)
+\tf@lof=\write5
+\openout5 = `thesis.lof'.
+
+ [5
+
+] (thesis.lot)
+\tf@lot=\write6
+\openout6 = `thesis.lot'.
+
+ [6
+
+] (thesis.loa)
+\tf@loa=\write7
+\openout7 = `thesis.loa'.
+
+ [7
+
 ]
-! Missing { inserted.
-<to be read again> 
-                   \def 
-l.42 ...begingroup \immediate \write \@unused \def
-                                                   \MessageBreak \let \prote...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+\openout2 = `preface.aux'.
 
+ (preface.tex) [8
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+[9
+
+
+] [10
+
+]
+\openout2 = `ch1.aux'.
+
+ (ch1.tex
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+[1
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Runaway text?
-\def \MessageBreak \let \protect \edef Try typing <return> to proceed\ETC.
-! File ended while scanning text of \write.
-<inserted text> 
-                }
-l.259 \tableofcontents
-                      
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.259 \tableofcontents
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.259 \tableofcontents
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.259 \tableofcontents
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(thesis.toc
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.1 \contentsline {chapter}{List of figures}{v}
-                                               
-(That makes 100 errors; please try again.) 
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+ [3]) [4]
+\openout2 = `ch2.aux'.
+
+ (ch2.tex
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+[5
+
+
+
+]) [6]
+\openout2 = `ch3.aux'.
+
+ (ch3.tex
+Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+[7
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+<Loanflowchart.jpg, id=59, 878.53218pt x 481.04718pt>
+File: Loanflowchart.jpg Graphic file (type jpg)
+ <use Loanflowchart.jpg>
+Package pdftex.def Info: Loanflowchart.jpg used on input line 20.
+(pdftex.def)             Requested size: 398.33858pt x 218.12077pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+[8] [9 <./Loanflowchart.jpg>]
+Overfull \hbox (24.51929pt too wide) in paragraph at lines 41--41
+[]\OT1/cmr/bx/n/14.4 Traditional Sub-jec-tive As-sess-ment Sys-tem and Credit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
+[]\OT1/cmr/m/n/12 Linear Re-gres-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]\OT1/cmr/m/n/12 Discriminant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+
+Overfull \hbox (6.92114pt too wide) in paragraph at lines 97--98
+[]\OT1/cmr/bx/n/12 Discriminant Anal-y-sis: \OT1/cmr/m/n/12 In credit scor-ing 
+mod-els, a sta-tis-ti-cal anal-y-sis method
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+[16] <simpledt.png, id=89, 977.15062pt x 508.90125pt>
+File: simpledt.png Graphic file (type png)
+ <use simpledt.png>
+Package pdftex.def Info: simpledt.png used on input line 104.
+(pdftex.def)             Requested size: 398.33858pt x 207.45502pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--109
+
+ []
+
+[17 <./simpledt.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+) [20]
+\openout2 = `ch4.aux'.
+
+ (ch4.tex
+Chapter 4.
+
+Overfull \hbox (4.42546pt too wide) in paragraph at lines 30--31
+[]\OT1/cmr/m/n/12 Following pack-ages used
+ []
+
+[21
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[]\OT1/cmr/bx/n/12 Operating
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]\OT1/cmr/m/n/12 Intel(R) Core(TM) i3-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+[]\OT1/cmr/m/n/12 Intel(R) Core(TM) i3-
+ []
+
+
+Overfull \hbox (7.54724pt too wide) in paragraph at lines 43--51
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+[22] [23]
+Overfull \hbox (21.56163pt too wide) in paragraph at lines 87--87
+[]\OT1/cmtt/m/n/12 [4] "ProbationaryLoans"     "MortgageType"   "NewLoan"      
+   "NIM"[] 
+ []
+
+
+Overfull \hbox (21.56163pt too wide) in paragraph at lines 87--87
+[]\OT1/cmtt/m/n/12 [8] "DefaultedLoans"        "CreditRating"   "InterestIncome
+"  "LTV"[] 
+ []
+
+
+Overfull \hbox (3.03662pt too wide) in paragraph at lines 87--87
+[]\OT1/cmtt/m/n/12 [30] "UpdatedPropertyValue" "LTVUpdated"     "LTVCategoryUpd
+ated"[] 
+ []
+
+[24]
+Missing character: There is no â in font cmtt12!
+Missing character: There is no € in font cmtt12!
+Missing character: There is no ˜ in font cmtt12!
+Missing character: There is no â in font cmtt12!
+Missing character: There is no € in font cmtt12!
+Missing character: There is no ™ in font cmtt12!
+Missing character: There is no â in font cmtt12!
+Missing character: There is no € in font cmtt12!
+Missing character: There is no ˜ in font cmtt12!
+Missing character: There is no â in font cmtt12!
+Missing character: There is no € in font cmtt12!
+Missing character: There is no ™ in font cmtt12!
+
+Overfull \hbox (9.21162pt too wide) in paragraph at lines 158--158
+[]\OT1/cmtt/m/n/12 Classes tbl_df, tbl and 'data.frame': 36696 obs. of  20 vari
+ables:[] 
+ []
+
+
+Overfull \hbox (40.08664pt too wide) in paragraph at lines 158--158
+[] \OT1/cmtt/m/n/12 $ ContractRef         : chr  "00000CONTR00111034" "00000CON
+TR00146183"[] 
+ []
+
+
+Overfull \hbox (3.03662pt too wide) in paragraph at lines 158--158
+[] \OT1/cmtt/m/n/12 $ InterestType        : Factor w/ 3 levels "Fixed","Tracker
+",..:[] 
+ []
+
+[25]
+Overfull \hbox (21.56163pt too wide) in paragraph at lines 158--158
+[] \OT1/cmtt/m/n/12 $ LTVCategory         : Factor w/ 11 levels "> 100%","0 to 
+10%",..:[] 
+ []
+
+
+Overfull \hbox (3.03662pt too wide) in paragraph at lines 158--158
+[] \OT1/cmtt/m/n/12 $ County              : Factor w/ 26 levels "Carlow","Cavan
+",..:[] 
+ []
+
+[26] <ETL.jpg, id=122, 963.6pt x 542.025pt>
+File: ETL.jpg Graphic file (type jpg)
+ <use ETL.jpg>
+Package pdftex.def Info: ETL.jpg used on input line 164.
+(pdftex.def)             Requested size: 398.33858pt x 224.0595pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+[27 <./ETL.jpg>] <dataprocess.png, id=127, 530.73282pt x 243.15843pt>
+File: dataprocess.png Graphic file (type png)
+
+<use dataprocess.png>
+Package pdftex.def Info: dataprocess.png used on input line 175.
+(pdftex.def)             Requested size: 398.33858pt x 182.50194pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+[28 <./dataprocess.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+[29] [30] <logistic.jpg, id=138, 464.4853pt x 355.3275pt>
+File: logistic.jpg Graphic file (type jpg)
+ <use logistic.jpg>
+Package pdftex.def Info: logistic.jpg used on input line 239.
+(pdftex.def)             Requested size: 398.33858pt x 304.73529pt.
+
+Overfull \hbox (27.73663pt too wide) in paragraph at lines 256--256
+[]\OT1/cmtt/m/n/12 m2 <- glm(DefaultedLoans ~., family = "binomial", data = tra
+inDatav2)[] 
+ []
+
+
+Overfull \hbox (15.38663pt too wide) in paragraph at lines 266--266
+[]\OT1/cmtt/m/n/12 simpleglmv2 <- glm(DefaultedLoans ~ CreditRating + InterestI
+ncome +[] 
+ []
+
+
+Overfull \hbox (64.78665pt too wide) in paragraph at lines 266--266
+[]    \OT1/cmtt/m/n/12 MortgageType + InArrears + County + AddressLatitude + Ad
+dressLongitude,[] 
+ []
+
+[31]
+Overfull \hbox (3.03662pt too wide) in paragraph at lines 272--272
+[]\OT1/cmtt/m/n/12 testDatav2$prediction <- predict(simpleglmv2, newdata=testDa
+tav2,[] 
+ []
+
+[32 <./logistic.jpg>]
+Overfull \hbox (46.26164pt too wide) in paragraph at lines 312--312
+[]\OT1/cmtt/m/n/12 defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County +
+ LoanBalance[] 
+ []
+
+
+Overfull \hbox (27.73663pt too wide) in paragraph at lines 312--312
+[]\OT1/cmtt/m/n/12 + PropertyValue + InterestIncome + CreditRating + AnnualPYMT
+ + County[] 
+ []
+
+[33]
+Overfull \hbox (46.26164pt too wide) in paragraph at lines 312--312
+[]\OT1/cmtt/m/n/12 + AddressLatitude + AddressLongitude ,method = "class",data=
+trainDatav2,[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
+
+ []
+
+[34]
+Overfull \hbox (64.78665pt too wide) in paragraph at lines 353--353
+[]\OT1/cmtt/m/n/12 SCRIPT_REAL('mydata <- data.frame(DefaultedLoans=.arg1, Cred
+itRating=.arg2,[] 
+ []
+
+
+Overfull \hbox (46.26164pt too wide) in paragraph at lines 353--353
+[]\OT1/cmtt/m/n/12 InterestIncome=.arg3, LoanBalance =.arg4, AnnualPYMT =.arg5,
+ LTV =.arg6,[] 
+ []
+
+
+Overfull \hbox (64.78665pt too wide) in paragraph at lines 353--353
+[]\OT1/cmtt/m/n/12 MortgageYears=.arg10,MortgageType=.arg11, InArrears =.arg12,
+County =.arg13,[] 
+ []
+
+
+Overfull \hbox (40.08664pt too wide) in paragraph at lines 353--353
+[]\OT1/cmtt/m/n/12 AddressLatitude=.arg14, AddressLongitude=.arg15, PropertyVal
+ue=.arg16);[] 
+ []
+
+
+Overfull \hbox (15.38663pt too wide) in paragraph at lines 353--353
+[]\OT1/cmtt/m/n/12 prob <- predict(simpleglmv2, newdata = mydata, type = "respo
+nse")',[] 
+ []
+
+
+Overfull \hbox (27.73663pt too wide) in paragraph at lines 353--353
+[]\OT1/cmtt/m/n/12 ATTR([Defaulted Loans]),ATTR([Credit Rating]),AVG([Interest 
+Income]),[] 
+ []
+
+
+Overfull \hbox (46.26164pt too wide) in paragraph at lines 353--353
+[]\OT1/cmtt/m/n/12 AVG([Loan Balance]),AVG([Annual PYMT]),AVG([LTV]),ATTR([Inte
+rest Type]),[] 
+ []
+
+
+Overfull \hbox (9.21162pt too wide) in paragraph at lines 353--353
+[]\OT1/cmtt/m/n/12 ATTR([New Loan]),ATTR([Probationary Loans]),AVG([Mortgage Ye
+ars]),[] 
+ []
+
+
+Overfull \hbox (40.08664pt too wide) in paragraph at lines 353--353
+[]\OT1/cmtt/m/n/12 AVG([Address Latitude]),AVG([Address Longitude]),AVG([Proper
+ty Value]))[] 
+ []
+
+) [35]
+\openout2 = `ch5.aux'.
+
+ (ch5.tex
+Chapter 5.
+[36
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+<LRrecall.png, id=158, 526.96875pt x 325.215pt>
+File: LRrecall.png Graphic file (type png)
+ <use LRrecall.png>
+Package pdftex.def Info: LRrecall.png used on input line 61.
+(pdftex.def)             Requested size: 140.5225pt x 86.72377pt.
+
+<DRrecall.png, id=159, 526.96875pt x 325.215pt>
+File: DRrecall.png Graphic file (type png)
+ <use DRrecall.png>
+Package pdftex.def Info: DRrecall.png used on input line 66.
+(pdftex.def)             Requested size: 140.5225pt x 86.72377pt.
+ [37]
+<results1.png, id=163, 526.96875pt x 315.42844pt>
+File: results1.png Graphic file (type png)
+ <use results1.png>
+Package pdftex.def Info: results1.png used on input line 75.
+(pdftex.def)             Requested size: 398.33858pt x 238.44301pt.
+ [38 <./LRrecall.png> <./DRrecall.png>] <DTorg.png, id=167, 526.96875pt x 325.2
+15pt>
+File: DTorg.png Graphic file (type png)
+
+<use DTorg.png>
+Package pdftex.def Info: DTorg.png used on input line 88.
+(pdftex.def)             Requested size: 398.33858pt x 245.841pt.
+ <DTmod.png, id=168, 526.96875pt x 325.215pt>
+File: DTmod.png Graphic file (type png)
+ <use DTmod.png>
+Package pdftex.def Info: DTmod.png used on input line 99.
+(pdftex.def)             Requested size: 398.33858pt x 245.841pt.
+)
+[39 <./results1.png>] [40 <./DTorg.png>] [41 <./DTmod.png>]
+\openout2 = `ch6.aux'.
+
+ (ch6.tex
+Chapter 6.
+) [42
+
+
+
+]
+\openout2 = `ch7.aux'.
+
+ (ch7.tex
+Chapter 7.
+) [43
+
+
+
+] [44]
+\openout2 = `appendix1.aux'.
+
+ (appendix1.tex) [45
+
+
+
+
+
+
+]
+\openout2 = `appendix2.aux'.
+
+ (appendix2.tex) [46
+
+
+
+]
+\openout2 = `glossary.aux'.
+
+ (glossary.tex) [47
+
+
+
+
+]
+(thesis.bbl (babelbst.tex) [48
+
+
+
+]
+Missing character: There is no â in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+Missing character: There is no â in font cmti12!
+Missing character: There is no € in font cmti12!
+Missing character: There is no ™ in font cmti12!
+ [49] [50] [51] [52]) [53]
+\openout2 = `notation.aux'.
+
+ (notation.tex
+
+LaTeX Warning: Reference `Th.FF.fte.field' on page 54 undefined on input line 2
+5.
+
+) [54
+
+
+
+] (thesis.ind) (thesis.aux (preface.aux) (ch1.aux) (ch2.aux) (ch3.aux)
+(ch4.aux) (ch5.aux) (ch6.aux) (ch7.aux) (appendix1.aux) (appendix2.aux)
+(glossary.aux) (notation.aux))
+
+LaTeX Warning: There were undefined references.
+
+ )
+(\end occurred inside a group at level 2)
+
+### simple group (level 2) entered at line 15 ({)
+### simple group (level 1) entered at line 1061 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 4872 strings out of 493333
- 65289 string characters out of 3139192
- 140550 words of memory out of 3000000
- 8247 multiletter control sequences out of 15000+200000
- 13386 words of font info for 55 fonts, out of 3000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 203i,6n,328p,1467b,2984s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 5311 strings out of 493333
+ 72424 string characters out of 3139192
+ 153804 words of memory out of 3000000
+ 8575 multiletter control sequences out of 15000+200000
+ 14468 words of font info for 59 fonts, out of 3000000 for 9000
+ 1146 hyphenation exceptions out of 8191
+ 40i,9n,33p,1790b,3223s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (64 pages, 549511 bytes).
+PDF statistics:
+ 250 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!

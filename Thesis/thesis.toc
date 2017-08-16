@@ -35,14 +35,13 @@
 \contentsline {section}{\numberline {5.1}Overview}{36}
 \contentsline {section}{\numberline {5.2}Introduction}{36}
 \contentsline {section}{\numberline {5.3}Performance}{37}
-\contentsline {chapter}{\numberline {6}Discussion}{40}
-\contentsline {section}{\numberline {6.1}Introduction}{40}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{41}
-\contentsline {section}{\numberline {7.1}Introduction}{42}
-\protect \protect \begingroup \immediate \write \@unused \def \MessageBreak \let \protect \edef Try typing <return> to proceed.\MessageBreak If that doesn't work, type X <return> to quit. \errhelp \let \def \MessageBreak \def \errmessage LaTeX Error: Something's wrong--perhaps a missing \protect \relax \let \reserved@d =[\def \par \endgroup \vskip \cftbeforechapskip {\leftskip \cftchapindent \relax \rightskip 2.55em\parfillskip -\rightskip \parindent \cftchapindent \relax \let } 
-\contentsline {chapter}{Detailed tables}{43}
-\contentsline {chapter}{Program code}{44}
-\protect \protect \begingroup \immediate \write \@unused \def \MessageBreak \let \protect \edef Try typing <return> to proceed.\MessageBreak If that doesn't work, type X <return> to quit. \errhelp \let \def \MessageBreak \def \errmessage LaTeX Error: Something's wrong--perhaps a missing \protect \relax \let \reserved@d =[\def \def \def \relax \vadjust {\def \par {\let \par \@@par \par }\hrule height\z@ \penalty \@M \vskip \relax \vadjust {\def \par {\let \par \@@par \par }\hrule height\z@ \penalty \@M \vskip \vskip \vskip \z@skip }\relax \z@skip }\relax \let 
-\protect \protect \begingroup \immediate \write \@unused \def \MessageBreak \let \protect \edef Try typing <return> to proceed.\MessageBreak If that doesn't work, type X <return> to quit. \errhelp \let \def \MessageBreak \def \errmessage LaTeX Error: Something's wrong--perhaps a missing \protect \relax \let \reserved@d =[\def \def thebibliography{thebibliography}\edef on input line 2{ on input line 2}\par \vfil \penalty -\@M \write \m@ne {}\vbox {}\penalty -\@Mi \global \let 
-\protect \protect \begingroup \immediate \write \@unused \def \MessageBreak \let \protect \edef Try typing <return> to proceed.\MessageBreak If that doesn't work, type X <return> to quit. \errhelp \let \def \MessageBreak \def \errmessage LaTeX Error: Something's wrong--perhaps a missing \protect \relax \let \reserved@d =[\def \def document{thebibliography}\edef { on input line 423}\par \vfil \penalty -\@M \write \m@ne {}\vbox {}\penalty -\@Mi \global \let 
-\protect \protect \begingroup \immediate \write \@unused \def \MessageBreak \let \protect \edef Try typing <return> to proceed.\MessageBreak If that doesn't work, type X <return> to quit. \errhelp \let \def \MessageBreak \def \errmessage LaTeX Error: Something's wrong--perhaps a missing \protect \relax \let \reserved@d =[\def document{\def \relax \vadjust {\def \par {\let \par \@@par \par }\vskip \let \vskip \cftbeforechapskip {\leftskip \cftchapindent \relax \rightskip 2.55em\parfillskip -\rightskip \parindent \cftchapindent \relax \let } } } 
+\contentsline {chapter}{\numberline {6}Discussion}{42}
+\contentsline {section}{\numberline {6.1}Introduction}{42}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{43}
+\contentsline {section}{\numberline {7.1}Introduction}{44}
+\contentsline {chapter}{Detailed tables}{45}
+\contentsline {chapter}{Appendices}{45}
+\contentsline {chapter}{Program code}{46}
+\contentsline {chapter}{Glossary}{47}
+\contentsline {chapter}{Bibliography}{48}
+\contentsline {chapter}{List of Notation}{54}

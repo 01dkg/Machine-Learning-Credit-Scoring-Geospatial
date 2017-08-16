@@ -75,8 +75,34 @@ In table. \ref{table:results}, KS is the Kolmogorov-Smirnov goodness-of-Fit Test
 \includegraphics[width=\textwidth]{results1.png}
 \centering
 \caption{ROCs for logistic regression vs decision tree}{\textbf{Source:} Plotted in R Studio}
-\label{fig:result}
+\label{fig:roc}
 \end{figure}
 \end{center}
 
-Receiver under curve is one of technique to estimate the performance of predictive model.
+Receiver operating characteristic (ROC) is one of technique to estimate the performance of predictive model by plotting true positive rate against the false positive rate. In fig. \ref{fig:roc}, performance of logistic regression and decision tree has been compared for ROC index. In general, higher the area under of ROC (AUROC) curve signifies better performance. 
+
+Decision tree of original data set is represented in fig.\ref{fig:DTorg}, it can seen that 72\% observations has been classified based on one rule i.e CreditRating <=4.5. Due to this reason original data set was giving accuracy of 99%. 
+
+\begin{center}
+\begin{figure}[!htb]
+\includegraphics[width=\textwidth]{DTorg.png}
+\centering
+\caption{Decision tree of original data}{\textbf{Source:} R Package:\citep{rpart.plotpackage}}
+\label{fig:DTorg}
+\end{figure}
+\end{center}
+
+Fig. \ref{fig:DTmod} is a decision tree for modified data set, and this tree has many rules which further improves its performance. Due to limitations of page size, we are showing a decision tree with a limited number of nodes.
+
+\begin{center}
+\begin{figure}[!htb]
+\includegraphics[width=\textwidth]{DTmod.png}
+\centering
+\caption{Decision tree of modified data}{\textbf{Source:} R Package: \citep{rpart.plotpackage}}
+\label{fig:DTmod}
+\end{figure}
+\end{center}
+
+
+
+
