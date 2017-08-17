@@ -1,5 +1,5 @@
-\contentsline {chapter}{List of figures}{v}
-\contentsline {chapter}{List of tables}{vi}
+\contentsline {chapter}{List of figures}{vi}
+\contentsline {chapter}{List of tables}{vii}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Assumptions \& Challenges}{2}
 \contentsline {section}{\numberline {1.2}Outline}{3}
@@ -36,11 +36,14 @@
 \contentsline {section}{\numberline {5.3}Performance}{37}
 \contentsline {chapter}{\numberline {6}Discussion}{42}
 \contentsline {section}{\numberline {6.1}Introduction}{42}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{43}
-\contentsline {section}{\numberline {7.1}Introduction}{44}
-\contentsline {chapter}{Detailed tables}{45}
-\contentsline {chapter}{Appendices}{45}
-\contentsline {chapter}{Program code}{46}
-\contentsline {chapter}{Glossary}{47}
-\contentsline {chapter}{Bibliography}{48}
-\contentsline {chapter}{List of Notation}{54}
+\contentsline {section}{\numberline {6.2}Patterns \& Analysis}{42}
+\contentsline {section}{\numberline {6.3}Success}{43}
+\contentsline {section}{\numberline {6.4}Integration with real data}{43}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{46}
+\contentsline {section}{\numberline {7.1}Introduction}{47}
+\contentsline {chapter}{Detailed tables}{48}
+\contentsline {chapter}{Appendices}{48}
+\contentsline {chapter}{Program code}{49}
+\contentsline {chapter}{Glossary}{50}
+\contentsline {chapter}{Bibliography}{51}
+\contentsline {chapter}{List of Notation}{57}

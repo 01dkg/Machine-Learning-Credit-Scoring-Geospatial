@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  17 AUG 2017 00:16
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.2.3)  17 AUG 2017 00:38
->>>>>>> 1a1516efb322395fdc40cc383e296dc5c3686ae8
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  17 AUG 2017 20:42
 entering extended mode
-**E:/KPMG/KPMG/Thesis/thesis.tex
-(E:/KPMG/KPMG/Thesis/thesis.tex
+**./thesis.tex
+(thesis.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
@@ -435,72 +431,68 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \openout4 = `thesis.toc'.
 
  [4]
-(thesis.lof)
+[5] (thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [5
+ [6
 
 ] (thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [6
+ [7
 
 ]
 \openout2 = `preface.aux'.
 
  (preface.tex
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-<<<<<<< HEAD
- [7
-=======
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[7
->>>>>>> 1a1516efb322395fdc40cc383e296dc5c3686ae8
+[8
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-) [8]
+) [9]
 Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-[9
+[10
 
 
-] [10
+] [11
 
 ]
 \openout2 = `ch1.aux'.
@@ -571,7 +563,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-<Loanflowchart.jpg, id=59, 878.53218pt x 481.04718pt>
+<Loanflowchart.jpg, id=62, 878.53218pt x 481.04718pt>
 File: Loanflowchart.jpg Graphic file (type jpg)
  <use Loanflowchart.jpg>
 Package pdftex.def Info: Loanflowchart.jpg used on input line 20.
@@ -682,7 +674,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[16] <simpledt.png, id=89, 977.15062pt x 508.90125pt>
+[16] <simpledt.png, id=92, 977.15062pt x 508.90125pt>
 File: simpledt.png Graphic file (type png)
  <use simpledt.png>
 Package pdftex.def Info: simpledt.png used on input line 104.
@@ -822,7 +814,7 @@ Overfull \hbox (3.03662pt too wide) in paragraph at lines 158--158
 ",..:[] 
  []
 
-[26] <ETL.jpg, id=122, 963.6pt x 542.025pt>
+[26] <ETL.jpg, id=126, 963.6pt x 542.025pt>
 File: ETL.jpg Graphic file (type jpg)
  <use ETL.jpg>
 Package pdftex.def Info: ETL.jpg used on input line 164.
@@ -832,7 +824,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-[27 <./ETL.jpg>] <dataprocess.png, id=127, 530.73282pt x 243.15843pt>
+[27 <./ETL.jpg>] <dataprocess.png, id=130, 530.73282pt x 243.15843pt>
 File: dataprocess.png Graphic file (type png)
 
 <use dataprocess.png>
@@ -863,7 +855,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
-[29] [30] <logistic.jpg, id=138, 464.4853pt x 355.3275pt>
+[29] [30] <logistic.jpg, id=141, 464.4853pt x 355.3275pt>
 File: logistic.jpg Graphic file (type jpg)
  <use logistic.jpg>
 Package pdftex.def Info: logistic.jpg used on input line 239.
@@ -983,31 +975,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-<LRrecall.png, id=158, 526.96875pt x 325.215pt>
+<LRrecall.png, id=161, 526.96875pt x 325.215pt>
 File: LRrecall.png Graphic file (type png)
  <use LRrecall.png>
 Package pdftex.def Info: LRrecall.png used on input line 61.
 (pdftex.def)             Requested size: 140.5225pt x 86.72377pt.
 
-<DRrecall.png, id=159, 526.96875pt x 325.215pt>
+<DRrecall.png, id=162, 526.96875pt x 325.215pt>
 File: DRrecall.png Graphic file (type png)
  <use DRrecall.png>
 Package pdftex.def Info: DRrecall.png used on input line 66.
 (pdftex.def)             Requested size: 140.5225pt x 86.72377pt.
  [37]
-<results1.png, id=163, 526.96875pt x 315.42844pt>
+<results1.png, id=166, 526.96875pt x 315.42844pt>
 File: results1.png Graphic file (type png)
  <use results1.png>
 Package pdftex.def Info: results1.png used on input line 75.
 (pdftex.def)             Requested size: 398.33858pt x 238.44301pt.
- [38 <./LRrecall.png> <./DRrecall.png>] <DTorg.png, id=167, 526.96875pt x 325.2
+ [38 <./LRrecall.png> <./DRrecall.png>] <DTorg.png, id=171, 526.96875pt x 325.2
 15pt>
 File: DTorg.png Graphic file (type png)
 
 <use DTorg.png>
 Package pdftex.def Info: DTorg.png used on input line 88.
 (pdftex.def)             Requested size: 398.33858pt x 245.841pt.
- <DTmod.png, id=168, 526.96875pt x 325.215pt>
+ <DTmod.png, id=172, 526.96875pt x 325.215pt>
 File: DTmod.png Graphic file (type png)
  <use DTmod.png>
 Package pdftex.def Info: DTmod.png used on input line 99.
@@ -1018,23 +1010,40 @@ Package pdftex.def Info: DTmod.png used on input line 99.
 
  (ch6.tex
 Chapter 6.
-) [42
+<countynumber.png, id=182, 1028.34187pt x 552.56438pt>
+File: countynumber.png Graphic file (type png)
+ <use countynumber.png>
+Package pdftex.def Info: countynumber.png used on input line 24.
+(pdftex.def)             Requested size: 398.33858pt x 214.04059pt.
+
+[42
 
 
 
-]
+] <DTcm.png, id=186, 324.46219pt x 325.215pt>
+File: DTcm.png Graphic file (type png)
+ <use DTcm.png>
+Package pdftex.def Info: DTcm.png used on input line 43.
+(pdftex.def)             Requested size: 398.33858pt x 399.28757pt.
+ [43 <./countynumber.png>] <rmap.png, id=190, 748.29562pt x 486.31688pt>
+File: rmap.png Graphic file (type png)
+ <use rmap.png>
+Package pdftex.def Info: rmap.png used on input line 54.
+(pdftex.def)             Requested size: 398.33858pt x 258.88206pt.
+)
+[44 <./DTcm.png>] [45 <./rmap.png>]
 \openout2 = `ch7.aux'.
 
  (ch7.tex
 Chapter 7.
-) [43
+) [46
 
 
 
-] [44]
+] [47]
 \openout2 = `appendix1.aux'.
 
- (appendix1.tex) [45
+ (appendix1.tex) [48
 
 
 
@@ -1044,20 +1053,20 @@ Chapter 7.
 ]
 \openout2 = `appendix2.aux'.
 
- (appendix2.tex) [46
+ (appendix2.tex) [49
 
 
 
 ]
 \openout2 = `glossary.aux'.
 
- (glossary.tex) [47
+ (glossary.tex) [50
 
 
 
 
 ]
-(thesis.bbl (babelbst.tex) [48
+(thesis.bbl (babelbst.tex) [51
 
 
 
@@ -1068,15 +1077,15 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [49] [50] [51] [52]) [53]
+ [52] [53] [54] [55]) [56]
 \openout2 = `notation.aux'.
 
  (notation.tex
 
-LaTeX Warning: Reference `Th.FF.fte.field' on page 54 undefined on input line 2
+LaTeX Warning: Reference `Th.FF.fte.field' on page 57 undefined on input line 2
 5.
 
-) [54
+) [57
 
 
 
@@ -1093,14 +1102,13 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 5311 strings out of 493333
- 72424 string characters out of 3139192
- 153804 words of memory out of 3000000
- 8575 multiletter control sequences out of 15000+200000
+ 5326 strings out of 493333
+ 72606 string characters out of 3139192
+ 153849 words of memory out of 3000000
+ 8591 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 40i,9n,33p,1790b,3223s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,9n,33p,1772b,3223s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
@@ -1109,29 +1117,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (64 pages, 549511 bytes).
-=======
- 5290 strings out of 493333
- 74103 string characters out of 3129710
- 153744 words of memory out of 3000000
- 8562 multiletter control sequences out of 15000+200000
- 14468 words of font info for 59 fonts, out of 3000000 for 9000
- 1146 hyphenation exceptions out of 8191
- 40i,9n,33p,1772b,3223s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmbx12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Users/Shruti/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Users/Shruti/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users
-/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmti12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmtt12.pfb><E:/Users/Shruti/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (62 pages, 527409 bytes).
->>>>>>> 1a1516efb322395fdc40cc383e296dc5c3686ae8
+Output written on thesis.pdf (68 pages, 1219138 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
+ 266 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
