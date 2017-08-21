@@ -1,0 +1,261 @@
+County;Branch;Town;Latitude;Longitude
+Carlow;Branch 108;Bagenalstown;52.7031;-6.9559
+Carlow;Branch 143;Borris;52.5998;-6.9231
+Carlow;Branch 219;Shamrock Plaza, Green Lane;52.8365;-6.9244
+Carlow;Branch 67;Tullow;52.8025;-6.7372
+Cavan;Branch 128;Arva;53.9214;-7.5799
+Cavan;Branch 130;Bailieborough;53.9156;-6.9693
+Cavan;Branch 153;Cavan;53.9897;-7.3633
+Cavan;Branch 194;Cootehill;54.0725;-7.0824
+Cavan;Branch 171;Kingscourt;53.9069;-6.8052
+Clare;Branch 59;Ennis;52.8474;-8.9887
+Clare;Branch 205;Ennistymon;52.9404;-9.2935
+Clare;Branch 199;Kilkee;52.6828;-9.6444
+Clare;Branch 97;Kilrush;52.6407;-9.4859
+Clare;Branch 246;Miltown Malbay;52.8562;-9.4008
+Clare;Branch 218;Scariff;52.9088;-8.5331
+Clare;Branch 220;Shannon;52.6997;-8.9147
+Clare;Branch 188;Tulla;52.8692;-8.7608
+Cork;Branch 43;Cork City;51.8969;-8.4863
+Cork;Branch 29;South Mall;51.8969;-8.4862
+Cork;Branch 132;Ballincollig,;51.888;-8.5949
+Cork;Branch 46;Main Street South. Bandon;51.7472;-8.7253
+Cork;Branch 260;Bantry;51.6801;-9.4526
+Cork;Branch 81;Bishopstown;51.878;-8.5326
+Cork;Branch 63;Blackpool;51.9142;-8.474
+Cork;Branch 150;Carrigaline;51.8179;-8.3915
+Cork;Branch 155;Charleville;52.3549;-8.6832
+Cork;Branch 209;Clonakilty;51.6203;-8.9055
+Cork;Branch 12;Cobh;51.8503;-8.2943
+Cork;Branch 112;Cork airport;51.8449;-8.4928
+Cork;Branch 84;Douglas;51.875;-8.4336
+Cork;Branch 158;Dunmanway;51.7223;-9.1118
+Cork;Branch 208;Fermoy;52.1373;-8.2812
+Cork;Branch 103;Glanmire;51.9177;-8.3982
+Cork;Branch 257;Kanturk;52.1773;-8.9052
+Cork;Branch 95;Kinsale;51.7059;-8.5222
+Cork;Branch 90;Little Island;51.9022;-8.3513
+Cork;Branch 198;Macroom;51.9048;-8.9588
+Cork;Branch 9;Mallow;52.139;-8.6539
+Cork;Branch 52;Midleton;51.9143;-8.1726
+Cork;Branch 245;Millstreet;52.0601;-9.0647
+Cork;Branch 254;Mitchelstown;52.2662;-8.2699
+Cork;Branch 16;Skibbereen;51.5559;-9.2621
+Cork;Branch 250;Western road;51.8921;-8.4933
+Cork;Branch 259;Wilton;51.874;-8.5064
+Cork;Branch 122;Youghal;51.9543;-7.8472
+Donegal;Branch 135;Ballybofey;54.7968;-7.7875
+Donegal;Branch 139;Ballyshannon;54.503;-8.192
+Donegal;Branch 118;Buncrana;55.1366;-7.456
+Donegal;Branch 146;Bundoran;54.4791;-8.2779
+Donegal;Branch 58;Carndonagh;55.2506;-7.2669
+Donegal;Branch 233;Donegal;54.6538;-8.1096
+Donegal;Branch 168;Killybegs;54.6348;-8.4547
+Donegal;Branch 120;Letterkenny;54.9558;-7.7343
+Donegal;Branch 179;Moville;55.189;-7.0401
+Donegal;Branch 211;Bun beg /An Bun Beag,;55.0609;-8.3003
+Donegal;Branch 163;Glenties / Na Gleannta,;54.7972;-8.283
+Donegal;Branch 162;Falcarragh I An Fal Carrach,;55.1364;-8.1045
+Donegal;Branch 119;Dungloe / An Cloch an Liath,;54.9503;-8.3574
+Dublin;Branch 36;Baggot Street Lower,;53.1958;-6.1432
+Dublin;Branch 249;College,;53.3438;-6.2546
+Dublin;Branch 60;Balbriggan;53.6083;-6.1821
+Dublin;Branch 23;Ballsbridge;53.3289;-6.2305
+Dublin;Branch 49;Ballsbridge;53.3289;-6.2305
+Dublin;Branch 27;Ballyfermot Road. Ballyfermot;53.3423;-6.3536
+Dublin;Branch 62;Beaumont;53.3904;-6.2234
+Dublin;Branch 25;Blackrock;53.3008;-6.1771
+Dublin;Branch 142;Blanchardstown;53.3842;-6.376
+Dublin;Branch 202;Cloghran;53.4119;-6.3572
+Dublin;Branch 197;Clondalkin;53.324;-6.4055
+Dublin;Branch 39;Malahide Road. Coolock;53.3882;-6.1992
+Dublin;Branch 32;Drumcondra;53.3634;-6.2579
+Dublin;Branch 31;Dublin;53.3382;-6.2591
+Dublin;Branch 48;Dublin;53.34;-6.2942
+Dublin;Branch 223;Dublin;53.34;-6.2942
+Dublin;Branch 50;Dublin;53.3382;-6.2591
+Dublin;Branch 17;Dublin;53.204;-6.1536
+Dublin;Branch 30;Dublin;53.3484;-6.2782
+Dublin;Branch 111;Dublin;53.3484;-6.2782
+Dublin;Branch 207;Dublin airport;53.4264;-6.2499
+Dublin;Branch 101;Dun laoghaire;53.2944;-6.1339
+Dublin;Branch 77;Dundrum;53.2932;-6.2462
+Dublin;Branch 24;Fairview;53.365;-6.23
+Dublin;Branch 56;Finglas;53.3903;-6.2984
+Dublin;Branch 5;Glasnevin;53.3828;-6.2763
+Dublin;Branch 110;IFSC;53.348899;-6.246032
+Dublin;Branch 83;Kill of the Grange;53.2797;-6.1615
+Dublin;Branch 13;Killester;53.3716;-6.2026
+Dublin;Branch 175;Lucan;53.3572;-6.4498
+Dublin;Branch 234;Malahide;53.4509;-6.1501
+Dublin;Branch 92;Mater hospital;53.3594;-6.2673
+Dublin;Branch 252;Montrose;53.3086;-6.2148
+Dublin;Branch 21;Northern cross;53.4042;-6.1807
+Dublin;Branch 38;O’connell street lower;53.2058;-6.1537
+Dublin;Branch 44;Phibsborough;53.3599;-6.2724
+Dublin;Branch 37;Raheny;53.3804;-6.1751
+Dublin;Branch 4;Ranelagh;53.3268;-6.2571
+Dublin;Branch 191;Rathcoole;53.2817;-6.4662
+Dublin;Branch 212;Rathfarnham;53.3005;-6.2839
+Dublin;Branch 10;Rathmines;53.3219;-6.2655
+Dublin;Branch 55;Sandyford;53.272;-6.2207
+Dublin;Branch 51;Skerries;53.5806;-6.1079
+Dublin;Branch 227;Stillorgan;53.2878;-6.2036
+Dublin;Branch 230;Sutton;53.3895;-6.1103
+Dublin;Branch 15;Swords;53.4557;-6.2197
+Dublin;Branch 3;Terenure;53.3104;-6.2899
+Dublin;Branch 85;The henry gratton building;53.3851;-6.2568
+Dublin;Branch 11;Walkinstown;53.3192;-6.3321
+Dublin;Branch 1;Docklands,;53.3507;-6.2393
+Dublin;Branch 210;Tallaght;53.2888;-6.3557
+Galway;Branch 99;Galway;53.2707;-9.0568
+Galway;Branch 20;Galway;53.2707;-9.0568
+Galway;Branch 100;Dublin Road,;53.2786;-9.0106
+Galway;Branch 117;Galway University,;53.2766;-9.0616
+Galway;Branch 131;Ballinasloe;53.3288;-8.2269
+Galway;Branch 137;Ballygar;53.2662;-7.3371
+Galway;Branch 156;Clifden;53.4891;-10.0202
+Galway;Branch 61;Dunmore;53.618;-8.7441
+Galway;Branch 33;Galway;53.2707;-9.0568
+Galway;Branch 65;Gort;53.0666;-8.8187
+Galway;Branch 241;Headford;53.4695;-9.1061
+Galway;Branch 174;Loughrea;53.1989;-8.5661
+Galway;Branch 57;Mountbellew;53.4719;-8.5049
+Galway;Branch 181;Oranmore;53.2648;-8.9297
+Galway;Branch 182;Oughterard;53.4285;-9.3189
+Galway;Branch 78;Portumna;53.0928;-8.2185
+Galway;Branch 217;Salthill;53.2626;-9.0704
+Galway;Branch 86;Tuam;53.5141;-8.8565
+Kerry;Branch 126;An daingean I dingle;52.1409;-10.264
+Kerry;Branch 136;Ballybunion;52.5111;-9.671
+Kerry;Branch 74;Cahirsiveen;51.9478;-10.2209
+Kerry;Branch 152;Castleisland;52.2329;-9.4601
+Kerry;Branch 242;Kenmare;51.8801;-9.5835
+Kerry;Branch 47;Killarney;52.0599;-9.5044
+Kerry;Branch 192;Killorglin;52.1064;-9.7843
+Kerry;Branch 244;Listowel;52.446;-9.4854
+Kerry;Branch 215;Tralee;52.2713;-9.6999
+Kerry;Branch 70;Tralee;52.2713;-9.6999
+Kildare;Branch 94;Athy;52.9918;-6.9857
+Kildare;Branch 2;Ceibridge;53.3399;-6.5385
+Kildare;Branch 167;Kilcullen;53.1303;-6.7453
+Kildare;Branch 243;Kildare;53.1589;-6.9096
+Kildare;Branch 68;Leixlip;53.3638;-6.49
+Kildare;Branch 176;Maynooth;53.3813;-6.5918
+Kildare;Branch 87;Monasterevin;53.1401;-7.0604
+Kildare;Branch 222;Naas;53.2206;-6.6593
+Kildare;Branch 180;Newbridge;53.1751;-6.8047
+Kilkenny;Branch 102;Callan;52.5448;-7.392
+Kilkenny;Branch 237;Castlecomer;52.8055;-7.2095
+Kilkenny;Branch 164;Graiguenamanagh;52.5415;-6.9556
+Kilkenny;Branch 35;Kilkenny;52.6541;-7.2448
+Kilkenny;Branch 195;Thomastown;52.5271;-7.1388
+Kilkenny;Branch 189;Urlingford;52.7197;-7.5839
+Laois;Branch 178;Mountrath,;52.995;-7.4676
+Laois;Branch 125;Abbeyleix,;52.9153;-7.3479
+Laois;Branch 240;Durrow;52.8453;-7.3965
+Laois;Branch 206;Mountmellick;53.1181;-7.3267
+Laois;Branch 123;Portarlington;53.1612;-7.1878
+Laois;Branch 173;Portlaoise;53.0328;-7.2988
+Laois;Branch 116;Rathdowney;52.8557;-7.5867
+Leitrim;Branch 64;Carrick-on-shannon;53.9451;-8.0862
+Leitrim;Branch 157;Drumshanbo;54.0487;-8.0358
+Leitrim;Branch 72;Manorhamilton;54.3049;-8.1767
+Leitrim;Branch 121;Mohill;53.9218;-7.8653
+Limerick;Branch 7;O’Connell Street,;52.668;-8.6305
+Limerick;Branch 124;Abbeyfeale;52.3862;-9.2971
+Limerick;Branch 91;Askeaton;52.6007;-8.9718
+Limerick;Branch 145;Bruff;52.4756;-8.547
+Limerick;Branch 18;Caherdavin;52.6692;-8.67
+Limerick;Branch 204;Castletroy;52.6717;-8.5533
+Limerick;Branch 251;Castletroy;52.6717;-8.5533
+Limerick;Branch 253;Castletroy;52.6717;-8.5533
+Limerick;Branch 225;Dooradoyle;52.6362;-8.6475
+Limerick;Branch 115;Kilmallock;52.3987;-8.5709
+Limerick;Branch 247;Newcastle west;52.4488;-9.0546
+Limerick;Branch 184;Rathkeale;52.5238;-8.9371
+Limerick;Branch 214;Roxboro;52.36;-8.36
+Longford;Branch 41;Main Street,;53.7276;-7.7933
+Longford;Branch 138;Ballymahon;53.5644;-7.7646
+Longford;Branch 165;Granard;53.7769;-7.5012
+Louth;Branch 71;Ardee;53.8576;-6.54
+Louth;Branch 8;St Laurence Street. Drogheda;53.7179;-6.3561
+Louth;Branch 45;Dundalk;53.9979;-6.406
+Louth;Branch 255;Dunleer;53.8311;-6.3945
+Mayo;Branch 69;Belmullet;54.2239;-9.9876
+Mayo;Branch 19;Ballina;54.1149;-9.1551
+Mayo;Branch 133;Ballinrobe;53.6237;-9.2211
+Mayo;Branch 109;Ballyhaunis;53.7628;-8.7646
+Mayo;Branch 93;Castlebar;53.855;-9.2879
+Mayo;Branch 154;Charlestown;53.964;-8.7926
+Mayo;Branch 105;Claremorris;53.7239;-9.0017
+Mayo;Branch 170;Kiltimagh;53.8495;-8.9995
+Mayo;Branch 185;Swinford;53.9437;-8.95
+Mayo;Branch 104;Westport;53.8021;-9.5143
+Meath;Branch 129;Athboy,;53.6236;-6.9156
+Meath;Branch 161;Enfield;53.4142;-6.8297
+Meath;Branch 98;Ashbourne;53.5112;-6.3974
+Meath;Branch 228;Dunboyne;53.4193;-6.4759
+Meath;Branch 159;Dunshaughlin;53.5135;-6.5403
+Meath;Branch 107;KelIs;53.7272;-6.877
+Meath;Branch 193;Navan;53.6471;-6.6967
+Meath;Branch 201;Oldcastle;53.77;-7.1624
+Meath;Branch 80;Ratoath;53.5063;-6.4657
+Meath;Branch 22;Trim;53.5524;-6.7866
+Monaghan;Branch 134;Ballybay;54.1295;-6.9028
+Monaghan;Branch 148;Carrickmacross;53.978;-6.7188
+Monaghan;Branch 151;Castleblayney;54.1207;-6.7397
+Monaghan;Branch 232;Clones;54.1797;-7.2307
+Monaghan;Branch 82;Monaghan;54.2492;-6.9683
+Offaly;Branch 141;Banagher;53.1901;-7.9861
+Offaly;Branch 96;Birr;53.098;-7.9097
+Offaly;Branch 75;Clara;53.3425;-7.6135
+Offaly;Branch 106;Edenderry;53.3433;-7.0506
+Offaly;Branch 66;Tullamore;53.2755;-7.4934
+Roscommon;Branch 235;Ballaghaderreen;53.9017;-8.5792
+Roscommon;Branch 144;Boyle;53.9722;-8.2973
+Roscommon;Branch 239;Castlerea;53.7687;-8.4925
+Roscommon;Branch 160;Elphin;53.8523;-8.1978
+Roscommon;Branch 248;Roscommon;53.6276;-8.1891
+Roscommon;Branch 76;Strokestown;53.7759;-8.1035
+Sligo;Branch 221;IT,;54.2766;-8.4761
+Sligo;Branch 114;Ballymote;54.0898;-8.5172
+Sligo;Branch 226;Sligo;54.2766;-8.4761
+Sligo;Branch 231;Tubbercurry;54.0552;-8.7298
+Tipperary;Branch 236;Cahir;52.3745;-7.9252
+Tipperary;Branch 149;Carrick-on-suir;52.3476;-7.419
+Tipperary;Branch 42;Cashel;52.5159;-7.8916
+Tipperary;Branch 203;Clonmel;52.3558;-7.6903
+Tipperary;Branch 196;Nenagh;52.8643;-8.1976
+Tipperary;Branch 73;Roscrea;52.9552;-7.7985
+Tipperary;Branch 186;Templemore;52.7948;-7.8399
+Tipperary;Branch 113;Thurles;52.6801;-7.8044
+Tipperary;Branch 187;Tipperary;52.4747;-8.1544
+Waterford;Branch 88;Ardkeen;52.2464;-7.0822
+Waterford;Branch 14;Dungarvan;52.0937;-7.6204
+Waterford;Branch 169;Kilmacthomas;52.2055;-7.4268
+Waterford;Branch 256;Lisduggan;52.2015;-7.1535
+Waterford;Branch 258;Lismore;52.1358;-7.9377
+Waterford;Branch 229;Tramore;52.1614;-7.1493
+Waterford;Branch 40;Watertord city;52.2593;-7.1101
+Westmeath;Branch 177;Moate,;53.395;-7.7186
+Westmeath;Branch 54;Athlone;53.4239;-7.9407
+Westmeath;Branch 26;Athlone;53.4239;-7.9407
+Westmeath;Branch 238;Castlepollard;53.6801;-7.2965
+Westmeath;Branch 172;Kinnegad;53.4568;-7.105
+Westmeath;Branch 200;Mullingar;53.5259;-7.3381
+Wexford;Branch 216;Bunclody;52.6551;-6.6522
+Wexford;Branch 53;Enniscorthy;52.5031;-6.5728
+Wexford;Branch 28;Gorey;52.6757;-6.2943
+Wexford;Branch 6;The Quay. New ross;52.3962;-6.9472
+Wexford;Branch 224;Rosslare harbour;52.2513;-6.3415
+Wexford;Branch 213;Taghmon;52.3193;-6.6606
+Wexford;Branch 79;Wextord;52.3369;-6.4633
+Wicklow;Branch 127;Arklow,;52.7977;-6.1599
+Wicklow;Branch 140;Baltinglass;52.9408;-6.711
+Wicklow;Branch 34;Bray;53.2009;-6.1111
+Wicklow;Branch 147;Carnew;52.7097;-6.4992
+Wicklow;Branch 166;Greystones;53.1491;-6.0793
+Wicklow;Branch 183;Rathdrum;52.9323;-6.2311
+Wicklow;Branch 89;Tinahely;52.7998;-6.4632
+Wicklow;Branch 190;Wicklow;52.9808;-6.0446
