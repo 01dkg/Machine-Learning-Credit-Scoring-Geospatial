@@ -1,0 +1,392 @@
+---
+title: "R Notebook"
+output:
+  html_document: 
+    toc: yes
+  html_notebook: default
+---
+## Data Reading:
+```{r}
+library(readr)
+Datav2 <- read_delim("Data/finalData.csv", 
+    ";", escape_double = FALSE, trim_ws = TRUE)
+m2 <- read_delim("Data/cleanData.csv", 
+    ";", escape_double = FALSE, trim_ws = TRUE)
+```
+
+# Data Stats
+```{r}
+Datav2$InterestType <- as.factor(Datav2$InterestType)
+Datav2$MortgageType <- as.factor(Datav2$MortgageType)
+Datav2$NewLoan <- as.factor(Datav2$NewLoan)
+Datav2$ProbationaryLoans <- as.factor(Datav2$ProbationaryLoans)
+Datav2$LTVCategory <- as.factor(Datav2$LTVCategory)
+Datav2$InArrears <- as.factor(Datav2$InArrears)
+#Datav2$County <- as.factor(Datav2$County)
+Datav2$DefaultedLoans <- as.factor(Datav2$DefaultedLoans)
+m2$InterestType <- as.factor(m2$InterestType)
+m2$MortgageType <- as.factor(m2$MortgageType)
+m2$NewLoan <- as.factor(m2$NewLoan)
+m2$ProbationaryLoans <- as.factor(m2$ProbationaryLoans)
+m2$LTVCategory <- as.factor(m2$LTVCategory)
+m2$InArrears <- as.factor(m2$InArrears)
+#Datav2$County <- as.factor(Datav2$County)
+m2$DefaultedLoans <- as.factor(m2$DefaultedLoans)
+m1 <- Datav2
+m3 <- Datav2
+
+```
+
+# LR Model with Scaled data (Original Data Set)
+## Data prep
+```{r}
+m2$County <- as.factor(m2$County)
+m2$LoanBalance <- scale(m2$LoanBalance)
+m2$PropertyValue <- scale(m2$PropertyValue)
+m2$AnnualPYMT <-scale(m2$AnnualPYMT)
+summary(m2)
+
+```
+
+##Data Subsetting
+```{r}
+set.seed(100)
+dataPartition = sample(2,nrow(m2),replace=TRUE,prob=c(0.7,0.3))
+m2train <- m2[dataPartition ==1,]
+m2test <- m2[dataPartition ==2,]
+
+```
+
+
+##Simple GLM for all variables
+```{r}
+#m2glm <- glm(m2$DefaultedLoans ~., family = "binomial", data = m2train)
+#step(m2glm)
+
+
+#Simple glm with selected variables
+m2glm <- glm(DefaultedLoans ~ CreditRating + InterestIncome + 
+    PropertyValue + LoanBalance + AnnualPYMT + LTV + 
+    InterestType + NewLoan + ProbationaryLoans + MortgageYears + 
+    MortgageType + InArrears + County + AddressLatitude + AddressLongitude, 
+    family = "binomial", data = m2train)
+#step(m2glm)
+
+summary(m2glm)
+
+save(m2glm, file = "Model/m2glm.rda")
+
+```
+
+##Prediction
+```{r}
+m2test$prediction <- predict(m2glm, newdata=m2test, type="response")
+
+
+#Confusion Matrix
+table(m2test$DefaultedLoans, as.numeric(m2test$prediction >= 0.8))
+
+confusion.glm <- function(data, model) {
+  prediction <- ifelse(predict(model, data, type='response') > 0.5, TRUE, FALSE)
+  confusion  <- table(prediction, as.logical(model$y))
+  confusion  <- cbind(confusion, c(1 - confusion[1,1]/(confusion[1,1]+confusion[2,1]), 1 - confusion[2,2]/(confusion[2,2]+confusion[1,2])))
+  confusion  <- as.data.frame(confusion)
+  names(confusion) <- c('FALSE', 'TRUE', 'class.error')
+  confusion
+}
+
+```
+
+##Significant Variables
+```{r}
+significant.variables <- summary(m2glm)$coeff[-1,4] < 0.05
+names(significant.variables)[significant.variables == TRUE]
+
+```
+
+##ROC
+```{r}
+#score test data set
+library(ROCR)
+m2test$lr_score <- predict(m2glm,type='response',m2test)
+m2pred <- prediction(m2test$lr_score, m2test$DefaultedLoans)
+m2perf <- performance(m2pred,"tpr","fpr")
+
+
+
+#ROC
+plot(m2perf, lwd=2, colorize=TRUE, main="ROC LR: Logistic Regression Performance")
+lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
+lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
+
+```
+
+##KS, Gini & AUC m2
+```{r}
+lr_KS <- round(max(attr(m2perf,'y.values')[[1]]-attr(m2perf,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(m2pred, measure = "auc")@y.values[[1]]*100, 2)
+lr_Gini <- (2*lr_AUROC - 100)
+cat("AUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
+
+```
+
+
+#LR without scaling
+```{r}
+#Data Subsetting
+set.seed(100)
+dataPartition = sample(2,nrow(m1),replace=TRUE,prob=c(0.7,0.3))
+m1train <- m1[dataPartition ==1,]
+m1test <- m1[dataPartition ==2,]
+summary(m1)
+```
+
+##Simple GLM for all variables
+```{r}
+#m2glm <- glm(m1$DefaultedLoans ~., family = "binomial", data = m1train)
+#step(m2glm)
+
+
+#Simple glm with selected variables
+m1glm <- glm(DefaultedLoans ~ CreditRating + InterestIncome + 
+    PropertyValue + LoanBalance + AnnualPYMT + LTV + 
+    InterestType + NewLoan + ProbationaryLoans + MortgageYears + 
+    MortgageType + InArrears + County + AddressLatitude + AddressLongitude, 
+    family = "binomial", data = m1train)
+#step(m1glm)
+
+summary(m1glm)
+
+save(m1glm, file = "Model/m1glm.rda")
+```
+
+##Prediction
+```{r}
+m1test$prediction <- predict(m1glm, newdata=m1test, type="response")
+
+
+#Confusion Matrix
+table(m1test$DefaultedLoans, as.numeric(m1test$prediction >= 0.5))
+```
+
+##Significant Variables & ROC
+```{r}
+significant.variables <- summary(m1glm)$coeff[-1,4] < 0.05
+names(significant.variables)[significant.variables == TRUE]
+
+#ROC
+#score test data set
+library(ROCR)
+m1test$lr_score <- predict(m1glm,type='response',m1test)
+m1pred <- prediction(m1test$lr_score, m1test$DefaultedLoans)
+m1perf <- performance(m1pred,"tpr","fpr")
+
+
+#ROC
+plot(m1perf, lwd=2, colorize=TRUE, main="ROC LR: Logistic Regression Performance")
+lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
+lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
+```
+
+##KS, Gini & AUC m1
+```{r}
+lr_KS <- round(max(attr(m1perf,'y.values')[[1]]-attr(m1perf,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(m1pred, measure = "auc")@y.values[[1]]*100, 2)
+lr_Gini <- (2*lr_AUROC - 100)
+cat("AUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
+```
+
+
+
+
+
+# Final Optimized Model
+## Data prep
+```{r}
+m3$County <- as.factor(m3$County)
+m3$LoanBalance <- scale(m3$LoanBalance)
+m3$PropertyValue <- scale(m3$PropertyValue)
+m3$AnnualPYMT <-scale(m3$AnnualPYMT)
+summary(m3)
+
+```
+
+##Data Subsetting
+```{r}
+set.seed(100)
+dataPartition = sample(2,nrow(m3),replace=TRUE,prob=c(0.7,0.3))
+m3train <- m3[dataPartition ==1,]
+m3test <- m3[dataPartition ==2,]
+
+```
+
+
+##Simple GLM for all variables
+```{r}
+#m3glm <- glm(m3$DefaultedLoans ~., family = "binomial", data = m3train)
+#step(m3glm)
+
+
+#Simple glm with selected variables
+m3glm <- glm(DefaultedLoans ~ CreditRating + InterestIncome + 
+    PropertyValue + LoanBalance + AnnualPYMT + LTV + 
+    InterestType + NewLoan + ProbationaryLoans + MortgageYears + 
+    MortgageType + InArrears + County + AddressLatitude + AddressLongitude, 
+    family = "binomial", data = m3train)
+#step(m3glm)
+
+summary(m3glm)
+
+save(m3glm, file = "Model/m3glm.rda")
+
+```
+
+##Prediction
+```{r}
+m3test$prediction <- predict(m3glm, newdata=m3test, type="response")
+
+
+#Confusion Matrix
+table(m3test$DefaultedLoans, as.numeric(m3test$prediction >= 0.8))
+
+confusion.glm <- function(data, model) {
+  prediction <- ifelse(predict(model, data, type='response') > 0.5, TRUE, FALSE)
+  confusion  <- table(prediction, as.logical(model$y))
+  confusion  <- cbind(confusion, c(1 - confusion[1,1]/(confusion[1,1]+confusion[2,1]), 1 - confusion[2,2]/(confusion[2,2]+confusion[1,2])))
+  confusion  <- as.data.frame(confusion)
+  names(confusion) <- c('FALSE', 'TRUE', 'class.error')
+  confusion
+}
+
+```
+
+##Significant Variables
+```{r}
+significant.variables <- summary(m3glm)$coeff[-1,4] < 0.05
+names(significant.variables)[significant.variables == TRUE]
+
+```
+
+##ROC
+```{r}
+#score test data set
+library(ROCR)
+m3test$lr_score <- predict(m3glm,type='response',m3test)
+m3pred <- prediction(m3test$lr_score, m3test$DefaultedLoans)
+m3perf <- performance(m3pred,"tpr","fpr")
+
+
+
+#ROC
+plot(m3perf, lwd=2, colorize=TRUE, main="ROC LR: Logistic Regression Performance")
+lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
+lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
+
+```
+
+##KS, Gini & AUC m3
+```{r}
+lr_KS <- round(max(attr(m3perf,'y.values')[[1]]-attr(m3perf,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(m3pred, measure = "auc")@y.values[[1]]*100, 2)
+lr_Gini <- (2*lr_AUROC - 100)
+cat("AUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
+
+```
+
+# ########################################################################################
+# # 
+# #   Desicion Tree
+```{r}
+library(rpart)
+library(rattle)					# Fancy tree plot
+library(rpart.plot)			# Enhanced tree plots
+library(RColorBrewer)		# Color selection for fancy tree plot
+library(party)					# Alternative decision tree algorithm
+library(partykit)				# Convert rpart object to BinaryTree
+library(caret)
+library(tree)
+```
+
+#Decision tree with original dataset
+```{r}
+m2dt <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=m2train, control =  rpart.control(minisplit=5000,cp = 0.001))
+
+m2test$DT_score <- predict(m2dt,type='prob',m2test)
+DT_prediction <- prediction(m2test$DT_score[,2],m2test$DefaultedLoans)
+DT_performance <- performance(DT_prediction,"tpr","fpr")
+
+# MOdel performance plot
+plot(DT_performance, lwd=2, colorize=TRUE, main="ROC Decision Tree: Traditional Recursive Partitioning")
+lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
+lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
+```
+# Confusion Matrix
+```{r}
+defaultPredict <- predict(m2dt,m2test, type = 'class')
+matrix <- table(defaultPredict, m2test$DefaultedLoans)
+print(matrix)
+```
+
+# KS & AUC DT
+```{r}
+DT_AUROC <- round(performance(DT_prediction, measure = "auc")@y.values[[1]]*100, 2)
+DT_KS <- round(max(attr(DT_performance,'y.values')[[1]]-attr(DT_performance,'x.values')[[1]])*100, 2)
+DT_Gini <- (2*DT_AUROC - 100)
+cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
+```
+
+# Decision tree without scaling variables
+```{r}
+m1dt <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=m1train, control =  rpart.control(minisplit=5,cp = 0.001))
+
+m1test$DT_score <- predict(m1dt,type='prob',m1test)
+DT_prediction <- prediction(m1test$DT_score[,2],m1test$DefaultedLoans)
+DT_performance <- performance(DT_prediction,"tpr","fpr")
+
+# MOdel performance plot
+plot(DT_performance, lwd=2, colorize=TRUE, main="ROC Decision Tree: Traditional Recursive Partitioning")
+lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
+lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
+```
+# Confusion Matrix
+```{r}
+defaultPredict <- predict(m1dt,m1test, type = 'class')
+matrix <- table(defaultPredict, m1test$DefaultedLoans)
+print(matrix)
+```
+
+# KS & AUC DT
+```{r}
+DT_AUROC <- round(performance(DT_prediction, measure = "auc")@y.values[[1]]*100, 2)
+DT_KS <- round(max(attr(DT_performance,'y.values')[[1]]-attr(DT_performance,'x.values')[[1]])*100, 2)
+DT_Gini <- (2*DT_AUROC - 100)
+cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
+```
+# Final optimized decision tree
+```{r}
+
+m3dt <- rpart(DefaultedLoans ~NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude,method = "class",data=m3train, control =  rpart.control(minisplit=5,cp = 0.001))
+
+m3test$DT_score <- predict(m3dt,type='prob',m3test)
+DT_prediction <- prediction(m3test$DT_score[,2],m3test$DefaultedLoans)
+DT_performance <- performance(DT_prediction,"tpr","fpr")
+
+# MOdel performance plot
+plot(DT_performance, lwd=2, colorize=TRUE, main="ROC Decision Tree: Traditional Recursive Partitioning")
+lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
+lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
+```
+# Confusion Matrix
+```{r}
+defaultPredict <- predict(m3dt,m3test, type = 'class')
+matrix <- table(defaultPredict, m3test$DefaultedLoans)
+print(matrix)
+```
+
+# KS & AUC DT
+```{r}
+DT_AUROC <- round(performance(DT_prediction, measure = "auc")@y.values[[1]]*100, 2)
+DT_KS <- round(max(attr(DT_performance,'y.values')[[1]]-attr(DT_performance,'x.values')[[1]])*100, 2)
+DT_Gini <- (2*DT_AUROC - 100)
+cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
+```

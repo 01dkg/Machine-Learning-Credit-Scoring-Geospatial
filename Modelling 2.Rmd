@@ -17,11 +17,20 @@ Datav2 <- read_delim("Data/finalData.csv",
 ```
 ## Data Stats
 ```{r}
-dim(Datav2)
-names(Datav2)
-summary(Datav2)
+Datav2$InterestType <- as.factor(Datav2$InterestType)
+Datav2$MortgageType <- as.factor(Datav2$MortgageType)
+Datav2$NewLoan <- as.factor(Datav2$NewLoan)
+Datav2$ProbationaryLoans <- as.factor(Datav2$ProbationaryLoans)
+Datav2$LTVCategory <- as.factor(Datav2$LTVCategory)
+Datav2$InArrears <- as.factor(Datav2$InArrears)
+#Datav2$County <- as.factor(Datav2$County)
+Datav2$DefaultedLoans <- as.factor(Datav2$DefaultedLoans)
+m1 <- Datav2
+m2 <- Datav2
+m3 <- Datav2
 
 ```
+
 
 ##Data Prepration
 ```{r}
@@ -38,9 +47,12 @@ Datav2$DefaultedLoans <- as.factor(Datav2$DefaultedLoans)
 #Datav2$PropertyValue <- scale(Datav2$PropertyValue)
 #Datav2$InterestIncome <-scale(Datav2$InterestIncome)
 #Datav2$AnnualPYMT <-scale(Datav2$AnnualPYMT)
-str(Datav2)
-
+#str(Datav2)
 ```
+
+
+
+
 
 ##Subsetting Train and Test Datasets
 ```{r}
@@ -55,7 +67,8 @@ testDatav2 <- Datav2[dataPartition ==2,]
 ### Model trained with all variables
 ```{r}
 
-m2 <- glm(DefaultedLoans ~., family = "binomial", data = trainDatav2)
+#m2 <- glm(DefaultedLoans ~., family = "binomial", data = trainDatav2)
+#step(m2)
 
 ```
 
@@ -84,7 +97,7 @@ testDatav2$prediction <- predict(simpleglmv2, newdata=testDatav2, type="response
 ###Testing Accuracy of glm() model
 ```{r}
 table(testDatav2$DefaultedLoans, as.numeric(testDatav2$prediction >= 0.5))
-write.csv(testDatav2, "Data/Data_Model2.csv")
+
 ```
 ### Accuracy
 ```{r}
