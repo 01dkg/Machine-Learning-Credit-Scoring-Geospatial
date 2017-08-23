@@ -8,10 +8,12 @@ output:
 ## Data Reading:
 ```{r}
 library(readr)
-Datav2 <- read_delim("Data/finalData.csv", 
-    ";", escape_double = FALSE, trim_ws = TRUE)
-m2 <- read_delim("Data/cleanData.csv", 
-    ";", escape_double = FALSE, trim_ws = TRUE)
+#Datav2 <- read_delim("Data/finalData.csv", ";", escape_double = FALSE, trim_ws = TRUE)
+#m2 <- read_delim("Data/cleanData.csv",";", escape_double = FALSE, trim_ws = TRUE)
+
+library(readxl)
+Datav2 <- read_excel("E:/KPMG/KPMG/Data/prepdata.xlsx")
+m2 <- read_excel("E:/KPMG/KPMG/Data/prepdataOrg.xlsx")
 ```
 
 # Data Stats
@@ -51,7 +53,7 @@ summary(m2)
 ##Data Subsetting
 ```{r}
 set.seed(100)
-dataPartition = sample(2,nrow(m2),replace=TRUE,prob=c(0.7,0.3))
+dataPartition = sample(2,nrow(m2),replace=TRUE,prob=c(0.6,0.4))
 m2train <- m2[dataPartition ==1,]
 m2test <- m2[dataPartition ==2,]
 
@@ -135,7 +137,7 @@ cat("AUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
 ```{r}
 #Data Subsetting
 set.seed(100)
-dataPartition = sample(2,nrow(m1),replace=TRUE,prob=c(0.7,0.3))
+dataPartition = sample(2,nrow(m1),replace=TRUE,prob=c(0.6,0.4))
 m1train <- m1[dataPartition ==1,]
 m1test <- m1[dataPartition ==2,]
 summary(m1)
@@ -214,7 +216,7 @@ summary(m3)
 ##Data Subsetting
 ```{r}
 set.seed(100)
-dataPartition = sample(2,nrow(m3),replace=TRUE,prob=c(0.7,0.3))
+dataPartition = sample(2,nrow(m3),replace=TRUE,prob=c(0.6,0.4))
 m3train <- m3[dataPartition ==1,]
 m3test <- m3[dataPartition ==2,]
 
@@ -381,6 +383,7 @@ lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 defaultPredict <- predict(m3dt,m3test, type = 'class')
 matrix <- table(defaultPredict, m3test$DefaultedLoans)
 print(matrix)
+write.csv(m3test, "Data/m3test.csv")
 ```
 
 # KS & AUC DT
