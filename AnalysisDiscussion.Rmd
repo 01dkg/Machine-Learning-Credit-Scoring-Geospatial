@@ -355,6 +355,7 @@ lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 defaultPredict <- predict(m1dt,m1test, type = 'class')
 matrix <- table(defaultPredict, m1test$DefaultedLoans)
 print(matrix)
+write.csv(m1test, "Data/m1test.csv")
 ```
 
 # KS & AUC DT
