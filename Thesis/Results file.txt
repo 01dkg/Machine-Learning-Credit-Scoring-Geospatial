@@ -1,0 +1,52 @@
+#Logistic Regression
+
+##KS, Gini & AUC m2
+```{r}
+lr_KS <- round(max(attr(m2perflr,'y.values')[[1]]-attr(m2perflr,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(m2predlr, measure = "auc")@y.values[[1]]*100, 2)
+lr_Gini <- (2*lr_AUROC - 100)
+cat("AUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
+
+```
+
+##KS, Gini & AUC m1
+```{r}
+accuracy <- 89.01
+lr_KS <- round(max(attr(m1perflr,'y.values')[[1]]-attr(m1perflr,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(m1predlr, measure = "auc")@y.values[[1]]*100, 2)
+lr_Gini <- (2*lr_AUROC - 100)
+cat("Accuracy:",accuracy, "\tAUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
+```
+
+##KS, Gini & AUC m3
+```{r}
+lr_KS <- round(max(attr(m3perflr,'y.values')[[1]]-attr(m3perflr,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(m3predlr, measure = "auc")@y.values[[1]]*100, 2)
+lr_Gini <- (2*lr_AUROC - 100)
+cat("AUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
+
+```
+
+
+# KS & AUC DT Original
+```{r}
+DT_AUROC <- round(performance(DT_prediction2, measure = "auc")@y.values[[1]]*100, 2)
+DT_KS <- round(max(attr(DT_performance2,'y.values')[[1]]-attr(DT_performance2,'x.values')[[1]])*100, 2)
+DT_Gini <- (2*DT_AUROC - 100)
+cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
+```
+# KS & AUC DT
+```{r}
+DT_AUROC <- round(performance(DT_prediction1, measure = "auc")@y.values[[1]]*100, 2)
+DT_KS <- round(max(attr(DT_performance1,'y.values')[[1]]-attr(DT_performance1,'x.values')[[1]])*100, 2)
+DT_Gini <- (2*DT_AUROC - 100)
+cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
+```
+
+# KS & AUC DT
+```{r}
+DT_AUROC <- round(performance(DT_prediction3, measure = "auc")@y.values[[1]]*100, 2)
+DT_KS <- round(max(attr(DT_performance3,'y.values')[[1]]-attr(DT_performance3,'x.values')[[1]])*100, 2)
+DT_Gini <- (2*DT_AUROC - 100)
+cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
+```
