@@ -17,7 +17,7 @@ library(gridExtra)
 library(htmlwidgets)
 library(leaflet.extras)
 library(magrittr)
-
+testDatav2 <- m1test
 MapDisplay <- leaflet() %>%
   addProviderTiles(providers$CartoDB.Positron)
 
@@ -38,16 +38,6 @@ popupInfo <- paste(testDatav2[['ContractRef']],
                    testDatav2[['PropertyValue']],
                    sep='')
 
-purrr::walk(
-  testDatav2$DefaultedLoans,
-  function(DefaultedLoans) {
-    MapDisplay <<- MapDisplay %>%
-      addHeatmap(
-        data = testDatav2,
-        layerId =  testDatav2$DefaultedLoans, group =  testDatav2$DefaultedLoans,
-        lng=~AddressLongitude, lat=~AddressLatitude,
-        blur = 20, max = 0.05, radius = 15)
-  })
 
 MapDisplay <- leaflet(testDatav2) %>% 
   setView(-6.24420, 53.30867, zoom = 12) %>%
@@ -78,12 +68,12 @@ library(gridExtra)
 library(htmlwidgets)
 library(leaflet.extras)
 library(magrittr)
-
+testDatav2 <- m1test
 leaf <- leaflet() %>%
   addProviderTiles(providers$CartoDB.Positron)
 
 leaf %>%
-  setView(-0.094106, 51.515, 14) %>%
+  setView(-6.24420, 53.30867, 12) %>%
   addLayersControl(
     baseGroups = testDatav2$DefaultedLoans,
     options = layersControlOptions(collapsed = FALSE)

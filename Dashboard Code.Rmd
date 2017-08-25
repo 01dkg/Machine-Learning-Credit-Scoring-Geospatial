@@ -16,6 +16,7 @@ library(ggmap)
 library(gridExtra)
 library(htmlwidgets)
 library(readr)
+
 #weatherIcon <- makeIcon(
                          #iconUrl = "./fig/weather.png",
                          #iconWidth = 30, 

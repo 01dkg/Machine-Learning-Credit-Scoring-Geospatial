@@ -12,8 +12,10 @@ library(readr)
 #m2 <- read_delim("Data/cleanData.csv",";", escape_double = FALSE, trim_ws = TRUE)
 
 library(readxl)
-Datav2 <- read_excel("E:/KPMG/KPMG/Data/prepdata.xlsx")
-m2 <- read_excel("E:/KPMG/KPMG/Data/prepdataOrg.xlsx")
+#Datav2 <- read_excel("E:/KPMG/KPMG/Data/prepdata.xlsx")
+#m2 <- read_excel("E:/KPMG/KPMG/Data/prepdataOrg.xlsx")
+Datav2 <- read_excel("G:/KPMG/Data/prepdata.xlsx")
+m2 <- read_excel("G:/KPMG/Data/prepdataOrg.xlsx")
 ```
 
 # Data Stats
@@ -111,13 +113,13 @@ names(significant.variables)[significant.variables == TRUE]
 #score test data set
 library(ROCR)
 m2test$lr_score <- predict(m2glm,type='response',m2test)
-m2pred <- prediction(m2test$lr_score, m2test$DefaultedLoans)
-m2perf <- performance(m2pred,"tpr","fpr")
+m2predlr <- prediction(m2test$lr_score, m2test$DefaultedLoans)
+m2perflr <- performance(m2pred,"tpr","fpr")
 
 
 
 #ROC
-plot(m2perf, lwd=2, colorize=TRUE, main="ROC LR: Logistic Regression Performance")
+plot(m2perflr, lwd=2, colorize=TRUE, main="ROC LR: Logistic Regression Performance")
 lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
 lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 
@@ -125,8 +127,8 @@ lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 
 ##KS, Gini & AUC m2
 ```{r}
-lr_KS <- round(max(attr(m2perf,'y.values')[[1]]-attr(m2perf,'x.values')[[1]])*100, 2)
-lr_AUROC <- round(performance(m2pred, measure = "auc")@y.values[[1]]*100, 2)
+lr_KS <- round(max(attr(m2perflr,'y.values')[[1]]-attr(m2perflr,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(m2predlr, measure = "auc")@y.values[[1]]*100, 2)
 lr_Gini <- (2*lr_AUROC - 100)
 cat("AUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
 
@@ -180,8 +182,8 @@ names(significant.variables)[significant.variables == TRUE]
 #score test data set
 library(ROCR)
 m1test$lr_score <- predict(m1glm,type='response',m1test)
-m1pred <- prediction(m1test$lr_score, m1test$DefaultedLoans)
-m1perf <- performance(m1pred,"tpr","fpr")
+m1predlr <- prediction(m1test$lr_score, m1test$DefaultedLoans)
+m1perflr <- performance(m1pred,"tpr","fpr")
 
 
 #ROC
@@ -192,8 +194,8 @@ lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 
 ##KS, Gini & AUC m1
 ```{r}
-lr_KS <- round(max(attr(m1perf,'y.values')[[1]]-attr(m1perf,'x.values')[[1]])*100, 2)
-lr_AUROC <- round(performance(m1pred, measure = "auc")@y.values[[1]]*100, 2)
+lr_KS <- round(max(attr(m1perflr,'y.values')[[1]]-attr(m1perflr,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(m1predlr, measure = "auc")@y.values[[1]]*100, 2)
 lr_Gini <- (2*lr_AUROC - 100)
 cat("AUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
 ```
@@ -274,8 +276,8 @@ names(significant.variables)[significant.variables == TRUE]
 #score test data set
 library(ROCR)
 m3test$lr_score <- predict(m3glm,type='response',m3test)
-m3pred <- prediction(m3test$lr_score, m3test$DefaultedLoans)
-m3perf <- performance(m3pred,"tpr","fpr")
+m3predlr <- prediction(m3test$lr_score, m3test$DefaultedLoans)
+m3perflr <- performance(m3pred,"tpr","fpr")
 
 
 
@@ -314,11 +316,11 @@ library(tree)
 m2dt <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=m2train, control =  rpart.control(minisplit=5000,cp = 0.001))
 
 m2test$DT_score <- predict(m2dt,type='prob',m2test)
-DT_prediction <- prediction(m2test$DT_score[,2],m2test$DefaultedLoans)
-DT_performance <- performance(DT_prediction,"tpr","fpr")
+DT_prediction2 <- prediction(m2test$DT_score[,2],m2test$DefaultedLoans)
+DT_performance2 <- performance(DT_prediction,"tpr","fpr")
 
 # MOdel performance plot
-plot(DT_performance, lwd=2, colorize=TRUE, main="ROC Decision Tree: Traditional Recursive Partitioning")
+plot(DT_performance2, lwd=2, colorize=TRUE, main="ROC Decision Tree: Traditional Recursive Partitioning")
 lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
 lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 ```
@@ -342,11 +344,11 @@ cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
 m1dt <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude ,method = "class",data=m1train, control =  rpart.control(minisplit=5,cp = 0.001))
 
 m1test$DT_score <- predict(m1dt,type='prob',m1test)
-DT_prediction <- prediction(m1test$DT_score[,2],m1test$DefaultedLoans)
-DT_performance <- performance(DT_prediction,"tpr","fpr")
+DT_prediction1 <- prediction(m1test$DT_score[,2],m1test$DefaultedLoans)
+DT_performance1 <- performance(DT_prediction1,"tpr","fpr")
 
 # MOdel performance plot
-plot(DT_performance, lwd=2, colorize=TRUE, main="ROC Decision Tree: Traditional Recursive Partitioning")
+plot(DT_performance1, lwd=2, colorize=TRUE, main="ROC Decision Tree: Traditional Recursive Partitioning")
 lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
 lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 ```
@@ -371,11 +373,11 @@ cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
 m3dt <- rpart(DefaultedLoans ~NewLoan + County + LoanBalance + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County + LTV + LTVCategory + InArrears + MortgageType + MortgageYears + AddressLatitude + AddressLongitude,method = "class",data=m3train, control =  rpart.control(minisplit=5,cp = 0.001))
 
 m3test$DT_score <- predict(m3dt,type='prob',m3test)
-DT_prediction <- prediction(m3test$DT_score[,2],m3test$DefaultedLoans)
-DT_performance <- performance(DT_prediction,"tpr","fpr")
+DT_prediction3 <- prediction(m3test$DT_score[,2],m3test$DefaultedLoans)
+DT_performance3 <- performance(DT_prediction3,"tpr","fpr")
 
 # MOdel performance plot
-plot(DT_performance, lwd=2, colorize=TRUE, main="ROC Decision Tree: Traditional Recursive Partitioning")
+plot(DT_performance3, lwd=2, colorize=TRUE, main="ROC Decision Tree: Traditional Recursive Partitioning")
 lines(x=c(0, 1), y=c(0, 1), col="red", lwd=1, lty=3);
 lines(x=c(1, 0), y=c(0, 1), col="green", lwd=1, lty=4)
 ```
@@ -394,3 +396,16 @@ DT_KS <- round(max(attr(DT_performance,'y.values')[[1]]-attr(DT_performance,'x.v
 DT_Gini <- (2*DT_AUROC - 100)
 cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
 ```
+
+```{r}
+#Compare ROC Performance of Models
+plot(m1perflr, col='dark green', lty=1, main='ROCs: Model Performance Comparision') # Modified data(without scaling)
+plot(m2perflr, col='blue',lty=2, add=TRUE); # Original Data Set
+plot(m3perflr, col='red',lty=3, add=TRUE); # Modified data(with scaling)
+    legend(0.6,0.5,
+           c('m1:logistic reg','m2:Recursive Partitioning','m3:random forest'),
+           col=c('dark green', "black", "red"),
+           lwd=3);
+lines(c(0,1),c(0,1),col = "gray", lty = 4 ) # random line
+```
+
