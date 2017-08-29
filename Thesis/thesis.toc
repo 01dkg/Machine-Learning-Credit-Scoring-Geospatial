@@ -1,5 +1,5 @@
-\contentsline {chapter}{List of figures}{v}
-\contentsline {chapter}{List of tables}{vi}
+\contentsline {chapter}{List of figures}{vii}
+\contentsline {chapter}{List of tables}{viii}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Assumptions \& Challenges}{2}
 \contentsline {section}{\numberline {1.2}Outline}{3}
@@ -35,18 +35,21 @@
 \contentsline {section}{\numberline {5.2}Data Normalization}{36}
 \contentsline {section}{\numberline {5.3}Performance}{37}
 \contentsline {section}{\numberline {5.4}Tableau Dashboard}{41}
-\contentsline {subsection}{\numberline {5.4.1}Overview}{41}
-\contentsline {subsection}{\numberline {5.4.2}Predictive Dashboard}{42}
+\contentsline {subsection}{\numberline {5.4.1}Overview}{42}
+\contentsline {subsection}{\numberline {5.4.2}Predictive Dashboard}{43}
 \contentsline {chapter}{\numberline {6}Discussion}{49}
 \contentsline {section}{\numberline {6.1}Introduction}{49}
-\contentsline {section}{\numberline {6.2}Patterns \& Analysis}{49}
-\contentsline {section}{\numberline {6.3}Dashboard}{51}
-\contentsline {section}{\numberline {6.4}Success}{54}
-\contentsline {section}{\numberline {6.5}Integration with real data}{55}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{59}
-\contentsline {chapter}{Detailed tables}{60}
-\contentsline {chapter}{Appendices}{60}
-\contentsline {chapter}{Program code}{61}
-\contentsline {chapter}{Glossary}{62}
-\contentsline {chapter}{Bibliography}{63}
-\contentsline {chapter}{List of Notation}{69}
+\contentsline {section}{\numberline {6.2}Patterns \& Analysis}{50}
+\contentsline {section}{\numberline {6.3}Statistical Analysis}{52}
+\contentsline {section}{\numberline {6.4}Dashboard}{53}
+\contentsline {section}{\numberline {6.5}Success}{56}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{58}
+\contentsline {section}{\numberline {7.1}Integration with real data}{58}
+\contentsline {section}{\numberline {7.2}Future Work}{59}
+\contentsline {section}{\numberline {7.3}Conclusion}{59}
+\contentsline {chapter}{Detailed tables}{61}
+\contentsline {chapter}{Appendices}{61}
+\contentsline {chapter}{Program code}{62}
+\contentsline {chapter}{Glossary}{63}
+\contentsline {chapter}{Bibliography}{64}
+\contentsline {chapter}{List of Notation}{70}
