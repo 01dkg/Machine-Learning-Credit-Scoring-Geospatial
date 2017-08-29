@@ -8,16 +8,26 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Data Processing using Alteryx}}{28}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Standard Logistic Regression}}{32}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Logistic Regression}}{38}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Decision Tree}}{38}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Precision vs Recall curve}}{38}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces ROCs for logistic regression vs decision tree}}{39}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Decision tree of original data}}{40}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Decision tree of modified data}}{41}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Original Data: ROCs for logistic regression vs decision tree}}{40}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Normalized Data: ROCs for logistic regression vs decision tree}}{41}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Decision tree of original data}}{42}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Decision tree of modified data}}{43}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Predictive Model Dashboard}}{44}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Street view map analysis}}{45}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Probability Heat map}}{46}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Irish Property Crash analysis}}{47}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Street view map analysis}}{48}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Number of account county wise}}{43}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Confusion Matrix of Test Data}}{44}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Confusion Matrix of Test Data}}{45}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Irish Property Crash}}{50}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces County Cluster}}{50}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Clustering Results}}{51}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Loan to Value histogram}}{52}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Portfolio Overview}}{52}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Portfolio Analysis}}{54}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Property Selection using distance}}{55}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Number of account county wise}}{56}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Confusion Matrix of Test Data}}{57}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Confusion Matrix of Test Data}}{58}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

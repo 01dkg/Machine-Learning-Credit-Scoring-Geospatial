@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  21 AUG 2017 20:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  29 AUG 2017 23:29
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -966,84 +966,234 @@ ty Value]))[]
 
  (ch5.tex
 Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
 [36
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 43.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-<LRrecall.png, id=158, 526.96875pt x 325.215pt>
-File: LRrecall.png Graphic file (type png)
- <use LRrecall.png>
-Package pdftex.def Info: LRrecall.png used on input line 61.
-(pdftex.def)             Requested size: 140.5225pt x 86.72377pt.
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
-<DRrecall.png, id=159, 526.96875pt x 325.215pt>
-File: DRrecall.png Graphic file (type png)
- <use DRrecall.png>
-Package pdftex.def Info: DRrecall.png used on input line 66.
-(pdftex.def)             Requested size: 140.5225pt x 86.72377pt.
- [37]
-<results1.png, id=163, 526.96875pt x 315.42844pt>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+<result0.png, id=164, 511.15968pt x 314.67563pt>
+File: result0.png Graphic file (type png)
+ <use result0.png>
+Package pdftex.def Info: result0.png used on input line 100.
+(pdftex.def)             Requested size: 398.33858pt x 245.22032pt.
+
+<results1.png, id=166, 526.96875pt x 315.42844pt>
 File: results1.png Graphic file (type png)
  <use results1.png>
-Package pdftex.def Info: results1.png used on input line 75.
+Package pdftex.def Info: results1.png used on input line 109.
 (pdftex.def)             Requested size: 398.33858pt x 238.44301pt.
- [38 <./LRrecall.png> <./DRrecall.png>] <DTorg.png, id=167, 526.96875pt x 325.2
-15pt>
-File: DTorg.png Graphic file (type png)
 
-<use DTorg.png>
-Package pdftex.def Info: DTorg.png used on input line 88.
+Overfull \hbox (2.58792pt too wide) in paragraph at lines 116--117
+\OT1/cmr/m/n/12 per-for-mance of the pre-dic-tive model by plot-ting true pos-i
+-tive rate(TPR) against
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+[39] <DTorg.png, id=171, 526.96875pt x 325.215pt>
+File: DTorg.png Graphic file (type png)
+ <use DTorg.png>
+Package pdftex.def Info: DTorg.png used on input line 122.
 (pdftex.def)             Requested size: 398.33858pt x 245.841pt.
- <DTmod.png, id=168, 526.96875pt x 325.215pt>
+ [40 <./result0.png>] <DTmod.png, id=176, 526.96875pt x 325.215pt>
 File: DTmod.png Graphic file (type png)
  <use DTmod.png>
-Package pdftex.def Info: DTmod.png used on input line 99.
+Package pdftex.def Info: DTmod.png used on input line 131.
 (pdftex.def)             Requested size: 398.33858pt x 245.841pt.
-)
-[39 <./results1.png>] [40 <./DTorg.png>] [41 <./DTmod.png>]
+
+<Predictive.png, id=177, 752.0597pt x 526.21594pt>
+File: Predictive.png Graphic file (type png)
+ <use Predictive.png>
+Package pdftex.def Info: Predictive.png used on input line 145.
+(pdftex.def)             Requested size: 398.33858pt x 278.7245pt.
+
+
+LaTeX Warning: Reference `fig.street' on page 41 undefined on input line 154.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+[41 <./results1.png>] <street.png, id=181, 604.50844pt x 363.60844pt>
+File: street.png Graphic file (type png)
+
+<use street.png>
+Package pdftex.def Info: street.png used on input line 158.
+(pdftex.def)             Requested size: 398.33858pt x 239.59947pt.
+ [42 <./DTorg.png>]
+<heatmap.png, id=185, 301.8778pt x 249.93375pt>
+File: heatmap.png Graphic file (type png)
+ <use heatmap.png>
+Package pdftex.def Info: heatmap.png used on input line 171.
+(pdftex.def)             Requested size: 398.33858pt x 329.79533pt.
+
+<crash.png, id=186, 740.7675pt x 514.92375pt>
+File: crash.png Graphic file (type png)
+ <use crash.png>
+Package pdftex.def Info: crash.png used on input line 182.
+(pdftex.def)             Requested size: 398.33858pt x 276.89969pt.
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no ¬ in font cmr12!
+ [43 <./DTmod.png>] <mala.png, id=190, 765.6103pt x 541.27219pt>
+File: mala.png Graphic file (type png)
+ <use mala.png>
+Package pdftex.def Info: mala.png used on input line 193.
+(pdftex.def)             Requested size: 398.33858pt x 281.62007pt.
+) [44 <./Predictive.png>] [45 <./street.png>] [46 <./heatmap.png>] [47 <./crash
+.png>] [48 <./mala.png>]
 \openout2 = `ch6.aux'.
 
  (ch6.tex
 Chapter 6.
-<countynumber.png, id=179, 1028.34187pt x 552.56438pt>
+
+LaTeX Warning: Reference `fig:crash1' on page 49 undefined on input line 22.
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no ¬ in font cmr12!
+<crash1.png, id=209, 889.07156pt x 509.65407pt>
+File: crash1.png Graphic file (type png)
+ <use crash1.png>
+Package pdftex.def Info: crash1.png used on input line 26.
+(pdftex.def)             Requested size: 444.5347pt x 254.8264pt.
+
+Overfull \hbox (46.19612pt too wide) in paragraph at lines 26--28
+ [][] 
+ []
+
+<clustero.png, id=210, 722.7pt x 387.69844pt>
+File: clustero.png Graphic file (type png)
+ <use clustero.png>
+Package pdftex.def Info: clustero.png used on input line 35.
+(pdftex.def)             Requested size: 361.3491pt x 193.84874pt.
+
+
+LaTeX Warning: Reference `fig:cluster' on page 49 undefined on input line 42.
+
+[49
+
+
+
+]
+
+LaTeX Warning: Text page 50 contains only floats.
+
+[50 <./crash1.png> <./clustero.png>]
+<cluster.png, id=218, 286.82156pt x 290.58563pt>
+File: cluster.png Graphic file (type png)
+ <use cluster.png>
+Package pdftex.def Info: cluster.png used on input line 46.
+(pdftex.def)             Requested size: 143.41042pt x 145.29245pt.
+
+
+LaTeX Warning: Reference `fig:ltv' on page 51 undefined on input line 54.
+
+
+Overfull \hbox (8.22945pt too wide) in paragraph at lines 53--55
+[]\OT1/cmr/m/n/12 During data anal-y-sis phase, it was noted that the most prop
+-er-ties has LTV(Loan-
+ []
+
+<ltv.png, id=219, 704.6325pt x 433.62pt>
+File: ltv.png Graphic file (type png)
+ <use ltv.png>
+Package pdftex.def Info: ltv.png used on input line 57.
+(pdftex.def)             Requested size: 352.3154pt x 216.80946pt.
+
+<Overview.png, id=220, 752.0597pt x 450.9347pt>
+File: Overview.png Graphic file (type png)
+ <use Overview.png>
+Package pdftex.def Info: Overview.png used on input line 70.
+(pdftex.def)             Requested size: 398.33858pt x 238.84975pt.
+ [51 <./cluster.png>]
+
+LaTeX Warning: Text page 52 contains only floats.
+
+[52 <./ltv.png (PNG copy)> <./Overview.png>]
+<Analysis.png, id=230, 752.0597pt x 526.21594pt>
+File: Analysis.png Graphic file (type png)
+ <use Analysis.png>
+Package pdftex.def Info: Analysis.png used on input line 91.
+(pdftex.def)             Requested size: 398.33858pt x 278.7245pt.
+
+
+LaTeX Warning: Reference `fig:dist' on page 53 undefined on input line 98.
+
+<dist.png, id=231, 770.12718pt x 524.71031pt>
+File: dist.png Graphic file (type png)
+ <use dist.png>
+Package pdftex.def Info: dist.png used on input line 102.
+(pdftex.def)             Requested size: 398.33858pt x 271.39375pt.
+
+<countynumber.png, id=232, 1028.34187pt x 552.56438pt>
 File: countynumber.png Graphic file (type png)
  <use countynumber.png>
-Package pdftex.def Info: countynumber.png used on input line 24.
+Package pdftex.def Info: countynumber.png used on input line 112.
 (pdftex.def)             Requested size: 398.33858pt x 214.04059pt.
 
-[42
 
+LaTeX Warning: Reference `fig:tableaucounty' on page 53 undefined on input line
+ 121.
 
-
-] <DTcm.png, id=183, 324.46219pt x 325.215pt>
+[53] [54 <./Analysis.png>] <DTcm.png, id=240, 324.46219pt x 325.215pt>
 File: DTcm.png Graphic file (type png)
- <use DTcm.png>
-Package pdftex.def Info: DTcm.png used on input line 43.
+
+<use DTcm.png>
+Package pdftex.def Info: DTcm.png used on input line 133.
 (pdftex.def)             Requested size: 398.33858pt x 399.28757pt.
- [43 <./countynumber.png>] <rmap.png, id=187, 748.29562pt x 486.31688pt>
+ <rmap.png, id=241, 748.29562pt x 486.31688pt>
 File: rmap.png Graphic file (type png)
  <use rmap.png>
-Package pdftex.def Info: rmap.png used on input line 54.
+Package pdftex.def Info: rmap.png used on input line 144.
 (pdftex.def)             Requested size: 398.33858pt x 258.88206pt.
 )
-[44 <./DTcm.png>] [45 <./rmap.png>]
+[55 <./dist.png>] [56 <./countynumber.png>] [57 <./DTcm.png>] [58 <./rmap.png>]
 \openout2 = `ch7.aux'.
 
- (ch7.tex
+(ch7.tex
 Chapter 7.
-) [46
+) [59
 
 
 
 ]
 \openout2 = `appendix1.aux'.
 
- (appendix1.tex) [47
+ (appendix1.tex) [60
 
 
 
@@ -1053,20 +1203,20 @@ Chapter 7.
 ]
 \openout2 = `appendix2.aux'.
 
- (appendix2.tex) [48
+ (appendix2.tex) [61
 
 
 
 ]
 \openout2 = `glossary.aux'.
 
- (glossary.tex) [49
+ (glossary.tex) [62
 
 
 
 
 ]
-(thesis.bbl (babelbst.tex) [50
+(thesis.bbl (babelbst.tex) [63
 
 
 
@@ -1077,15 +1227,15 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [51] [52] [53] [54]) [55]
+ [64] [65] [66] [67]) [68]
 \openout2 = `notation.aux'.
 
  (notation.tex
 
-LaTeX Warning: Reference `Th.FF.fte.field' on page 56 undefined on input line 2
+LaTeX Warning: Reference `Th.FF.fte.field' on page 69 undefined on input line 2
 5.
 
-) [56
+) [69
 
 
 
@@ -1095,6 +1245,9 @@ LaTeX Warning: Reference `Th.FF.fte.field' on page 56 undefined on input line 2
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  )
 (\end occurred inside a group at level 2)
 
@@ -1102,13 +1255,13 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5324 strings out of 493333
- 72575 string characters out of 3139192
- 153829 words of memory out of 3000000
- 8589 multiletter control sequences out of 15000+200000
+ 5392 strings out of 493333
+ 73504 string characters out of 3139192
+ 153808 words of memory out of 3000000
+ 8646 multiletter control sequences out of 15000+200000
  14468 words of font info for 59 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 40i,9n,33p,1772b,3222s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,13n,33p,1772b,3228s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
@@ -1117,9 +1270,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (66 pages, 1217491 bytes).
+Output written on thesis.pdf (79 pages, 2216076 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
+ 321 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

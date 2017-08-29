@@ -5,7 +5,9 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces System configurations used to carry out this research}}{22}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of Logistic Regression and Decision Tree performance}}{38}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Distribution of Defaulted Loans vs Credit for Original Data}}{37}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Distribution of Defaulted Loans vs Credit for Normalized Data}}{38}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Test results for Logistic Regression and Decision Tree performance}}{39}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

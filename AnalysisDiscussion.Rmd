@@ -198,10 +198,12 @@ cat("Accuracy:",accuracy, "\tAUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gi
 # Final Optimized Model
 ## Data prep
 ```{r}
+m3 <- Datav2
 m3$County <- as.factor(m3$County)
 m3$LoanBalance <- scale(m3$LoanBalance)
 m3$PropertyValue <- scale(m3$PropertyValue)
 m3$AnnualPYMT <-scale(m3$AnnualPYMT)
+m3$InterestIncome <-scale(m3$InterestIncome)
 summary(m3)
 
 ```
@@ -416,7 +418,7 @@ lines(c(0,1),c(0,1),col = "gray", lty = 4 ) # random line
 ## Modified Data (Unnormalized data)
 ```{r}
 #Without Scaling
-plot(m1perflr, col='blue', lty=1, main='ROCs: Model Performance Comparision (Modified Data)') # Modified data(without scaling)
+plot(m1perflr, col='blue', lty=1, main='ROCs: Model Performance Comparision (Unnormalized Data)') # Modified data(without scaling)
 plot(DT_performance1, col='red',lty=2, add=TRUE); # Original Data Set
     legend(0.6,0.5,
            c('Logistic Regression','Decision tree'),
@@ -428,7 +430,7 @@ lines(c(0,1),c(0,1),col = "gray", lty = 4 ) # random line
 ## Modified Data (Normalized data)
 ```{r}
 #Final
-plot(m3perflr, col='blue', lty=1, main='ROCs: Model Performance Comparision(Original Data') # Modified data(without scaling)
+plot(m3perflr, col='blue', lty=1, main='ROCs: Model Performance Comparision(Normalized Data') # Modified data(without scaling)
 plot(DT_performance3, col='red',lty=2, add=TRUE); # Original Data Set
     legend(0.6,0.5,
            c('Logistic Regression','Decision tree'),
@@ -436,6 +438,56 @@ plot(DT_performance3, col='red',lty=2, add=TRUE); # Original Data Set
            lwd=3);
 lines(c(0,1),c(0,1),col = "gray", lty = 4 ) # random line
 ```
+#Logistic Regression
+
+##KS, Gini & AUC m2
+```{r}
+lr_KS <- round(max(attr(m2perflr,'y.values')[[1]]-attr(m2perflr,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(m2predlr, measure = "auc")@y.values[[1]]*100, 2)
+lr_Gini <- (2*lr_AUROC - 100)
+cat("AUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
+
 ```
 
+##KS, Gini & AUC m1
+```{r}
+accuracy <- 89.01
+lr_KS <- round(max(attr(m1perflr,'y.values')[[1]]-attr(m1perflr,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(m1predlr, measure = "auc")@y.values[[1]]*100, 2)
+lr_Gini <- (2*lr_AUROC - 100)
+cat("Accuracy:",accuracy, "\tAUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
+```
+
+##KS, Gini & AUC m3
+```{r}
+lr_KS <- round(max(attr(m3perflr,'y.values')[[1]]-attr(m3perflr,'x.values')[[1]])*100, 2)
+lr_AUROC <- round(performance(m3predlr, measure = "auc")@y.values[[1]]*100, 2)
+lr_Gini <- (2*lr_AUROC - 100)
+cat("AUROC: ",lr_AUROC,"\tKS: ", lr_KS, "\tGini:", lr_Gini, "\n")
+
+```
+
+
+# KS & AUC DT Original
+```{r}
+DT_AUROC <- round(performance(DT_prediction2, measure = "auc")@y.values[[1]]*100, 2)
+DT_KS <- round(max(attr(DT_performance2,'y.values')[[1]]-attr(DT_performance2,'x.values')[[1]])*100, 2)
+DT_Gini <- (2*DT_AUROC - 100)
+cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
+```
+# KS & AUC DT
+```{r}
+DT_AUROC <- round(performance(DT_prediction1, measure = "auc")@y.values[[1]]*100, 2)
+DT_KS <- round(max(attr(DT_performance1,'y.values')[[1]]-attr(DT_performance1,'x.values')[[1]])*100, 2)
+DT_Gini <- (2*DT_AUROC - 100)
+cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
+```
+
+# KS & AUC DT
+```{r}
+DT_AUROC <- round(performance(DT_prediction3, measure = "auc")@y.values[[1]]*100, 2)
+DT_KS <- round(max(attr(DT_performance3,'y.values')[[1]]-attr(DT_performance3,'x.values')[[1]])*100, 2)
+DT_Gini <- (2*DT_AUROC - 100)
+cat("AUROC: ",DT_AUROC,"\tKS: ", DT_KS, "\tGini:", DT_Gini, "\n")
+```
 

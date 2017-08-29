@@ -32,17 +32,21 @@
 \contentsline {section}{\numberline {4.5}Tableau \& Dashboards}{34}
 \contentsline {chapter}{\numberline {5}Results}{36}
 \contentsline {section}{\numberline {5.1}Overview}{36}
-\contentsline {section}{\numberline {5.2}Introduction}{36}
+\contentsline {section}{\numberline {5.2}Data Normalization}{36}
 \contentsline {section}{\numberline {5.3}Performance}{37}
-\contentsline {chapter}{\numberline {6}Discussion}{42}
-\contentsline {section}{\numberline {6.1}Introduction}{42}
-\contentsline {section}{\numberline {6.2}Patterns \& Analysis}{42}
-\contentsline {section}{\numberline {6.3}Success}{43}
-\contentsline {section}{\numberline {6.4}Integration with real data}{43}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{46}
-\contentsline {chapter}{Detailed tables}{47}
-\contentsline {chapter}{Appendices}{47}
-\contentsline {chapter}{Program code}{48}
-\contentsline {chapter}{Glossary}{49}
-\contentsline {chapter}{Bibliography}{50}
-\contentsline {chapter}{List of Notation}{56}
+\contentsline {section}{\numberline {5.4}Tableau Dashboard}{41}
+\contentsline {subsection}{\numberline {5.4.1}Overview}{41}
+\contentsline {subsection}{\numberline {5.4.2}Predictive Dashboard}{42}
+\contentsline {chapter}{\numberline {6}Discussion}{49}
+\contentsline {section}{\numberline {6.1}Introduction}{49}
+\contentsline {section}{\numberline {6.2}Patterns \& Analysis}{49}
+\contentsline {section}{\numberline {6.3}Dashboard}{51}
+\contentsline {section}{\numberline {6.4}Success}{54}
+\contentsline {section}{\numberline {6.5}Integration with real data}{55}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Research}{59}
+\contentsline {chapter}{Detailed tables}{60}
+\contentsline {chapter}{Appendices}{60}
+\contentsline {chapter}{Program code}{61}
+\contentsline {chapter}{Glossary}{62}
+\contentsline {chapter}{Bibliography}{63}
+\contentsline {chapter}{List of Notation}{69}
