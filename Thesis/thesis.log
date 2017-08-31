@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  30 AUG 2017 00:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.7)  31 AUG 2017 00:12
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -340,7 +340,20 @@ LaTeX Warning: Label `fig:overview' multiply defined.
 
 LaTeX Warning: Label `fig:overview' multiply defined.
 
-) (ch7.aux) (appendix1.aux) (appendix2.aux) (glossary.aux) (notation.aux))
+) (ch7.aux) (appendix1.aux) (appendix2.aux
+
+LaTeX Warning: Label `fig:git' multiply defined.
+
+
+LaTeX Warning: Label `fig:git' multiply defined.
+
+
+LaTeX Warning: Label `fig:git' multiply defined.
+
+
+LaTeX Warning: Label `fig:git' multiply defined.
+
+))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 201.
@@ -355,8 +368,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 201.
 LaTeX Font Info:    ... okay on input line 201.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 201.
 LaTeX Font Info:    ... okay on input line 201.
-
-(C:\Users\Deepak\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+ (C:\Users\Deepak\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count127
 \scratchdimen=\dimen140
@@ -502,9 +514,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--306
 [11
 
 
-] [12
+]
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+
+ []
+
+[12
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+
+ []
+
+[13
+
+] <Predictive.png, id=47, 752.0597pt x 526.21594pt>
+File: Predictive.png Graphic file (type png)
+ <use Predictive.png>
+Package pdftex.def Info: Predictive.png used on input line 339.
+(pdftex.def)             Requested size: 398.33858pt x 278.7245pt.
+
+[14 <./Predictive.png>]
 \openout2 = `ch1.aux'.
 
  (ch1.tex
@@ -573,7 +608,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-<Loanflowchart.jpg, id=66, 878.53218pt x 481.04718pt>
+<Loanflowchart.jpg, id=76, 878.53218pt x 481.04718pt>
 File: Loanflowchart.jpg Graphic file (type jpg)
  <use Loanflowchart.jpg>
 Package pdftex.def Info: Loanflowchart.jpg used on input line 20.
@@ -643,24 +678,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--88
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
 []\OT1/cmr/m/n/12 Linear Re-gres-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
 []\OT1/cmr/m/n/12 Discriminant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+[15]
+Overfull \hbox (6.92114pt too wide) in paragraph at lines 95--96
+[]\OT1/cmr/bx/n/12 Discriminant Anal-y-sis: \OT1/cmr/m/n/12 In credit scor-ing 
+mod-els, a sta-tis-ti-cal anal-y-sis method
  []
 
 
@@ -669,38 +710,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
  []
 
 
-Overfull \hbox (6.92114pt too wide) in paragraph at lines 97--98
-[]\OT1/cmr/bx/n/12 Discriminant Anal-y-sis: \OT1/cmr/m/n/12 In credit scor-ing 
-mod-els, a sta-tis-ti-cal anal-y-sis method
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-[16] <simpledt.png, id=95, 977.15062pt x 508.90125pt>
+[16] <simpledt.png, id=105, 977.15062pt x 508.90125pt>
 File: simpledt.png Graphic file (type png)
  <use simpledt.png>
-Package pdftex.def Info: simpledt.png used on input line 104.
+Package pdftex.def Info: simpledt.png used on input line 102.
 (pdftex.def)             Requested size: 398.33858pt x 207.45502pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--109
+Underfull \hbox (badness 10000) in paragraph at lines 100--107
 
  []
 
 [17 <./simpledt.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
@@ -709,18 +744,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
-
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-[19]
+
 Underfull \hbox (badness 10000) in paragraph at lines 127--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
@@ -729,11 +759,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  (ch4.tex
 Chapter 4.
-
-Overfull \hbox (4.42546pt too wide) in paragraph at lines 30--31
-[]\OT1/cmr/m/n/12 Following pack-ages used
- []
-
 [21
 
 
@@ -795,9 +820,9 @@ Missing character: There is no â in font cmtt12!
 Missing character: There is no € in font cmtt12!
 Missing character: There is no ™ in font cmtt12!
 
-Overfull \hbox (9.21162pt too wide) in paragraph at lines 158--158
-[]\OT1/cmtt/m/n/12 Classes tbl_df, tbl and 'data.frame': 36696 obs. of  20 vari
-ables:[] 
+Overfull \hbox (27.73663pt too wide) in paragraph at lines 158--158
+[]\OT1/cmtt/m/n/12 Classes tbl_df, tbl and 'data.frame':    36696 obs. of  20 v
+ariables:[] 
  []
 
 
@@ -824,7 +849,7 @@ Overfull \hbox (3.03662pt too wide) in paragraph at lines 158--158
 ",..:[] 
  []
 
-[26] <ETL.jpg, id=129, 963.6pt x 542.025pt>
+[26] <ETL.jpg, id=139, 963.6pt x 542.025pt>
 File: ETL.jpg Graphic file (type jpg)
  <use ETL.jpg>
 Package pdftex.def Info: ETL.jpg used on input line 164.
@@ -834,7 +859,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-[27 <./ETL.jpg>] <dataprocess.png, id=133, 530.73282pt x 243.15843pt>
+[27 <./ETL.jpg>] <dataprocess.png, id=143, 530.73282pt x 243.15843pt>
 File: dataprocess.png Graphic file (type png)
 
 <use dataprocess.png>
@@ -865,7 +890,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
-[29] [30] <logistic.jpg, id=144, 464.4853pt x 355.3275pt>
+[29] [30] <logistic.jpg, id=154, 464.4853pt x 355.3275pt>
 File: logistic.jpg Graphic file (type jpg)
  <use logistic.jpg>
 Package pdftex.def Info: logistic.jpg used on input line 239.
@@ -991,190 +1016,206 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 43.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-
- []
-
-<result0.png, id=171, 511.15968pt x 314.67563pt>
+[38] <result0.png, id=180, 511.15968pt x 314.67563pt>
 File: result0.png Graphic file (type png)
  <use result0.png>
-Package pdftex.def Info: result0.png used on input line 100.
+Package pdftex.def Info: result0.png used on input line 97.
 (pdftex.def)             Requested size: 398.33858pt x 245.22032pt.
 
-<results1.png, id=173, 526.96875pt x 315.42844pt>
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+<results1.png, id=181, 526.96875pt x 315.42844pt>
 File: results1.png Graphic file (type png)
  <use results1.png>
-Package pdftex.def Info: results1.png used on input line 109.
+Package pdftex.def Info: results1.png used on input line 108.
 (pdftex.def)             Requested size: 398.33858pt x 238.44301pt.
 
-Overfull \hbox (2.58792pt too wide) in paragraph at lines 116--117
+Overfull \hbox (2.58792pt too wide) in paragraph at lines 115--116
 \OT1/cmr/m/n/12 per-for-mance of the pre-dic-tive model by plot-ting true pos-i
 -tive rate(TPR) against
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-[39] <DTorg.png, id=177, 526.96875pt x 325.215pt>
+[39] <DTorg.png, id=185, 526.96875pt x 325.215pt>
 File: DTorg.png Graphic file (type png)
  <use DTorg.png>
-Package pdftex.def Info: DTorg.png used on input line 122.
-(pdftex.def)             Requested size: 398.33858pt x 245.841pt.
- [40 <./result0.png>] <DTmod.png, id=182, 526.96875pt x 325.215pt>
-File: DTmod.png Graphic file (type png)
- <use DTmod.png>
-Package pdftex.def Info: DTmod.png used on input line 131.
+Package pdftex.def Info: DTorg.png used on input line 119.
 (pdftex.def)             Requested size: 398.33858pt x 245.841pt.
 
-<DTcm.png, id=183, 324.46219pt x 325.215pt>
+
+LaTeX Warning: Reference `fig: DTorg' on page 40 undefined on input line 126.
+
+[40 <./result0.png>] <DTmod.png, id=190, 526.96875pt x 325.215pt>
+File: DTmod.png Graphic file (type png)
+
+<use DTmod.png>
+Package pdftex.def Info: DTmod.png used on input line 130.
+(pdftex.def)             Requested size: 398.33858pt x 245.841pt.
+ <DTcm.png, id=191, 324.46219pt x 325.215pt>
 File: DTcm.png Graphic file (type png)
  <use DTcm.png>
-Package pdftex.def Info: DTcm.png used on input line 140.
+Package pdftex.def Info: DTcm.png used on input line 139.
 (pdftex.def)             Requested size: 97.3394pt x 97.56525pt.
-
-<Predictive.png, id=184, 752.0597pt x 526.21594pt>
 File: Predictive.png Graphic file (type png)
- <use Predictive.png>
-Package pdftex.def Info: Predictive.png used on input line 154.
-(pdftex.def)             Requested size: 398.33858pt x 278.7245pt.
+
+<use Predictive.png>
+Package pdftex.def Info: Predictive.png used on input line 151.
+(pdftex.def)             Requested size: 376.02893pt x 263.10733pt.
 
 
-LaTeX Warning: Reference `fig.street' on page 41 undefined on input line 163.
+LaTeX Warning: Reference `fig.street' on page 41 undefined on input line 160.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
-[41 <./results1.png>] <street.png, id=188, 604.50844pt x 363.60844pt>
+[41 <./results1.png>] <street.png, id=196, 604.50844pt x 363.60844pt>
 File: street.png Graphic file (type png)
 
 <use street.png>
-Package pdftex.def Info: street.png used on input line 167.
-(pdftex.def)             Requested size: 398.33858pt x 239.59947pt.
+Package pdftex.def Info: street.png used on input line 164.
+(pdftex.def)             Requested size: 302.25348pt x 181.80377pt.
  [42 <./DTorg.png>]
-<heatmap.png, id=192, 301.8778pt x 249.93375pt>
+<heatmap.png, id=200, 301.8778pt x 249.93375pt>
 File: heatmap.png Graphic file (type png)
  <use heatmap.png>
-Package pdftex.def Info: heatmap.png used on input line 180.
-(pdftex.def)             Requested size: 398.33858pt x 329.79533pt.
- [43 <./DTmod.png> <./DTcm.png>] <crash.png, id=197, 740.7675pt x 514.92375pt>
+Package pdftex.def Info: heatmap.png used on input line 177.
+(pdftex.def)             Requested size: 211.31302pt x 174.95242pt.
+ [43 <./DTmod.png> <./DTcm.png>]
+
+LaTeX Warning: Text page 44 contains only floats.
+
+[44 <./street.png>] <crash.png, id=207, 740.7675pt x 514.92375pt>
 File: crash.png Graphic file (type png)
 
 <use crash.png>
-Package pdftex.def Info: crash.png used on input line 191.
-(pdftex.def)             Requested size: 398.33858pt x 276.89969pt.
+Package pdftex.def Info: crash.png used on input line 188.
+(pdftex.def)             Requested size: 370.38284pt x 257.46124pt.
 Missing character: There is no â in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no ¬ in font cmr12!
- <mala.png, id=198, 765.6103pt x 541.27219pt>
+ <mala.png, id=208, 765.6103pt x 541.27219pt>
 File: mala.png Graphic file (type png)
  <use mala.png>
-Package pdftex.def Info: mala.png used on input line 202.
-(pdftex.def)             Requested size: 398.33858pt x 281.62007pt.
-
-[44 <./Predictive.png>]) [45 <./street.png>] [46 <./heatmap.png>] [47 <./crash.
-png>] [48 <./mala.png>]
+Package pdftex.def Info: mala.png used on input line 199.
+(pdftex.def)             Requested size: 382.80421pt x 270.63542pt.
+)
+[45 <./heatmap.png>] [46 <./crash.png>] [47 <./mala.png>]
 \openout2 = `ch6.aux'.
 
  (ch6.tex
 Chapter 6.
-<crash1.png, id=216, 889.07156pt x 509.65407pt>
+<crash1.png, id=220, 889.07156pt x 509.65407pt>
 File: crash1.png Graphic file (type png)
  <use crash1.png>
 Package pdftex.def Info: crash1.png used on input line 18.
 (pdftex.def)             Requested size: 266.72353pt x 152.8974pt.
- [49
+ [48
 
 
 
- <./crash1.png>] <clustero.png, id=222, 722.7pt x 387.69844pt>
+ <./crash1.png>] <clustero.png, id=225, 722.7pt x 387.69844pt>
 File: clustero.png Graphic file (type png)
  <use clustero.png>
 Package pdftex.def Info: clustero.png used on input line 32.
 (pdftex.def)             Requested size: 289.07487pt x 155.07661pt.
 
-<cluster.png, id=223, 286.82156pt x 290.58563pt>
+<cluster.png, id=226, 286.82156pt x 290.58563pt>
 File: cluster.png Graphic file (type png)
  <use cluster.png>
 Package pdftex.def Info: cluster.png used on input line 43.
 (pdftex.def)             Requested size: 143.41042pt x 145.29245pt.
 
-Overfull \hbox (8.22945pt too wide) in paragraph at lines 50--52
+Overfull \hbox (14.3655pt too wide) in paragraph at lines 50--52
 []\OT1/cmr/m/n/12 During data anal-y-sis phase, it was noted that the most prop
--er-ties has LTV(Loan-
+-er-ties have LTV(Loan-
  []
 
-[50 <./clustero.png>] <ltv.png, id=228, 704.6325pt x 433.62pt>
+[49 <./clustero.png>] <ltv.png, id=231, 704.6325pt x 433.62pt>
 File: ltv.png Graphic file (type png)
  <use ltv.png>
 Package pdftex.def Info: ltv.png used on input line 54.
 (pdftex.def)             Requested size: 352.3154pt x 216.80946pt.
 
-<countynumber.png, id=229, 975.645pt x 530.73282pt>
+<countynumber.png, id=232, 975.645pt x 530.73282pt>
 File: countynumber.png Graphic file (type png)
  <use countynumber.png>
 Package pdftex.def Info: countynumber.png used on input line 63.
 (pdftex.def)             Requested size: 390.25108pt x 212.28937pt.
 
-[51 <./cluster.png> <./ltv.png (PNG copy)>]
-<stats1.png, id=234, 461.47406pt x 199.49532pt>
+[50 <./cluster.png> <./ltv.png (PNG copy)>] [51 <./countynumber.png>]
+<stats1.png, id=241, 461.47406pt x 199.49532pt>
 File: stats1.png Graphic file (type png)
  <use stats1.png>
 Package pdftex.def Info: stats1.png used on input line 78.
 (pdftex.def)             Requested size: 323.02963pt x 139.64575pt.
 
-<stats2.png, id=235, 475.7775pt x 180.675pt>
+<stats2.png, id=242, 475.7775pt x 180.675pt>
 File: stats2.png Graphic file (type png)
  <use stats2.png>
 Package pdftex.def Info: stats2.png used on input line 88.
 (pdftex.def)             Requested size: 333.04196pt x 126.47162pt.
- [52 <./countynumber.png>] <Overview.png, id=240, 752.0597pt x 450.9347pt>
+ [52 <./stats1.png> <./stats2.png>] <Overview.png, id=246, 752.0597pt x 450.934
+7pt>
 File: Overview.png Graphic file (type png)
- <use Overview.png>
+
+<use Overview.png>
 Package pdftex.def Info: Overview.png used on input line 102.
 (pdftex.def)             Requested size: 398.33858pt x 238.84975pt.
-
-[53 <./stats1.png> <./stats2.png>]
-<Analysis.png, id=244, 752.0597pt x 526.21594pt>
+ [53 <./Overview.png>]
+<Analysis.png, id=252, 752.0597pt x 526.21594pt>
 File: Analysis.png Graphic file (type png)
  <use Analysis.png>
 Package pdftex.def Info: Analysis.png used on input line 123.
 (pdftex.def)             Requested size: 398.33858pt x 278.7245pt.
- [54 <./Overview.png>] <dist.png, id=249, 770.12718pt x 524.71031pt>
+ [54 <./Analysis.png>] <dist.png, id=257, 770.12718pt x 524.71031pt>
 File: dist.png Graphic file (type png)
  <use dist.png>
 Package pdftex.def Info: dist.png used on input line 134.
 (pdftex.def)             Requested size: 398.33858pt x 271.39375pt.
 
-<rmap.png, id=250, 748.29562pt x 486.31688pt>
+<rmap.png, id=258, 748.29562pt x 486.31688pt>
 File: rmap.png Graphic file (type png)
  <use rmap.png>
-Package pdftex.def Info: rmap.png used on input line 145.
+Package pdftex.def Info: rmap.png used on input line 146.
 (pdftex.def)             Requested size: 398.33858pt x 258.88206pt.
- [55 <./Analysis.png>]) [56 <./dist.png>] [57 <./rmap.png>]
+ [55 <./dist.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+[56 <./rmap.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+) [57]
 \openout2 = `ch7.aux'.
 
  (ch7.tex
 Chapter 7.
-<future.png, id=262, 376.40625pt x 223.58531pt>
+<future.png, id=268, 376.40625pt x 223.58531pt>
 File: future.png Graphic file (type png)
  <use future.png>
 Package pdftex.def Info: future.png used on input line 29.
@@ -1186,30 +1227,52 @@ Package pdftex.def Info: future.png used on input line 29.
 ] [59 <./future.png>]) [60]
 \openout2 = `appendix1.aux'.
 
- (appendix1.tex) [61
+ (appendix1.tex <git.png, id=279, 750.55406pt x 489.32813pt>
+File: git.png Graphic file (type png)
+
+<use git.png>
+Package pdftex.def Info: git.png used on input line 22.
+(pdftex.def)             Requested size: 398.33858pt x 259.70105pt.
+) [61
 
 
 
 
 
 
-]
+ <./git.png>]
 \openout2 = `appendix2.aux'.
 
- (appendix2.tex) [62
+ (appendix2.tex
+<freq.png, id=284, 388.45125pt x 572.1375pt>
+File: freq.png Graphic file (type png)
+ <use freq.png>
+Package pdftex.def Info: freq.png used on input line 18.
+(pdftex.def)             Requested size: 233.07254pt x 343.28514pt.
+
+<freq1.png, id=285, 370.38374pt x 484.81125pt>
+File: freq1.png Graphic file (type png)
+ <use freq1.png>
+Package pdftex.def Info: freq1.png used on input line 27.
+(pdftex.def)             Requested size: 222.23195pt x 290.88899pt.
+ [62
 
 
 
-]
-\openout2 = `glossary.aux'.
+ <./freq.png>] [63 <./freq1.png>] <ques1.png, id=292, 465.23813pt x 572.1375pt>
+File: ques1.png Graphic file (type png)
 
- (glossary.tex)
-[63
+<use ques1.png>
+Package pdftex.def Info: ques1.png used on input line 38.
+(pdftex.def)             Requested size: 279.14502pt x 343.28514pt.
+ <ques2.png, id=293, 465.23813pt x 575.90157pt>
+File: ques2.png Graphic file (type png)
+ <use ques2.png>
+Package pdftex.def Info: ques2.png used on input line 46.
+(pdftex.def)             Requested size: 279.14502pt x 345.54361pt.
+) [64
 
-
-
-
-] (thesis.bbl (babelbst.tex) [64
+ <./ques1.png>] [65 <./ques2.png>] (thesis.bbl (babelbst.tex) [66
 
 
 
@@ -1220,21 +1283,9 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [65] [66] [67] [68]) [69]
-\openout2 = `notation.aux'.
-
- (notation.tex
-
-LaTeX Warning: Reference `Th.FF.fte.field' on page 70 undefined on input line 2
-5.
-
-) [70
-
-
-
-] (thesis.ind) (thesis.aux (preface.aux) (ch1.aux) (ch2.aux) (ch3.aux)
-(ch4.aux) (ch5.aux) (ch6.aux) (ch7.aux) (appendix1.aux) (appendix2.aux)
-(glossary.aux) (notation.aux))
+ [67]
+[68] [69] [70]) [71] (thesis.aux (preface.aux) (ch1.aux) (ch2.aux) (ch3.aux)
+(ch4.aux) (ch5.aux) (ch6.aux) (ch7.aux) (appendix1.aux) (appendix2.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -1248,25 +1299,23 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5471 strings out of 493333
- 74627 string characters out of 3139192
- 154377 words of memory out of 3000000
- 8717 multiletter control sequences out of 15000+200000
+ 5481 strings out of 493333
+ 74765 string characters out of 3139192
+ 152381 words of memory out of 3000000
+ 8738 multiletter control sequences out of 15000+200000
  14585 words of font info for 60 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 40i,13n,33p,1772b,3281s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,14n,33p,1772b,3282s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/eurosym/feymr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/symbols/msbm10.pfb>
-Output written on thesis.pdf (82 pages, 2345407 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/eurosym/feymr10.pfb>
+Output written on thesis.pdf (85 pages, 2476965 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
+ 346 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

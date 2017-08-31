@@ -13,17 +13,17 @@
 
 \chapter{Conclusions and Future Research}\label{C.Conclusions.Future.research}
 
-\section{Integration with real data}
+\section{Future Work}
 
-Credit scoring is a senstive and important component of any bank and financial institutions. The outcome of this work presents a predictive model that connects with a business dashboard. One can integrate the day to day financial data from a bank with this dashboard. This work can be improvised with the help of real banking data so that predictive model can be trained efficiently.
+Credit scoring is a sensitive and critical component of any bank and financial institutions. The outcome of this work presents a predictive model that connects with a business dashboard. One can integrate the day to day financial data from a bank with this dashboard. This work can be improvised with the help of real banking data so that predictive model can be trained efficiently. The dashboard is designed in a way which allows easy integration with any data. 
 \begin{description}
-\item[Dashboard:] Real transactional data can improve the performance of Tableau dashboard which acts as decision support system 
-\item[Geospatial Data:] Credit assessment can be enhanced if it includes information such as house coordinates
-\item[External Factors:] The model can perform better when trained with large number of external factors such as medical information, average salary in neighbourhood
+\item[Dashboard:] Real transactional data can improve the performance of Tableau dashboard which acts as a decision support system 
+\item[Geospatial Data:] Credit assessment can be enhanced if it includes information such as house coordinates, neighbourhood amenities 
+\item[External Factors:] The model can perform better when trained with large number of external factors such as medical information, average salary in neighbourhood, inflation rates
 
 \end{description}
 
-\section{Future Work}
+\subsection{Proposed system Architecture}
 \begin{center}
 \begin{figure}[!htb]
 \includegraphics[width=\textwidth]{future.png}
@@ -32,6 +32,9 @@ Credit scoring is a senstive and important component of any bank and financial i
 \label{fig:future}
 \end{figure}
 \end{center}
+
+This practicum proposes an enhanced and scalable system architecture that can be used on a commercial platform (fig. \ref{fig:future}). A high-end data warehouse can be used to process and store big data in real time by using techniques such as MapReduce, Hadoop clusters, etc. Deployment of Microsoft R Server will allow faster and efficient processing of predictive models; that eventually will generate dynamic reports on Tableau Server. Using such type of system architecture, a business can have multiple users who can access predictive dashboard; which is hosted on a central data centre; from various locations on their hand-held devices such as mobile phones, tablets, iPads. Banks or Financial Services Institutions can reduce manual efforts and dependencies from a monotonous task and complex procedures. Also, data from various sources will be available in a pre processed form from which user can take business decisions much faster than traditional methods. 
+
 \section{Conclusion}
-The objective of this project was to build an interactive and efficient dashboard that supports credit analysis and assessment of residential loan portfolios with the help of geospatial methods. This practicum was stemmed on aggregation of loan portfolio data and financial services data that adheres to credit assessment policies and macroeconomic performance indicators. The purpose of developing predictive models for calculating the probability of default using logistic regression and decision trees was successfully achieved.  Initial review of the literature revealed that majority of the researchers believe models developed using logistic regression show better performance compared to decision trees regarding accuracy and area under ROC, but few have concluded the opposite. This practicum falls into the category of those researchers, who have stated decision trees give better performance than logistic regression based on KS, GINI and ROC statistics.  Although, because of the limitation of data, it cannot be said that the developed predictive model will show similar results when connected to real life dataset. There are possibilities that logistic regression can give better performance compared to decision trees.
+The objective of this project was to build an interactive and efficient dashboard that supports credit analysis and assessment of residential loan portfolios with the help of Geospatial methods. This practicum was stemmed on aggregation of loan portfolio data and financial services data that adheres to credit assessment policies and macroeconomic performance indicators. The purpose of developing predictive models for calculating the probability of default using logistic regression and decision trees was successfully achieved.  Initial review of the literature revealed that majority of the researchers believe models developed using logistic regression show better performance compared to decision trees, but few have concluded the opposite. This practicum falls into the category of those researchers, who have stated decision trees give better performance than logistic regression based on KS, GINI and ROC statistics.  Although, because of the limitation of data, it cannot be said that the developed predictive model will show similar results when connected to real life dataset. There are possibilities that logistic regression can give better performance compared to decision trees. Also, if the model is integrated with another dataset, some training may be required to obtain properly fitted models. 
 

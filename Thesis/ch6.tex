@@ -36,7 +36,7 @@ Since the property crash (2007-2010) average property price and the number of lo
 \end{figure}
 \end{center}
 
-k-Mean algorithm is used to cluster twenty six(26) counties among four cluster based on loan balance, as Ireland property market vary a lot in county. Co. Dublin is classified into cluster \#2 and Co. Cork is classified into cluster \#4 has highest outstanding loan balance. As shown in fig. \ref{fig:cluster} 8 counties are in cluster \#1 and 16 counties with least outstanding loan balance classified into cluster \#3.
+The k-mean algorithm is used to cluster twenty-six(26) counties among four clusters based on the loan balance, as Ireland property market vary a lot in a county. Co. Dublin is classified into cluster \#2, and Co. Cork is classified into cluster \#4 has highest outstanding loan balance. As shown in fig. \ref{fig:cluster} 8 counties are in cluster \#1 and 16 counties with least outstanding loan balance classified into cluster \#3.
 
 \begin{center}
 \begin{figure}[!htb]
@@ -47,7 +47,7 @@ k-Mean algorithm is used to cluster twenty six(26) counties among four cluster b
 \end{figure}
 \end{center}
 
-During data analysis phase, it was noted that the most properties has LTV(Loan-to-value) ratio between 60 - 80\%. There are few properties with LTV higher than 100\%.
+During data analysis phase, it was noted that the most properties have LTV(Loan-to-value) ratio between 60 - 80\%. There are few properties with LTV higher than 100\%.
 In fig. \ref{fig:ltv}
 \begin{center}
 \begin{figure}[!htb]
@@ -67,11 +67,11 @@ In fig. \ref{fig:ltv}
 \end{figure}
 \end{center}
 
-A total number of accounts in the normalized data set was 273,000 , and most numbers of default and loan account were from County Dublin and Cork as seen in fig. \ref{fig:tableaucounty}.
+A total number of accounts in the normalised data set was 273,000, and most numbers of default and loan account were from County Dublin and Cork as seen in fig. \ref{fig:tableaucounty}.
 
 \section{Statistical Analysis}
 
-Descriptive analysis has been performed using SPSS tool to get better understanding of data and take required steps for data preprocessing.
+Descriptive analysis has been performed using SPSS tool to get a better understanding of data and take required steps for data preprocessing. It can be seen from fig.\ref{fig:stats1} and fig.\ref{fig:stats2}, there are no missing values or unknown values present in the data as it is very well structured. Statistical analysis helped in generating the rules to normalise data for building an unbiased predictive model. $Loan Balance$ is of 6 digits (e.g. \euro103,584), and $Annual Payment$ is of 4 digits (e.g. \euro4614); in such scenarios, a predictive model can assign more weight to $Loan Balance$ as it is more significant compared to the $Annual Payment$. So, the model will outweigh $Loan Balance$ over $Annual Payment$ but for credit assessment both the variables hold equal importance. Therefore, its is necessary to scale the variables in data set accordingly to achieve better performance.  
 
 \begin{center}
 \begin{figure}[!htb]
@@ -95,7 +95,7 @@ Descriptive analysis has been performed using SPSS tool to get better understand
 
 
 \section{Dashboard}
-Considering the day-to-day requirement of stakeholders at KPMG, three business dashboards are designed using Tableau software. Main response to build dashboard using Tableau,as it allow the easy integrations with predictive model from R engine and provides a better means to visualize prediction and forecast.
+Considering the day-to-day requirement of stakeholders at KPMG, three business dashboards are designed using Tableau software. Main response to build the dashboard using Tableau, as it allows the easy integrations with the predictive model from R engine and provides a better means to visualise prediction and forecast.
 
 \begin{center}
 \begin{figure}[!htb]
@@ -110,13 +110,13 @@ Considering the day-to-day requirement of stakeholders at KPMG, three business d
 \textbf{Portfolio Overview}\\
 Portfolio overview dashboard is built to allow auditors and credit analysts to analyse overall existing loan portfolio registered under a bank. This dashboard allows the user to perform a detailed analysis by selecting various combinations of variables from filters such as:
 \begin{itemize}
-\item Loan Start Date: User can view selective number of loan account based on the start date of a account
+\item Loan Start Date: User can view a selective number of loan account based on the start date of an account
 \item Is in Arrears?: Does a loan account has any outstanding repayment in last one year?
 \item Mortgage Type: For what purpose mortgage has been buy-to-let or owner occupied?
 \item Is probationary Loan?: Has the loan account been converted to probationary loan
 \end{itemize}
 
-The geospatial map allows analyst to view loan balance for each county, along with a time-series analysis of property price and number of accounts for past three decades. Using interest type vs mortgage type user can identify which type of interest is giving more income to banks.
+The geospatial map allows the analyst to view loan balance for each county, along with a time-series analysis of property price and a number of accounts for past three decades. Using interest type vs mortgage type user can identify which type of interest is giving more income to banks.
 
 \begin{center}
 \begin{figure}[!htb]
@@ -138,7 +138,8 @@ Portfolio analysis dashboard allow user to view loan account movement from one L
 \end{figure}
 \end{center}
 
-By using open source library of R Shiny, a dynamic dashboard has been build which allow user to view property based on clustring. Also user can view street level statstical metrics.
+\textbf{R Shiny Dashboard}
+The second dashboard has been built using R shiny package, which allows one to create interactive dashboards. R shiny is quite a popular package among data scientist as it is open source and easy to deploy. However, only limitations it has that user won't be able to load large datasets, and during this research work, it was observed that dashboard performance was slow data set has more than 100,000 row. A dynamic dashboard has been build which allows user to view property based on clustering and it allows user can view street level statistical metrics as seen in fig \ref{fig:rmap}.
 
 \begin{center}
 \begin{figure}[!htb]
@@ -152,10 +153,34 @@ By using open source library of R Shiny, a dynamic dashboard has been build whic
 
 
 \section{Success}\label{S.succes}
-To measure the performance of this work, a working business dashboard has been given to stakeholder to use it and provide their feedback. Based on their feedback and suggestions dashboard features has been implemented accordingly. The user was given two dashboard design and asked to recommend best one with possible changes and suggestions to further improve usability.
+To measure the performance of this work, a working business dashboard has been given to stakeholders to perform analysis and provide their feedback. The questionnaire covers all qualitative and quantitative measures which focus on the performance of the model, characteristics of a good visualisation, financial aspects and legal information. Based on the feedback received and suggestions dashboard features are improved to satisfy the user needs. The user was given three dashboard designs and asked to recommend best one with possible changes stating the reason for choice made and suggestions to further improve usability.\\
 
+Following represents the overall feedback received from users: 
 \begin{itemize}
-\item \textbf{47\%}Auditors feel this dashboard is extremely useful
-\item \textbf{70\%}Feel that geospatial techniques have enhanced credit assessment
+\item \textbf{47\%}Auditors feel this dashboard is handy
+\item \textbf{70\%}Feel that Geospatial techniques have enhanced credit assessment
 \item \textbf{60\%}Likely to recommend this dashboard to colleagues
+\item \textbf{65\%}Feel that dashboard is very appealing
 \end{itemize}
+
+Auditors, Credit Analysts, Data Scientists and Tableau Consultants have responded to the survey by providing unbiased and specific suggestions on all three dashboards. From the recorded responses, it is significant that dashboards are helpful for credit analysis or for making new bank sales strategies. Fig.\ref{fig:feed} represents overall positive or negative responses to the feedback. \\
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[!htb]
+\centering
+\caption{Overall Recorded Response}
+\label{fig:feed}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\# & Answer                        & \%      \\ \midrule
+1  & Extremely positive            & 37.50\% \\
+2  & Moderately positive           & 50.00\% \\
+3  & Slightly positive             & 12.50\% \\
+4  & Neither positive nor negative & 0.00\%  \\
+5  & Slightly negative             & 0.00\%  \\
+6  & Moderately negative           & 0.00\%  \\
+7  & Extremely negative            & 0.00\%  \\
+   & Total                         & 100\%   \\ \bottomrule
+\end{tabular}
+\end{table}

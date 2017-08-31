@@ -14,13 +14,13 @@
 \chapter{Results}\label{C.Results}
 
 \section{Overview}
-Model prediction accuracy of original test data set was 99.65\%, which is practically impossible. As discussed in chapter \ref{C.intro} actual data received from KPMG was made up using pre-defined formulas and rules to make it look real. Data didn't cover all possible scenario for a loan portfolio and achieving an accuracy of 99\% in credit scoring model is difficult as one needs to train model recursively with large data size covering all permutations and combinations of situations for loan default.
+Model prediction accuracy of original test data set was 99.65\%, which is practically impossible. As discussed in chapter \ref{C.intro} original data received from KPMG was made up using pre-defined formulas and rules to make it look real. Data didn't cover all possible scenario for a loan portfolio and achieving an accuracy of 99\% in credit scoring model is difficult as one needs to train model recursively with large data size covering all permutations and combinations of situations for loan default.
 
 \section{Data Normalization}\label{S.intro5}
 
 Original data set consist of 237389 observations and 35 variables, according to data 5\% of loan applications have defaulted, and the customer has credit rating 1 will not default ever. Therefore, to consider all possible scenarios data has been normalised, and a data subset has been generated from original data set to carry experiments.\\
 
-In Table \ref{table:dataorg}, it is evident that data is very well structured and it does not give much information about the applicants who can default in future even if they had an excellent credit history. So loan portfolios of credit rating 1,2 and 3 don't contribute much to the objective of the project. Also, it can be seen that as per the distribution of original data, the only applicant with credit rating 5 will default. And this information does not comply to the real world scenarios. In discussion with KPMG, loan portfolios were again analysed to establish data that resembles the real world. Based on the variables such as loan balances, unemployment rates, annual income, address and mortgage years, changes had been made to the data that can be seen in Table \ref{table:datanormalized}. After data normalization, all cases are considered including some of the extreme cases; normalised data gives a better representation of loan portfolios accordance to real world with 0.22\% probability of default with credit rating 1, almost 11\% defaulters with credit rating 4 and 10\% chances of default and 1\% chance of not default in credit rating 5.   
+In Table \ref{table:dataorg}, it is evident that data is very well structured and it does not give much information about the applicants who can default in future even if they had an excellent credit history. So loan portfolios of credit rating 1,2 and 3 don't contribute much to the objective of the project. Also, it can be seen that as per the distribution of original data, the only applicant with credit rating 5 will default. And this information does not comply to the real world scenarios. In discussion with KPMG, loan portfolios were again analysed to establish data that resembles the real world. Based on the variables such as loan balances, unemployment rates, annual income, address and mortgage years, changes had been made to the data that can be seen in Table \ref{table:datanormalized}. After data normalisation, all cases are considered including some of the extreme cases. Normalised data gives a better representation of loan portfolios accordance to the real world with 0.22\% probability of default with credit rating 1, almost 11\% defaulters with credit rating 4 and 10\% chances of default and 1\% chance of not default in credit rating 5.   
 
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
@@ -56,13 +56,12 @@ In Table \ref{table:dataorg}, it is evident that data is very well structured an
 \end{tabular}
 \end{table}
 
-
-\section{Performance}
+\section{Predictive Model Performance}
 \textbf{Decision Tree over Logistic Regression:}
 
 \cite{long1993comparison} studied decision tree application for classifying heart disease patient and compared the performance of decision tree with logistic regression. \cite{long1993comparison}, also noted that logistic regression model failed to consider missing data and decision tree model easily worked when data was noisy. \cite{satchidananda2006comparing}, build credit scoring model and found that decision tree produce a more precise model and good performance in comparison to logistic regression.\\
 
-Two individual predictive models were built on logistic regression and decision tree and both models performance on original data and normalized. Performance of the models has been compared using three key metrics AUROC, KS, Gini. AUROC is the area under receiver output characteristics, and an excellent model has AUROC score in the range of 80 - 90\%. KS is Kolmogorov-Smirnov (KS) Goodness-of-Fit Test, and it is used to determine the classification power of the binary model, higher the score means better is classification power of a predictive model. Gini (or Gini index) is another more commonly used goodness of fit test in machine learning, and it has direct relation with AUROC, i.e. $(Gini = 2*AUROCC - 1)$.\\
+Two individual predictive models were built on logistic regression and decision tree and both models performance on original data and normalised. Performance of the models has been compared using three key metrics AUROC, KS, Gini. AUROC is the area under receiver output characteristics, and an excellent model has AUROC score in the range of 80 - 90\%. KS is Kolmogorov-Smirnov (KS) Goodness-of-Fit Test, and it is used to determine the classification power of the binary model, higher the score means better is classification power of a predictive model. Gini (or Gini index) is another more commonly used goodness of fit test in machine learning, and it has direct relation with AUROC, i.e. $(Gini = 2*AUROCC - 1)$.\\
 
 In this research work, decision tree performance did better against the logistic regression performance. In Table table. \ref{table:results} it can noted that decision tree AUROC (Area Under Receiver Output Characteristics) score is 81.4\%, and logistic regression AUROC is 67.61\%. Based on the results of previous research work and after considering current experiments results on normalised dataset, it is appropriate to build the business dashboard using decision tree model.\\
 
@@ -93,8 +92,6 @@ Data/Measure      & \textbf{AUROC }   & \textbf{KS}    & \textbf{Gini}          
 \end{tabular}
 \end{table}
 
-A model with higher AUROC on test data doesn't signify that the model is over-fitted, but it means that predictive has excellent performance. In this project, train data and test data created using original data set gave AUROC of 99\% from which an inference has been noted that our model is over-fitted, but it may not always be a case.\\
-
 \begin{center}
 \begin{figure}[!htb]
 \includegraphics[width=\textwidth]{result0.png}
@@ -103,6 +100,8 @@ A model with higher AUROC on test data doesn't signify that the model is over-fi
 \label{fig:roc1}
 \end{figure}
 \end{center}
+
+A model with higher AUROC on test data doesn't signify that the model is over-fitted, but it means that predictive has excellent performance. In this project, train data and test data created using original data set gave AUROC of 99\% from which an inference has been noted that our model is over-fitted, but it may not always be a case.\\
 
 \begin{center}
 \begin{figure}[!htb]
@@ -113,9 +112,7 @@ A model with higher AUROC on test data doesn't signify that the model is over-fi
 \end{figure}
 \end{center}
 
-Receiver operating characteristic (ROC) is one of technique to estimate the performance of the predictive model by plotting true positive rate(TPR) against the false positive rate(FPR). In figs. \ref{fig:roc} \& \ref{fig:roc1}, performance of logistic regression and decision tree has been compared for ROC index. The original dataset has a 90-degree line for both logistic regression and decision tree, which suggests that predictive might be overfitted. It is evident from the ROC for the normalised data set in fig In \ref{fig:roc} that decision tree performance is better over logistic regression for credit assessment and analysis. In general, higher the area under of ROC (AUROC) curve signifies better performance. \\
-
-Decision tree of original data set is represented in fig.\ref{fig:DTorg}, it can seen that 72\% observations has been classified based on one rule i.e CreditRating <=4.5. Due to this reason original data set was giving accuracy of 99%. 
+Receiver operating characteristic (ROC) is one of technique to estimate the performance of the predictive model by plotting true positive rate(TPR) against the false positive rate(FPR). In figs. \ref{fig:roc} \& \ref{fig:roc1}, performance of logistic regression and decision tree has been compared for ROC index. The original dataset has a 90-degree line for both logistic regression and decision tree, which suggests that predictive might be overfitted. It is evident from the ROC for the normalised data set in fig. I\ref{fig:roc} that decision tree performance is better over logistic regression for credit assessment and analysis. In general, higher the area under of ROC (AUROC) curve signifies better performance. \\
 
 \begin{center}
 \begin{figure}[!htb]
@@ -125,6 +122,8 @@ Decision tree of original data set is represented in fig.\ref{fig:DTorg}, it can
 \label{fig:DTorg}
 \end{figure}
 \end{center}
+
+The decision tree of original data set is represented in fig.\ref{fig: DTorg}, it can be seen that 72\% observations have been classified based on one rule, i.e. CreditRating <=4.5. Due to this reason original data set was giving the accuracy of 99%. 
 
 \begin{center}
 \begin{figure}[!htb]
@@ -144,14 +143,12 @@ Decision tree of original data set is represented in fig.\ref{fig:DTorg}, it can
 \end{figure}
 \end{center}
 
-In fig. \ref{fig:DTmod}, decision tree for normalized data set is represented and this tree has over 2000 rules which further improves its performance. Due to limitations of page size, we are showing a decision tree with a limited number of nodes. Originally trained tree has 328 nodes and depth of tree was 9. 
-
+In fig. \ref{fig:DTmod}, the decision tree for normalised data set is represented, and this tree has over 2000 rules which further improves its performance. Due to limitations of page size, we are showing a decision tree with a limited number of nodes. The originally trained tree has 328 nodes, and depth of tree was 9. 
 
 \section{Tableau Dashboard}
-
 \begin{center}
 \begin{figure}[!htb]
-\includegraphics[width=\textwidth]{Predictive.png}
+\includegraphics[scale=0.5]{Predictive.png}
 \centering
 \caption{Predictive Model Dashboard}{\textbf{Source:} Tableau Professional v10}
 \label{fig:overview}
@@ -160,11 +157,11 @@ In fig. \ref{fig:DTmod}, decision tree for normalized data set is represented an
 
 \subsection{Overview}
 
-Considering the day-to-day requirement of stakeholders at KPMG, three business dashboards are designed using Tableau software. Main response to build dashboard using Tableau,as it allow the easy integrations with predictive model from R engine and provides a better means to visualize prediction and forecast. This dashboard offer an interactive way to identify outlier and analyse loan accounts and user can drill down to street level analyses as shown in fig.\ref{fig.street}. Also, it integrates multiple data sources that turns out to be great time saving for an auditor, as it is not needed to physically map variables from different sources such as employment rate of a town with listed portfolios.\\
+Considering the day-to-day requirement of stakeholders at KPMG, three business dashboards are designed using Tableau software. Primary purpose of building the dashboard using Tableau, as it allows the easy integrations with a predictive model from R engine and provides a better means to visualise prediction and forecast. This dashboard offers an interactive way to identify outlier and analyse loan accounts and the user can drill down to street level analyses as shown in fig.\ref{fig.street}. Also, it integrates multiple data sources that turn out to be a great time saving for an auditor, as it is not needed to physically map variables from different sources such as employment rate of a town with listed portfolios.\\
 
 \begin{center}
 \begin{figure}[!htb]
-\includegraphics[width=\textwidth]{street.png}
+\includegraphics[scale=0.5]{street.png}
 \centering
 \caption{Street view map analysis}{\textbf{Source:} Tableau Professional v10}
 \label{fig:street}
@@ -173,43 +170,35 @@ Considering the day-to-day requirement of stakeholders at KPMG, three business d
 
 \subsection{Predictive Dashboard}
 
-To support end user decision making process, probability of default is segmented into five levels 0-5\%, 6-25\%,26-6\%,61-80\%, and 81-100\%. A heatmap is shown in fig \ref{fig:heatmap}, this will assist credit analyst to find out those loan account which require particular human attention.
+To support end user decision-making process, probability of default is segmented into five levels 0-5\%, 6-25\%,26-6\%,61-80\%, and 81-100\%. A heat map is shown in fig \ref{fig:heatmap}, this will assist credit analyst to find out those loan account which requires particular human attention.
 
 \begin{center}
 \begin{figure}[!htb]
-\includegraphics[width=\textwidth]{heatmap.png}
+\includegraphics[scale=0.7]{heatmap.png}
 \centering
 \caption{Probability Heat map}{\textbf{Source:} Tableau Professional v10}
 \label{fig:heatmap}
 \end{figure}
 \end{center}
 
-\textbf{Case 1:} Division of dashboard into three parts turned out to be good idea as it provides better prediction results: Loan Balance vs Probability of Default, Top fifteen towns and statistical summary table based on selection filter and values. It can be seen from fig. \ref{fig:crash}, number of loans booked during Irish property crash (2007-2010) have highest probability of default.
+\textbf{Case 1:} Division of dashboard into three parts turned out to be a good idea as it provides better prediction results: Loan Balance vs Probability of Default, Top fifteen towns and statistical summary table based on selection filter and values. It can be seen from fig. \ref{fig:crash}, a number of loans booked during Irish property crash (2007-2010) have the highest probability of default.
 
 \begin{center}
 \begin{figure}[!htb]
-\includegraphics[width=\textwidth]{crash.png}
+\includegraphics[scale=0.5]{crash.png}
 \centering
 \caption{Irish Property Crash analysis}{\textbf{Source:} Tableau Professional v10}
 \label{fig:crash}
 \end{figure}
 \end{center}
 
-\textbf{Case 2:} With use of action filters, dashboard provide detailed information about number of loan account and loan balance due from selected origin city. As in fig. \ref{fig:mala}, there is only one loan account which satisfy selected user criteria. $ 3, Woodlawn, Malahide Demesne, Malahide, Co. Dublin, Ireland$ provability of default is 0.15\% and remaining loan balance is $€0.07M$.  
+\textbf{Case 2:} With the use of action filters, dashboard provide detailed information about a number of loan account and loan balance due from selected origin city. As in fig. \ref{fig:mala}, there is only one credit account which satisfies selected user criteria. $ 3, Woodlawn, Malahide Demesne, Malahide, Co. Dublin, Ireland$ probability of default is 0.15\%, and remaining loan balance is $€0.07M$.  
 
 \begin{center}
 \begin{figure}[!htb]
-\includegraphics[width=\textwidth]{mala.png}
+\includegraphics[scale=0.5]{mala.png}
 \centering
 \caption{Street view map analysis}{\textbf{Source:} Tableau Professional v10}
 \label{fig:mala}
 \end{figure}
 \end{center}
-
-
-
-
-
-
-
-

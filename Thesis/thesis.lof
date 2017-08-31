@@ -1,3 +1,4 @@
+\contentsline {figure}{\numberline {0.1}{\ignorespaces Predictive Dashboard built on Tableau }}{xiv}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -14,23 +15,27 @@
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Decision tree of modified data}}{43}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Confusion Matrix of Test Data}}{43}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Predictive Model Dashboard}}{44}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Street view map analysis}}{45}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Probability Heat map}}{46}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Irish Property Crash analysis}}{47}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Street view map analysis}}{48}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Street view map analysis}}{44}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Probability Heat map}}{45}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Irish Property Crash analysis}}{46}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Street view map analysis}}{47}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Irish Property Crash}}{49}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces County Cluster}}{50}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Clustering Results}}{51}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Loan to Value histogram}}{51}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Number of account county wise}}{52}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Analysis of Significant variables - 1}}{53}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Analysis of Significant variables - 2}}{53}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Portfolio Overview}}{54}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Portfolio Analysis}}{55}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Property Selection using distance}}{56}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Dashboard Build using R Shinny}}{57}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Irish Property Crash}}{48}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces County Cluster}}{49}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Clustering Results}}{50}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Loan to Value histogram}}{50}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Number of account county wise}}{51}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Analysis of Significant variables - 1}}{52}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Analysis of Significant variables - 2}}{52}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Portfolio Overview}}{53}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Portfolio Analysis}}{54}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Property Selection using distance}}{55}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Dashboard Build using R Shinny}}{56}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces System Architecture}}{59}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Git Repository}}{61}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Frequency table for Interest Type, Mortgage Type, LTV Category}}{62}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Frequency table for County}}{63}
 \addvspace {10\p@ }

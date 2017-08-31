@@ -18,7 +18,7 @@ To assist financial auditor or stakeholder at financial institutions and banks, 
 
 \textbf{Software \& Tools used:}
 
-Following is the list of tools and softwares that has been used while working on this project:
+Following is the list of tools and software that has been used while working on this project:
 \begin{description}
   \item[Data Processing:] MS Excel 2017 and Alteryx Desginer 11.0
   \item[Version Control:] Github (github.com)
@@ -27,10 +27,10 @@ Following is the list of tools and softwares that has been used while working on
 \end{description}
 \textbf{R Packages used:}
 \begin{description}
-  \item[Packages required Logisctic Regression Model:] Following packages used to building simple regression and logistic regression based model for predictig the good or bad loan portfolio: glm() with class set to "bionomial" for Logistic Regression and "log" for Poisson regression, ROSE, ROCR, Dplyr, maps, ggplot2
+  \item[Packages required Logistic Regression Model:] Following packages used to building simple regression and logistic regression based model for predicting the good or bad loan portfolio: glm() with class set to "binomial" for Logistic Regression and "log" for Poisson regression, ROSE, ROCR, Dplyr, maps, ggplot2
   \item[Decession Tree:] Following r-packages used for building a predictive model based on decision tree: caret, rpart, rattle, ROSE, ROCR, RColorBrewer, party, partykit
 \end{description}
-\textbf{R Shiny:} R Shiny packages for building interactive dashboards: leaflet, maps, ggmap, gridExtra, htmlwidgets, reshape2. To deploy predictive model on Tableau to build dyanmic and easy to user dashboard R Server used
+\textbf{R Shiny:} R Shiny packages for building interactive dashboards: leaflet, maps, ggmap, gridExtra, htmlwidgets, reshape2. To deploy predictive model on Tableau to build dynamic and easy to use dashboard R Server used
 
 
 One may replicate our work on his/her computer having minimum hardware specifications outlined here. This research work carried on following machines. 
@@ -112,7 +112,7 @@ Below is the comprehensive list of all variables that have been chosen for the m
 
 \textbf{Structure of the Data}
 \begin{verbatim}
-Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	36696 obs. of  20 variables:
+Classes ‘tbl_df’, ‘tbl’ and 'data.frame':    36696 obs. of  20 variables:
  $ ContractRef         : chr  "00000CONTR00111034" "00000CONTR00146183"
     "00000CONTR00175040" "00000CONTR00171901" ...
  $ InterestType        : Factor w/ 3 levels "Fixed","Tracker",..:
@@ -166,9 +166,9 @@ Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	36696 obs. of  20 variables:
 \end{figure}
 
 
-\subsection{Data Extraction} Prior building predictive model in R one, need to process and analyse the data. The primary objective is to identify any outliers and to normalise the available data set. \cite{sola1997importance}, observed that un-normalized data tends to increase square mean error and then deviate the model prediction. Therefore, it is important to treat data and normalised it's all variables so that model works with high precision and accuracy. One can also do data pre-processing using R as well, but Alteryx provides graphical user interface to select features and settings that makes whole data processing phase easy and fast\\
+\subsection{Data Extraction} Prior building the predictive model in R one, need to process and analyse the data. The primary objective is to identify any outliers and to normalise the available data set. \citet{sola1997importance} observed that un-normalised data tends to increase square mean error and then deviate the model prediction. Therefore, it is important to treat data and normalised it's all variables so that model works with high precision and accuracy. One can also do data pre-processing using R as well, but Alteryx provides graphical user interface for selecting features and settings that makes whole data processing phase easy and fast\\
 
-\textbf{Alteryx Desginer} tool allow one to build workflow to prepare data from multiple data sources on the go and by using features such as 'Select', 'Random Sample', 'Transform' and 'Output' one can easily prepare data for the predictive model \citep{dinsmore2016self}. Alteryx can process large amount of dataset and optimized it to be ready for data modelling in R.
+\textbf{Alteryx Desginer} tool allow one to build workflow to prepare data from multiple data sources on the go and by using features such as 'Select', 'Random Sample', 'Transform' and 'Output' one can easily prepare data for the predictive model \citep{dinsmore2016self}. Alteryx can process a large amount of data set and optimised it to be ready for data modelling in R.
 
 \begin{center}
 \begin{figure}[ht]
@@ -184,7 +184,7 @@ In fig.\ref{fig:dataprocessing}, raw data has been read using \emph{Input tool},
 \subsection{Data Transformation}
 In Alteryx, there is no provision to normalize data. Processed data from Alteryx is loaded into \textbf{R Studio} for data normalization or scaling using in built functions such as scale($<variable>$) and log($<variable>$) on $LoanBalance$, $PropertyValue$, $InterestIncome$ and $AnnualPYMT$ as these variables are crucial paramters for credit scoring to make unbaised prediction model.\\
 
-\textbf{R Studio}: Data from Alteryx is loaded to R Studio for the development of prediction model. R is used to identify patterns or correlation in variables using \emph{ggplot2}, \emph{plot.ly}, \emph{leaflets}. Two predictive models have developed based Logistic Regression and Decision Tree algorithms and both models performance evaluated concerning accuracy. Trained model is saved on the hard drive and loaded in Tableau, and with the help of R Server, Tableau allows the user to build dynamic visualizations. In Tableau, calculated fields can dynamically invokes R engine to perform calculations and then R results output values back to Tableau, so that visualizations can be designed.\\
+\textbf{R Studio}: Data from Alteryx is loaded to R Studio for the development of prediction model. R is used to identify patterns or correlation in variables using \emph{ggplot2}, \emph{plot.ly}, \emph{leaflets}. Two predictive models have developed based Logistic Regression and Decision Tree algorithms and both models performance evaluated concerning accuracy. Trained model is saved on the hard drive and loaded in Tableau, and with the help of R Server, Tableau allows the user to build dynamic visualizations. In Tableau, calculated fields can dynamically invokes R engine to perform calculations and then R results from output values back to Tableau, so that visualisations can be designed.\\
 
 
 \subsection{Data Loading}\label{tableau}
@@ -232,7 +232,7 @@ Datav2$AnnualPYMT <-scale(Datav2$AnnualPYMT
 
 \subsection{Logistic Regression}
 
-Logistic regression is the most commonly used technique in credit scoring as it works on binary response variables, i.e., 0 or 1 \citep{hilbe2011logistic}. In fig. \ref{fig:logistic}, output results of standard logistics regression function lies between 0 and 1 only. In this research work output of response variable, i.e., the probability of default $p=1$ is considered as 'Yes' and $p=0$ is considered as 'No'. Probability is represented using logistic function (logit) and the probability of binary response variable based on the one, or more independent variables.
+Logistic regression is the most generally used technique for credit analysis and assessment as it works on binary response variables, i.e., 0 or 1 \citep{hilbe2011logistic}. In fig. \ref{fig:logistic}, output results of standard logistics regression function lies between 0 and 1 only. In this research work output of response variable, i.e., the probability of default $p=1$ is considered as 'Yes' and $p=0$ is considered as 'No'. Probability is represented using logistic function (logit) and the probability of binary response variable based on the one, or more independent variables.
 
 \begin{center}
 \begin{figure}[!htb]
@@ -292,11 +292,11 @@ Packages such as rattle(), RColorBrewer(), etc. used to enhance the overall deci
 
 \begin{verbatim}
 library(rpart)
-library(rattle)					# Fancy tree plot
-library(rpart.plot)			# Enhanced tree plots
-library(RColorBrewer)		# Color selection for fancy tree plot
-library(party)					# Alternative decision tree algorithm
-library(partykit)				# Convert rpart object to BinaryTree
+library(rattle)                    
+library(rpart.plot)            
+library(RColorBrewer)       
+library(party)                    
+library(partykit)                
 library(caret)
 defaultLoanTree <- rpart(DefaultedLoans ~ NewLoan + County + LoanBalance 
 + PropertyValue + InterestIncome + CreditRating + AnnualPYMT + County 
@@ -311,15 +311,15 @@ tree.1 <- defaultLoanTree
 fancyRpartPlot(tree.1)
 \end{verbatim}
 
-Finally, Model performance of logistic regression and decision tree has been evaulated based on GINI, ROC metrics.
+Finally, the Model performance of logistic regression and decision tree has been evaluated based on GINI, ROC metrics.
 
 \section{Tableau \& Dashboards} 
 
-Tableau professional software is used to develop the business dashboard that will be utilised by end users such as credit analyst, auditors, banks officials, etc. In Tableau, CSV file connector is used to connect to the data source ( sample dataset); then it is used to prepare various graphs and geospatial dashboard. Calculated field in Tableau allows making the call to R engine directly. By using calculated field options in Tableau, the predictive model is loaded into Tableau to make direct calls to R engine. Instructions and settings mentioned in section \ref{tableau} used as is to connect Tableau with R. \\
+Tableau professional software is used to develop the business dashboard that will be utilised by end users such as credit analyst, auditors, banks officials, etc. In Tableau, CSV file connector is used to connect to the data source ( sample dataset); then it is used to prepare various graphs and geospatial dashboard. The calculated field in Tableau allows making the call to R engine directly. By using calculated field options in Tableau, the predictive model is loaded into Tableau to make direct calls to R engine. Instructions and settings mentioned in section \ref{tableau} used as is to connect Tableau with R. \\
 
-In the dashboard, the user can select an origin city or region and distance (in miles) from that origin. Based on these inputs user will be able to take the business decision such as investigating a loan account when property value of a particular house is higher than the area average property value, or opening new branches near by to areas for which a high number of loan applications is coming in. Following calculations are performed in Tableau calculated fields:
+In the dashboard, the user can select an origin city or region and distance (in miles) from that origin. Based on these inputs user will be able to take the business decision such as investigating a loan account when property value of a particular house is higher than the area average property value, or opening new branches near by to areas for which a significant number of loan applications is coming in. Following calculations are performed in Tableau calculated fields:
 
-\textbf{Calculation for distance from Origin city}:
+\textbf{Calculation for the distance from Origin city}:
 \begin{verbatim}
 3959 * ACOS
 (
