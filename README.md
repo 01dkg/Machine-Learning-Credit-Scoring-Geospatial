@@ -1,4 +1,4 @@
-#Enhancing Credit Analysis and Assessment using Geo Spatial Techniques
+# Enhancing Credit Analysis and Assessment using Geo Spatial Techniques
 
 This practicum presents interactive dashboard for enhancing credit analysis
 
