@@ -11,3 +11,4 @@ Keywords: Credit Scoring, Logistic Regression, Decision Tree, Tableau, Auditing
 
 Final Dashboard
 <iframe src="https://public.tableau.com/shared/3P3GFNMNJ?:showVizHome=no&:embed=true width="90%" height="500"></iframe>
+[iframe src="https://public.tableau.com/shared/3P3GFNMNJ?:showVizHome=no&:embed=true width="90%" height="500"]
